@@ -58,6 +58,26 @@ python -c "import mt; print(mt.__file__)"
 
 SDToolbox remains a separately installed dependency. The optional OpenMP build instructions below assume an editable source checkout.
 
+### Using the installed package
+
+After installation, activate the same environment whenever you use the package:
+
+```bash
+conda activate ct-env
+```
+
+Your scripts can then import `mt` from any working directory, without adding the repository to `sys.path`:
+
+```python
+from mt import CombustionCalculator
+from mt.flame_ignition import run_flame_ignition_case
+```
+
+An editable install links the environment to your source checkout rather than copying it. Source changes are available to newly started Python processes without reinstalling. Restart an existing Python session to load updated code. Keep the checkout in place; if you move it, rerun `python -m pip install -e /new/path/to/kinetic-model-tuning` in the same environment.
+
+Installing the package does not start an optimization or automatically download future GitHub updates. To update a cloned checkout, use `git pull` after handling any local changes. Rerun the installation command if package dependencies change.
+
+
 ## Run an example
 
 ```bash
