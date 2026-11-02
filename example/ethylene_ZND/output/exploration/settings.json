@@ -176,6 +176,10 @@
   ],
   "ea_delta": 60000.0,
   "b_delta": 0.2,
+  "plog_max_trials": 1,
+  "plog_min_relative_score": 0.1,
+  "plog_trial_rounds": 5,
+  "plog_min_improvement": 0.001,
   "enable_plog": true,
   "plog_candidates": [
     2
@@ -185,10 +189,9 @@
     50.0,
     100.0
   ],
-  "plog_max_trials": 1,
-  "plog_min_relative_score": 0.1,
-  "plog_trial_rounds": 5,
-  "plog_min_improvement": 0.001,
+  "plot_yscales": {
+    "T_profile": "linear"
+  },
   "resume": false,
   "reference_cache": "/project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/diagnostics/reference_cache",
   "stages": [

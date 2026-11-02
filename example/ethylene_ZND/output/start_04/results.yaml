@@ -16,10 +16,10 @@ stages:
   status: not_converged
   converged: false
   stop_reason: stalled
-  rounds: 2
+  rounds: 5
   baseline_loss: 1.7819328439866193
-  best_loss: 1.1068866332749399
-  relative_improvement: 0.37882808659347433
+  best_loss: 1.0722219023283373
+  relative_improvement: 0.39828153069742445
 - stage: 02_AE
   trial: false
   accepted: true
@@ -27,8 +27,8 @@ stages:
   converged: false
   stop_reason: stalled
   rounds: 2
-  baseline_loss: 1.1068866332749399
-  best_loss: 1.039080232564489
+  baseline_loss: 1.0722219023283373
+  best_loss: 1.0053233029917699
 - stage: 03_AEB
   trial: false
   accepted: true
@@ -36,15 +36,15 @@ stages:
   converged: false
   stop_reason: stalled
   rounds: 1
-  baseline_loss: 1.039080232564489
-  best_loss: 1.039080232564489
+  baseline_loss: 1.0053233029917699
+  best_loss: 1.0053233029917699
 validation:
   status: passed
   performed: true
   passed: true
-  max_temperature_change_K: 2.82357178e-08
-  max_length_change_percent: 8.80105833e-07
-  tighter_loss: 1.03908023
+  max_temperature_change_K: 2.6735961e-08
+  max_length_change_percent: 6.43956044e-07
+  tighter_loss: 1.0053233
   errors: []
   plog_monotonicity_status: checked
   plog_monotonicity_passed: true
@@ -61,21 +61,21 @@ cases:
     induction_length_m: 0.0160696463
     exothermic_length_m: 0.000742557515
   baseline:
-    final_temperature_K: 2208.57467
-    temperature_error_K: 2.33319183
-    profile_rmse_K: 363.109481
-    induction_length_m: 0.0103274689
-    induction_error_percent: -35.7330668
-    exothermic_length_m: 0.00101218483
-    exothermic_error_percent: 36.3106299
+    final_temperature_K: 2208.22525
+    temperature_error_K: 1.98377499
+    profile_rmse_K: 379.554613
+    induction_length_m: 0.0099517989
+    induction_error_percent: -38.070828
+    exothermic_length_m: 0.00101033045
+    exothermic_error_percent: 36.0609017
   accepted:
-    final_temperature_K: 2208.57467
-    temperature_error_K: 2.33319183
-    profile_rmse_K: 363.109481
-    induction_length_m: 0.0103274689
-    induction_error_percent: -35.7330668
-    exothermic_length_m: 0.00101218483
-    exothermic_error_percent: 36.3106299
+    final_temperature_K: 2208.22525
+    temperature_error_K: 1.98377499
+    profile_rmse_K: 379.554613
+    induction_length_m: 0.0099517989
+    induction_error_percent: -38.070828
+    exothermic_length_m: 0.00101033045
+    exothermic_error_percent: 36.0609017
 - case: 2
   pressure_bar: 1
   initial_temperature_K: 298.0
@@ -86,21 +86,21 @@ cases:
     induction_length_m: 0.000547180897
     exothermic_length_m: 0.000117933906
   baseline:
-    final_temperature_K: 2958.19128
-    temperature_error_K: 5.98728199
-    profile_rmse_K: 228.966845
-    induction_length_m: 0.000267305068
-    induction_error_percent: -51.1486843
-    exothermic_length_m: 6.4334683e-05
-    exothermic_error_percent: -45.4485268
+    final_temperature_K: 2958.11295
+    temperature_error_K: 5.90894692
+    profile_rmse_K: 233.821882
+    induction_length_m: 0.000265790202
+    induction_error_percent: -51.4255334
+    exothermic_length_m: 6.38687582e-05
+    exothermic_error_percent: -45.8435996
   accepted:
-    final_temperature_K: 2958.19128
-    temperature_error_K: 5.98728199
-    profile_rmse_K: 228.966845
-    induction_length_m: 0.000267305068
-    induction_error_percent: -51.1486843
-    exothermic_length_m: 6.4334683e-05
-    exothermic_error_percent: -45.4485268
+    final_temperature_K: 2958.11295
+    temperature_error_K: 5.90894692
+    profile_rmse_K: 233.821882
+    induction_length_m: 0.000265790202
+    induction_error_percent: -51.4255334
+    exothermic_length_m: 6.38687582e-05
+    exothermic_error_percent: -45.8435996
 - case: 3
   pressure_bar: 1
   initial_temperature_K: 298.0
@@ -111,21 +111,21 @@ cases:
     induction_length_m: 0.000949470195
     exothermic_length_m: 0.000627802883
   baseline:
-    final_temperature_K: 2670.55007
-    temperature_error_K: 1.634743
-    profile_rmse_K: 500.653403
-    induction_length_m: 0.000259266497
-    induction_error_percent: -72.6935612
-    exothermic_length_m: 0.000164972835
-    exothermic_error_percent: -73.7221922
+    final_temperature_K: 2671.20009
+    temperature_error_K: 2.28477058
+    profile_rmse_K: 506.255233
+    induction_length_m: 0.000259316257
+    induction_error_percent: -72.6883204
+    exothermic_length_m: 0.000169427349
+    exothermic_error_percent: -73.0126519
   accepted:
-    final_temperature_K: 2670.55007
-    temperature_error_K: 1.634743
-    profile_rmse_K: 500.653403
-    induction_length_m: 0.000259266497
-    induction_error_percent: -72.6935612
-    exothermic_length_m: 0.000164972835
-    exothermic_error_percent: -73.7221922
+    final_temperature_K: 2671.20009
+    temperature_error_K: 2.28477058
+    profile_rmse_K: 506.255233
+    induction_length_m: 0.000259316257
+    induction_error_percent: -72.6883204
+    exothermic_length_m: 0.000169427349
+    exothermic_error_percent: -73.0126519
 - case: 4
   pressure_bar: 5
   initial_temperature_K: 298.0
@@ -136,21 +136,21 @@ cases:
     induction_length_m: 0.00800831413
     exothermic_length_m: 0.000888393278
   baseline:
-    final_temperature_K: 2206.95608
-    temperature_error_K: 9.49687059
-    profile_rmse_K: 184.531595
-    induction_length_m: 0.00932167525
-    induction_error_percent: 16.3999701
-    exothermic_length_m: 0.000472693567
-    exothermic_error_percent: -46.7923071
+    final_temperature_K: 2207.62328
+    temperature_error_K: 10.1640708
+    profile_rmse_K: 255.983891
+    induction_length_m: 0.00998239747
+    induction_error_percent: 24.6504234
+    exothermic_length_m: 0.000485818266
+    exothermic_error_percent: -45.3149547
   accepted:
-    final_temperature_K: 2206.95608
-    temperature_error_K: 9.49687059
-    profile_rmse_K: 184.531595
-    induction_length_m: 0.00932167525
-    induction_error_percent: 16.3999701
-    exothermic_length_m: 0.000472693567
-    exothermic_error_percent: -46.7923071
+    final_temperature_K: 2207.62328
+    temperature_error_K: 10.1640708
+    profile_rmse_K: 255.983891
+    induction_length_m: 0.00998239747
+    induction_error_percent: 24.6504234
+    exothermic_length_m: 0.000485818266
+    exothermic_error_percent: -45.3149547
 - case: 5
   pressure_bar: 5
   initial_temperature_K: 298.0
@@ -161,21 +161,21 @@ cases:
     induction_length_m: 0.000202749973
     exothermic_length_m: 5.08385321e-05
   baseline:
-    final_temperature_K: 3072.65429
-    temperature_error_K: 23.3114299
-    profile_rmse_K: 390.797094
-    induction_length_m: 0.000108249956
-    induction_error_percent: -46.6091392
-    exothermic_length_m: 2.81015313e-05
-    exothermic_error_percent: -44.7239523
+    final_temperature_K: 3073.08434
+    temperature_error_K: 23.7414814
+    profile_rmse_K: 372.431856
+    induction_length_m: 0.000112968127
+    induction_error_percent: -44.282051
+    exothermic_length_m: 2.85359232e-05
+    exothermic_error_percent: -43.8694982
   accepted:
-    final_temperature_K: 3072.65429
-    temperature_error_K: 23.3114299
-    profile_rmse_K: 390.797094
-    induction_length_m: 0.000108249956
-    induction_error_percent: -46.6091392
-    exothermic_length_m: 2.81015313e-05
-    exothermic_error_percent: -44.7239523
+    final_temperature_K: 3073.08434
+    temperature_error_K: 23.7414814
+    profile_rmse_K: 372.431856
+    induction_length_m: 0.000112968127
+    induction_error_percent: -44.282051
+    exothermic_length_m: 2.85359232e-05
+    exothermic_error_percent: -43.8694982
 - case: 6
   pressure_bar: 5
   initial_temperature_K: 298.0
@@ -186,21 +186,21 @@ cases:
     induction_length_m: 0.000264002493
     exothermic_length_m: 0.000231186297
   baseline:
-    final_temperature_K: 2781.69063
-    temperature_error_K: 53.9741537
-    profile_rmse_K: 591.950373
-    induction_length_m: 0.000137708649
-    induction_error_percent: -47.8381257
-    exothermic_length_m: 2.02240516e-05
-    exothermic_error_percent: -91.2520544
+    final_temperature_K: 2780.71155
+    temperature_error_K: 52.9950756
+    profile_rmse_K: 578.836022
+    induction_length_m: 0.000144168468
+    induction_error_percent: -45.3912476
+    exothermic_length_m: 2.06902783e-05
+    exothermic_error_percent: -91.0503872
   accepted:
-    final_temperature_K: 2781.69063
-    temperature_error_K: 53.9741537
-    profile_rmse_K: 591.950373
-    induction_length_m: 0.000137708649
-    induction_error_percent: -47.8381257
-    exothermic_length_m: 2.02240516e-05
-    exothermic_error_percent: -91.2520544
+    final_temperature_K: 2780.71155
+    temperature_error_K: 52.9950756
+    profile_rmse_K: 578.836022
+    induction_length_m: 0.000144168468
+    induction_error_percent: -45.3912476
+    exothermic_length_m: 2.06902783e-05
+    exothermic_error_percent: -91.0503872
 - case: 7
   pressure_bar: 20
   initial_temperature_K: 298.0
@@ -211,21 +211,21 @@ cases:
     induction_length_m: 0.00249482991
     exothermic_length_m: 0.000334072034
   baseline:
-    final_temperature_K: 2197.89852
-    temperature_error_K: 0.228132446
-    profile_rmse_K: 96.8063294
-    induction_length_m: 0.00254112157
-    induction_error_percent: 1.85550372
-    exothermic_length_m: 0.000149598517
-    exothermic_error_percent: -55.2196828
+    final_temperature_K: 2197.86852
+    temperature_error_K: 0.198138118
+    profile_rmse_K: 69.2158347
+    induction_length_m: 0.00271912677
+    induction_error_percent: 8.99046674
+    exothermic_length_m: 0.000155963685
+    exothermic_error_percent: -53.3143547
   accepted:
-    final_temperature_K: 2197.89852
-    temperature_error_K: 0.228132446
-    profile_rmse_K: 96.8063294
-    induction_length_m: 0.00254112157
-    induction_error_percent: 1.85550372
-    exothermic_length_m: 0.000149598517
-    exothermic_error_percent: -55.2196828
+    final_temperature_K: 2197.86852
+    temperature_error_K: 0.198138118
+    profile_rmse_K: 69.2158347
+    induction_length_m: 0.00271912677
+    induction_error_percent: 8.99046674
+    exothermic_length_m: 0.000155963685
+    exothermic_error_percent: -53.3143547
 - case: 8
   pressure_bar: 20
   initial_temperature_K: 298.0
@@ -236,21 +236,21 @@ cases:
     induction_length_m: 8.88256425e-05
     exothermic_length_m: 4.03857502e-05
   baseline:
-    final_temperature_K: 3153.55446
-    temperature_error_K: -0.604694601
-    profile_rmse_K: 685.754649
-    induction_length_m: 2.30820684e-05
-    induction_error_percent: -74.0141836
-    exothermic_length_m: 7.22637609e-06
-    exothermic_error_percent: -82.1066192
+    final_temperature_K: 3153.40143
+    temperature_error_K: -0.757718818
+    profile_rmse_K: 673.214245
+    induction_length_m: 2.40653217e-05
+    induction_error_percent: -72.9072359
+    exothermic_length_m: 7.43154376e-06
+    exothermic_error_percent: -81.5985992
   accepted:
-    final_temperature_K: 3153.55446
-    temperature_error_K: -0.604694601
-    profile_rmse_K: 685.754649
-    induction_length_m: 2.30820684e-05
-    induction_error_percent: -74.0141836
-    exothermic_length_m: 7.22637609e-06
-    exothermic_error_percent: -82.1066192
+    final_temperature_K: 3153.40143
+    temperature_error_K: -0.757718818
+    profile_rmse_K: 673.214245
+    induction_length_m: 2.40653217e-05
+    induction_error_percent: -72.9072359
+    exothermic_length_m: 7.43154376e-06
+    exothermic_error_percent: -81.5985992
 - case: 9
   pressure_bar: 20
   initial_temperature_K: 298.0
@@ -261,32 +261,32 @@ cases:
     induction_length_m: 0.000110703795
     exothermic_length_m: 4.26312386e-05
   baseline:
-    final_temperature_K: 2705.96536
-    temperature_error_K: 6.8455494
-    profile_rmse_K: 677.778371
-    induction_length_m: 3.770412e-05
-    induction_error_percent: -65.9414386
-    exothermic_length_m: 6.59566548e-06
-    exothermic_error_percent: -84.5285624
+    final_temperature_K: 2702.77643
+    temperature_error_K: 3.65661752
+    profile_rmse_K: 667.483872
+    induction_length_m: 3.95593444e-05
+    induction_error_percent: -64.2655932
+    exothermic_length_m: 6.79733743e-06
+    exothermic_error_percent: -84.055501
   accepted:
-    final_temperature_K: 2705.96536
-    temperature_error_K: 6.8455494
-    profile_rmse_K: 677.778371
-    induction_length_m: 3.770412e-05
-    induction_error_percent: -65.9414386
-    exothermic_length_m: 6.59566548e-06
-    exothermic_error_percent: -84.5285624
+    final_temperature_K: 2702.77643
+    temperature_error_K: 3.65661752
+    profile_rmse_K: 667.483872
+    induction_length_m: 3.95593444e-05
+    induction_error_percent: -64.2655932
+    exothermic_length_m: 6.79733743e-06
+    exothermic_error_percent: -84.055501
 fit_quality:
   mean_absolute_errors:
-    final_temperature_percent: 0.425373931
-    induction_percent: 45.8037415
-    exothermic_percent: 62.2338363
-    profile_rmse_K: 413.372015
+    final_temperature_percent: 0.414237901
+    induction_percent: 46.9635222
+    exothermic_percent: 61.5689387
+    profile_rmse_K: 415.199717
   loss_contributions:
     temperature_profile: 0.0
-    final_temperature: 0.215589069
-    induction_length: 0.230021203
-    exothermic_length: 0.593469961
+    final_temperature: 0.209392578
+    induction_length: 0.220881469
+    exothermic_length: 0.575049255
   targets:
     final_temperature_percent: 5.0
     induction_percent: 10.0
@@ -334,9 +334,9 @@ active_bounds:
   value: 1.16315081
   bound: 1.16315081
 - parameter: R13 physical ln A
-  side: lower
-  value: -0.405465107
-  bound: -0.405465107
+  side: upper
+  value: 0.405465107
+  bound: 0.405465107
 - parameter: R14 physical ln A
   side: lower
   value: -1.09861229

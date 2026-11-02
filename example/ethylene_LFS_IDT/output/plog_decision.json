@@ -1,5 +1,5 @@
 {
-  "accepted": true,
+  "accepted": false,
   "selected_reactions": [
     2
   ],
@@ -11,24 +11,8 @@
   "trials": [
     {
       "reaction": 2,
-      "accepted": true,
-      "relative_improvement": 0.41018399237762987,
-      "rate_equivalence": {
-        "valid": true,
-        "max_relative_error": 3.699967762314877e-15,
-        "temperatures": [
-          300.0,
-          1000.0,
-          1800.0,
-          3000.0
-        ],
-        "pressures_pa": [
-          100000.0,
-          5000000.0,
-          10000000.0
-        ],
-        "rtol": 1e-10
-      }
+      "accepted": false,
+      "error": "Ignition tighter-tolerance validation failed."
     }
   ]
 }

@@ -100,6 +100,10 @@
   "threshold": 0.01,
   "stagnation_rounds": 3,
   "stagnation_relative_tolerance": 1e-05,
+  "plog_max_trials": 1,
+  "plog_min_relative_score": 0.1,
+  "plog_trial_rounds": 5,
+  "plog_min_improvement": 0.001,
   "enable_plog": true,
   "plog_candidates": [
     2
@@ -109,12 +113,11 @@
     50.0,
     100.0
   ],
-  "plog_free": null,
   "plog_direction": "either",
-  "plog_max_trials": 1,
-  "plog_min_relative_score": 0.1,
-  "plog_trial_rounds": 5,
-  "plog_min_improvement": 0.001,
+  "plog_free": null,
+  "plot_yscales": {
+    "T_profile": "linear"
+  },
   "backend": "openmp",
   "workers": 32,
   "resume": false,

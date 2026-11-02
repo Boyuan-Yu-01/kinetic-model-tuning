@@ -1,0 +1,164 @@
+test_trial_acceptance_and_rollback (test_adaptive_flame.AdaptiveFlameTests.test_trial_acceptance_and_rollback) ... PLOG trial: R2, [1.0, 50.0, 100.0] bar.
+PLOG accepted: improvement 50.000%.
+PLOG trial: R2, [1.0, 50.0, 100.0] bar.
+PLOG rejected: improvement -20.000%.
+ok
+test_example_entrypoint_does_not_eagerly_insert_plog (test_adaptive_znd.AdaptiveTests.test_example_entrypoint_does_not_eagerly_insert_plog) ... ok
+test_rejects_no_gain_or_failed_or_missing_validation (test_adaptive_znd.AdaptiveTests.test_rejects_no_gain_or_failed_or_missing_validation) ... 
+01_A: A | sensitivity-selected reactions
+PLOG trial: R2; fixed entries [1.0, 50.0, 100.0] bar.
+
+plog_trial_R2: A | sensitivity-selected reactions
+PLOG rejected: R2; validated improvement criterion not met (0.000%).
+
+02_AE: AE | sensitivity-selected reactions
+
+03_AEB: AEB | sensitivity-selected reactions
+
+01_A: A | sensitivity-selected reactions
+PLOG trial: R2; fixed entries [1.0, 50.0, 100.0] bar.
+
+plog_trial_R2: A | sensitivity-selected reactions
+PLOG rejected: R2; validated improvement criterion not met (50.000%).
+
+02_AE: AE | sensitivity-selected reactions
+
+03_AEB: AEB | sensitivity-selected reactions
+
+01_A: A | sensitivity-selected reactions
+PLOG trial: R2; fixed entries [1.0, 50.0, 100.0] bar.
+
+plog_trial_R2: A | sensitivity-selected reactions
+PLOG rejected: R2; validated improvement criterion not met (50.000%).
+
+02_AE: AE | sensitivity-selected reactions
+
+03_AEB: AEB | sensitivity-selected reactions
+ok
+test_retains_improving_validated_trial_and_transfers_stages (test_adaptive_znd.AdaptiveTests.test_retains_improving_validated_trial_and_transfers_stages) ... 
+01_A: A | sensitivity-selected reactions
+PLOG trial: R2; fixed entries [1.0, 50.0, 100.0] bar.
+
+plog_trial_R2: A | sensitivity-selected reactions
+PLOG accepted: R2; loss improved 50.000%.
+
+02_AE: AE | sensitivity-selected reactions
+
+03_AEB: AEB | sensitivity-selected reactions
+ok
+test_unresolved_sensitivity_skips_structure_change (test_adaptive_znd.AdaptiveTests.test_unresolved_sensitivity_skips_structure_change) ... 
+01_A: A | sensitivity-selected reactions
+PLOG: no eligible reaction passed the resolved-sensitivity importance threshold.
+
+02_AE: AE | sensitivity-selected reactions
+
+03_AEB: AEB | sensitivity-selected reactions
+ok
+test_captured_lfs_step (test_constraints_regression.FeasibilityRepairTests.test_captured_lfs_step) ... Constraint step repaired: violation 3.55e-10 -> 5.58e-25
+ok
+test_failed_update_stalls_without_crashing (test_constraints_regression.FeasibilityRepairTests.test_failed_update_stalls_without_crashing) ... Constraint update rejected; shrinking trust radius from 0.35.
+Constraint update rejected; shrinking trust radius from 0.175.
+Constraint update rejected; shrinking trust radius from 0.0875.
+Constraint update rejected; shrinking trust radius from 0.0437.
+Constraint update rejected; shrinking trust radius from 0.0219.
+Constraint update rejected; shrinking trust radius from 0.0109.
+Constraint update rejected; shrinking trust radius from 0.00547.
+Constraint update rejected; shrinking trust radius from 0.00273.
+Constraint update rejected; shrinking trust radius from 0.00137.
+Constraint update rejected; shrinking trust radius from 0.000684.
+Constraint update rejected; shrinking trust radius from 0.000342.
+Constraint update rejected; shrinking trust radius from 0.000171.
+ok
+test_projection_failure_is_not_stationarity (test_constraints_regression.FeasibilityRepairTests.test_projection_failure_is_not_stationarity) ... ok
+test_gradient_mapping_does_not_report_false_stationarity (test_constraints_regression.RedundantConstraintTests.test_gradient_mapping_does_not_report_false_stationarity) ... ok
+test_infeasible_branch_is_skipped_without_losing_feasible_branch (test_constraints_regression.RedundantConstraintTests.test_infeasible_branch_is_skipped_without_losing_feasible_branch) ... ok
+test_large_residual_redundant_envelope_has_known_feasible_optimum (test_constraints_regression.RedundantConstraintTests.test_large_residual_redundant_envelope_has_known_feasible_optimum) ... ok
+test_slsqp_failure_uses_feasible_quadratic_fallback (test_constraints_regression.RedundantConstraintTests.test_slsqp_failure_uses_feasible_quadratic_fallback) ... ok
+test_disjoint_plog_node_bounds_rejected (test_feasibility.FeasibilityTests.test_disjoint_plog_node_bounds_rejected) ... ok
+test_no_accurate_candidate_is_not_accepted (test_feasibility.FeasibilityTests.test_no_accurate_candidate_is_not_accepted) ... Initial A search: 4/9 candidates, 4 coarse-valid, 0.0 s elapsed
+Initial A search: 8/9 candidates, 8 coarse-valid, 0.0 s elapsed
+Initial A search: 9/9 candidates, 9 coarse-valid, 0.0 s elapsed
+Initial A search verification: 1/3, 0.0 s elapsed
+Initial A search verification: 2/3, 0.0 s elapsed
+Initial A search verification: 3/3, 0.0 s elapsed
+ok
+test_non_source_center_rejected (test_feasibility.FeasibilityTests.test_non_source_center_rejected) ... ok
+test_shared_plog_multiplier_bounds_exclusions_and_immutable_source (test_feasibility.FeasibilityTests.test_shared_plog_multiplier_bounds_exclusions_and_immutable_source) ... Initial A search: 4/9 candidates, 4 coarse-valid, 0.0 s elapsed
+Initial A search: 8/9 candidates, 8 coarse-valid, 0.0 s elapsed
+Initial A search: 9/9 candidates, 9 coarse-valid, 0.0 s elapsed
+Initial A search verification: 1/3, 0.0 s elapsed
+Initial A search verification: 2/3, 0.0 s elapsed
+Initial A search verification: 3/3, 0.0 s elapsed
+Initial A search: 4/9 candidates, 4 coarse-valid, 0.0 s elapsed
+Initial A search: 8/9 candidates, 8 coarse-valid, 0.0 s elapsed
+Initial A search: 9/9 candidates, 9 coarse-valid, 0.0 s elapsed
+Initial A search verification: 1/3, 0.0 s elapsed
+Initial A search verification: 2/3, 0.0 s elapsed
+Initial A search verification: 3/3, 0.0 s elapsed
+ok
+test_partial_jacobian_used (test_flame_adjoint.AdjointTests.test_partial_jacobian_used) ... ok
+test_weighted_entries (test_flame_adjoint.AdjointTests.test_weighted_entries) ... ok
+test_each_branch_has_equal_weight (test_flame_ignition.JointTests.test_each_branch_has_equal_weight) ... ok
+test_fixed_horizons (test_flame_ignition.JointTests.test_fixed_horizons) ... ok
+test_enabled_and_disabled (test_flame_plot_switch.PlotSwitchTests.test_enabled_and_disabled) ... ok
+test_loss_normalization_and_coverage (test_flame_profile.ProfileTests.test_loss_normalization_and_coverage) ... ok
+test_no_extrapolation (test_flame_profile.ProfileTests.test_no_extrapolation) ... ok
+test_settings_and_fraction_scale (test_flame_profile.ProfileTests.test_settings_and_fraction_scale) ... ok
+test_translation_and_different_grids (test_flame_profile.ProfileTests.test_translation_and_different_grids) ... ok
+test_equal_case_log_loss (test_flame_tuning.FlameTuningTests.test_equal_case_log_loss) ... ok
+test_module_launcher_dispatches_importable_worker (test_flame_tuning.FlameTuningTests.test_module_launcher_dispatches_importable_worker) ... ok
+test_speed_and_temperature_normalization (test_flame_tuning.FlameTuningTests.test_speed_and_temperature_normalization) ... ok
+test_convergence_takes_precedence (test_iterative_stagnation.StagnationTests.test_convergence_takes_precedence) ... ok
+test_default_stops_after_three_negligible_reductions (test_iterative_stagnation.StagnationTests.test_default_stops_after_three_negligible_reductions) ... ok
+test_disabled_and_custom_threshold (test_iterative_stagnation.StagnationTests.test_disabled_and_custom_threshold) ... ok
+test_inner_failure_remains_explicit (test_iterative_stagnation.StagnationTests.test_inner_failure_remains_explicit) ... ok
+test_invalid_settings (test_iterative_stagnation.StagnationTests.test_invalid_settings) ... ok
+test_material_improvement_resets_counter (test_iterative_stagnation.StagnationTests.test_material_improvement_resets_counter) ... ok
+test_unresolved_sensitivities_are_not_hidden (test_iterative_stagnation.StagnationTests.test_unresolved_sensitivities_are_not_hidden) ... ok
+test_zero_update_requires_stationarity (test_iterative_stagnation.StagnationTests.test_zero_update_requires_stationarity) ... ok
+test_all_stages_and_real_mismatch (test_methane_units.MethaneUnits.test_all_stages_and_real_mismatch) ... ok
+test_selected_losses (test_multistart_znd.ObjectiveSelectionTests.test_selected_losses) ... ok
+test_separate_starts_and_failure (test_multistart_znd.WorkflowTests.test_separate_starts_and_failure) ... Multistart: optimizing 3/3 requested starts; sequential starts, 8 workers each.
+
+Start 1/3 | initial loss 5
+
+Start 2/3 | initial loss 6
+
+Start 3/3 | initial loss 7
+ok
+test_unscaled_lengths (test_multistart_znd.WorkflowTests.test_unscaled_lengths) ... ok
+test_dynamic_completion (test_openmp_backend.OpenMPTests.test_dynamic_completion) ... ok
+test_exception_context_terminates (test_openmp_backend.OpenMPTests.test_exception_context_terminates) ... ok
+test_many_submissions_do_not_deadlock (test_openmp_backend.OpenMPTests.test_many_submissions_do_not_deadlock) ... ok
+test_map_and_exception_and_worker_reuse (test_openmp_backend.OpenMPTests.test_map_and_exception_and_worker_reuse) ... ok
+test_parent_death_kills_private_worker_group (test_openmp_backend.OpenMPTests.test_parent_death_kills_private_worker_group) ... ok
+test_terminate (test_openmp_backend.OpenMPTests.test_terminate) ... ok
+test_worker_crash_propagates (test_openmp_backend.OpenMPTests.test_worker_crash_propagates) ... ok
+test_worker_recycling (test_openmp_backend.OpenMPTests.test_worker_recycling) ... ok
+test_missing_coordinate_stays_fixed_without_false_convergence (test_partial_sensitivities.PartialTests.test_missing_coordinate_stays_fixed_without_false_convergence) ... ok
+test_retry_after_no_progress_and_recover (test_partial_sensitivities.PartialTests.test_retry_after_no_progress_and_recover) ... ok
+test_actual_mapping_preserves_rates_and_shared_ea_b (test_plog_adaptation.AdaptationTests.test_actual_mapping_preserves_rates_and_shared_ea_b) ... ok
+test_rank_requires_resolved_artificial_arrhenius (test_plog_adaptation.AdaptationTests.test_rank_requires_resolved_artificial_arrhenius) ... ok
+test_boolean_scope (test_plog_settings.PlogSettingsTests.test_boolean_scope) ... ok
+test_insertion_and_defaults (test_plog_settings.PlogSettingsTests.test_insertion_and_defaults) ... ok
+test_legacy (test_plog_settings.PlogSettingsTests.test_legacy) ... ok
+test_interior_reversal_is_cut_and_exactly_rejected (test_plog_shape.ShapeTests.test_interior_reversal_is_cut_and_exactly_rejected) ... ok
+test_pressure_cuts_allow_reversed_a_order (test_plog_shape.ShapeTests.test_pressure_cuts_allow_reversed_a_order) ... ok
+test_stage_transfer_retains_accepted_boundary_slack (test_plog_shape.ShapeTests.test_stage_transfer_retains_accepted_boundary_slack) ... ok
+test_transfer_and_native_export_parity (test_plog_shape.ShapeTests.test_transfer_and_native_export_parity) ... ok
+test_defaults_and_override (test_plot_scales.PlotScaleTests.test_defaults_and_override) ... ok
+test_plotters_use_scales (test_plot_scales.PlotScaleTests.test_plotters_use_scales) ... ok
+test_cache_invalidates_on_reference_cases_solver_but_not_candidate (test_run_diagnostics.DiagnosticsTests.test_cache_invalidates_on_reference_cases_solver_but_not_candidate) ... ok
+test_fit_targets_separate_from_loss (test_run_diagnostics.DiagnosticsTests.test_fit_targets_separate_from_loss) ... ok
+test_openmp_lazy_initializer_and_future_protocol (test_workflow.BackendRoutingTests.test_openmp_lazy_initializer_and_future_protocol) ... ok
+test_unknown_backend_and_mpi_conflict (test_workflow.BackendRoutingTests.test_unknown_backend_and_mpi_conflict) ... ok
+test_bad_weights_and_counts_rejected (test_workflow.WorkflowTests.test_bad_weights_and_counts_rejected) ... ok
+test_disabled_branch_needs_no_simulations (test_workflow.WorkflowTests.test_disabled_branch_needs_no_simulations) ... ok
+test_independent_counts_and_hierarchical_weights (test_workflow.WorkflowTests.test_independent_counts_and_hierarchical_weights) ... ok
+test_objective_weights_normalized_within_branch (test_workflow.WorkflowTests.test_objective_weights_normalized_within_branch) ... ok
+test_unknown_or_inactive_objectives_rejected (test_workflow.WorkflowTests.test_unknown_or_inactive_objectives_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 70 tests in 10.984s
+
+OK

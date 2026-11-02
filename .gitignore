@@ -27,10 +27,6 @@ code/native/.build.lock
 *.slurm
 
 # Published result snapshots and logs for the included examples
-!/example/ethylene_LFS/output/
-!/example/ethylene_LFS/output/**
-!/example/ethylene_LFS/logs/
-!/example/ethylene_LFS/logs/**
 !/example/ethylene_LFS_IDT/output/
 !/example/ethylene_LFS_IDT/output/**
 !/example/ethylene_LFS_IDT/logs/

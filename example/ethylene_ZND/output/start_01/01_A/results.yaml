@@ -168,7 +168,7 @@ validation:
   rate_uncertainty_passed: true
   export_max_relative_rate_error: 0.00000000e+00
 evaluations_at_accepted_state: 750
-elapsed_seconds: 2.87825864e+02
+elapsed_seconds: 2.86985417e+02
 reactions:
 - reaction: 1
   equation: O2 + H2 => 2 OH

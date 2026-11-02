@@ -2,9 +2,9 @@
   "stages": [
     {
       "stage": "A",
-      "initial_loss": 0.41818650918917394,
-      "loss": 0.3034846062394287,
-      "status": "unresolved_sensitivities"
+      "initial_loss": 0.4181986763938897,
+      "loss": 0.3266383302110089,
+      "status": "loss_plateau_unresolved"
     }
   ],
   "cases": [
@@ -12,166 +12,196 @@
       "P_atm": 1,
       "T": 298.0,
       "phi": 0.6,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
       "reference_cm_s": 25.87379642878264,
-      "model_cm_s": 5.434059092079992,
-      "error_percent": -78.99782852880834,
+      "model_cm_s": 5.22340387273022,
+      "error_percent": -79.81199285111644,
       "reference_temperature_K": 1813.9796561418195,
-      "model_temperature_K": 1811.207942623472,
-      "temperature_error_K": -2.7717135183474966
+      "model_temperature_K": 1811.0908247881957,
+      "temperature_error_K": -2.8888313536238
     },
     {
       "P_atm": 1,
       "T": 298.0,
       "phi": 0.8,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
       "reference_cm_s": 49.99120574882362,
-      "model_cm_s": 13.223797487462516,
-      "error_percent": -73.54775247089596,
+      "model_cm_s": 12.316300992629072,
+      "error_percent": -75.3630647468052,
       "reference_temperature_K": 2165.765015606705,
-      "model_temperature_K": 2171.148919231371,
-      "temperature_error_K": 5.383903624665891
+      "model_temperature_K": 2170.540916891773,
+      "temperature_error_K": 4.775901285067903
     },
     {
       "P_atm": 1,
       "T": 298.0,
       "phi": 1.0,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
       "reference_cm_s": 66.55236072867754,
-      "model_cm_s": 21.347854754386706,
-      "error_percent": -67.92321937095784,
+      "model_cm_s": 19.638580838795367,
+      "error_percent": -70.49153384827555,
       "reference_temperature_K": 2359.7665843717573,
-      "model_temperature_K": 2376.7742973387194,
-      "temperature_error_K": 17.007712966962117
+      "model_temperature_K": 2377.5206891150283,
+      "temperature_error_K": 17.754104743271
     },
     {
       "P_atm": 1,
       "T": 298.0,
       "phi": 1.2,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
       "reference_cm_s": 71.13186342944887,
-      "model_cm_s": 27.895985591741475,
-      "error_percent": -60.78271502136352,
+      "model_cm_s": 25.383159349848178,
+      "error_percent": -64.31534599817688,
       "reference_temperature_K": 2362.9123049686405,
-      "model_temperature_K": 2368.481089705753,
-      "temperature_error_K": 5.568784737112765
+      "model_temperature_K": 2368.7477674246124,
+      "temperature_error_K": 5.835462455971992
     },
     {
       "P_atm": 1,
       "T": 298.0,
       "phi": 1.4,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
       "reference_cm_s": 60.609439528965744,
-      "model_cm_s": 31.043909612253145,
-      "error_percent": -48.78040474633162,
+      "model_cm_s": 28.20008073436003,
+      "error_percent": -53.472460802276544,
       "reference_temperature_K": 2249.4889182630786,
-      "model_temperature_K": 2254.317191055875,
-      "temperature_error_K": 4.82827279279627
+      "model_temperature_K": 2252.60682484498,
+      "temperature_error_K": 3.1179065819014795
     },
     {
       "P_atm": 10,
       "T": 298.0,
       "phi": 0.6,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
       "reference_cm_s": 11.058889809439457,
-      "model_cm_s": 6.211435224882302,
-      "error_percent": -43.833103214569945,
+      "model_cm_s": 6.179490837955521,
+      "error_percent": -44.121960301286855,
       "reference_temperature_K": 1815.6170265309222,
-      "model_temperature_K": 1815.0806436741696,
-      "temperature_error_K": -0.5363828567526525
+      "model_temperature_K": 1815.1091420004768,
+      "temperature_error_K": -0.5078845304453807
     },
     {
       "P_atm": 10,
       "T": 298.0,
       "phi": 0.8,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
       "reference_cm_s": 27.248183030027057,
-      "model_cm_s": 15.74708978403956,
-      "error_percent": -42.20866115481344,
+      "model_cm_s": 15.406085860816388,
+      "error_percent": -43.46013514428052,
       "reference_temperature_K": 2192.579423492294,
-      "model_temperature_K": 2192.332823204065,
-      "temperature_error_K": -0.24660028822927416
+      "model_temperature_K": 2192.419915596176,
+      "temperature_error_K": -0.15950789611815708
     },
     {
       "P_atm": 10,
       "T": 298.0,
       "phi": 1.0,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
       "reference_cm_s": 39.573296506152396,
-      "model_cm_s": 25.795185483225776,
-      "error_percent": -34.816687613539,
+      "model_cm_s": 24.997407281277294,
+      "error_percent": -36.83263845004424,
       "reference_temperature_K": 2450.2892026022428,
-      "model_temperature_K": 2450.245064431274,
-      "temperature_error_K": -0.044138170968835766
+      "model_temperature_K": 2450.2900669819014,
+      "temperature_error_K": 0.0008643796586511598
     },
     {
       "P_atm": 10,
       "T": 298.0,
       "phi": 1.2,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
       "reference_cm_s": 42.27567214217821,
-      "model_cm_s": 33.81280097681468,
-      "error_percent": -20.018300683432944,
+      "model_cm_s": 32.63190962800209,
+      "error_percent": -22.811612507881527,
       "reference_temperature_K": 2396.855409335736,
-      "model_temperature_K": 2395.618419722669,
-      "temperature_error_K": -1.2369896130671805
+      "model_temperature_K": 2395.8341278535913,
+      "temperature_error_K": -1.0212814821447864
     },
     {
       "P_atm": 10,
       "T": 298.0,
       "phi": 1.4,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
       "reference_cm_s": 31.62206048435409,
-      "model_cm_s": 37.04577641589078,
-      "error_percent": 17.151684135890587,
+      "model_cm_s": 35.65169176403708,
+      "error_percent": 12.743101549871373,
       "reference_temperature_K": 2262.6159612075244,
-      "model_temperature_K": 2284.080090499201,
-      "temperature_error_K": 21.464129291676727
+      "model_temperature_K": 2283.2409003899525,
+      "temperature_error_K": 20.62493918242808
     },
     {
       "P_atm": 50,
       "T": 298.0,
       "phi": 0.6,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
       "reference_cm_s": 4.611248416445221,
-      "model_cm_s": 6.063271677958379,
-      "error_percent": 31.488723451435984,
+      "model_cm_s": 6.1140580832321865,
+      "error_percent": 32.59008257779941,
       "reference_temperature_K": 1816.174050332244,
-      "model_temperature_K": 1815.139935954182,
-      "temperature_error_K": -1.034114378061986
+      "model_temperature_K": 1815.1658316564847,
+      "temperature_error_K": -1.0082186757592808
     },
     {
       "P_atm": 50,
       "T": 298.0,
       "phi": 0.8,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
       "reference_cm_s": 14.380258706119028,
-      "model_cm_s": 15.240037677771284,
-      "error_percent": 5.978883893698006,
+      "model_cm_s": 15.301496437738601,
+      "error_percent": 6.406266746978417,
       "reference_temperature_K": 2199.671571281716,
-      "model_temperature_K": 2198.5820348556754,
-      "temperature_error_K": -1.0895364260404676
+      "model_temperature_K": 2198.3452106318955,
+      "temperature_error_K": -1.3263606498203444
     },
     {
       "P_atm": 50,
       "T": 298.0,
       "phi": 1.0,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
       "reference_cm_s": 22.457229090204063,
-      "model_cm_s": 24.535550133686492,
-      "error_percent": 9.254574707923346,
+      "model_cm_s": 24.687671304135062,
+      "error_percent": 9.931956453630008,
       "reference_temperature_K": 2487.563058349108,
-      "model_temperature_K": 2487.1495675547626,
-      "temperature_error_K": -0.4134907943453072
+      "model_temperature_K": 2487.2931065127677,
+      "temperature_error_K": -0.2699518363401694
     },
     {
       "P_atm": 50,
       "T": 298.0,
       "phi": 1.2,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
       "reference_cm_s": 22.44699458114796,
-      "model_cm_s": 31.312980535751223,
-      "error_percent": 39.49742992342207,
+      "model_cm_s": 31.631578791429632,
+      "error_percent": 40.91676583730865,
       "reference_temperature_K": 2403.3528594637833,
-      "model_temperature_K": 2402.266048100467,
-      "temperature_error_K": -1.0868113633164285
+      "model_temperature_K": 2402.2622037119213,
+      "temperature_error_K": -1.0906557518619593
     },
     {
       "P_atm": 50,
       "T": 298.0,
       "phi": 1.4,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
       "reference_cm_s": 15.12542100316476,
-      "model_cm_s": 34.15726214553487,
-      "error_percent": 125.8268522799332,
+      "model_cm_s": 34.63060118032046,
+      "error_percent": 128.9562794521524,
       "reference_temperature_K": 2265.400923864034,
-      "model_temperature_K": 2278.6494003469616,
-      "temperature_error_K": 13.248476482927344
+      "model_temperature_K": 2282.097487845447,
+      "temperature_error_K": 16.696563981412964
     }
   ],
   "ignition_cases": [
@@ -181,12 +211,14 @@
       "T": 1400,
       "phi": 0.6,
       "end_time_s": 0.003,
-      "reference_delay_us": 57.72503303349878,
-      "model_delay_us": 201.01151350771846,
-      "delay_error_percent": 248.2224313168746,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 57.7265609046692,
+      "model_delay_us": 208.50195772868,
+      "delay_error_percent": 261.1889474465737,
       "reference_temperature_K": 2750.206219705219,
-      "model_temperature_K": 2750.0751993728118,
-      "temperature_error_K": -0.1310203324073882
+      "model_temperature_K": 2750.0752009557386,
+      "temperature_error_K": -0.13101874948051773
     },
     {
       "kind": "ignition",
@@ -194,12 +226,14 @@
       "T": 1400,
       "phi": 1.0,
       "end_time_s": 0.003,
-      "reference_delay_us": 55.03534739210405,
-      "model_delay_us": 139.24597137598,
-      "delay_error_percent": 153.0118877671656,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 55.03398595279131,
+      "model_delay_us": 142.05663349143464,
+      "delay_error_percent": 158.1252857339684,
       "reference_temperature_K": 2986.868519481076,
-      "model_temperature_K": 2986.2823994535665,
-      "temperature_error_K": -0.5861200275094234
+      "model_temperature_K": 2986.2824010639706,
+      "temperature_error_K": -0.5861184171053537
     },
     {
       "kind": "ignition",
@@ -207,12 +241,14 @@
       "T": 1400,
       "phi": 1.4,
       "end_time_s": 0.003,
-      "reference_delay_us": 55.68238614001457,
-      "model_delay_us": 112.34282475902259,
-      "delay_error_percent": 101.75648449499653,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 55.68181654140749,
+      "model_delay_us": 113.36667642337812,
+      "delay_error_percent": 103.59730243188743,
       "reference_temperature_K": 3060.6880636209644,
-      "model_temperature_K": 3060.0338106608233,
-      "temperature_error_K": -0.6542529601410934
+      "model_temperature_K": 3060.0338113136763,
+      "temperature_error_K": -0.6542523072880613
     },
     {
       "kind": "ignition",
@@ -220,12 +256,14 @@
       "T": 1500,
       "phi": 0.6,
       "end_time_s": 0.003,
-      "reference_delay_us": 36.17539123963627,
-      "model_delay_us": 58.3515245726353,
-      "delay_error_percent": 61.30170973438243,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 36.17718909002317,
+      "model_delay_us": 57.221715020595155,
+      "delay_error_percent": 58.170704966062644,
       "reference_temperature_K": 2786.9959031671974,
-      "model_temperature_K": 2786.824303658612,
-      "temperature_error_K": -0.1715995085855866
+      "model_temperature_K": 2786.824304769574,
+      "temperature_error_K": -0.17159839762325646
     },
     {
       "kind": "ignition",
@@ -233,12 +271,14 @@
       "T": 1500,
       "phi": 1.0,
       "end_time_s": 0.003,
-      "reference_delay_us": 34.11175679366904,
-      "model_delay_us": 44.139051488672926,
-      "delay_error_percent": 29.395421513045328,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 34.111119847972496,
+      "model_delay_us": 43.18055035559121,
+      "delay_error_percent": 26.587900215647075,
       "reference_temperature_K": 3009.975315671184,
-      "model_temperature_K": 3009.3225089053985,
-      "temperature_error_K": -0.652806765785499
+      "model_temperature_K": 3009.322510646715,
+      "temperature_error_K": -0.6528050244692167
     },
     {
       "kind": "ignition",
@@ -246,12 +286,14 @@
       "T": 1500,
       "phi": 1.4,
       "end_time_s": 0.003,
-      "reference_delay_us": 34.28397251187709,
-      "model_delay_us": 36.87045879022645,
-      "delay_error_percent": 7.544301575476164,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 34.284801492375266,
+      "model_delay_us": 35.94616173247561,
+      "delay_error_percent": 4.8457630430493115,
       "reference_temperature_K": 3084.926521828961,
-      "model_temperature_K": 3084.186330837586,
-      "temperature_error_K": -0.7401909913751297
+      "model_temperature_K": 3084.186331873356,
+      "temperature_error_K": -0.740189955605274
     },
     {
       "kind": "ignition",
@@ -259,12 +301,14 @@
       "T": 1600,
       "phi": 0.6,
       "end_time_s": 0.003,
-      "reference_delay_us": 24.56841957030401,
-      "model_delay_us": 27.83173589467365,
-      "delay_error_percent": 13.282565103674916,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 24.56651666263162,
+      "model_delay_us": 27.27686889647034,
+      "delay_error_percent": 11.032708751751773,
       "reference_temperature_K": 2822.1306634464804,
-      "model_temperature_K": 2821.9138231790344,
-      "temperature_error_K": -0.21684026744605944
+      "model_temperature_K": 2821.9138248026516,
+      "temperature_error_K": -0.21683864382885076
     },
     {
       "kind": "ignition",
@@ -272,12 +316,14 @@
       "T": 1600,
       "phi": 1.0,
       "end_time_s": 0.003,
-      "reference_delay_us": 23.111618566680697,
-      "model_delay_us": 19.532675705972213,
-      "delay_error_percent": -15.485470437229075,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 23.11161325466611,
+      "model_delay_us": 19.06937544658827,
+      "delay_error_percent": -17.49007204099754,
       "reference_temperature_K": 3032.8693273230188,
-      "model_temperature_K": 3032.146896148118,
-      "temperature_error_K": -0.7224311749009757
+      "model_temperature_K": 3032.1468975867606,
+      "temperature_error_K": -0.7224297362581638
     },
     {
       "kind": "ignition",
@@ -285,12 +331,14 @@
       "T": 1600,
       "phi": 1.4,
       "end_time_s": 0.003,
-      "reference_delay_us": 23.224769947658796,
-      "model_delay_us": 15.636464884849628,
-      "delay_error_percent": -32.673327141283984,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 23.22426413614163,
+      "model_delay_us": 15.269557240433851,
+      "delay_error_percent": -34.2517069607758,
       "reference_temperature_K": 3108.468898344429,
-      "model_temperature_K": 3107.641305547699,
-      "temperature_error_K": -0.8275927967297321
+      "model_temperature_K": 3107.6413065420047,
+      "temperature_error_K": -0.8275918024241946
     },
     {
       "kind": "ignition",
@@ -298,12 +346,14 @@
       "T": 1400,
       "phi": 0.6,
       "end_time_s": 0.003,
-      "reference_delay_us": 10.609796705734784,
-      "model_delay_us": 17.256665540574005,
-      "delay_error_percent": 62.64840900529669,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 10.609500177340776,
+      "model_delay_us": 17.48616812579502,
+      "delay_error_percent": 64.81613491219014,
       "reference_temperature_K": 2887.2382845544894,
-      "model_temperature_K": 2887.2155559908792,
-      "temperature_error_K": -0.022728563610144192
+      "model_temperature_K": 2887.2155572450242,
+      "temperature_error_K": -0.022727309465153667
     },
     {
       "kind": "ignition",
@@ -311,12 +361,14 @@
       "T": 1400,
       "phi": 1.0,
       "end_time_s": 0.003,
-      "reference_delay_us": 10.869385417253465,
-      "model_delay_us": 12.404595353968132,
-      "delay_error_percent": 14.124165054242699,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 10.869264483988728,
+      "model_delay_us": 12.450734974758188,
+      "delay_error_percent": 14.549931074904743,
       "reference_temperature_K": 3214.7991348900596,
-      "model_temperature_K": 3214.2376419023744,
-      "temperature_error_K": -0.561492987685142
+      "model_temperature_K": 3214.2376430394006,
+      "temperature_error_K": -0.5614918506589675
     },
     {
       "kind": "ignition",
@@ -324,12 +376,14 @@
       "T": 1400,
       "phi": 1.4,
       "end_time_s": 0.003,
-      "reference_delay_us": 11.515956535669998,
-      "model_delay_us": 10.239757360354377,
-      "delay_error_percent": -11.082007572385933,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 11.515982867234335,
+      "model_delay_us": 10.218089786357394,
+      "delay_error_percent": -11.270363075736679,
       "reference_temperature_K": 3292.9996362271413,
-      "model_temperature_K": 3292.464311057016,
-      "temperature_error_K": -0.5353251701253612
+      "model_temperature_K": 3292.4643116261714,
+      "temperature_error_K": -0.5353246009699433
     },
     {
       "kind": "ignition",
@@ -337,12 +391,14 @@
       "T": 1500,
       "phi": 0.6,
       "end_time_s": 0.003,
-      "reference_delay_us": 5.163914352284756,
-      "model_delay_us": 6.774610421802062,
-      "delay_error_percent": 31.19137847057165,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 5.164147555394219,
+      "model_delay_us": 6.794358361371105,
+      "delay_error_percent": 31.567858750938417,
       "reference_temperature_K": 2937.4441986140473,
-      "model_temperature_K": 2937.3850369875386,
-      "temperature_error_K": -0.05916162650873957
+      "model_temperature_K": 2937.385038329859,
+      "temperature_error_K": -0.05916028418823771
     },
     {
       "kind": "ignition",
@@ -350,12 +406,14 @@
       "T": 1500,
       "phi": 1.0,
       "end_time_s": 0.003,
-      "reference_delay_us": 5.068360705669288,
-      "model_delay_us": 4.7351521276733095,
-      "delay_error_percent": -6.574286980468125,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 5.0682397647701345,
+      "model_delay_us": 4.677271175389102,
+      "delay_error_percent": -7.714090246848537,
       "reference_temperature_K": 3246.841973432521,
-      "model_temperature_K": 3246.1916554356467,
-      "temperature_error_K": -0.6503179968744917
+      "model_temperature_K": 3246.191656862409,
+      "temperature_error_K": -0.6503165701119542
     },
     {
       "kind": "ignition",
@@ -363,12 +421,14 @@
       "T": 1500,
       "phi": 1.4,
       "end_time_s": 0.003,
-      "reference_delay_us": 5.262970479323181,
-      "model_delay_us": 3.7695437800902254,
-      "delay_error_percent": -28.37611772857619,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 5.262802054553393,
+      "model_delay_us": 3.643865061816988,
+      "delay_error_percent": -30.761882661645913,
       "reference_temperature_K": 3330.38524674508,
-      "model_temperature_K": 3329.7289582066987,
-      "temperature_error_K": -0.6562885383814319
+      "model_temperature_K": 3329.7289586085367,
+      "temperature_error_K": -0.6562881365434805
     },
     {
       "kind": "ignition",
@@ -376,12 +436,14 @@
       "T": 1600,
       "phi": 0.6,
       "end_time_s": 0.003,
-      "reference_delay_us": 3.1107579094366535,
-      "model_delay_us": 2.7948875887684044,
-      "delay_error_percent": -10.154127381948918,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 3.110772206708995,
+      "model_delay_us": 2.731148479323301,
+      "delay_error_percent": -12.203520610315355,
       "reference_temperature_K": 2985.5232107756456,
-      "model_temperature_K": 2985.4196427785423,
-      "temperature_error_K": -0.10356799710325504
+      "model_temperature_K": 2985.4196442464113,
+      "temperature_error_K": -0.10356652923428555
     },
     {
       "kind": "ignition",
@@ -389,12 +451,14 @@
       "T": 1600,
       "phi": 1.0,
       "end_time_s": 0.003,
-      "reference_delay_us": 3.0218097073597394,
-      "model_delay_us": 1.959482668935734,
-      "delay_error_percent": -35.15532549374849,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 3.022005094397159,
+      "model_delay_us": 1.9097004992004063,
+      "delay_error_percent": -36.80684050662196,
       "reference_temperature_K": 3278.6280685426273,
-      "model_temperature_K": 3277.8816640724735,
-      "temperature_error_K": -0.7464044701537205
+      "model_temperature_K": 3277.8816654084276,
+      "temperature_error_K": -0.7464031341996815
     },
     {
       "kind": "ignition",
@@ -402,12 +466,14 @@
       "T": 1600,
       "phi": 1.4,
       "end_time_s": 0.003,
-      "reference_delay_us": 3.1266755232261,
-      "model_delay_us": 1.5673366814897514,
-      "delay_error_percent": -49.872103138077605,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 3.1264591368868095,
+      "model_delay_us": 1.5284538372605565,
+      "delay_error_percent": -51.11230403661941,
       "reference_temperature_K": 3366.3419084535035,
-      "model_temperature_K": 3365.555868832522,
-      "temperature_error_K": -0.7860396209816827
+      "model_temperature_K": 3365.555869523237,
+      "temperature_error_K": -0.7860389302663862
     },
     {
       "kind": "ignition",
@@ -415,12 +481,14 @@
       "T": 1400,
       "phi": 0.6,
       "end_time_s": 0.003,
-      "reference_delay_us": 8.931721504066296,
-      "model_delay_us": 3.3235383412567394,
-      "delay_error_percent": -62.78949875739352,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 8.931756825770668,
+      "model_delay_us": 3.296918626996943,
+      "delay_error_percent": -63.08768038238131,
       "reference_temperature_K": 2961.4045685620977,
-      "model_temperature_K": 2961.5119189189145,
-      "temperature_error_K": 0.10735035681682348
+      "model_temperature_K": 2961.5119198373477,
+      "temperature_error_K": 0.10735127525003918
     },
     {
       "kind": "ignition",
@@ -428,12 +496,14 @@
       "T": 1400,
       "phi": 1.0,
       "end_time_s": 0.003,
-      "reference_delay_us": 7.952631388027137,
-      "model_delay_us": 2.4157188224978974,
-      "delay_error_percent": -69.62365405072319,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 7.952685732059685,
+      "model_delay_us": 2.385191526026202,
+      "delay_error_percent": -70.0077230964783,
       "reference_temperature_K": 3366.874165007748,
-      "model_temperature_K": 3366.45657391649,
-      "temperature_error_K": -0.41759109125814575
+      "model_temperature_K": 3366.4565751280315,
+      "temperature_error_K": -0.41758987971661554
     },
     {
       "kind": "ignition",
@@ -441,12 +511,14 @@
       "T": 1400,
       "phi": 1.4,
       "end_time_s": 0.003,
-      "reference_delay_us": 7.50642216450944,
-      "model_delay_us": 2.008456193960162,
-      "delay_error_percent": -73.24349537045498,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 7.50635353441432,
+      "model_delay_us": 1.976539093365458,
+      "delay_error_percent": -73.66845187475337,
       "reference_temperature_K": 3430.9126889954186,
-      "model_temperature_K": 3430.627745927297,
-      "temperature_error_K": -0.28494306812172
+      "model_temperature_K": 3430.627746396572,
+      "temperature_error_K": -0.2849425988465555
     },
     {
       "kind": "ignition",
@@ -454,12 +526,14 @@
       "T": 1500,
       "phi": 0.6,
       "end_time_s": 0.003,
-      "reference_delay_us": 2.5247169871356605,
-      "model_delay_us": 1.3070201821571577,
-      "delay_error_percent": -48.23102197922006,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 2.52470966341587,
+      "model_delay_us": 1.2928266657400216,
+      "delay_error_percent": -48.79305591159109,
       "reference_temperature_K": 3021.887128469471,
-      "model_temperature_K": 3021.972896063219,
-      "temperature_error_K": 0.08576759374818721
+      "model_temperature_K": 3021.9728969621547,
+      "temperature_error_K": 0.0857684926836555
     },
     {
       "kind": "ignition",
@@ -467,12 +541,14 @@
       "T": 1500,
       "phi": 1.0,
       "end_time_s": 0.003,
-      "reference_delay_us": 2.425161573981386,
-      "model_delay_us": 0.9280756748076148,
-      "delay_error_percent": -61.7313879304135,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 2.425203236142224,
+      "model_delay_us": 0.9108120678084834,
+      "delay_error_percent": -62.44388700151522,
       "reference_temperature_K": 3406.165676182674,
-      "model_temperature_K": 3405.656410558874,
-      "temperature_error_K": -0.5092656237998199
+      "model_temperature_K": 3405.6564118085694,
+      "temperature_error_K": -0.5092643741045322
     },
     {
       "kind": "ignition",
@@ -480,12 +556,14 @@
       "T": 1500,
       "phi": 1.4,
       "end_time_s": 0.003,
-      "reference_delay_us": 2.446521207851678,
-      "model_delay_us": 0.7507366781883124,
-      "delay_error_percent": -69.31411525152713,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 2.446507439401204,
+      "model_delay_us": 0.7315029592648012,
+      "delay_error_percent": -70.10011302300227,
       "reference_temperature_K": 3480.9878714098586,
-      "model_temperature_K": 3480.591326279344,
-      "temperature_error_K": -0.39654513051482354
+      "model_temperature_K": 3480.591326084527,
+      "temperature_error_K": -0.3965453253317719
     },
     {
       "kind": "ignition",
@@ -493,12 +571,14 @@
       "T": 1600,
       "phi": 0.6,
       "end_time_s": 0.003,
-      "reference_delay_us": 1.098208980977598,
-      "model_delay_us": 0.5669910100942284,
-      "delay_error_percent": -48.37130091674289,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 1.0981913619956414,
+      "model_delay_us": 0.5524700399171091,
+      "delay_error_percent": -49.69273488792003,
       "reference_temperature_K": 3080.188576272509,
-      "model_temperature_K": 3080.2435080844443,
-      "temperature_error_K": 0.05493181193514829
+      "model_temperature_K": 3080.243508909364,
+      "temperature_error_K": 0.05493263685502825
     },
     {
       "kind": "ignition",
@@ -506,12 +586,14 @@
       "T": 1600,
       "phi": 1.0,
       "end_time_s": 0.003,
-      "reference_delay_us": 1.0592491928595038,
-      "model_delay_us": 0.39486152441320804,
-      "delay_error_percent": -62.72250882275805,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 1.0592458920773724,
+      "model_delay_us": 0.3852382753614061,
+      "delay_error_percent": -63.63089267158881,
       "reference_temperature_K": 3445.190890981015,
-      "model_temperature_K": 3444.579508998168,
-      "temperature_error_K": -0.6113819828469786
+      "model_temperature_K": 3444.579510221036,
+      "temperature_error_K": -0.6113807599790562
     },
     {
       "kind": "ignition",
@@ -519,12 +601,14 @@
       "T": 1600,
       "phi": 1.4,
       "end_time_s": 0.003,
-      "reference_delay_us": 1.0914704829911663,
-      "model_delay_us": 0.3144781153132038,
-      "delay_error_percent": -71.18766652751076,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76",
+      "reference_delay_us": 1.0914802312818095,
+      "model_delay_us": 0.3071083442102898,
+      "delay_error_percent": -71.8631327065238,
       "reference_temperature_K": 3528.9827578237027,
-      "model_temperature_K": 3528.4564684764996,
-      "temperature_error_K": -0.5262893472031465
+      "model_temperature_K": 3528.4564687808042,
+      "temperature_error_K": -0.5262890428984974
     }
   ],
   "validation_passed": true

@@ -1,0 +1,1630 @@
+Code checks passed (see logs/code_checks_6715070.log).
+Preparing iterative ZND run: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/exploration
+Computing 9 reference profiles...
+Checking 9 stage-entry cases...
+Initial A search: 32/2000 candidates, 4 coarse-valid, 2.7 s elapsed
+Initial A search: 64/2000 candidates, 13 coarse-valid, 5.1 s elapsed
+Initial A search: 96/2000 candidates, 16 coarse-valid, 8.1 s elapsed
+Initial A search: 128/2000 candidates, 23 coarse-valid, 11.1 s elapsed
+Initial A search: 160/2000 candidates, 29 coarse-valid, 13.4 s elapsed
+Initial A search: 192/2000 candidates, 35 coarse-valid, 16.0 s elapsed
+Initial A search: 224/2000 candidates, 36 coarse-valid, 19.2 s elapsed
+Initial A search: 256/2000 candidates, 44 coarse-valid, 21.8 s elapsed
+Initial A search: 288/2000 candidates, 52 coarse-valid, 24.2 s elapsed
+Initial A search: 320/2000 candidates, 57 coarse-valid, 26.9 s elapsed
+Initial A search: 352/2000 candidates, 62 coarse-valid, 29.3 s elapsed
+Initial A search: 384/2000 candidates, 69 coarse-valid, 32.0 s elapsed
+Initial A search: 416/2000 candidates, 79 coarse-valid, 34.2 s elapsed
+Initial A search: 448/2000 candidates, 85 coarse-valid, 37.2 s elapsed
+Initial A search: 480/2000 candidates, 91 coarse-valid, 39.9 s elapsed
+Initial A search: 512/2000 candidates, 96 coarse-valid, 42.3 s elapsed
+Initial A search: 544/2000 candidates, 101 coarse-valid, 45.0 s elapsed
+Initial A search: 576/2000 candidates, 108 coarse-valid, 49.0 s elapsed
+Initial A search: 608/2000 candidates, 109 coarse-valid, 51.8 s elapsed
+Initial A search: 640/2000 candidates, 114 coarse-valid, 54.6 s elapsed
+Initial A search: 672/2000 candidates, 119 coarse-valid, 57.4 s elapsed
+Initial A search: 704/2000 candidates, 125 coarse-valid, 60.0 s elapsed
+Initial A search: 736/2000 candidates, 131 coarse-valid, 62.8 s elapsed
+Initial A search: 768/2000 candidates, 139 coarse-valid, 66.2 s elapsed
+Initial A search: 800/2000 candidates, 143 coarse-valid, 69.0 s elapsed
+Initial A search: 832/2000 candidates, 147 coarse-valid, 72.3 s elapsed
+Initial A search: 864/2000 candidates, 152 coarse-valid, 74.8 s elapsed
+Initial A search: 896/2000 candidates, 157 coarse-valid, 77.6 s elapsed
+Initial A search: 928/2000 candidates, 162 coarse-valid, 80.2 s elapsed
+Initial A search: 960/2000 candidates, 166 coarse-valid, 82.9 s elapsed
+Initial A search: 992/2000 candidates, 176 coarse-valid, 85.5 s elapsed
+Initial A search: 1024/2000 candidates, 180 coarse-valid, 88.1 s elapsed
+Initial A search: 1056/2000 candidates, 187 coarse-valid, 90.4 s elapsed
+Initial A search: 1088/2000 candidates, 190 coarse-valid, 92.8 s elapsed
+Initial A search: 1120/2000 candidates, 194 coarse-valid, 95.7 s elapsed
+Initial A search: 1152/2000 candidates, 199 coarse-valid, 98.2 s elapsed
+Initial A search: 1184/2000 candidates, 201 coarse-valid, 101.6 s elapsed
+Initial A search: 1216/2000 candidates, 209 coarse-valid, 104.0 s elapsed
+Initial A search: 1248/2000 candidates, 215 coarse-valid, 106.6 s elapsed
+Initial A search: 1280/2000 candidates, 220 coarse-valid, 108.9 s elapsed
+Initial A search: 1312/2000 candidates, 228 coarse-valid, 111.7 s elapsed
+Initial A search: 1344/2000 candidates, 233 coarse-valid, 114.0 s elapsed
+Initial A search: 1376/2000 candidates, 236 coarse-valid, 116.7 s elapsed
+Initial A search: 1408/2000 candidates, 243 coarse-valid, 119.5 s elapsed
+Initial A search: 1440/2000 candidates, 252 coarse-valid, 122.6 s elapsed
+Initial A search: 1472/2000 candidates, 257 coarse-valid, 125.4 s elapsed
+Initial A search: 1504/2000 candidates, 260 coarse-valid, 127.6 s elapsed
+Initial A search: 1536/2000 candidates, 266 coarse-valid, 130.1 s elapsed
+Initial A search: 1568/2000 candidates, 272 coarse-valid, 132.3 s elapsed
+Initial A search: 1600/2000 candidates, 276 coarse-valid, 134.6 s elapsed
+Initial A search: 1632/2000 candidates, 282 coarse-valid, 137.0 s elapsed
+Initial A search: 1664/2000 candidates, 288 coarse-valid, 138.8 s elapsed
+Initial A search: 1696/2000 candidates, 292 coarse-valid, 141.1 s elapsed
+Initial A search: 1728/2000 candidates, 297 coarse-valid, 144.0 s elapsed
+Initial A search: 1760/2000 candidates, 303 coarse-valid, 146.2 s elapsed
+Initial A search: 1792/2000 candidates, 309 coarse-valid, 149.1 s elapsed
+Initial A search: 1824/2000 candidates, 315 coarse-valid, 151.3 s elapsed
+Initial A search: 1856/2000 candidates, 322 coarse-valid, 153.4 s elapsed
+Initial A search: 1888/2000 candidates, 331 coarse-valid, 155.6 s elapsed
+Initial A search: 1920/2000 candidates, 339 coarse-valid, 158.7 s elapsed
+Initial A search: 1952/2000 candidates, 348 coarse-valid, 161.7 s elapsed
+Initial A search: 1984/2000 candidates, 354 coarse-valid, 164.0 s elapsed
+Initial A search: 2000/2000 candidates, 355 coarse-valid, 165.7 s elapsed
+Initial A search verification: 1/20, 167.0 s elapsed
+Initial A search verification: 2/20, 168.2 s elapsed
+Initial A search verification: 3/20, 169.4 s elapsed
+Initial A search verification: 4/20, 170.6 s elapsed
+Initial A search verification: 5/20, 171.8 s elapsed
+Initial A search verification: 6/20, 173.1 s elapsed
+Initial A search verification: 7/20, 174.3 s elapsed
+Initial A search verification: 8/20, 175.6 s elapsed
+Initial A search verification: 9/20, 176.8 s elapsed
+Initial A search verification: 10/20, 178.0 s elapsed
+Initial A search verification: 11/20, 180.6 s elapsed
+Initial A search verification: 12/20, 182.9 s elapsed
+Initial A search verification: 13/20, 184.1 s elapsed
+Initial A search verification: 14/20, 185.3 s elapsed
+Initial A search verification: 15/20, 186.6 s elapsed
+Initial A search verification: 16/20, 187.8 s elapsed
+Initial A search verification: 17/20, 189.0 s elapsed
+Initial A search verification: 18/20, 191.3 s elapsed
+Initial A search verification: 19/20, 192.5 s elapsed
+Initial A search verification: 20/20, 193.8 s elapsed
+Multistart: optimizing 5/5 requested starts; sequential starts, 32 workers each.
+
+Start 1/5 | initial loss 2.2994194
+
+01_A: A | sensitivity-selected reactions
+Preparing iterative ZND run: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_01/01_A
+Reusing cached 9 reference profiles...
+Checking 9 stage-entry cases...
+Baseline loss 2.2994194; 17 active / 51 total parameter coordinates, 9 cases, 32 workers.
+
+Round 1/20
+  Selected reactions: R2, R4, R12, R13, R11
+  Loss: 2.2994194 -> 2.0241334 (11.97% reduction)
+  Largest normalized parameter change: 400.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Inner optimizer: projected_gradient
+  Convergence blocked: parameter change threshold
+  Convergence blocked: all free audit or stationarity required
+  R11 entry 1 (Arrhenius): A 4.7124e+18 -> 2.3562e+19 (5x); sampled k ratio 5–5
+  R12 entry 1 (Arrhenius): A 5.9030e+27 -> 1.8890e+28 (3.2x); sampled k ratio 3.2–3.2
+  R13 entry 1 (Arrhenius): A 1.0100e+26 -> 6.7333e+25 (0.6667x); sampled k ratio 0.6667–0.6667
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 8 (details in rounds.yaml)
+
+Round 2/20
+  Selected reactions: R2, R4, R12, R11, R6
+  Loss: 2.0241334 -> 1.9364867 (4.33% reduction)
+  Largest normalized parameter change: 37.50% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Inner optimizer: projected_gradient
+  Convergence blocked: parameter change threshold
+  Convergence blocked: all free audit or stationarity required
+  R6 entry 1 (Arrhenius): A 7.6025e+14 -> 4.7516e+14 (0.625x); sampled k ratio 0.625–0.625
+  R2 entry 1 (Arrhenius): A 5.6664e+17 -> 5.5404e+17 (0.9778x); sampled k ratio 0.9778–0.9778
+  R1 entry 1 (Arrhenius): A 4.9972e+07 -> 4.9972e+07 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 10 (details in rounds.yaml)
+
+Round 3/20
+  Selected reactions: R2, R4, R12, R11, R6
+  Loss: 1.9364867 -> 1.7819328 (7.981% reduction)
+  Largest normalized parameter change: 200.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: projected_gradient
+  Convergence blocked: parameter change threshold
+  R1 entry 1 (Arrhenius): A 4.9972e+07 -> 3.6490e+06 (0.07302x); sampled k ratio 0.07302–0.07302
+  R15 entry 1 (Arrhenius): A 2.0406e+12 -> 2.0406e+11 (0.1x); sampled k ratio 0.1–0.1
+  R9 entry 1 (Arrhenius): A 3.8767e+19 -> 1.2922e+19 (0.3333x); sampled k ratio 0.3333–0.3333
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Round 4/20
+  Selected reactions: R2, R4, R12, R11, R7
+  Loss: 1.7819328 -> 1.7819328 (0% reduction)
+  Largest normalized parameter change: 0.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: projected_gradient
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (Arrhenius): A 5.5070e+17 -> 5.5070e+17 (1x); sampled k ratio 1–1
+  R3 entry 1 (Arrhenius): A 2.2143e+16 -> 2.2143e+16 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 1
+  CONVERGED: parameter-change and sensitivity checks passed.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Optimization result: CONVERGED
+  Rounds: 4/20
+  Stop reason: parameter change
+  Loss: 2.2994194 -> 1.7819328 (22.51% reduction)
+  Solver validation: PASSED
+  PLOG monotonicity: not applicable
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_01/01_A/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_01/01_A/results.yaml
+  Fit errors: final_temperature_percent=0.7546, induction_percent=53.44, exothermic_percent=83.58, profile_rmse_K=484.9
+  Objective loss contributions: temperature_profile=0, final_temperature=0.69437, induction_length=0.32346, exothermic_length=0.76409
+  Fit targets: NOT MET
+PLOG trial: R2; fixed entries [1.0, 50.0, 100.0] bar.
+
+plog_trial_R2: A | sensitivity-selected reactions
+Preparing iterative ZND run: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_01/plog_trial_R2
+Reusing cached 9 reference profiles...
+Checking 9 stage-entry cases...
+Baseline loss 1.7819328; 19 active / 57 total parameter coordinates, 9 cases, 32 workers.
+  Sensitivity retry 1/3: R11, R12 unresolved; scaling all base perturbations by 0.5 (largest 0.025 -> 0.0125).
+  Sensitivity retry 2/3: R11, R12 unresolved; scaling all base perturbations by 0.5 (largest 0.0125 -> 0.00625).
+  Sensitivity retry 3/3: R11, R12 unresolved; scaling all base perturbations by 0.5 (largest 0.00625 -> 0.003125).
+
+Round 1/5
+  Selected reactions: R2, R4, R12, R11, R7
+  Loss: 1.7819328 -> 1.1068867 (37.88% reduction)
+  Largest normalized parameter change: 586.79% (target: < 1%)
+  Sensitivities: 15/17 reactions resolved
+  Unresolved: R11, R12; retrying next round.
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: parameter change threshold
+  Convergence blocked: unresolved sensitivities
+  Convergence blocked: inner solver status: trust_region_stalled
+  R2 entry 1 (1 bar): A 5.5070e+17 -> 3.7821e+18 (6.868x); sampled k ratio 0.7039–6.868
+  R2 entry 2 (50 bar): A 5.5070e+17 -> 1.7298e+18 (3.141x); sampled k ratio 0.7039–6.868
+  R2 entry 3 (100 bar): A 5.5070e+17 -> 3.8763e+17 (0.7039x); sampled k ratio 0.7039–6.868
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 30 (details in rounds.yaml)
+  Sensitivity retry 1/3: R11, R12 unresolved; scaling all base perturbations by 0.5 (largest 0.003125 -> 0.0015625).
+  Sensitivity retry 2/3: R11, R12 unresolved; scaling all base perturbations by 0.5 (largest 0.0015625 -> 0.00078125).
+  Sensitivity retry 3/3: R11 unresolved; scaling all base perturbations by 0.5 (largest 0.00078125 -> 0.000390625).
+
+Round 2/5
+  Selected reactions: R2, R4, R6, R7, R16
+  Loss: 1.1068867 -> 1.1068867 (0% reduction)
+  Largest normalized parameter change: 0.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: inner solver status: trust_region_stalled
+  Convergence blocked: zero update requires stationarity
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (1 bar): A 3.7821e+18 -> 3.7821e+18 (1x); sampled k ratio 1–1
+  R2 entry 2 (50 bar): A 1.7298e+18 -> 1.7298e+18 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 1
+  Continuing to the next round.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Round 3/5
+  Selected reactions: R12, R11, R1, R13, R5
+  Loss: 1.1068867 -> 1.0739046 (2.98% reduction)
+  Largest normalized parameter change: 125.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Inner optimizer: projected_gradient
+  Convergence blocked: parameter change threshold
+  Convergence blocked: all free audit or stationarity required
+  R13 entry 1 (Arrhenius): A 6.7333e+25 -> 1.5150e+26 (2.25x); sampled k ratio 2.25–2.25
+  R11 entry 1 (Arrhenius): A 2.3562e+19 -> 2.3562e+19 (1x); sampled k ratio 1–1
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Round 4/5
+  Selected reactions: R2, R4, R12, R6, R7
+  Loss: 1.0739046 -> 1.072222 (0.1567% reduction)
+  Largest normalized parameter change: 0.45% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: inner solver status: trust_region_stalled
+  R2 entry 3 (100 bar): A 3.8763e+17 -> 3.8590e+17 (0.9955x); sampled k ratio 0.9955–1.004
+  R2 entry 2 (50 bar): A 1.7298e+18 -> 1.7375e+18 (1.004x); sampled k ratio 0.9955–1.004
+  R2 entry 1 (1 bar): A 3.7821e+18 -> 3.7991e+18 (1.004x); sampled k ratio 0.9955–1.004
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Round 5/5
+  Selected reactions: R2, R4, R12, R6, R7
+  Loss: 1.072222 -> 1.072222 (0% reduction)
+  Largest normalized parameter change: 0.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: inner solver status: trust_region_stalled
+  Convergence blocked: zero update requires stationarity
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (1 bar): A 3.7991e+18 -> 3.7991e+18 (1x); sampled k ratio 1–1
+  R2 entry 2 (50 bar): A 1.7375e+18 -> 1.7375e+18 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 1
+  Stopped: no accepted improvement after the full audit; NOT CONVERGED.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Optimization result: NOT_CONVERGED
+  Rounds: 5/5
+  Stop reason: stalled
+  Loss: 1.7819328 -> 1.072222 (39.83% reduction)
+  Solver validation: PASSED
+  PLOG monotonicity: PASSED
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_01/plog_trial_R2/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_01/plog_trial_R2/results.yaml
+  Fit errors: final_temperature_percent=0.3935, induction_percent=54.37, exothermic_percent=61.6, profile_rmse_K=489.1
+  Objective loss contributions: temperature_profile=0, final_temperature=0.20465, induction_length=0.29881, exothermic_length=0.56876
+  Fit targets: NOT MET
+PLOG accepted: R2; loss improved 39.828%.
+
+02_AE: AE | sensitivity-selected reactions
+Preparing iterative ZND run: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_01/02_AE
+Reusing cached 9 reference profiles...
+Checking 9 stage-entry cases...
+Baseline loss 1.072222; 38 active / 57 total parameter coordinates, 9 cases, 32 workers.
+Constraint step repaired: violation 1.11e-12 -> 1.69e-21
+Constraint step repaired: violation 1.46e-11 -> 1.11e-16
+Constraint step repaired: violation 1.34e-11 -> 3.18e-27
+Constraint step repaired: violation 8.82e-12 -> 2.01e-27
+Constraint step repaired: violation 1.19e-11 -> 2.22e-27
+Constraint step repaired: violation 9.3e-12 -> 1.41e-26
+Constraint step repaired: violation 1.89e-11 -> 1.02e-26
+Constraint step repaired: violation 2.23e-11 -> 4.64e-27
+Constraint step repaired: violation 9.2e-12 -> 9.71e-27
+Constraint step repaired: violation 1.59e-11 -> 2e-26
+Constraint step repaired: violation 1.31e-11 -> 1.34e-26
+Constraint step repaired: violation 1.19e-11 -> 5.42e-20
+Constraint step repaired: violation 2.76e-11 -> 2.71e-20
+
+Round 1/20
+  Selected reactions: R4, R2, R12, R11, R7
+  Loss: 1.072222 -> 1.0053236 (6.239% reduction)
+  Largest normalized parameter change: 100.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: parameter change threshold
+  Convergence blocked: inner solver status: trust_region_stalled
+  R2 entry 1 (1 bar): A 3.7991e+18 -> 7.5982e+18 (2x); sampled k ratio 0.4141–1.27
+  R2 entry 3 (100 bar): A 3.8590e+17 -> 7.7179e+17 (2x); sampled k ratio 0.4141–1.27
+  R2 entry 2 (50 bar): A 1.7375e+18 -> 2.8557e+18 (1.644x); sampled k ratio 0.4141–1.27
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 17 (details in rounds.yaml)
+Constraint step repaired: violation 1.46e-11 -> 1.11e-16
+Constraint step repaired: violation 1.34e-11 -> 3.18e-27
+Constraint step repaired: violation 8.82e-12 -> 2.01e-27
+Constraint step repaired: violation 1.19e-11 -> 2.22e-27
+Constraint step repaired: violation 9.3e-12 -> 1.41e-26
+Constraint step repaired: violation 1.89e-11 -> 1.02e-26
+Constraint step repaired: violation 2.23e-11 -> 4.64e-27
+Constraint step repaired: violation 9.2e-12 -> 9.71e-27
+Constraint step repaired: violation 1.59e-11 -> 2e-26
+Constraint step repaired: violation 1.31e-11 -> 1.34e-26
+Constraint step repaired: violation 1.19e-11 -> 5.42e-20
+Constraint step repaired: violation 2.76e-11 -> 2.71e-20
+
+Round 2/20
+  Selected reactions: R4, R2, R12, R11, R7
+  Loss: 1.0053236 -> 1.0053236 (0% reduction)
+  Largest normalized parameter change: 0.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: inner solver status: trust_region_stalled
+  Convergence blocked: zero update requires stationarity
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (1 bar): A 7.5982e+18 -> 7.5982e+18 (1x); sampled k ratio 1–1
+  R2 entry 2 (50 bar): A 2.8557e+18 -> 2.8557e+18 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 1
+  Stopped: no accepted improvement after the full audit; NOT CONVERGED.
+  Active parameter bounds: 17 (details in rounds.yaml)
+
+Optimization result: NOT_CONVERGED
+  Rounds: 2/20
+  Stop reason: stalled
+  Loss: 1.072222 -> 1.0053236 (6.24% reduction)
+  Solver validation: PASSED
+  PLOG monotonicity: PASSED
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_01/02_AE/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_01/02_AE/results.yaml
+  Fit errors: final_temperature_percent=0.4142, induction_percent=46.96, exothermic_percent=61.57, profile_rmse_K=415.2
+  Objective loss contributions: temperature_profile=0, final_temperature=0.20939, induction_length=0.22088, exothermic_length=0.57505
+  Fit targets: NOT MET
+
+03_AEB: AEB | sensitivity-selected reactions
+Preparing iterative ZND run: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_01/03_AEB
+Reusing cached 9 reference profiles...
+Checking 9 stage-entry cases...
+Baseline loss 1.0053236; 57 active / 57 total parameter coordinates, 9 cases, 32 workers.
+Constraint step repaired: violation 1.17e-12 -> 1.21e-27
+Constraint step repaired: violation 4.57e-12 -> 4.04e-28
+Constraint step repaired: violation 2.04e-12 -> 1.39e-17
+Constraint step repaired: violation 2.61e-12 -> 9.34e-28
+Constraint step repaired: violation 1.43e-12 -> 1.02e-27
+Constraint step repaired: violation 2.08e-12 -> 6.56e-28
+Constraint step repaired: violation 3.05e-12 -> 4.04e-27
+Constraint step repaired: violation 2.29e-12 -> 1.34e-27
+Constraint step repaired: violation 1.92e-12 -> 2.63e-27
+Constraint step repaired: violation 2.54e-12 -> 1.06e-27
+Constraint step repaired: violation 1.81e-12 -> 5.87e-28
+Constraint step repaired: violation 1.69e-12 -> 4.11e-27
+Constraint step repaired: violation 5.26e-12 -> 1.15e-26
+Constraint step repaired: violation 4.32e-12 -> 1.08e-27
+
+Round 1/20
+  Selected reactions: R2, R4, R12, R6, R7
+  Loss: 1.0053236 -> 1.0053236 (0% reduction)
+  Largest normalized parameter change: 0.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: inner solver status: trust_region_stalled
+  Convergence blocked: zero update requires stationarity
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (1 bar): A 7.5982e+18 -> 7.5982e+18 (1x); sampled k ratio 1–1
+  R2 entry 2 (50 bar): A 2.8557e+18 -> 2.8557e+18 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 1
+  Stopped: no accepted improvement after the full audit; NOT CONVERGED.
+  Active parameter bounds: 15 (details in rounds.yaml)
+
+Optimization result: NOT_CONVERGED
+  Rounds: 1/20
+  Stop reason: stalled
+  Loss: 1.0053236 -> 1.0053236 (0.00% reduction)
+  Solver validation: PASSED
+  PLOG monotonicity: PASSED
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_01/03_AEB/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_01/03_AEB/results.yaml
+  Fit errors: final_temperature_percent=0.4142, induction_percent=46.96, exothermic_percent=61.57, profile_rmse_K=415.2
+  Objective loss contributions: temperature_profile=0, final_temperature=0.20939, induction_length=0.22088, exothermic_length=0.57505
+  Fit targets: NOT MET
+
+Start 2/5 | initial loss 2.3042709
+
+01_A: A | sensitivity-selected reactions
+Preparing iterative ZND run: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_02/01_A
+Reusing cached 9 reference profiles...
+Checking 9 stage-entry cases...
+Baseline loss 2.3042709; 17 active / 51 total parameter coordinates, 9 cases, 32 workers.
+
+Round 1/20
+  Selected reactions: R2, R4, R12, R13, R11
+  Loss: 2.3042709 -> 2.0063102 (12.93% reduction)
+  Largest normalized parameter change: 400.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Inner optimizer: projected_gradient
+  Convergence blocked: parameter change threshold
+  Convergence blocked: all free audit or stationarity required
+  R11 entry 1 (Arrhenius): A 4.7124e+18 -> 2.3562e+19 (5x); sampled k ratio 5–5
+  R12 entry 1 (Arrhenius): A 5.9030e+27 -> 1.8890e+28 (3.2x); sampled k ratio 3.2–3.2
+  R13 entry 1 (Arrhenius): A 1.0100e+26 -> 6.7333e+25 (0.6667x); sampled k ratio 0.6667–0.6667
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 8 (details in rounds.yaml)
+
+Round 2/20
+  Selected reactions: R2, R4, R12, R11, R6
+  Loss: 2.0063102 -> 1.9187812 (4.363% reduction)
+  Largest normalized parameter change: 37.50% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Inner optimizer: projected_gradient
+  Convergence blocked: parameter change threshold
+  Convergence blocked: all free audit or stationarity required
+  R6 entry 1 (Arrhenius): A 7.6025e+14 -> 4.7516e+14 (0.625x); sampled k ratio 0.625–0.625
+  R2 entry 1 (Arrhenius): A 5.6915e+17 -> 5.5752e+17 (0.9796x); sampled k ratio 0.9796–0.9796
+  R12 entry 1 (Arrhenius): A 1.8890e+28 -> 1.8890e+28 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 10 (details in rounds.yaml)
+
+Round 3/20
+  Selected reactions: R2, R4, R12, R11, R6
+  Loss: 1.9187812 -> 1.7819327 (7.132% reduction)
+  Largest normalized parameter change: 200.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: projected_gradient
+  Convergence blocked: parameter change threshold
+  R15 entry 1 (Arrhenius): A 2.0406e+12 -> 2.0406e+11 (0.1x); sampled k ratio 0.1–0.1
+  R9 entry 1 (Arrhenius): A 3.8767e+19 -> 1.2922e+19 (0.3333x); sampled k ratio 0.3333–0.3333
+  R10 entry 1 (Arrhenius): A 6.1600e+15 -> 1.8480e+16 (3x); sampled k ratio 3–3
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Round 4/20
+  Selected reactions: R2, R4, R12, R11, R7
+  Loss: 1.7819327 -> 1.7819327 (0% reduction)
+  Largest normalized parameter change: 0.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: projected_gradient
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (Arrhenius): A 5.5069e+17 -> 5.5069e+17 (1x); sampled k ratio 1–1
+  R3 entry 1 (Arrhenius): A 8.7979e+22 -> 8.7979e+22 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 1
+  CONVERGED: parameter-change and sensitivity checks passed.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Optimization result: CONVERGED
+  Rounds: 4/20
+  Stop reason: parameter change
+  Loss: 2.3042709 -> 1.7819327 (22.67% reduction)
+  Solver validation: PASSED
+  PLOG monotonicity: not applicable
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_02/01_A/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_02/01_A/results.yaml
+  Fit errors: final_temperature_percent=0.7546, induction_percent=53.44, exothermic_percent=83.58, profile_rmse_K=484.9
+  Objective loss contributions: temperature_profile=0, final_temperature=0.69438, induction_length=0.32346, exothermic_length=0.76409
+  Fit targets: NOT MET
+PLOG trial: R2; fixed entries [1.0, 50.0, 100.0] bar.
+
+plog_trial_R2: A | sensitivity-selected reactions
+Preparing iterative ZND run: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_02/plog_trial_R2
+Reusing cached 9 reference profiles...
+Checking 9 stage-entry cases...
+Baseline loss 1.7819327; 19 active / 57 total parameter coordinates, 9 cases, 32 workers.
+  Sensitivity retry 1/3: R11, R12 unresolved; scaling all base perturbations by 0.5 (largest 0.025 -> 0.0125).
+  Sensitivity retry 2/3: R11, R12 unresolved; scaling all base perturbations by 0.5 (largest 0.0125 -> 0.00625).
+  Sensitivity retry 3/3: R11, R12 unresolved; scaling all base perturbations by 0.5 (largest 0.00625 -> 0.003125).
+
+Round 1/5
+  Selected reactions: R2, R4, R12, R11, R7
+  Loss: 1.7819327 -> 1.1068865 (37.88% reduction)
+  Largest normalized parameter change: 586.80% (target: < 1%)
+  Sensitivities: 15/17 reactions resolved
+  Unresolved: R11, R12; retrying next round.
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: parameter change threshold
+  Convergence blocked: unresolved sensitivities
+  Convergence blocked: inner solver status: trust_region_stalled
+  R2 entry 1 (1 bar): A 5.5069e+17 -> 3.7821e+18 (6.868x); sampled k ratio 0.7039–6.868
+  R2 entry 2 (50 bar): A 5.5069e+17 -> 1.7298e+18 (3.141x); sampled k ratio 0.7039–6.868
+  R2 entry 3 (100 bar): A 5.5069e+17 -> 3.8763e+17 (0.7039x); sampled k ratio 0.7039–6.868
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 30 (details in rounds.yaml)
+  Sensitivity retry 1/3: R11, R12 unresolved; scaling all base perturbations by 0.5 (largest 0.003125 -> 0.0015625).
+  Sensitivity retry 2/3: R11, R12 unresolved; scaling all base perturbations by 0.5 (largest 0.0015625 -> 0.00078125).
+  Sensitivity retry 3/3: R11 unresolved; scaling all base perturbations by 0.5 (largest 0.00078125 -> 0.000390625).
+
+Round 2/5
+  Selected reactions: R2, R4, R6, R7, R16
+  Loss: 1.1068865 -> 1.1068865 (0% reduction)
+  Largest normalized parameter change: 0.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: inner solver status: trust_region_stalled
+  Convergence blocked: zero update requires stationarity
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (1 bar): A 3.7821e+18 -> 3.7821e+18 (1x); sampled k ratio 1–1
+  R2 entry 2 (50 bar): A 1.7298e+18 -> 1.7298e+18 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 1
+  Continuing to the next round.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Round 3/5
+  Selected reactions: R12, R11, R1, R13, R5
+  Loss: 1.1068865 -> 1.0739044 (2.98% reduction)
+  Largest normalized parameter change: 125.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Inner optimizer: projected_gradient
+  Convergence blocked: parameter change threshold
+  Convergence blocked: all free audit or stationarity required
+  R13 entry 1 (Arrhenius): A 6.7333e+25 -> 1.5150e+26 (2.25x); sampled k ratio 2.25–2.25
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (1 bar): A 3.7821e+18 -> 3.7821e+18 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Round 4/5
+  Selected reactions: R2, R4, R12, R6, R7
+  Loss: 1.0739044 -> 1.0722218 (0.1567% reduction)
+  Largest normalized parameter change: 0.45% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: inner solver status: trust_region_stalled
+  R2 entry 3 (100 bar): A 3.8763e+17 -> 3.8590e+17 (0.9955x); sampled k ratio 0.9955–1.004
+  R2 entry 2 (50 bar): A 1.7298e+18 -> 1.7375e+18 (1.004x); sampled k ratio 0.9955–1.004
+  R2 entry 1 (1 bar): A 3.7821e+18 -> 3.7991e+18 (1.004x); sampled k ratio 0.9955–1.004
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Round 5/5
+  Selected reactions: R2, R4, R12, R6, R7
+  Loss: 1.0722218 -> 1.0722218 (0% reduction)
+  Largest normalized parameter change: 0.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: inner solver status: trust_region_stalled
+  Convergence blocked: zero update requires stationarity
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (1 bar): A 3.7991e+18 -> 3.7991e+18 (1x); sampled k ratio 1–1
+  R2 entry 2 (50 bar): A 1.7375e+18 -> 1.7375e+18 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 1
+  Stopped: no accepted improvement after the full audit; NOT CONVERGED.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Optimization result: NOT_CONVERGED
+  Rounds: 5/5
+  Stop reason: stalled
+  Loss: 1.7819327 -> 1.0722218 (39.83% reduction)
+  Solver validation: PASSED
+  PLOG monotonicity: PASSED
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_02/plog_trial_R2/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_02/plog_trial_R2/results.yaml
+  Fit errors: final_temperature_percent=0.3935, induction_percent=54.37, exothermic_percent=61.6, profile_rmse_K=489.1
+  Objective loss contributions: temperature_profile=0, final_temperature=0.20465, induction_length=0.29881, exothermic_length=0.56876
+  Fit targets: NOT MET
+PLOG accepted: R2; loss improved 39.828%.
+
+02_AE: AE | sensitivity-selected reactions
+Preparing iterative ZND run: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_02/02_AE
+Reusing cached 9 reference profiles...
+Checking 9 stage-entry cases...
+Baseline loss 1.0722218; 38 active / 57 total parameter coordinates, 9 cases, 32 workers.
+Constraint step repaired: violation 1.75e-12 -> 2.15e-27
+Constraint step repaired: violation 1.06e-12 -> 1.01e-28
+Constraint step repaired: violation 4.79e-12 -> 1.11e-16
+Constraint step repaired: violation 1.18e-11 -> 2.22e-16
+Constraint step repaired: violation 1.58e-11 -> 5.55e-17
+Constraint step repaired: violation 1.06e-11 -> 7.29e-27
+Constraint step repaired: violation 9.31e-12 -> 3.15e-26
+Constraint step repaired: violation 2.35e-11 -> 9.09e-27
+Constraint step repaired: violation 1.65e-11 -> 1.19e-26
+Constraint step repaired: violation 2.88e-11 -> 2.89e-26
+Constraint step repaired: violation 3.62e-12 -> 8.91e-27
+Constraint step repaired: violation 1.19e-11 -> 1.2e-26
+Constraint step repaired: violation 1.17e-11 -> 8.47e-22
+Constraint step repaired: violation 1.2e-11 -> 2.57e-27
+
+Round 1/20
+  Selected reactions: R4, R2, R12, R11, R7
+  Loss: 1.0722218 -> 1.0053223 (6.239% reduction)
+  Largest normalized parameter change: 100.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: parameter change threshold
+  Convergence blocked: inner solver status: trust_region_stalled
+  R2 entry 1 (1 bar): A 3.7991e+18 -> 7.5982e+18 (2x); sampled k ratio 0.4141–1.27
+  R2 entry 3 (100 bar): A 3.8590e+17 -> 7.7179e+17 (2x); sampled k ratio 0.4141–1.27
+  R2 entry 2 (50 bar): A 1.7375e+18 -> 2.8556e+18 (1.643x); sampled k ratio 0.4141–1.27
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 17 (details in rounds.yaml)
+Constraint step repaired: violation 4.79e-12 -> 1.11e-16
+Constraint step repaired: violation 1.18e-11 -> 2.22e-16
+Constraint step repaired: violation 1.58e-11 -> 5.55e-17
+Constraint step repaired: violation 1.06e-11 -> 7.29e-27
+Constraint step repaired: violation 9.31e-12 -> 3.15e-26
+Constraint step repaired: violation 2.35e-11 -> 9.09e-27
+Constraint step repaired: violation 1.65e-11 -> 1.19e-26
+Constraint step repaired: violation 2.88e-11 -> 2.89e-26
+Constraint step repaired: violation 3.62e-12 -> 8.91e-27
+Constraint step repaired: violation 1.19e-11 -> 1.2e-26
+Constraint step repaired: violation 1.17e-11 -> 8.47e-22
+Constraint step repaired: violation 1.2e-11 -> 2.57e-27
+
+Round 2/20
+  Selected reactions: R4, R2, R12, R11, R7
+  Loss: 1.0053223 -> 1.0053223 (0% reduction)
+  Largest normalized parameter change: 0.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: inner solver status: trust_region_stalled
+  Convergence blocked: zero update requires stationarity
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (1 bar): A 7.5982e+18 -> 7.5982e+18 (1x); sampled k ratio 1–1
+  R2 entry 2 (50 bar): A 2.8556e+18 -> 2.8556e+18 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 1
+  Stopped: no accepted improvement after the full audit; NOT CONVERGED.
+  Active parameter bounds: 17 (details in rounds.yaml)
+
+Optimization result: NOT_CONVERGED
+  Rounds: 2/20
+  Stop reason: stalled
+  Loss: 1.0722218 -> 1.0053223 (6.24% reduction)
+  Solver validation: PASSED
+  PLOG monotonicity: PASSED
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_02/02_AE/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_02/02_AE/results.yaml
+  Fit errors: final_temperature_percent=0.4142, induction_percent=46.96, exothermic_percent=61.57, profile_rmse_K=415.2
+  Objective loss contributions: temperature_profile=0, final_temperature=0.20939, induction_length=0.22088, exothermic_length=0.57505
+  Fit targets: NOT MET
+
+03_AEB: AEB | sensitivity-selected reactions
+Preparing iterative ZND run: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_02/03_AEB
+Reusing cached 9 reference profiles...
+Checking 9 stage-entry cases...
+Baseline loss 1.0053223; 57 active / 57 total parameter coordinates, 9 cases, 32 workers.
+Constraint step repaired: violation 2.15e-12 -> 2.57e-27
+Constraint step repaired: violation 2.23e-12 -> 4.59e-28
+Constraint step repaired: violation 1.13e-12 -> 1.39e-17
+Constraint step repaired: violation 1.22e-12 -> 1.89e-27
+Constraint step repaired: violation 1.37e-12 -> 1.16e-27
+Constraint step repaired: violation 1.16e-12 -> 2.02e-27
+Constraint step repaired: violation 1.57e-12 -> 3.53e-28
+Constraint step repaired: violation 1.48e-12 -> 5.55e-17
+Constraint step repaired: violation 3.36e-12 -> 2.78e-17
+Constraint step repaired: violation 2.93e-12 -> 8.7e-28
+Constraint step repaired: violation 1.91e-12 -> 7.11e-27
+Constraint step repaired: violation 1.14e-12 -> 6.94e-18
+Constraint step repaired: violation 1.33e-12 -> 1.17e-27
+Constraint step repaired: violation 1.39e-12 -> 2.73e-27
+Constraint step repaired: violation 1.68e-12 -> 1.59e-27
+Constraint step repaired: violation 4e-12 -> 2.07e-27
+Constraint step repaired: violation 1.97e-12 -> 2.52e-27
+Constraint step repaired: violation 2.23e-12 -> 9.21e-28
+Constraint step repaired: violation 1.81e-12 -> 3.08e-27
+
+Round 1/20
+  Selected reactions: R2, R4, R12, R6, R7
+  Loss: 1.0053223 -> 1.0053223 (0% reduction)
+  Largest normalized parameter change: 0.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: inner solver status: trust_region_stalled
+  Convergence blocked: zero update requires stationarity
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (1 bar): A 7.5982e+18 -> 7.5982e+18 (1x); sampled k ratio 1–1
+  R2 entry 2 (50 bar): A 2.8556e+18 -> 2.8556e+18 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 1
+  Stopped: no accepted improvement after the full audit; NOT CONVERGED.
+  Active parameter bounds: 15 (details in rounds.yaml)
+
+Optimization result: NOT_CONVERGED
+  Rounds: 1/20
+  Stop reason: stalled
+  Loss: 1.0053223 -> 1.0053223 (0.00% reduction)
+  Solver validation: PASSED
+  PLOG monotonicity: PASSED
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_02/03_AEB/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_02/03_AEB/results.yaml
+  Fit errors: final_temperature_percent=0.4142, induction_percent=46.96, exothermic_percent=61.57, profile_rmse_K=415.2
+  Objective loss contributions: temperature_profile=0, final_temperature=0.20939, induction_length=0.22088, exothermic_length=0.57505
+  Fit targets: NOT MET
+
+Start 3/5 | initial loss 2.3190269
+
+01_A: A | sensitivity-selected reactions
+Preparing iterative ZND run: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_03/01_A
+Reusing cached 9 reference profiles...
+Checking 9 stage-entry cases...
+Baseline loss 2.3190269; 17 active / 51 total parameter coordinates, 9 cases, 32 workers.
+
+Round 1/20
+  Selected reactions: R2, R4, R12, R13, R11
+  Loss: 2.3190269 -> 2.0224627 (12.79% reduction)
+  Largest normalized parameter change: 400.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Inner optimizer: projected_gradient
+  Convergence blocked: parameter change threshold
+  Convergence blocked: all free audit or stationarity required
+  R11 entry 1 (Arrhenius): A 4.7124e+18 -> 2.3562e+19 (5x); sampled k ratio 5–5
+  R12 entry 1 (Arrhenius): A 5.9030e+27 -> 1.8890e+28 (3.2x); sampled k ratio 3.2–3.2
+  R13 entry 1 (Arrhenius): A 1.0100e+26 -> 6.7333e+25 (0.6667x); sampled k ratio 0.6667–0.6667
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 8 (details in rounds.yaml)
+
+Round 2/20
+  Selected reactions: R2, R4, R12, R11, R6
+  Loss: 2.0224627 -> 1.934883 (4.33% reduction)
+  Largest normalized parameter change: 37.50% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Inner optimizer: projected_gradient
+  Convergence blocked: parameter change threshold
+  Convergence blocked: all free audit or stationarity required
+  R6 entry 1 (Arrhenius): A 7.6025e+14 -> 4.7516e+14 (0.625x); sampled k ratio 0.625–0.625
+  R2 entry 1 (Arrhenius): A 5.6677e+17 -> 5.5428e+17 (0.978x); sampled k ratio 0.978–0.978
+  R12 entry 1 (Arrhenius): A 1.8890e+28 -> 1.8890e+28 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 10 (details in rounds.yaml)
+
+Round 3/20
+  Selected reactions: R2, R4, R12, R11, R6
+  Loss: 1.934883 -> 1.7819328 (7.905% reduction)
+  Largest normalized parameter change: 200.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: projected_gradient
+  Convergence blocked: parameter change threshold
+  R1 entry 1 (Arrhenius): A 4.2175e+07 -> 3.6490e+06 (0.08652x); sampled k ratio 0.08652–0.08652
+  R15 entry 1 (Arrhenius): A 2.0406e+12 -> 2.0406e+11 (0.1x); sampled k ratio 0.1–0.1
+  R9 entry 1 (Arrhenius): A 3.8767e+19 -> 1.2922e+19 (0.3333x); sampled k ratio 0.3333–0.3333
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Round 4/20
+  Selected reactions: R2, R4, R12, R11, R7
+  Loss: 1.7819328 -> 1.7819328 (0% reduction)
+  Largest normalized parameter change: 0.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: projected_gradient
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (Arrhenius): A 5.5069e+17 -> 5.5069e+17 (1x); sampled k ratio 1–1
+  R3 entry 1 (Arrhenius): A 3.2686e+13 -> 3.2686e+13 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 1
+  CONVERGED: parameter-change and sensitivity checks passed.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Optimization result: CONVERGED
+  Rounds: 4/20
+  Stop reason: parameter change
+  Loss: 2.3190269 -> 1.7819328 (23.16% reduction)
+  Solver validation: PASSED
+  PLOG monotonicity: not applicable
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_03/01_A/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_03/01_A/results.yaml
+  Fit errors: final_temperature_percent=0.7546, induction_percent=53.44, exothermic_percent=83.58, profile_rmse_K=484.9
+  Objective loss contributions: temperature_profile=0, final_temperature=0.69437, induction_length=0.32346, exothermic_length=0.76409
+  Fit targets: NOT MET
+PLOG trial: R2; fixed entries [1.0, 50.0, 100.0] bar.
+
+plog_trial_R2: A | sensitivity-selected reactions
+Preparing iterative ZND run: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_03/plog_trial_R2
+Reusing cached 9 reference profiles...
+Checking 9 stage-entry cases...
+Baseline loss 1.7819328; 19 active / 57 total parameter coordinates, 9 cases, 32 workers.
+  Sensitivity retry 1/3: R11, R12 unresolved; scaling all base perturbations by 0.5 (largest 0.025 -> 0.0125).
+  Sensitivity retry 2/3: R11, R12 unresolved; scaling all base perturbations by 0.5 (largest 0.0125 -> 0.00625).
+  Sensitivity retry 3/3: R11, R12 unresolved; scaling all base perturbations by 0.5 (largest 0.00625 -> 0.003125).
+
+Round 1/5
+  Selected reactions: R2, R4, R12, R11, R7
+  Loss: 1.7819328 -> 1.1068867 (37.88% reduction)
+  Largest normalized parameter change: 586.79% (target: < 1%)
+  Sensitivities: 15/17 reactions resolved
+  Unresolved: R11, R12; retrying next round.
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: parameter change threshold
+  Convergence blocked: unresolved sensitivities
+  Convergence blocked: inner solver status: trust_region_stalled
+  R2 entry 1 (1 bar): A 5.5069e+17 -> 3.7821e+18 (6.868x); sampled k ratio 0.7039–6.868
+  R2 entry 2 (50 bar): A 5.5069e+17 -> 1.7298e+18 (3.141x); sampled k ratio 0.7039–6.868
+  R2 entry 3 (100 bar): A 5.5069e+17 -> 3.8763e+17 (0.7039x); sampled k ratio 0.7039–6.868
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 30 (details in rounds.yaml)
+  Sensitivity retry 1/3: R11, R12 unresolved; scaling all base perturbations by 0.5 (largest 0.003125 -> 0.0015625).
+  Sensitivity retry 2/3: R11, R12 unresolved; scaling all base perturbations by 0.5 (largest 0.0015625 -> 0.00078125).
+  Sensitivity retry 3/3: R11 unresolved; scaling all base perturbations by 0.5 (largest 0.00078125 -> 0.000390625).
+
+Round 2/5
+  Selected reactions: R2, R4, R6, R7, R16
+  Loss: 1.1068867 -> 1.1068867 (0% reduction)
+  Largest normalized parameter change: 0.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: inner solver status: trust_region_stalled
+  Convergence blocked: zero update requires stationarity
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (1 bar): A 3.7821e+18 -> 3.7821e+18 (1x); sampled k ratio 1–1
+  R2 entry 2 (50 bar): A 1.7298e+18 -> 1.7298e+18 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 1
+  Continuing to the next round.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Round 3/5
+  Selected reactions: R12, R11, R1, R13, R5
+  Loss: 1.1068867 -> 1.0739046 (2.98% reduction)
+  Largest normalized parameter change: 125.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Inner optimizer: projected_gradient
+  Convergence blocked: parameter change threshold
+  Convergence blocked: all free audit or stationarity required
+  R13 entry 1 (Arrhenius): A 6.7333e+25 -> 1.5150e+26 (2.25x); sampled k ratio 2.25–2.25
+  R12 entry 1 (Arrhenius): A 1.8890e+28 -> 1.8890e+28 (1x); sampled k ratio 1–1
+  R11 entry 1 (Arrhenius): A 2.3562e+19 -> 2.3562e+19 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Round 4/5
+  Selected reactions: R2, R4, R12, R6, R7
+  Loss: 1.0739046 -> 1.072222 (0.1567% reduction)
+  Largest normalized parameter change: 0.45% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: inner solver status: trust_region_stalled
+  R2 entry 3 (100 bar): A 3.8763e+17 -> 3.8590e+17 (0.9955x); sampled k ratio 0.9955–1.004
+  R2 entry 2 (50 bar): A 1.7298e+18 -> 1.7375e+18 (1.004x); sampled k ratio 0.9955–1.004
+  R2 entry 1 (1 bar): A 3.7821e+18 -> 3.7991e+18 (1.004x); sampled k ratio 0.9955–1.004
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Round 5/5
+  Selected reactions: R2, R4, R12, R6, R7
+  Loss: 1.072222 -> 1.072222 (0% reduction)
+  Largest normalized parameter change: 0.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: inner solver status: trust_region_stalled
+  Convergence blocked: zero update requires stationarity
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (1 bar): A 3.7991e+18 -> 3.7991e+18 (1x); sampled k ratio 1–1
+  R2 entry 2 (50 bar): A 1.7375e+18 -> 1.7375e+18 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 1
+  Stopped: no accepted improvement after the full audit; NOT CONVERGED.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Optimization result: NOT_CONVERGED
+  Rounds: 5/5
+  Stop reason: stalled
+  Loss: 1.7819328 -> 1.072222 (39.83% reduction)
+  Solver validation: PASSED
+  PLOG monotonicity: PASSED
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_03/plog_trial_R2/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_03/plog_trial_R2/results.yaml
+  Fit errors: final_temperature_percent=0.3935, induction_percent=54.37, exothermic_percent=61.6, profile_rmse_K=489.1
+  Objective loss contributions: temperature_profile=0, final_temperature=0.20465, induction_length=0.29881, exothermic_length=0.56876
+  Fit targets: NOT MET
+PLOG accepted: R2; loss improved 39.828%.
+
+02_AE: AE | sensitivity-selected reactions
+Preparing iterative ZND run: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_03/02_AE
+Reusing cached 9 reference profiles...
+Checking 9 stage-entry cases...
+Baseline loss 1.072222; 38 active / 57 total parameter coordinates, 9 cases, 32 workers.
+Constraint step repaired: violation 8.19e-12 -> 2.22e-16
+Constraint step repaired: violation 8.5e-12 -> 2.29e-26
+Constraint step repaired: violation 1.1e-11 -> 6.25e-27
+Constraint step repaired: violation 1.15e-11 -> 6.79e-27
+Constraint step repaired: violation 9.84e-12 -> 4.38e-27
+Constraint step repaired: violation 2.43e-11 -> 1.4e-26
+Constraint step repaired: violation 6.78e-12 -> 7.46e-27
+Constraint step repaired: violation 2.08e-11 -> 1.56e-26
+Constraint step repaired: violation 6.15e-12 -> 1.14e-26
+Constraint step repaired: violation 5.63e-12 -> 8.99e-27
+Constraint step repaired: violation 7.07e-12 -> 1.16e-26
+Constraint step repaired: violation 1.97e-11 -> 4.13e-26
+
+Round 1/20
+  Selected reactions: R4, R2, R12, R11, R7
+  Loss: 1.072222 -> 1.005323 (6.239% reduction)
+  Largest normalized parameter change: 100.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: parameter change threshold
+  Convergence blocked: inner solver status: trust_region_stalled
+  R2 entry 3 (100 bar): A 3.8590e+17 -> 7.7179e+17 (2x); sampled k ratio 0.4141–1.27
+  R2 entry 1 (1 bar): A 3.7991e+18 -> 7.5982e+18 (2x); sampled k ratio 0.4141–1.27
+  R2 entry 2 (50 bar): A 1.7375e+18 -> 2.8557e+18 (1.644x); sampled k ratio 0.4141–1.27
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 17 (details in rounds.yaml)
+Constraint step repaired: violation 8.19e-12 -> 2.22e-16
+Constraint step repaired: violation 8.5e-12 -> 2.29e-26
+Constraint step repaired: violation 1.1e-11 -> 6.25e-27
+Constraint step repaired: violation 1.15e-11 -> 6.79e-27
+Constraint step repaired: violation 9.84e-12 -> 4.38e-27
+Constraint step repaired: violation 2.43e-11 -> 1.4e-26
+Constraint step repaired: violation 6.78e-12 -> 7.46e-27
+Constraint step repaired: violation 2.08e-11 -> 1.56e-26
+Constraint step repaired: violation 6.15e-12 -> 1.14e-26
+Constraint step repaired: violation 5.63e-12 -> 8.99e-27
+Constraint step repaired: violation 7.07e-12 -> 1.16e-26
+Constraint step repaired: violation 1.97e-11 -> 4.13e-26
+
+Round 2/20
+  Selected reactions: R4, R2, R12, R11, R7
+  Loss: 1.005323 -> 1.005323 (0% reduction)
+  Largest normalized parameter change: 0.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: inner solver status: trust_region_stalled
+  Convergence blocked: zero update requires stationarity
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (1 bar): A 7.5982e+18 -> 7.5982e+18 (1x); sampled k ratio 1–1
+  R2 entry 2 (50 bar): A 2.8557e+18 -> 2.8557e+18 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 1
+  Stopped: no accepted improvement after the full audit; NOT CONVERGED.
+  Active parameter bounds: 17 (details in rounds.yaml)
+
+Optimization result: NOT_CONVERGED
+  Rounds: 2/20
+  Stop reason: stalled
+  Loss: 1.072222 -> 1.005323 (6.24% reduction)
+  Solver validation: PASSED
+  PLOG monotonicity: PASSED
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_03/02_AE/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_03/02_AE/results.yaml
+  Fit errors: final_temperature_percent=0.4142, induction_percent=46.96, exothermic_percent=61.57, profile_rmse_K=415.2
+  Objective loss contributions: temperature_profile=0, final_temperature=0.20939, induction_length=0.22088, exothermic_length=0.57505
+  Fit targets: NOT MET
+
+03_AEB: AEB | sensitivity-selected reactions
+Preparing iterative ZND run: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_03/03_AEB
+Reusing cached 9 reference profiles...
+Checking 9 stage-entry cases...
+Baseline loss 1.005323; 57 active / 57 total parameter coordinates, 9 cases, 32 workers.
+Constraint step repaired: violation 1.09e-12 -> 6.94e-18
+Constraint step repaired: violation 2.18e-12 -> 7.57e-28
+Constraint step repaired: violation 1.76e-12 -> 2.78e-27
+Constraint step repaired: violation 1.1e-12 -> 3.22e-28
+Constraint step repaired: violation 1.46e-12 -> 5.55e-28
+Constraint step repaired: violation 1.02e-12 -> 9.09e-28
+Constraint step repaired: violation 1.38e-12 -> 2.63e-27
+Constraint step repaired: violation 2.6e-12 -> 3.53e-27
+Constraint step repaired: violation 2.81e-12 -> 4.94e-27
+Constraint step repaired: violation 1.48e-12 -> 3.03e-27
+Constraint step repaired: violation 2.35e-12 -> 2.93e-27
+Constraint step repaired: violation 2.12e-12 -> 2.83e-27
+Constraint step repaired: violation 1.77e-12 -> 1.99e-27
+Constraint step repaired: violation 1.67e-12 -> 8.67e-19
+Constraint step repaired: violation 4.74e-12 -> 9.9e-27
+Constraint step repaired: violation 2.62e-12 -> 2.02e-27
+Constraint step repaired: violation 1.43e-12 -> 3.28e-28
+Constraint step repaired: violation 3.85e-12 -> 1.82e-27
+Constraint step repaired: violation 2.18e-12 -> 2.02e-27
+
+Round 1/20
+  Selected reactions: R2, R4, R12, R6, R7
+  Loss: 1.005323 -> 1.005323 (0% reduction)
+  Largest normalized parameter change: 0.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: inner solver status: trust_region_stalled
+  Convergence blocked: zero update requires stationarity
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (1 bar): A 7.5982e+18 -> 7.5982e+18 (1x); sampled k ratio 1–1
+  R2 entry 2 (50 bar): A 2.8557e+18 -> 2.8557e+18 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 1
+  Stopped: no accepted improvement after the full audit; NOT CONVERGED.
+  Active parameter bounds: 15 (details in rounds.yaml)
+
+Optimization result: NOT_CONVERGED
+  Rounds: 1/20
+  Stop reason: stalled
+  Loss: 1.005323 -> 1.005323 (0.00% reduction)
+  Solver validation: PASSED
+  PLOG monotonicity: PASSED
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_03/03_AEB/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_03/03_AEB/results.yaml
+  Fit errors: final_temperature_percent=0.4142, induction_percent=46.96, exothermic_percent=61.57, profile_rmse_K=415.2
+  Objective loss contributions: temperature_profile=0, final_temperature=0.20939, induction_length=0.22088, exothermic_length=0.57505
+  Fit targets: NOT MET
+
+Start 4/5 | initial loss 2.34023
+
+01_A: A | sensitivity-selected reactions
+Preparing iterative ZND run: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_04/01_A
+Reusing cached 9 reference profiles...
+Checking 9 stage-entry cases...
+Baseline loss 2.34023; 17 active / 51 total parameter coordinates, 9 cases, 32 workers.
+
+Round 1/20
+  Selected reactions: R2, R4, R12, R13, R11
+  Loss: 2.34023 -> 2.0226891 (13.57% reduction)
+  Largest normalized parameter change: 400.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Inner optimizer: projected_gradient
+  Convergence blocked: parameter change threshold
+  Convergence blocked: all free audit or stationarity required
+  R11 entry 1 (Arrhenius): A 4.7124e+18 -> 2.3562e+19 (5x); sampled k ratio 5–5
+  R12 entry 1 (Arrhenius): A 5.9030e+27 -> 1.8890e+28 (3.2x); sampled k ratio 3.2–3.2
+  R2 entry 1 (Arrhenius): A 1.0234e+18 -> 5.6675e+17 (0.5538x); sampled k ratio 0.5538–0.5538
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 8 (details in rounds.yaml)
+
+Round 2/20
+  Selected reactions: R2, R4, R12, R11, R6
+  Loss: 2.0226891 -> 1.9351006 (4.33% reduction)
+  Largest normalized parameter change: 37.50% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Inner optimizer: projected_gradient
+  Convergence blocked: parameter change threshold
+  Convergence blocked: all free audit or stationarity required
+  R6 entry 1 (Arrhenius): A 7.6025e+14 -> 4.7516e+14 (0.625x); sampled k ratio 0.625–0.625
+  R2 entry 1 (Arrhenius): A 5.6675e+17 -> 5.5425e+17 (0.9779x); sampled k ratio 0.9779–0.9779
+  R12 entry 1 (Arrhenius): A 1.8890e+28 -> 1.8890e+28 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 10 (details in rounds.yaml)
+
+Round 3/20
+  Selected reactions: R2, R4, R12, R11, R6
+  Loss: 1.9351006 -> 1.7819328 (7.915% reduction)
+  Largest normalized parameter change: 200.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: projected_gradient
+  Convergence blocked: parameter change threshold
+  R1 entry 1 (Arrhenius): A 4.3168e+07 -> 3.6490e+06 (0.08453x); sampled k ratio 0.08453–0.08453
+  R15 entry 1 (Arrhenius): A 2.0406e+12 -> 2.0406e+11 (0.1x); sampled k ratio 0.1–0.1
+  R9 entry 1 (Arrhenius): A 3.8767e+19 -> 1.2922e+19 (0.3333x); sampled k ratio 0.3333–0.3333
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Round 4/20
+  Selected reactions: R2, R4, R12, R11, R7
+  Loss: 1.7819328 -> 1.7819328 (0% reduction)
+  Largest normalized parameter change: 0.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: projected_gradient
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (Arrhenius): A 5.5069e+17 -> 5.5069e+17 (1x); sampled k ratio 1–1
+  R3 entry 1 (Arrhenius): A 4.0036e+20 -> 4.0036e+20 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 1
+  CONVERGED: parameter-change and sensitivity checks passed.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Optimization result: CONVERGED
+  Rounds: 4/20
+  Stop reason: parameter change
+  Loss: 2.34023 -> 1.7819328 (23.86% reduction)
+  Solver validation: PASSED
+  PLOG monotonicity: not applicable
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_04/01_A/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_04/01_A/results.yaml
+  Fit errors: final_temperature_percent=0.7546, induction_percent=53.44, exothermic_percent=83.58, profile_rmse_K=484.9
+  Objective loss contributions: temperature_profile=0, final_temperature=0.69437, induction_length=0.32346, exothermic_length=0.76409
+  Fit targets: NOT MET
+PLOG trial: R2; fixed entries [1.0, 50.0, 100.0] bar.
+
+plog_trial_R2: A | sensitivity-selected reactions
+Preparing iterative ZND run: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_04/plog_trial_R2
+Reusing cached 9 reference profiles...
+Checking 9 stage-entry cases...
+Baseline loss 1.7819328; 19 active / 57 total parameter coordinates, 9 cases, 32 workers.
+  Sensitivity retry 1/3: R11, R12 unresolved; scaling all base perturbations by 0.5 (largest 0.025 -> 0.0125).
+  Sensitivity retry 2/3: R11, R12 unresolved; scaling all base perturbations by 0.5 (largest 0.0125 -> 0.00625).
+  Sensitivity retry 3/3: R11, R12 unresolved; scaling all base perturbations by 0.5 (largest 0.00625 -> 0.003125).
+
+Round 1/5
+  Selected reactions: R2, R4, R12, R11, R7
+  Loss: 1.7819328 -> 1.1068866 (37.88% reduction)
+  Largest normalized parameter change: 586.79% (target: < 1%)
+  Sensitivities: 15/17 reactions resolved
+  Unresolved: R11, R12; retrying next round.
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: parameter change threshold
+  Convergence blocked: unresolved sensitivities
+  Convergence blocked: inner solver status: trust_region_stalled
+  R2 entry 1 (1 bar): A 5.5069e+17 -> 3.7821e+18 (6.868x); sampled k ratio 0.7039–6.868
+  R2 entry 2 (50 bar): A 5.5069e+17 -> 1.7298e+18 (3.141x); sampled k ratio 0.7039–6.868
+  R2 entry 3 (100 bar): A 5.5069e+17 -> 3.8763e+17 (0.7039x); sampled k ratio 0.7039–6.868
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 30 (details in rounds.yaml)
+  Sensitivity retry 1/3: R11, R12 unresolved; scaling all base perturbations by 0.5 (largest 0.003125 -> 0.0015625).
+  Sensitivity retry 2/3: R11, R12 unresolved; scaling all base perturbations by 0.5 (largest 0.0015625 -> 0.00078125).
+  Sensitivity retry 3/3: R11 unresolved; scaling all base perturbations by 0.5 (largest 0.00078125 -> 0.000390625).
+
+Round 2/5
+  Selected reactions: R2, R4, R6, R7, R16
+  Loss: 1.1068866 -> 1.1068866 (0% reduction)
+  Largest normalized parameter change: 0.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: inner solver status: trust_region_stalled
+  Convergence blocked: zero update requires stationarity
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (1 bar): A 3.7821e+18 -> 3.7821e+18 (1x); sampled k ratio 1–1
+  R2 entry 2 (50 bar): A 1.7298e+18 -> 1.7298e+18 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 1
+  Continuing to the next round.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Round 3/5
+  Selected reactions: R12, R11, R1, R13, R5
+  Loss: 1.1068866 -> 1.0739045 (2.98% reduction)
+  Largest normalized parameter change: 125.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Inner optimizer: projected_gradient
+  Convergence blocked: parameter change threshold
+  Convergence blocked: all free audit or stationarity required
+  R13 entry 1 (Arrhenius): A 6.7333e+25 -> 1.5150e+26 (2.25x); sampled k ratio 2.25–2.25
+  R12 entry 1 (Arrhenius): A 1.8890e+28 -> 1.8890e+28 (1x); sampled k ratio 1–1
+  R11 entry 1 (Arrhenius): A 2.3562e+19 -> 2.3562e+19 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Round 4/5
+  Selected reactions: R2, R4, R12, R6, R7
+  Loss: 1.0739045 -> 1.0722219 (0.1567% reduction)
+  Largest normalized parameter change: 0.45% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: inner solver status: trust_region_stalled
+  R2 entry 3 (100 bar): A 3.8763e+17 -> 3.8590e+17 (0.9955x); sampled k ratio 0.9955–1.004
+  R2 entry 2 (50 bar): A 1.7298e+18 -> 1.7375e+18 (1.004x); sampled k ratio 0.9955–1.004
+  R2 entry 1 (1 bar): A 3.7821e+18 -> 3.7991e+18 (1.004x); sampled k ratio 0.9955–1.004
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Round 5/5
+  Selected reactions: R2, R4, R12, R6, R7
+  Loss: 1.0722219 -> 1.0722219 (0% reduction)
+  Largest normalized parameter change: 0.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: inner solver status: trust_region_stalled
+  Convergence blocked: zero update requires stationarity
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (1 bar): A 3.7991e+18 -> 3.7991e+18 (1x); sampled k ratio 1–1
+  R2 entry 2 (50 bar): A 1.7375e+18 -> 1.7375e+18 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 1
+  Stopped: no accepted improvement after the full audit; NOT CONVERGED.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Optimization result: NOT_CONVERGED
+  Rounds: 5/5
+  Stop reason: stalled
+  Loss: 1.7819328 -> 1.0722219 (39.83% reduction)
+  Solver validation: PASSED
+  PLOG monotonicity: PASSED
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_04/plog_trial_R2/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_04/plog_trial_R2/results.yaml
+  Fit errors: final_temperature_percent=0.3935, induction_percent=54.37, exothermic_percent=61.6, profile_rmse_K=489.1
+  Objective loss contributions: temperature_profile=0, final_temperature=0.20465, induction_length=0.29881, exothermic_length=0.56876
+  Fit targets: NOT MET
+PLOG accepted: R2; loss improved 39.828%.
+
+02_AE: AE | sensitivity-selected reactions
+Preparing iterative ZND run: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_04/02_AE
+Reusing cached 9 reference profiles...
+Checking 9 stage-entry cases...
+Baseline loss 1.0722219; 38 active / 57 total parameter coordinates, 9 cases, 32 workers.
+Constraint step repaired: violation 1.72e-12 -> 1.43e-27
+Constraint step repaired: violation 1.21e-12 -> 1.39e-27
+Constraint step repaired: violation 1.14e-12 -> 1.64e-28
+Constraint step repaired: violation 1.43e-12 -> 2.21e-28
+Constraint step repaired: violation 8.11e-12 -> 1.11e-16
+Constraint step repaired: violation 2.63e-11 -> 1.8e-26
+Constraint step repaired: violation 1.84e-11 -> 6.62e-27
+Constraint step repaired: violation 1.78e-11 -> 5.62e-27
+Constraint step repaired: violation 1.92e-11 -> 1.62e-26
+Constraint step repaired: violation 7.13e-12 -> 6.86e-26
+Constraint step repaired: violation 1.19e-11 -> 1.36e-20
+Constraint step repaired: violation 1.27e-11 -> 3.16e-26
+Constraint step repaired: violation 4.24e-12 -> 2.85e-26
+Constraint step repaired: violation 1.04e-11 -> 4.56e-27
+Constraint step repaired: violation 7.58e-12 -> 2.32e-26
+Constraint step repaired: violation 7.96e-12 -> 3.54e-26
+
+Round 1/20
+  Selected reactions: R4, R2, R12, R11, R7
+  Loss: 1.0722219 -> 1.0053233 (6.239% reduction)
+  Largest normalized parameter change: 100.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: parameter change threshold
+  Convergence blocked: inner solver status: trust_region_stalled
+  R2 entry 3 (100 bar): A 3.8590e+17 -> 7.7179e+17 (2x); sampled k ratio 0.4141–1.27
+  R2 entry 1 (1 bar): A 3.7991e+18 -> 7.5982e+18 (2x); sampled k ratio 0.4141–1.27
+  R2 entry 2 (50 bar): A 1.7375e+18 -> 2.8557e+18 (1.644x); sampled k ratio 0.4141–1.27
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 17 (details in rounds.yaml)
+Constraint step repaired: violation 1.23e-12 -> 1.73e-18
+Constraint step repaired: violation 8.11e-12 -> 1.11e-16
+Constraint step repaired: violation 2.63e-11 -> 1.8e-26
+Constraint step repaired: violation 1.84e-11 -> 6.62e-27
+Constraint step repaired: violation 1.78e-11 -> 5.62e-27
+Constraint step repaired: violation 1.92e-11 -> 1.62e-26
+Constraint step repaired: violation 7.13e-12 -> 6.86e-26
+Constraint step repaired: violation 1.19e-11 -> 1.36e-20
+Constraint step repaired: violation 1.27e-11 -> 3.16e-26
+Constraint step repaired: violation 4.24e-12 -> 2.85e-26
+Constraint step repaired: violation 1.04e-11 -> 4.56e-27
+Constraint step repaired: violation 7.58e-12 -> 2.32e-26
+Constraint step repaired: violation 7.96e-12 -> 3.54e-26
+
+Round 2/20
+  Selected reactions: R4, R2, R12, R11, R7
+  Loss: 1.0053233 -> 1.0053233 (0% reduction)
+  Largest normalized parameter change: 0.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: inner solver status: trust_region_stalled
+  Convergence blocked: zero update requires stationarity
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (1 bar): A 7.5982e+18 -> 7.5982e+18 (1x); sampled k ratio 1–1
+  R2 entry 2 (50 bar): A 2.8557e+18 -> 2.8557e+18 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 1
+  Stopped: no accepted improvement after the full audit; NOT CONVERGED.
+  Active parameter bounds: 17 (details in rounds.yaml)
+
+Optimization result: NOT_CONVERGED
+  Rounds: 2/20
+  Stop reason: stalled
+  Loss: 1.0722219 -> 1.0053233 (6.24% reduction)
+  Solver validation: PASSED
+  PLOG monotonicity: PASSED
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_04/02_AE/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_04/02_AE/results.yaml
+  Fit errors: final_temperature_percent=0.4142, induction_percent=46.96, exothermic_percent=61.57, profile_rmse_K=415.2
+  Objective loss contributions: temperature_profile=0, final_temperature=0.20939, induction_length=0.22088, exothermic_length=0.57505
+  Fit targets: NOT MET
+
+03_AEB: AEB | sensitivity-selected reactions
+Preparing iterative ZND run: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_04/03_AEB
+Reusing cached 9 reference profiles...
+Checking 9 stage-entry cases...
+Baseline loss 1.0053233; 57 active / 57 total parameter coordinates, 9 cases, 32 workers.
+Constraint step repaired: violation 2.41e-12 -> 3.69e-27
+Constraint step repaired: violation 1.42e-12 -> 2.02e-27
+Constraint step repaired: violation 1.21e-12 -> 2.78e-17
+Constraint step repaired: violation 1.76e-12 -> 7.55e-27
+Constraint step repaired: violation 2.14e-12 -> 4.85e-27
+Constraint step repaired: violation 1.24e-12 -> 6.94e-18
+Constraint step repaired: violation 2.07e-12 -> 3.08e-27
+Constraint step repaired: violation 3.32e-12 -> 6.01e-27
+Constraint step repaired: violation 2.06e-12 -> 1.76e-26
+Constraint step repaired: violation 1.89e-12 -> 1.12e-26
+Constraint step repaired: violation 1.7e-12 -> 2.06e-26
+Constraint step repaired: violation 1.11e-12 -> 2.07e-27
+Constraint step repaired: violation 1.64e-12 -> 1.87e-27
+
+Round 1/20
+  Selected reactions: R2, R4, R12, R6, R7
+  Loss: 1.0053233 -> 1.0053233 (0% reduction)
+  Largest normalized parameter change: 0.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: inner solver status: trust_region_stalled
+  Convergence blocked: zero update requires stationarity
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (1 bar): A 7.5982e+18 -> 7.5982e+18 (1x); sampled k ratio 1–1
+  R2 entry 2 (50 bar): A 2.8557e+18 -> 2.8557e+18 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 1
+  Stopped: no accepted improvement after the full audit; NOT CONVERGED.
+  Active parameter bounds: 15 (details in rounds.yaml)
+
+Optimization result: NOT_CONVERGED
+  Rounds: 1/20
+  Stop reason: stalled
+  Loss: 1.0053233 -> 1.0053233 (0.00% reduction)
+  Solver validation: PASSED
+  PLOG monotonicity: PASSED
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_04/03_AEB/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_04/03_AEB/results.yaml
+  Fit errors: final_temperature_percent=0.4142, induction_percent=46.96, exothermic_percent=61.57, profile_rmse_K=415.2
+  Objective loss contributions: temperature_profile=0, final_temperature=0.20939, induction_length=0.22088, exothermic_length=0.57505
+  Fit targets: NOT MET
+
+Start 5/5 | initial loss 2.388586
+
+01_A: A | sensitivity-selected reactions
+Preparing iterative ZND run: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_05/01_A
+Reusing cached 9 reference profiles...
+Checking 9 stage-entry cases...
+Baseline loss 2.388586; 17 active / 51 total parameter coordinates, 9 cases, 32 workers.
+
+Round 1/20
+  Selected reactions: R2, R4, R12, R13, R11
+  Loss: 2.388586 -> 2.0265559 (15.16% reduction)
+  Largest normalized parameter change: 400.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Inner optimizer: projected_gradient
+  Convergence blocked: parameter change threshold
+  Convergence blocked: all free audit or stationarity required
+  R11 entry 1 (Arrhenius): A 4.7124e+18 -> 2.3562e+19 (5x); sampled k ratio 5–5
+  R12 entry 1 (Arrhenius): A 5.9030e+27 -> 1.8890e+28 (3.2x); sampled k ratio 3.2–3.2
+  R13 entry 1 (Arrhenius): A 1.0100e+26 -> 6.7333e+25 (0.6667x); sampled k ratio 0.6667–0.6667
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 8 (details in rounds.yaml)
+
+Round 2/20
+  Selected reactions: R2, R4, R12, R11, R6
+  Loss: 2.0265559 -> 1.7819328 (12.07% reduction)
+  Largest normalized parameter change: 200.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: projected_gradient
+  Convergence blocked: parameter change threshold
+  R1 entry 1 (Arrhenius): A 6.3394e+07 -> 3.6490e+06 (0.05756x); sampled k ratio 0.05756–0.05756
+  R15 entry 1 (Arrhenius): A 2.0406e+12 -> 2.0406e+11 (0.1x); sampled k ratio 0.1–0.1
+  R9 entry 1 (Arrhenius): A 3.8767e+19 -> 1.2922e+19 (0.3333x); sampled k ratio 0.3333–0.3333
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Round 3/20
+  Selected reactions: R2, R4, R12, R11, R7
+  Loss: 1.7819328 -> 1.7819328 (0% reduction)
+  Largest normalized parameter change: 0.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: projected_gradient
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (Arrhenius): A 5.5070e+17 -> 5.5070e+17 (1x); sampled k ratio 1–1
+  R3 entry 1 (Arrhenius): A 3.9560e+21 -> 3.9560e+21 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 1
+  CONVERGED: parameter-change and sensitivity checks passed.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Optimization result: CONVERGED
+  Rounds: 3/20
+  Stop reason: parameter change
+  Loss: 2.388586 -> 1.7819328 (25.40% reduction)
+  Solver validation: PASSED
+  PLOG monotonicity: not applicable
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_05/01_A/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_05/01_A/results.yaml
+  Fit errors: final_temperature_percent=0.7546, induction_percent=53.44, exothermic_percent=83.58, profile_rmse_K=484.9
+  Objective loss contributions: temperature_profile=0, final_temperature=0.69437, induction_length=0.32347, exothermic_length=0.7641
+  Fit targets: NOT MET
+PLOG trial: R2; fixed entries [1.0, 50.0, 100.0] bar.
+
+plog_trial_R2: A | sensitivity-selected reactions
+Preparing iterative ZND run: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_05/plog_trial_R2
+Reusing cached 9 reference profiles...
+Checking 9 stage-entry cases...
+Baseline loss 1.7819328; 19 active / 57 total parameter coordinates, 9 cases, 32 workers.
+  Sensitivity retry 1/3: R11, R12 unresolved; scaling all base perturbations by 0.5 (largest 0.025 -> 0.0125).
+  Sensitivity retry 2/3: R11, R12 unresolved; scaling all base perturbations by 0.5 (largest 0.0125 -> 0.00625).
+  Sensitivity retry 3/3: R11, R12 unresolved; scaling all base perturbations by 0.5 (largest 0.00625 -> 0.003125).
+
+Round 1/5
+  Selected reactions: R2, R4, R12, R11, R7
+  Loss: 1.7819328 -> 1.1068867 (37.88% reduction)
+  Largest normalized parameter change: 586.79% (target: < 1%)
+  Sensitivities: 15/17 reactions resolved
+  Unresolved: R11, R12; retrying next round.
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: parameter change threshold
+  Convergence blocked: unresolved sensitivities
+  Convergence blocked: inner solver status: trust_region_stalled
+  R2 entry 1 (1 bar): A 5.5070e+17 -> 3.7821e+18 (6.868x); sampled k ratio 0.7039–6.868
+  R2 entry 2 (50 bar): A 5.5070e+17 -> 1.7298e+18 (3.141x); sampled k ratio 0.7039–6.868
+  R2 entry 3 (100 bar): A 5.5070e+17 -> 3.8763e+17 (0.7039x); sampled k ratio 0.7039–6.868
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 30 (details in rounds.yaml)
+  Sensitivity retry 1/3: R11, R12 unresolved; scaling all base perturbations by 0.5 (largest 0.003125 -> 0.0015625).
+  Sensitivity retry 2/3: R11, R12 unresolved; scaling all base perturbations by 0.5 (largest 0.0015625 -> 0.00078125).
+  Sensitivity retry 3/3: R11 unresolved; scaling all base perturbations by 0.5 (largest 0.00078125 -> 0.000390625).
+
+Round 2/5
+  Selected reactions: R2, R4, R6, R7, R16
+  Loss: 1.1068867 -> 1.1068867 (0% reduction)
+  Largest normalized parameter change: 0.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: inner solver status: trust_region_stalled
+  Convergence blocked: zero update requires stationarity
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (1 bar): A 3.7821e+18 -> 3.7821e+18 (1x); sampled k ratio 1–1
+  R2 entry 2 (50 bar): A 1.7298e+18 -> 1.7298e+18 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 1
+  Continuing to the next round.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Round 3/5
+  Selected reactions: R12, R11, R1, R13, R5
+  Loss: 1.1068867 -> 1.0739045 (2.98% reduction)
+  Largest normalized parameter change: 125.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Inner optimizer: projected_gradient
+  Convergence blocked: parameter change threshold
+  Convergence blocked: all free audit or stationarity required
+  R13 entry 1 (Arrhenius): A 6.7333e+25 -> 1.5150e+26 (2.25x); sampled k ratio 2.25–2.25
+  R12 entry 1 (Arrhenius): A 1.8890e+28 -> 1.8890e+28 (1x); sampled k ratio 1–1
+  R11 entry 1 (Arrhenius): A 2.3562e+19 -> 2.3562e+19 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Round 4/5
+  Selected reactions: R2, R4, R12, R6, R7
+  Loss: 1.0739045 -> 1.072222 (0.1567% reduction)
+  Largest normalized parameter change: 0.45% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: inner solver status: trust_region_stalled
+  R2 entry 3 (100 bar): A 3.8763e+17 -> 3.8590e+17 (0.9955x); sampled k ratio 0.9955–1.004
+  R2 entry 2 (50 bar): A 1.7298e+18 -> 1.7375e+18 (1.004x); sampled k ratio 0.9955–1.004
+  R2 entry 1 (1 bar): A 3.7821e+18 -> 3.7991e+18 (1.004x); sampled k ratio 0.9955–1.004
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Round 5/5
+  Selected reactions: R2, R4, R12, R6, R7
+  Loss: 1.072222 -> 1.072222 (0% reduction)
+  Largest normalized parameter change: 0.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: inner solver status: trust_region_stalled
+  Convergence blocked: zero update requires stationarity
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (1 bar): A 3.7991e+18 -> 3.7991e+18 (1x); sampled k ratio 1–1
+  R2 entry 2 (50 bar): A 1.7375e+18 -> 1.7375e+18 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 1
+  Stopped: no accepted improvement after the full audit; NOT CONVERGED.
+  Active parameter bounds: 30 (details in rounds.yaml)
+
+Optimization result: NOT_CONVERGED
+  Rounds: 5/5
+  Stop reason: stalled
+  Loss: 1.7819328 -> 1.072222 (39.83% reduction)
+  Solver validation: PASSED
+  PLOG monotonicity: PASSED
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_05/plog_trial_R2/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_05/plog_trial_R2/results.yaml
+  Fit errors: final_temperature_percent=0.3935, induction_percent=54.37, exothermic_percent=61.6, profile_rmse_K=489.1
+  Objective loss contributions: temperature_profile=0, final_temperature=0.20465, induction_length=0.29881, exothermic_length=0.56876
+  Fit targets: NOT MET
+PLOG accepted: R2; loss improved 39.828%.
+
+02_AE: AE | sensitivity-selected reactions
+Preparing iterative ZND run: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_05/02_AE
+Reusing cached 9 reference profiles...
+Checking 9 stage-entry cases...
+Baseline loss 1.072222; 38 active / 57 total parameter coordinates, 9 cases, 32 workers.
+Constraint step repaired: violation 1.16e-12 -> 1.08e-19
+Constraint step repaired: violation 1.21e-12 -> 9.72e-28
+Constraint step repaired: violation 6.27e-12 -> 6.33e-27
+Constraint step repaired: violation 7.44e-12 -> 1.79e-26
+Constraint step repaired: violation 1.48e-11 -> 8.33e-17
+Constraint step repaired: violation 6.41e-12 -> 6.32e-27
+Constraint step repaired: violation 1.73e-11 -> 1.17e-27
+Constraint step repaired: violation 1.29e-11 -> 1.73e-18
+Constraint step repaired: violation 1.06e-11 -> 5.15e-27
+Constraint step repaired: violation 1.71e-11 -> 1.57e-26
+Constraint step repaired: violation 2.08e-11 -> 1.07e-26
+Constraint step repaired: violation 1.09e-11 -> 1.26e-26
+Constraint step repaired: violation 5.5e-12 -> 1.18e-26
+Constraint step repaired: violation 1.57e-11 -> 7.02e-27
+
+Round 1/20
+  Selected reactions: R4, R2, R12, R11, R7
+  Loss: 1.072222 -> 1.0053224 (6.239% reduction)
+  Largest normalized parameter change: 100.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: parameter change threshold
+  Convergence blocked: inner solver status: trust_region_stalled
+  R2 entry 1 (1 bar): A 3.7991e+18 -> 7.5982e+18 (2x); sampled k ratio 0.4141–1.27
+  R2 entry 3 (100 bar): A 3.8590e+17 -> 7.7179e+17 (2x); sampled k ratio 0.4141–1.27
+  R2 entry 2 (50 bar): A 1.7375e+18 -> 2.8557e+18 (1.644x); sampled k ratio 0.4141–1.27
+  Consecutive negligible improvements: 0
+  Continuing to the next round.
+  Active parameter bounds: 17 (details in rounds.yaml)
+Constraint step repaired: violation 1.08e-12 -> 6.78e-21
+Constraint step repaired: violation 1.18e-12 -> 5.93e-28
+Constraint step repaired: violation 6.27e-12 -> 6.33e-27
+Constraint step repaired: violation 7.44e-12 -> 1.79e-26
+Constraint step repaired: violation 1.48e-11 -> 8.33e-17
+Constraint step repaired: violation 6.41e-12 -> 6.32e-27
+Constraint step repaired: violation 1.73e-11 -> 1.17e-27
+Constraint step repaired: violation 1.29e-11 -> 1.73e-18
+Constraint step repaired: violation 1.06e-11 -> 5.15e-27
+Constraint step repaired: violation 1.71e-11 -> 1.57e-26
+Constraint step repaired: violation 2.08e-11 -> 1.07e-26
+Constraint step repaired: violation 1.09e-11 -> 1.26e-26
+Constraint step repaired: violation 5.5e-12 -> 1.18e-26
+Constraint step repaired: violation 1.57e-11 -> 7.02e-27
+
+Round 2/20
+  Selected reactions: R4, R2, R12, R11, R7
+  Loss: 1.0053224 -> 1.0053224 (0% reduction)
+  Largest normalized parameter change: 0.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: inner solver status: trust_region_stalled
+  Convergence blocked: zero update requires stationarity
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (1 bar): A 7.5982e+18 -> 7.5982e+18 (1x); sampled k ratio 1–1
+  R2 entry 2 (50 bar): A 2.8557e+18 -> 2.8557e+18 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 1
+  Stopped: no accepted improvement after the full audit; NOT CONVERGED.
+  Active parameter bounds: 17 (details in rounds.yaml)
+
+Optimization result: NOT_CONVERGED
+  Rounds: 2/20
+  Stop reason: stalled
+  Loss: 1.072222 -> 1.0053224 (6.24% reduction)
+  Solver validation: PASSED
+  PLOG monotonicity: PASSED
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_05/02_AE/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_05/02_AE/results.yaml
+  Fit errors: final_temperature_percent=0.4142, induction_percent=46.96, exothermic_percent=61.57, profile_rmse_K=415.2
+  Objective loss contributions: temperature_profile=0, final_temperature=0.20939, induction_length=0.22088, exothermic_length=0.57505
+  Fit targets: NOT MET
+
+03_AEB: AEB | sensitivity-selected reactions
+Preparing iterative ZND run: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_05/03_AEB
+Reusing cached 9 reference profiles...
+Checking 9 stage-entry cases...
+Baseline loss 1.0053224; 57 active / 57 total parameter coordinates, 9 cases, 32 workers.
+Constraint step repaired: violation 1.67e-12 -> 1.55e-28
+Constraint step repaired: violation 2.52e-12 -> 4.67e-28
+Constraint step repaired: violation 1.1e-12 -> 3.16e-29
+Constraint step repaired: violation 1.51e-12 -> 4.89e-28
+Constraint step repaired: violation 1.06e-12 -> 1.21e-27
+Constraint step repaired: violation 3.08e-12 -> 8.96e-28
+Constraint step repaired: violation 3.02e-12 -> 3.03e-27
+Constraint step repaired: violation 1.07e-12 -> 3.06e-28
+Constraint step repaired: violation 2.32e-12 -> 1.19e-27
+Constraint step repaired: violation 2.46e-12 -> 2.38e-27
+Constraint step repaired: violation 2.88e-12 -> 2.83e-27
+Constraint step repaired: violation 1.12e-12 -> 2.73e-27
+Constraint step repaired: violation 5.24e-12 -> 2.95e-27
+Constraint step repaired: violation 2.85e-12 -> 2.8e-27
+Constraint step repaired: violation 2.3e-12 -> 5.96e-27
+Constraint step repaired: violation 1.64e-12 -> 1.03e-27
+Constraint step repaired: violation 5.1e-12 -> 9.1e-27
+Constraint step repaired: violation 2.47e-12 -> 5.93e-28
+Constraint step repaired: violation 3e-12 -> 2.22e-27
+Constraint step repaired: violation 4.28e-12 -> 7.67e-27
+
+Round 1/20
+  Selected reactions: R2, R4, R12, R6, R7
+  Loss: 1.0053224 -> 1.0053224 (0% reduction)
+  Largest normalized parameter change: 0.00% (target: < 1%)
+  Sensitivities: 17/17 reactions resolved
+  Additional optimization audit: all eligible reactions.
+  Inner optimizer: trust_region_stalled
+  Convergence blocked: inner solver status: trust_region_stalled
+  Convergence blocked: zero update requires stationarity
+  R1 entry 1 (Arrhenius): A 3.6490e+06 -> 3.6490e+06 (1x); sampled k ratio 1–1
+  R2 entry 1 (1 bar): A 7.5982e+18 -> 7.5982e+18 (1x); sampled k ratio 1–1
+  R2 entry 2 (50 bar): A 2.8557e+18 -> 2.8557e+18 (1x); sampled k ratio 1–1
+  Consecutive negligible improvements: 1
+  Stopped: no accepted improvement after the full audit; NOT CONVERGED.
+  Active parameter bounds: 15 (details in rounds.yaml)
+
+Optimization result: NOT_CONVERGED
+  Rounds: 1/20
+  Stop reason: stalled
+  Loss: 1.0053224 -> 1.0053224 (0.00% reduction)
+  Solver validation: PASSED
+  PLOG monotonicity: PASSED
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_05/03_AEB/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_05/03_AEB/results.yaml
+  Fit errors: final_temperature_percent=0.4142, induction_percent=46.96, exothermic_percent=61.57, profile_rmse_K=415.2
+  Objective loss contributions: temperature_profile=0, final_temperature=0.20939, induction_length=0.22088, exothermic_length=0.57505
+  Fit targets: NOT MET

@@ -339,17 +339,17 @@ species:
 reactions:
 - equation: O2 + H2 => 2 OH
   rate-constant:
-    A: 3649000.0000004163
+    A: 3649000.000000034
     b: 0.0
     Ea: 7950.0
 - equation: C2H4 + O2 => 2 CO + 2 H2
   rate-constant:
-    A: 1.240526359425008e+18
+    A: 1.2815340045432517e+18
     b: 0.0
     Ea: 60000.0
 - equation: C2H4 + 2 O => 2 CO + 2 H2
   rate-constant:
-    A: 1.3064709506187518e+20
+    A: 2.365627711801937e+20
     b: -1.717
     Ea: 60000.0
 - equation: H + O2 <=> O + OH
@@ -360,23 +360,23 @@ reactions:
 - equation: H2 + O <=> H + OH
   duplicate: true
   rate-constant:
-    A: 2280625002280.625
+    A: 2280625002280.6772
     b: 0.0
     Ea: 7950.0
 - equation: H2 + O <=> H + OH
   duplicate: true
   rate-constant:
-    A: 475156250475156.3
+    A: 475156250480273.7
     b: 0.0
     Ea: 19180.0
 - equation: H2 + OH <=> H + H2O
   rate-constant:
-    A: 179816666.84648332
+    A: 179816666.84678778
     b: 1.51
     Ea: 3437.0
 - equation: 2 OH <=> H2O + O
   rate-constant:
-    A: 23928.571452500008
+    A: 23928.571452500615
     b: 2.42
     Ea: -1928.0
 - equation: H2 + M <=> 2 H + M
@@ -394,7 +394,7 @@ reactions:
 - equation: 2 O + M <=> O2 + M
   type: three-body
   rate-constant:
-    A: 1.847999998152e+16
+    A: 1.7603130887268916e+16
     b: -0.5
     Ea: 0.0
   efficiencies:
@@ -406,7 +406,7 @@ reactions:
 - equation: H + O + M <=> OH + M
   type: three-body
   rate-constant:
-    A: 2.3561999976437993e+19
+    A: 4.7124e+18
     b: -1.0
     Ea: 0.0
   efficiencies:
@@ -437,11 +437,11 @@ reactions:
 - equation: CO + O (+M) <=> CO2 (+M)
   type: falloff
   low-P-rate-constant:
-    A: 1.437955215916395e+21
+    A: 5.296000005296e+20
     b: -2.1
     Ea: 5500.0
   high-P-rate-constant:
-    A: 10886935606909.814
+    A: 4009666670676.3335
     b: -0.31
     Ea: 6943.0
   efficiencies:
@@ -452,18 +452,18 @@ reactions:
     H2O: 12.0
 - equation: CO + O2 <=> CO2 + O
   rate-constant:
-    A: 204060000204.05997
+    A: 204060000204.0607
     b: 0.0
     Ea: 47700.0
 - equation: CO + OH <=> CO2 + H
   duplicate: true
   rate-constant:
-    A: 56315.192221256446
+    A: 56289.16672295583
     b: 2.05
     Ea: -356.0
 - equation: CO + OH <=> CO2 + H
   duplicate: true
   rate-constant:
-    A: 7822199992177.8
+    A: 7822199992177.705
     b: -0.66
     Ea: 332.0

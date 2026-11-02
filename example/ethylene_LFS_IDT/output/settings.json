@@ -6,266 +6,350 @@
     {
       "P_atm": 1,
       "T": 298.0,
-      "phi": 0.6
+      "phi": 0.6,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "P_atm": 1,
       "T": 298.0,
-      "phi": 0.8
+      "phi": 0.8,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "P_atm": 1,
       "T": 298.0,
-      "phi": 1.0
+      "phi": 1.0,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "P_atm": 1,
       "T": 298.0,
-      "phi": 1.2
+      "phi": 1.2,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "P_atm": 1,
       "T": 298.0,
-      "phi": 1.4
+      "phi": 1.4,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "P_atm": 10,
       "T": 298.0,
-      "phi": 0.6
+      "phi": 0.6,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "P_atm": 10,
       "T": 298.0,
-      "phi": 0.8
+      "phi": 0.8,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "P_atm": 10,
       "T": 298.0,
-      "phi": 1.0
+      "phi": 1.0,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "P_atm": 10,
       "T": 298.0,
-      "phi": 1.2
+      "phi": 1.2,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "P_atm": 10,
       "T": 298.0,
-      "phi": 1.4
+      "phi": 1.4,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "P_atm": 50,
       "T": 298.0,
-      "phi": 0.6
+      "phi": 0.6,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "P_atm": 50,
       "T": 298.0,
-      "phi": 0.8
+      "phi": 0.8,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "P_atm": 50,
       "T": 298.0,
-      "phi": 1.0
+      "phi": 1.0,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "P_atm": 50,
       "T": 298.0,
-      "phi": 1.2
+      "phi": 1.2,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "P_atm": 50,
       "T": 298.0,
-      "phi": 1.4
+      "phi": 1.4,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 1,
       "T": 1400,
       "phi": 0.6,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 1,
       "T": 1400,
       "phi": 1.0,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 1,
       "T": 1400,
       "phi": 1.4,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 1,
       "T": 1500,
       "phi": 0.6,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 1,
       "T": 1500,
       "phi": 1.0,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 1,
       "T": 1500,
       "phi": 1.4,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 1,
       "T": 1600,
       "phi": 0.6,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 1,
       "T": 1600,
       "phi": 1.0,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 1,
       "T": 1600,
       "phi": 1.4,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 10,
       "T": 1400,
       "phi": 0.6,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 10,
       "T": 1400,
       "phi": 1.0,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 10,
       "T": 1400,
       "phi": 1.4,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 10,
       "T": 1500,
       "phi": 0.6,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 10,
       "T": 1500,
       "phi": 1.0,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 10,
       "T": 1500,
       "phi": 1.4,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 10,
       "T": 1600,
       "phi": 0.6,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 10,
       "T": 1600,
       "phi": 1.0,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 10,
       "T": 1600,
       "phi": 1.4,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 50,
       "T": 1400,
       "phi": 0.6,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 50,
       "T": 1400,
       "phi": 1.0,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 50,
       "T": 1400,
       "phi": 1.4,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 50,
       "T": 1500,
       "phi": 0.6,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 50,
       "T": 1500,
       "phi": 1.0,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 50,
       "T": 1500,
       "phi": 1.4,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 50,
       "T": 1600,
       "phi": 0.6,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 50,
       "T": 1600,
       "phi": 1.0,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     },
     {
       "kind": "ignition",
       "P_atm": 50,
       "T": 1600,
       "phi": 1.4,
-      "end_time_s": 0.003
+      "end_time_s": 0.003,
+      "fuel": "C2H4",
+      "oxidizer": "O2:1, N2:3.76"
     }
   ],
   "objectives": {
@@ -338,6 +422,10 @@
   "b_delta": 0.2,
   "max_rounds": 20,
   "inner_iterations": 15,
+  "plog_max_trials": 1,
+  "plog_min_relative_score": 0.1,
+  "plog_trial_rounds": 5,
+  "plog_min_improvement": 0.001,
   "enable_plog": true,
   "plog_candidates": [
     2
@@ -347,12 +435,8 @@
     50.0,
     100.0
   ],
-  "plog_free": null,
   "plog_direction": "either",
-  "plog_max_trials": 1,
-  "plog_min_relative_score": 0.1,
-  "plog_trial_rounds": 5,
-  "plog_min_improvement": 0.001,
+  "plog_free": null,
   "plot_yscales": {
     "laminar_flame_speed": "linear",
     "T_flame": "linear",
@@ -362,6 +446,10 @@
   "comparison_plots": true,
   "backend": "openmp",
   "workers": 128,
+  "mixture": {
+    "fuel": "C2H4",
+    "oxidizer": "O2:1, N2:3.76"
+  },
   "ignition_solver": {
     "marker_species": "OH",
     "reactor_type": "constant-volume",

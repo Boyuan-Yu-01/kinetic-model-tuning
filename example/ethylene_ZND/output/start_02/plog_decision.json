@@ -222,7 +222,7 @@
     {
       "reaction": 2,
       "accepted": true,
-      "relative_improvement": 0.37882810042773774,
+      "relative_improvement": 0.398281542696775,
       "required_improvement": 0.001,
       "rate_equivalence": {
         "valid": true,

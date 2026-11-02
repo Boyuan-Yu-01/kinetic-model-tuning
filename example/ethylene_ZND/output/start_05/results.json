@@ -20,10 +20,10 @@
       "status": "not_converged",
       "converged": false,
       "stop_reason": "stalled",
-      "rounds": 2,
+      "rounds": 5,
       "baseline_loss": 1.7819328407105968,
-      "best_loss": 1.1068866954827818,
-      "relative_improvement": 0.3788280502252545
+      "best_loss": 1.0722219581494277,
+      "relative_improvement": 0.39828149795903295
     },
     {
       "stage": "02_AE",
@@ -33,8 +33,8 @@
       "converged": false,
       "stop_reason": "stalled",
       "rounds": 2,
-      "baseline_loss": 1.1068866954827818,
-      "best_loss": 1.039081945821323
+      "baseline_loss": 1.0722219581494277,
+      "best_loss": 1.0053224322057286
     },
     {
       "stage": "03_AEB",
@@ -44,17 +44,17 @@
       "converged": false,
       "stop_reason": "stalled",
       "rounds": 1,
-      "baseline_loss": 1.039081945821323,
-      "best_loss": 1.039081945821323
+      "baseline_loss": 1.0053224322057286,
+      "best_loss": 1.0053224322057286
     }
   ],
   "validation": {
     "status": "passed",
     "performed": true,
     "passed": true,
-    "max_temperature_change_K": 2.72598299e-08,
-    "max_length_change_percent": 1.29658964e-06,
-    "tighter_loss": 1.03908194,
+    "max_temperature_change_K": 2.04304342e-08,
+    "max_length_change_percent": 8.94600882e-07,
+    "tighter_loss": 1.00532243,
     "errors": [],
     "plog_monotonicity_status": "checked",
     "plog_monotonicity_passed": true,
@@ -74,22 +74,22 @@
         "exothermic_length_m": 0.000742557515
       },
       "baseline": {
-        "final_temperature_K": 2208.57459,
-        "temperature_error_K": 2.33311895,
-        "profile_rmse_K": 363.124384,
-        "induction_length_m": 0.0103271297,
-        "induction_error_percent": -35.7351771,
-        "exothermic_length_m": 0.00101219572,
-        "exothermic_error_percent": 36.3120968
+        "final_temperature_K": 2208.22523,
+        "temperature_error_K": 1.98375763,
+        "profile_rmse_K": 379.557664,
+        "induction_length_m": 0.00995172644,
+        "induction_error_percent": -38.0712789,
+        "exothermic_length_m": 0.00101032984,
+        "exothermic_error_percent": 36.06082
       },
       "accepted": {
-        "final_temperature_K": 2208.57459,
-        "temperature_error_K": 2.33311895,
-        "profile_rmse_K": 363.124384,
-        "induction_length_m": 0.0103271297,
-        "induction_error_percent": -35.7351771,
-        "exothermic_length_m": 0.00101219572,
-        "exothermic_error_percent": 36.3120968
+        "final_temperature_K": 2208.22523,
+        "temperature_error_K": 1.98375763,
+        "profile_rmse_K": 379.557664,
+        "induction_length_m": 0.00995172644,
+        "induction_error_percent": -38.0712789,
+        "exothermic_length_m": 0.00101032984,
+        "exothermic_error_percent": 36.06082
       }
     },
     {
@@ -104,22 +104,22 @@
         "exothermic_length_m": 0.000117933906
       },
       "baseline": {
-        "final_temperature_K": 2958.19128,
-        "temperature_error_K": 5.98728209,
-        "profile_rmse_K": 228.967236,
-        "induction_length_m": 0.000267304539,
-        "induction_error_percent": -51.1487809,
-        "exothermic_length_m": 6.43351307e-05,
-        "exothermic_error_percent": -45.4481471
+        "final_temperature_K": 2958.11295,
+        "temperature_error_K": 5.90894642,
+        "profile_rmse_K": 233.822335,
+        "induction_length_m": 0.00026578973,
+        "induction_error_percent": -51.4256197,
+        "exothermic_length_m": 6.38687422e-05,
+        "exothermic_error_percent": -45.8436131
       },
       "accepted": {
-        "final_temperature_K": 2958.19128,
-        "temperature_error_K": 5.98728209,
-        "profile_rmse_K": 228.967236,
-        "induction_length_m": 0.000267304539,
-        "induction_error_percent": -51.1487809,
-        "exothermic_length_m": 6.43351307e-05,
-        "exothermic_error_percent": -45.4481471
+        "final_temperature_K": 2958.11295,
+        "temperature_error_K": 5.90894642,
+        "profile_rmse_K": 233.822335,
+        "induction_length_m": 0.00026578973,
+        "induction_error_percent": -51.4256197,
+        "exothermic_length_m": 6.38687422e-05,
+        "exothermic_error_percent": -45.8436131
       }
     },
     {
@@ -134,22 +134,22 @@
         "exothermic_length_m": 0.000627802883
       },
       "baseline": {
-        "final_temperature_K": 2670.5523,
-        "temperature_error_K": 1.63697962,
-        "profile_rmse_K": 500.655877,
-        "induction_length_m": 0.000259266192,
-        "induction_error_percent": -72.6935934,
-        "exothermic_length_m": 0.000164972654,
-        "exothermic_error_percent": -73.7222209
+        "final_temperature_K": 2671.19973,
+        "temperature_error_K": 2.28440984,
+        "profile_rmse_K": 506.25531,
+        "induction_length_m": 0.000259316037,
+        "induction_error_percent": -72.6883437,
+        "exothermic_length_m": 0.000169429454,
+        "exothermic_error_percent": -73.0123166
       },
       "accepted": {
-        "final_temperature_K": 2670.5523,
-        "temperature_error_K": 1.63697962,
-        "profile_rmse_K": 500.655877,
-        "induction_length_m": 0.000259266192,
-        "induction_error_percent": -72.6935934,
-        "exothermic_length_m": 0.000164972654,
-        "exothermic_error_percent": -73.7222209
+        "final_temperature_K": 2671.19973,
+        "temperature_error_K": 2.28440984,
+        "profile_rmse_K": 506.25531,
+        "induction_length_m": 0.000259316037,
+        "induction_error_percent": -72.6883437,
+        "exothermic_length_m": 0.000169429454,
+        "exothermic_error_percent": -73.0123166
       }
     },
     {
@@ -164,22 +164,22 @@
         "exothermic_length_m": 0.000888393278
       },
       "baseline": {
-        "final_temperature_K": 2206.95608,
-        "temperature_error_K": 9.49686881,
-        "profile_rmse_K": 184.53146,
-        "induction_length_m": 0.0093216739,
-        "induction_error_percent": 16.3999533,
-        "exothermic_length_m": 0.000472693917,
-        "exothermic_error_percent": -46.7922677
+        "final_temperature_K": 2207.62328,
+        "temperature_error_K": 10.1640686,
+        "profile_rmse_K": 255.983771,
+        "induction_length_m": 0.00998239628,
+        "induction_error_percent": 24.6504086,
+        "exothermic_length_m": 0.000485818203,
+        "exothermic_error_percent": -45.3149618
       },
       "accepted": {
-        "final_temperature_K": 2206.95608,
-        "temperature_error_K": 9.49686881,
-        "profile_rmse_K": 184.53146,
-        "induction_length_m": 0.0093216739,
-        "induction_error_percent": 16.3999533,
-        "exothermic_length_m": 0.000472693917,
-        "exothermic_error_percent": -46.7922677
+        "final_temperature_K": 2207.62328,
+        "temperature_error_K": 10.1640686,
+        "profile_rmse_K": 255.983771,
+        "induction_length_m": 0.00998239628,
+        "induction_error_percent": 24.6504086,
+        "exothermic_length_m": 0.000485818203,
+        "exothermic_error_percent": -45.3149618
       }
     },
     {
@@ -194,22 +194,22 @@
         "exothermic_length_m": 5.08385321e-05
       },
       "baseline": {
-        "final_temperature_K": 3072.65429,
-        "temperature_error_K": 23.3114304,
-        "profile_rmse_K": 390.797124,
-        "induction_length_m": 0.000108249949,
-        "induction_error_percent": -46.6091429,
-        "exothermic_length_m": 2.81015306e-05,
-        "exothermic_error_percent": -44.7239536
+        "final_temperature_K": 3073.08434,
+        "temperature_error_K": 23.7414819,
+        "profile_rmse_K": 372.431887,
+        "induction_length_m": 0.000112968119,
+        "induction_error_percent": -44.2820547,
+        "exothermic_length_m": 2.85359226e-05,
+        "exothermic_error_percent": -43.8694994
       },
       "accepted": {
-        "final_temperature_K": 3072.65429,
-        "temperature_error_K": 23.3114304,
-        "profile_rmse_K": 390.797124,
-        "induction_length_m": 0.000108249949,
-        "induction_error_percent": -46.6091429,
-        "exothermic_length_m": 2.81015306e-05,
-        "exothermic_error_percent": -44.7239536
+        "final_temperature_K": 3073.08434,
+        "temperature_error_K": 23.7414819,
+        "profile_rmse_K": 372.431887,
+        "induction_length_m": 0.000112968119,
+        "induction_error_percent": -44.2820547,
+        "exothermic_length_m": 2.85359226e-05,
+        "exothermic_error_percent": -43.8694994
       }
     },
     {
@@ -224,22 +224,22 @@
         "exothermic_length_m": 0.000231186297
       },
       "baseline": {
-        "final_temperature_K": 2781.69062,
-        "temperature_error_K": 53.9741494,
-        "profile_rmse_K": 591.950393,
-        "induction_length_m": 0.000137708638,
-        "induction_error_percent": -47.8381296,
-        "exothermic_length_m": 2.02240511e-05,
-        "exothermic_error_percent": -91.2520546
+        "final_temperature_K": 2780.71154,
+        "temperature_error_K": 52.9950716,
+        "profile_rmse_K": 578.836043,
+        "induction_length_m": 0.000144168457,
+        "induction_error_percent": -45.3912516,
+        "exothermic_length_m": 2.06902778e-05,
+        "exothermic_error_percent": -91.0503874
       },
       "accepted": {
-        "final_temperature_K": 2781.69062,
-        "temperature_error_K": 53.9741494,
-        "profile_rmse_K": 591.950393,
-        "induction_length_m": 0.000137708638,
-        "induction_error_percent": -47.8381296,
-        "exothermic_length_m": 2.02240511e-05,
-        "exothermic_error_percent": -91.2520546
+        "final_temperature_K": 2780.71154,
+        "temperature_error_K": 52.9950716,
+        "profile_rmse_K": 578.836043,
+        "induction_length_m": 0.000144168457,
+        "induction_error_percent": -45.3912516,
+        "exothermic_length_m": 2.06902778e-05,
+        "exothermic_error_percent": -91.0503874
       }
     },
     {
@@ -254,22 +254,22 @@
         "exothermic_length_m": 0.000334072034
       },
       "baseline": {
-        "final_temperature_K": 2197.89852,
-        "temperature_error_K": 0.228132401,
-        "profile_rmse_K": 96.8064249,
-        "induction_length_m": 0.00254112127,
-        "induction_error_percent": 1.85549133,
-        "exothermic_length_m": 0.00014959851,
-        "exothermic_error_percent": -55.2196846
+        "final_temperature_K": 2197.86852,
+        "temperature_error_K": 0.198138081,
+        "profile_rmse_K": 69.2158236,
+        "induction_length_m": 0.00271912645,
+        "induction_error_percent": 8.99045398,
+        "exothermic_length_m": 0.000155963679,
+        "exothermic_error_percent": -53.3143565
       },
       "accepted": {
-        "final_temperature_K": 2197.89852,
-        "temperature_error_K": 0.228132401,
-        "profile_rmse_K": 96.8064249,
-        "induction_length_m": 0.00254112127,
-        "induction_error_percent": 1.85549133,
-        "exothermic_length_m": 0.00014959851,
-        "exothermic_error_percent": -55.2196846
+        "final_temperature_K": 2197.86852,
+        "temperature_error_K": 0.198138081,
+        "profile_rmse_K": 69.2158236,
+        "induction_length_m": 0.00271912645,
+        "induction_error_percent": 8.99045398,
+        "exothermic_length_m": 0.000155963679,
+        "exothermic_error_percent": -53.3143565
       }
     },
     {
@@ -284,22 +284,22 @@
         "exothermic_length_m": 4.03857502e-05
       },
       "baseline": {
-        "final_temperature_K": 3153.55446,
-        "temperature_error_K": -0.604694618,
-        "profile_rmse_K": 685.754662,
-        "induction_length_m": 2.3082067e-05,
-        "induction_error_percent": -74.0141852,
-        "exothermic_length_m": 7.22637597e-06,
-        "exothermic_error_percent": -82.1066194
+        "final_temperature_K": 3153.40143,
+        "temperature_error_K": -0.757718835,
+        "profile_rmse_K": 673.214258,
+        "induction_length_m": 2.406532e-05,
+        "induction_error_percent": -72.9072379,
+        "exothermic_length_m": 7.43154364e-06,
+        "exothermic_error_percent": -81.5985995
       },
       "accepted": {
-        "final_temperature_K": 3153.55446,
-        "temperature_error_K": -0.604694618,
-        "profile_rmse_K": 685.754662,
-        "induction_length_m": 2.3082067e-05,
-        "induction_error_percent": -74.0141852,
-        "exothermic_length_m": 7.22637597e-06,
-        "exothermic_error_percent": -82.1066194
+        "final_temperature_K": 3153.40143,
+        "temperature_error_K": -0.757718835,
+        "profile_rmse_K": 673.214258,
+        "induction_length_m": 2.406532e-05,
+        "induction_error_percent": -72.9072379,
+        "exothermic_length_m": 7.43154364e-06,
+        "exothermic_error_percent": -81.5985995
       }
     },
     {
@@ -314,37 +314,37 @@
         "exothermic_length_m": 4.26312386e-05
       },
       "baseline": {
-        "final_temperature_K": 2705.96536,
-        "temperature_error_K": 6.84554488,
-        "profile_rmse_K": 677.778382,
-        "induction_length_m": 3.77041167e-05,
-        "induction_error_percent": -65.9414415,
-        "exothermic_length_m": 6.59566539e-06,
-        "exothermic_error_percent": -84.5285626
+        "final_temperature_K": 2702.77643,
+        "temperature_error_K": 3.65661339,
+        "profile_rmse_K": 667.483884,
+        "induction_length_m": 3.95593417e-05,
+        "induction_error_percent": -64.2655956,
+        "exothermic_length_m": 6.79733734e-06,
+        "exothermic_error_percent": -84.0555012
       },
       "accepted": {
-        "final_temperature_K": 2705.96536,
-        "temperature_error_K": 6.84554488,
-        "profile_rmse_K": 677.778382,
-        "induction_length_m": 3.77041167e-05,
-        "induction_error_percent": -65.9414415,
-        "exothermic_length_m": 6.59566539e-06,
-        "exothermic_error_percent": -84.5285626
+        "final_temperature_K": 2702.77643,
+        "temperature_error_K": 3.65661339,
+        "profile_rmse_K": 667.483884,
+        "induction_length_m": 3.95593417e-05,
+        "induction_error_percent": -64.2655956,
+        "exothermic_length_m": 6.79733734e-06,
+        "exothermic_error_percent": -84.0555012
       }
     }
   ],
   "fit_quality": {
     "mean_absolute_errors": {
-      "final_temperature_percent": 0.425382832,
-      "induction_percent": 45.8039884,
-      "exothermic_percent": 62.2339564,
-      "profile_rmse_K": 413.373994
+      "final_temperature_percent": 0.414236267,
+      "induction_percent": 46.9635827,
+      "exothermic_percent": 61.5688951,
+      "profile_rmse_K": 415.200108
     },
     "loss_contributions": {
       "temperature_profile": 0.0,
-      "final_temperature": 0.215589451,
-      "induction_length": 0.230022514,
-      "exothermic_length": 0.59346998
+      "final_temperature": 0.209392448,
+      "induction_length": 0.22088192,
+      "exothermic_length": 0.575048064
     },
     "targets": {
       "final_temperature_percent": 5.0,
@@ -416,9 +416,9 @@
     },
     {
       "parameter": "R13 physical ln A",
-      "side": "lower",
-      "value": -0.405465107,
-      "bound": -0.405465107
+      "side": "upper",
+      "value": 0.405465107,
+      "bound": 0.405465107
     },
     {
       "parameter": "R14 physical ln A",
@@ -450,38 +450,38 @@
   "active_model": "/project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_05/inputs/plog_R2.yaml",
   "coordinates": [
     -13.815510557964274,
-    10.380879624025615,
-    10.08442764903306,
-    8.324603316286082,
+    10.392249454428928,
+    10.089079750658275,
+    8.26142200637185,
     8.707029567513784,
-    -0.1397619413751515,
+    -0.13976194137516498,
     -0.4700036282457356,
     -0.4700036282457356,
-    -0.1823215557939546,
+    -0.18232155579393516,
     -0.33647223562121287,
     -1.0986122876681097,
     1.0986122876681097,
-    1.6094379114340187,
-    1.1631508088056808,
-    -0.40546510710816436,
+    1.6094379114338644,
+    1.1631508088057567,
+    0.4054651071081154,
     -1.0986122876681097,
     -2.302585091994046,
     -0.1823215557939546,
     -0.40546510710816436,
     0.0,
-    0.06771682354880829,
-    0.03658148883559876,
-    0.05449855885672679,
+    0.06730580447382184,
+    0.027038794092054143,
+    0.05799837771357043,
     0.0,
-    1.0792902783974285e-15,
-    0.0,
-    0.0,
-    -2.1954506382270743e-19,
+    2.9454945798554614e-15,
     0.0,
     0.0,
+    -3.4923040717589023e-15,
     0.0,
-    4.8613824267596904e-15,
-    -5.667627106875097e-19,
+    0.0,
+    0.0,
+    5.59872255964263e-14,
+    -9.86333529402259e-15,
     0.0,
     0.0,
     0.0,

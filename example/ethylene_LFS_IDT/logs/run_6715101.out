@@ -1,0 +1,235 @@
+Code checks passed (see logs/code_checks_6715101.log).
+Computing FFCM2 reference cases: 42 cases, 128 workers.
+
+Stage A | sensitivity-selected reactions
+Baseline loss 0.41819868; 42 cases, 128 workers.
+  Optimizer diagnostics: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_LFS_IDT/output/01_A/A/optimizer.log
+
+Round 1/20
+  Selected reactions: R2, R13, R6, R4, R7
+  Loss: 0.35512828 (15.08% reduction)
+  Largest normalized parameter change: 200% (target: < 1%)
+  Sensitivities: 11/17 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 2/20
+  Selected reactions: R2, R12, R4, R16, R8
+  Loss: 0.32663833 (8.022% reduction)
+  Largest normalized parameter change: 220% (target: < 1%)
+  Sensitivities: 4/17 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 3/20
+  Selected reactions: R2, R1, R15, R3
+  Loss: 0.32663833 (0% reduction)
+  Largest normalized parameter change: 0% (target: < 1%)
+  Sensitivities: 4/17 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 4/20
+  Selected reactions: R2, R1, R15, R3
+  Loss: 0.32663833 (0% reduction)
+  Largest normalized parameter change: 0% (target: < 1%)
+  Sensitivities: 4/17 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 5/20
+  Selected reactions: R2, R1, R15, R3
+  Loss: 0.32663833 (0% reduction)
+  Largest normalized parameter change: 0% (target: < 1%)
+  Sensitivities: 4/17 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  Inner optimizer: trust_region_stalled
+  Stop/status: loss_plateau_unresolved
+
+Optimization result: NOT_CONVERGED
+  Rounds: 5
+  Stop reason: loss_plateau_unresolved
+  Loss: 0.41819868 -> 0.32663833 (21.89% reduction)
+  Solver validation: PASSED
+  Rate uncertainty constraints: PASSED
+  PLOG monotonicity: PASSED
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_LFS_IDT/output/01_A/A/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_LFS_IDT/output/01_A/A/results.json
+
+Tuning finished.
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_LFS_IDT/output/01_A/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_LFS_IDT/output/01_A/results.json
+PLOG trial: R2, [1.0, 50.0, 100.0] bar.
+Computing FFCM2 reference cases: 42 cases, 128 workers.
+
+Stage A | sensitivity-selected reactions
+Baseline loss 0.32663833; 42 cases, 128 workers.
+  Optimizer diagnostics: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_LFS_IDT/output/plog_trial_R2/A/optimizer.log
+
+Round 1/5
+  Selected reactions: R2, R1, R15, R3
+  Loss: 0.19004708 (41.82% reduction)
+  Largest normalized parameter change: 188.9% (target: < 1%)
+  Sensitivities: 5/17 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  Inner optimizer: iteration_limit
+  Stop/status: iterating
+
+Round 2/5
+  Selected reactions: R2, R1, R10, R15, R3
+  Loss: 0.19004239 (0.002471% reduction)
+  Largest normalized parameter change: 0.139% (target: < 1%)
+  Sensitivities: 4/17 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 3/5
+  Selected reactions: R2, R1, R15, R3
+  Loss: 0.19004239 (0% reduction)
+  Largest normalized parameter change: 0% (target: < 1%)
+  Sensitivities: 4/17 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 4/5
+  Selected reactions: R2, R1, R15, R3
+  Loss: 0.19004239 (0% reduction)
+  Largest normalized parameter change: 0% (target: < 1%)
+  Sensitivities: 4/17 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 5/5
+  Selected reactions: R2, R1, R15, R3
+  Loss: 0.19004239 (0% reduction)
+  Largest normalized parameter change: 0% (target: < 1%)
+  Sensitivities: 4/17 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  Inner optimizer: trust_region_stalled
+  Stop/status: loss_plateau_unresolved
+Computing FFCM2 reference cases: 42 cases, 128 workers.
+
+Stage AE | sensitivity-selected reactions
+Baseline loss 0.32663833; 42 cases, 128 workers.
+  Optimizer diagnostics: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_LFS_IDT/output/02_AE/AE/optimizer.log
+
+Round 1/20
+  Selected reactions: R2, R4, R6, R12, R16
+  Loss: 0.31872515 (2.423% reduction)
+  Largest normalized parameter change: 100% (target: < 1%)
+  Sensitivities: 15/17 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 2/20
+  Selected reactions: R2, R4, R16, R6, R11
+  Loss: 0.30805988 (3.346% reduction)
+  Largest normalized parameter change: 100% (target: < 1%)
+  Sensitivities: 16/17 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 3/20
+  Selected reactions: R2, R4, R12, R16, R6
+  Loss: 0.30801326 (0.01514% reduction)
+  Largest normalized parameter change: 13.5% (target: < 1%)
+  Sensitivities: 17/17 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 4/20
+  Selected reactions: R2, R4, R12, R11, R16
+  Loss: 0.30801326 (0% reduction)
+  Largest normalized parameter change: 0% (target: < 1%)
+  Sensitivities: 17/17 reaction groups resolved
+  Additional optimization audit: all eligible parameters.
+  Inner optimizer: trust_region_stalled
+  Stop/status: stalled
+
+Optimization result: NOT_CONVERGED
+  Rounds: 4
+  Stop reason: stalled
+  Loss: 0.32663833 -> 0.30801326 (5.702% reduction)
+  Solver validation: PASSED
+  Rate uncertainty constraints: PASSED
+  PLOG monotonicity: PASSED
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_LFS_IDT/output/02_AE/AE/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_LFS_IDT/output/02_AE/AE/results.json
+
+Tuning finished.
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_LFS_IDT/output/02_AE/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_LFS_IDT/output/02_AE/results.json
+Computing FFCM2 reference cases: 42 cases, 128 workers.
+
+Stage AEB | sensitivity-selected reactions
+Baseline loss 0.30801326; 42 cases, 128 workers.
+  Optimizer diagnostics: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_LFS_IDT/output/03_AEB/AEB/optimizer.log
+
+Round 1/20
+  Selected reactions: R2, R4, R16, R12, R6
+  Loss: 0.29596515 (3.912% reduction)
+  Largest normalized parameter change: 100% (target: < 1%)
+  Sensitivities: 12/17 reaction groups resolved
+  Additional optimization audit: all eligible parameters.
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 2/20
+  Selected reactions: R2, R4, R16, R12, R6
+  Loss: 0.29595107 (0.004758% reduction)
+  Largest normalized parameter change: 0.1497% (target: < 1%)
+  Sensitivities: 12/17 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 3/20
+  Selected reactions: R2, R4, R12, R16, R6
+  Loss: 0.29595107 (0% reduction)
+  Largest normalized parameter change: 0% (target: < 1%)
+  Sensitivities: 12/17 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 4/20
+  Selected reactions: R11, R7, R13, R17, R8
+  Loss: 0.29595107 (0% reduction)
+  Largest normalized parameter change: 0% (target: < 1%)
+  Sensitivities: 12/17 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 5/20
+  Selected reactions: R9, R15, R5, R10, R14
+  Loss: 0.29595107 (0% reduction)
+  Largest normalized parameter change: 0% (target: < 1%)
+  Sensitivities: 12/17 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  Inner optimizer: trust_region_stalled
+  Stop/status: loss_plateau_unresolved
+
+Optimization result: NOT_CONVERGED
+  Rounds: 5
+  Stop reason: loss_plateau_unresolved
+  Loss: 0.30801326 -> 0.29595107 (3.916% reduction)
+  Solver validation: PASSED
+  Rate uncertainty constraints: PASSED
+  PLOG monotonicity: PASSED
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_LFS_IDT/output/03_AEB/AEB/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_LFS_IDT/output/03_AEB/AEB/results.json
+
+Tuning finished.
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_LFS_IDT/output/03_AEB/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_LFS_IDT/output/03_AEB/results.json

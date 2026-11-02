@@ -346,15 +346,15 @@ reactions:
   type: pressure-dependent-Arrhenius
   rate-constants:
   - P: 1 bar
-    A: 3.7821273470696494e+18
+    A: 3.7990918236234276e+18
     b: 0.0
     Ea: 60000.0
   - P: 50 bar
-    A: 1.7297739279165716e+18
+    A: 1.7375327119429778e+18
     b: 0.0
     Ea: 60000.0
   - P: 100 bar
-    A: 3.8762663848797446e+17
+    A: 3.858957292793874e+17
     b: 0.0
     Ea: 60000.0
 - equation: C2H4 + 2 O => 2 CO + 2 H2
@@ -364,7 +364,7 @@ reactions:
     Ea: 60000.0
 - equation: H + O2 <=> O + OH
   rate-constant:
-    A: 90426087046947.84
+    A: 90426087046947.83
     b: 0.0
     Ea: 15310.0
 - equation: H2 + O <=> H + OH
@@ -381,7 +381,7 @@ reactions:
     Ea: 19180.0
 - equation: H2 + OH <=> H + H2O
   rate-constant:
-    A: 179816666.84648335
+    A: 179816666.84648332
     b: 1.51
     Ea: 3437.0
 - equation: 2 OH <=> H2O + O
@@ -416,7 +416,7 @@ reactions:
 - equation: H + O + M <=> OH + M
   type: three-body
   rate-constant:
-    A: 2.3561999976437993e+19
+    A: 2.3561999976437985e+19
     b: -1.0
     Ea: 0.0
   efficiencies:
@@ -441,7 +441,7 @@ reactions:
     O2: 1.5
 - equation: H2O + H2O <=> H + OH + H2O
   rate-constant:
-    A: 6.7333333400666665e+25
+    A: 1.5149999984849523e+26
     b: -2.44
     Ea: 120200.0
 - equation: CO + O (+M) <=> CO2 (+M)

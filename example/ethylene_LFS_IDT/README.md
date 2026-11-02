@@ -1,6 +1,6 @@
 # Combined ethylene LFS and IDT tuning
 
-`run.py` uses 15 flame cases copied from ethylene_LFS and 27 ignition cases.
+`run.py` uses 15 flame cases and 27 ignition cases.
 No supplied reference delays are needed. All reference and candidate ignition cases
 use the same physical integration end time of 0.003 s. There is no ignition
 wall-clock timeout. FFCM2 is recalculated for reference delay and final temperature.

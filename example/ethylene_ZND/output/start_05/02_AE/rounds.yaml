@@ -13,34 +13,34 @@ rounds:
   - reason: inner_solver_status
     status: trust_region_stalled
   inner_status: trust_region_stalled
-  relative_loss_reduction: 6.12571729e-02
+  relative_loss_reduction: 6.23933556e-02
   stagnation_count: 0
   update_audit:
     largest_A_updates:
     - reaction: 2
       entry: 1
       pressure: 1 bar
-      old_A: 3.78212707e+18
-      new_A: 7.56425415e+18
+      old_A: 3.79909155e+18
+      new_A: 7.59818310e+18
       multiplier: 2.00000000e+00
-      sampled_k_ratio_min: 4.10125180e-01
-      sampled_k_ratio_max: 1.36034974e+00
+      sampled_k_ratio_min: 4.14088395e-01
+      sampled_k_ratio_max: 1.26983418e+00
     - reaction: 2
       entry: 3
       pressure: 100 bar
-      old_A: 3.87626627e+17
-      new_A: 7.75253253e+17
+      old_A: 3.85895718e+17
+      new_A: 7.71791435e+17
       multiplier: 2.00000000e+00
-      sampled_k_ratio_min: 4.10125180e-01
-      sampled_k_ratio_max: 1.36034974e+00
+      sampled_k_ratio_min: 4.14088395e-01
+      sampled_k_ratio_max: 1.26983418e+00
     - reaction: 2
       entry: 2
       pressure: 50 bar
-      old_A: 1.72977411e+18
-      new_A: 3.33581876e+18
-      multiplier: 1.92847074e+00
-      sampled_k_ratio_min: 4.10125180e-01
-      sampled_k_ratio_max: 1.36034974e+00
+      old_A: 1.73753290e+18
+      new_A: 2.85565501e+18
+      multiplier: 1.64351133e+00
+      sampled_k_ratio_min: 4.14088395e-01
+      sampled_k_ratio_max: 1.26983418e+00
     temperature_interval_K:
     - 1.29041533e+03
     - 3.16492001e+03
@@ -59,12 +59,12 @@ rounds:
     bound: -1.38155106e+01
   - parameter: R2 @ 1 bar physical ln A
     side: upper
-    value: 1.15167606e+01
-    bound: 1.15167606e+01
+    value: 1.15212360e+01
+    bound: 1.15212360e+01
   - parameter: R2 @ 100 bar physical ln A
     side: upper
-    value: 9.23876130e+00
-    bound: 9.23876130e+00
+    value: 9.23428589e+00
+    bound: 9.23428589e+00
   - parameter: R4 physical ln A
     side: lower
     value: -1.39761941e-01
@@ -102,9 +102,9 @@ rounds:
     value: 1.16315081e+00
     bound: 1.16315081e+00
   - parameter: R13 physical ln A
-    side: lower
-    value: -4.05465107e-01
-    bound: -4.05465107e-01
+    side: upper
+    value: 4.05465107e-01
+    bound: 4.05465107e-01
   - parameter: R14 physical ln A
     side: lower
     value: -1.09861229e+00
@@ -122,7 +122,7 @@ rounds:
     value: -4.05465107e-01
     bound: -4.05465107e-01
   round: 1
-  loss: 1.03908195e+00
+  loss: 1.00532243e+00
   status: iterating
   converged: false
   selected_reactions:
@@ -138,59 +138,59 @@ rounds:
   all_reactions_audited: true
   all_sensitivities_resolved: true
   unresolved_reactions: []
-  projected_gradient: 1.15945111e-01
+  projected_gradient: 1.16870337e-01
   stationary: false
   sensitivity_ranking:
   - reaction: 4
-    score: 1.61455831e+00
+    score: 1.67720256e+00
     resolved: true
   - reaction: 2
-    score: 1.46018884e+00
+    score: 1.48879022e+00
     resolved: true
   - reaction: 12
-    score: 5.05222162e-01
+    score: 4.72588951e-01
     resolved: true
   - reaction: 11
-    score: 3.11593809e-01
+    score: 3.03188276e-01
     resolved: true
   - reaction: 7
-    score: 2.38378596e-01
+    score: 2.41833643e-01
     resolved: true
   - reaction: 6
-    score: 2.30810984e-01
+    score: 2.31500499e-01
     resolved: true
   - reaction: 16
-    score: 1.94208219e-01
+    score: 1.98425744e-01
     resolved: true
   - reaction: 13
-    score: 8.06377285e-02
+    score: 1.70581142e-01
     resolved: true
   - reaction: 1
-    score: 5.79747819e-02
+    score: 6.01642330e-02
     resolved: true
   - reaction: 9
-    score: 2.50853266e-02
+    score: 2.34987664e-02
     resolved: true
   - reaction: 8
-    score: 1.84146983e-02
+    score: 1.85967409e-02
     resolved: true
   - reaction: 5
-    score: 1.80690986e-02
+    score: 1.82777937e-02
     resolved: true
   - reaction: 10
-    score: 1.14779511e-02
+    score: 1.13172265e-02
     resolved: true
   - reaction: 17
-    score: 1.02332490e-02
+    score: 1.05687380e-02
     resolved: true
   - reaction: 14
-    score: 7.06190286e-03
+    score: 7.23345310e-03
     resolved: true
   - reaction: 15
-    score: 5.86224827e-03
+    score: 6.13776453e-03
     resolved: true
   - reaction: 3
-    score: 1.71316984e-06
+    score: 3.20981473e-07
     resolved: true
   max_scaled_parameter_change_percent: 1.00000000e+02
 - convergence_blockers:
@@ -213,16 +213,16 @@ rounds:
     - reaction: 2
       entry: 1
       pressure: 1 bar
-      old_A: 7.56425415e+18
-      new_A: 7.56425415e+18
+      old_A: 7.59818310e+18
+      new_A: 7.59818310e+18
       multiplier: 1.00000000e+00
       sampled_k_ratio_min: 1.00000000e+00
       sampled_k_ratio_max: 1.00000000e+00
     - reaction: 2
       entry: 2
       pressure: 50 bar
-      old_A: 3.33581876e+18
-      new_A: 3.33581876e+18
+      old_A: 2.85565501e+18
+      new_A: 2.85565501e+18
       multiplier: 1.00000000e+00
       sampled_k_ratio_min: 1.00000000e+00
       sampled_k_ratio_max: 1.00000000e+00
@@ -244,12 +244,12 @@ rounds:
     bound: -1.38155106e+01
   - parameter: R2 @ 1 bar physical ln A
     side: upper
-    value: 1.15167606e+01
-    bound: 1.15167606e+01
+    value: 1.15212360e+01
+    bound: 1.15212360e+01
   - parameter: R2 @ 100 bar physical ln A
     side: upper
-    value: 9.23876130e+00
-    bound: 9.23876130e+00
+    value: 9.23428589e+00
+    bound: 9.23428589e+00
   - parameter: R4 physical ln A
     side: lower
     value: -1.39761941e-01
@@ -287,9 +287,9 @@ rounds:
     value: 1.16315081e+00
     bound: 1.16315081e+00
   - parameter: R13 physical ln A
-    side: lower
-    value: -4.05465107e-01
-    bound: -4.05465107e-01
+    side: upper
+    value: 4.05465107e-01
+    bound: 4.05465107e-01
   - parameter: R14 physical ln A
     side: lower
     value: -1.09861229e+00
@@ -307,7 +307,7 @@ rounds:
     value: -4.05465107e-01
     bound: -4.05465107e-01
   round: 2
-  loss: 1.03908195e+00
+  loss: 1.00532243e+00
   status: stalled
   converged: false
   selected_reactions:
@@ -323,58 +323,58 @@ rounds:
   all_reactions_audited: true
   all_sensitivities_resolved: true
   unresolved_reactions: []
-  projected_gradient: 1.15945111e-01
+  projected_gradient: 1.16870337e-01
   stationary: false
   sensitivity_ranking:
   - reaction: 4
-    score: 1.61455831e+00
+    score: 1.67720256e+00
     resolved: true
   - reaction: 2
-    score: 1.46018884e+00
+    score: 1.48879022e+00
     resolved: true
   - reaction: 12
-    score: 5.05222162e-01
+    score: 4.72588951e-01
     resolved: true
   - reaction: 11
-    score: 3.11593809e-01
+    score: 3.03188276e-01
     resolved: true
   - reaction: 7
-    score: 2.38378596e-01
+    score: 2.41833643e-01
     resolved: true
   - reaction: 6
-    score: 2.30810984e-01
+    score: 2.31500499e-01
     resolved: true
   - reaction: 16
-    score: 1.94208219e-01
+    score: 1.98425744e-01
     resolved: true
   - reaction: 13
-    score: 8.06377285e-02
+    score: 1.70581142e-01
     resolved: true
   - reaction: 1
-    score: 5.79747819e-02
+    score: 6.01642330e-02
     resolved: true
   - reaction: 9
-    score: 2.50853266e-02
+    score: 2.34987664e-02
     resolved: true
   - reaction: 8
-    score: 1.84146983e-02
+    score: 1.85967409e-02
     resolved: true
   - reaction: 5
-    score: 1.80690986e-02
+    score: 1.82777937e-02
     resolved: true
   - reaction: 10
-    score: 1.14779511e-02
+    score: 1.13172265e-02
     resolved: true
   - reaction: 17
-    score: 1.02332490e-02
+    score: 1.05687380e-02
     resolved: true
   - reaction: 14
-    score: 7.06190286e-03
+    score: 7.23345310e-03
     resolved: true
   - reaction: 15
-    score: 5.86224827e-03
+    score: 6.13776453e-03
     resolved: true
   - reaction: 3
-    score: 1.71316984e-06
+    score: 3.20981473e-07
     resolved: true
   max_scaled_parameter_change_percent: 0.00000000e+00

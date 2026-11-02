@@ -20,7 +20,6 @@ The workflow tunes an existing reaction scheme; it does not automatically discov
 
 | Directory | Fuel | Targets |
 |---|---|---|
-| [`ethylene_LFS`](example/ethylene_LFS/run.py) | Ethylene–air | Flame speed and burned temperature |
 | [`ethylene_LFS_IDT`](example/ethylene_LFS_IDT/run.py) | Ethylene–air | Flame speed, ignition delay, and both final temperatures |
 | [`ethylene_ZND`](example/ethylene_ZND/run.py) | Ethylene–air | Final ZND temperature, induction length, and exothermic length |
 | [`methane_LFS_IDT`](example/methane_LFS_IDT/run.py) | Methane–air | Flame speed, ignition delay, and both final temperatures |
@@ -135,7 +134,6 @@ code/
   tests/              Regression tests and fixtures
   requirements.txt    Python dependencies, excluding SDToolbox
 example/
-  ethylene_LFS/
   ethylene_LFS_IDT/
   ethylene_ZND/
   methane_LFS_IDT/

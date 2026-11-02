@@ -4,7 +4,7 @@
     {
       "start": "start_01",
       "initial_loss": 2.2994193734755184,
-      "final_loss": 1.0390827729023848,
+      "final_loss": 1.0053235529530735,
       "status": "completed",
       "validation_passed": true,
       "stop_reason": "stalled"
@@ -12,7 +12,7 @@
     {
       "start": "start_02",
       "initial_loss": 2.304270927874208,
-      "final_loss": 1.039079971734924,
+      "final_loss": 1.0053222621540159,
       "status": "completed",
       "validation_passed": true,
       "stop_reason": "stalled"
@@ -20,7 +20,7 @@
     {
       "start": "start_03",
       "initial_loss": 2.319026941222704,
-      "final_loss": 1.0390814678128926,
+      "final_loss": 1.0053230064789132,
       "status": "completed",
       "validation_passed": true,
       "stop_reason": "stalled"
@@ -28,7 +28,7 @@
     {
       "start": "start_04",
       "initial_loss": 2.3402300047765023,
-      "final_loss": 1.039080232564489,
+      "final_loss": 1.0053233029917699,
       "status": "completed",
       "validation_passed": true,
       "stop_reason": "stalled"
@@ -36,7 +36,7 @@
     {
       "start": "start_05",
       "initial_loss": 2.3885859523447817,
-      "final_loss": 1.039081945821323,
+      "final_loss": 1.0053224322057286,
       "status": "completed",
       "validation_passed": true,
       "stop_reason": "stalled"

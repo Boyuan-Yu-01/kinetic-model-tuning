@@ -346,17 +346,17 @@ reactions:
   type: pressure-dependent-Arrhenius
   rate-constants:
   - P: 1 bar
-    A: 7.564254146755958e+18
+    A: 7.598183097407655e+18
     b: 0.0
-    Ea: 64063.0094129285
+    Ea: 64038.34826842931
   - P: 50 bar
-    A: 3.3358187598342753e+18
+    A: 2.855655011304937e+18
     b: 0.0
-    Ea: 62194.88933013593
+    Ea: 61622.32764552325
   - P: 100 bar
-    A: 7.752532534299913e+17
+    A: 7.717914351180457e+17
     b: 0.0
-    Ea: 63269.91353140361
+    Ea: 63479.902662814224
 - equation: C2H4 + 2 O => 2 CO + 2 H2
   rate-constant:
     A: 3.955956878993292e+21
@@ -364,9 +364,9 @@ reactions:
     Ea: 60000.0
 - equation: H + O2 <=> O + OH
   rate-constant:
-    A: 90426087046950.12
+    A: 90426087046951.72
     b: 0.0
-    Ea: 15310.000000000065
+    Ea: 15310.000000000176
 - equation: H2 + O <=> H + OH
   duplicate: true
   rate-constant:
@@ -381,9 +381,9 @@ reactions:
     Ea: 19180.0
 - equation: H2 + OH <=> H + H2O
   rate-constant:
-    A: 179816666.84648332
+    A: 179816666.8464763
     b: 1.51
-    Ea: 3437.0
+    Ea: 3436.9999999997904
 - equation: 2 OH <=> H2O + O
   rate-constant:
     A: 23928.5714525
@@ -416,9 +416,9 @@ reactions:
 - equation: H + O + M <=> OH + M
   type: three-body
   rate-constant:
-    A: 2.3561999976437993e+19
+    A: 2.3561999976454566e+19
     b: -1.0
-    Ea: 2.916829456055814e-10
+    Ea: 3.359233535785578e-09
   efficiencies:
     C2H4: 3.0
     CO: 1.9
@@ -428,9 +428,9 @@ reactions:
 - equation: H2O + M <=> H + OH + M
   type: three-body
   rate-constant:
-    A: 1.8889599981110398e+28
+    A: 1.8889599981108707e+28
     b: -3.32
-    Ea: 120800.0
+    Ea: 120799.9999999994
   efficiencies:
     C2H4: 3.0
     CO: 1.9
@@ -441,7 +441,7 @@ reactions:
     O2: 1.5
 - equation: H2O + H2O <=> H + OH + H2O
   rate-constant:
-    A: 6.7333333400666665e+25
+    A: 1.5149999984849259e+26
     b: -2.44
     Ea: 120200.0
 - equation: CO + O (+M) <=> CO2 (+M)
