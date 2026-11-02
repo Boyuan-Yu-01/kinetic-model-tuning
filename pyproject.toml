@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kinetic-model-tuning"
+version = "0.1.0"
+description = "Sensitivity-guided tuning of reduced combustion mechanisms"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["numpy", "scipy", "cantera", "PyYAML", "matplotlib"]
+
+[project.urls]
+Repository = "https://github.com/Boyuan-Yu-01/kinetic-model-tuning"
+
+[tool.setuptools]
+package-dir = {"" = "code"}
+packages = ["mt"]

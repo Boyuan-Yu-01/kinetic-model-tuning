@@ -1,9 +1,7 @@
 """Editable ethylene experiment. Reaction numbers are one-based; Ea uses YAML units."""
 from pathlib import Path
 import os
-import sys
 ROOT = Path(__file__).resolve().parent
-sys.path[:0] = [str(ROOT.parents[1]/'code'), str(ROOT.parents[1])]
 
 problem = {
     'model': ROOT/'inputs/model_populated.yaml',

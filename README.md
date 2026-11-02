@@ -35,7 +35,7 @@ git clone https://github.com/Boyuan-Yu-01/kinetic-model-tuning.git
 cd kinetic-model-tuning
 python -m venv .venv
 source .venv/bin/activate
-python -m pip install -r code/requirements.txt
+python -m pip install -e .
 ```
 
 On Windows, activate the environment with `.venv\Scripts\activate` instead. Windows execution has not been validated.
@@ -46,7 +46,17 @@ On Windows, activate the environment with `.venv\Scripts\activate` instead. Wind
 python -c "import cantera, numpy, scipy, matplotlib, yaml, sdtoolbox"
 ```
 
-The repository is run directly from its source layout; `pip install .` is not currently supported.
+The distribution is named `kinetic-model-tuning`; its Python import name is `mt`. An editable installation makes source edits available immediately and allows imports from any directory. Keep this checkout in place, or reinstall after moving it.
+
+For an existing Conda environment, activate it and install the checkout:
+
+```bash
+conda activate ct-env
+python -m pip install -e /path/to/kinetic-model-tuning
+python -c "import mt; print(mt.__file__)"
+```
+
+SDToolbox remains a separately installed dependency. The optional OpenMP build instructions below assume an editable source checkout.
 
 ## Run an example
 
@@ -57,7 +67,7 @@ python run.py
 
 Running the script starts the full optimization. Review the case count, exploration samples, iteration limits, and workers first; these examples are research workloads rather than short demonstrations.
 
-The scripts find the shared code and inputs relative to their own locations. Outside Slurm, they default to Python multiprocessing with eight workers. For a smaller local run, edit the `execution` dictionary:
+The scripts import the installed `mt` package and find inputs relative to their own locations. Outside Slurm, they default to Python multiprocessing with eight workers. For a smaller local run, edit the `execution` dictionary:
 
 ```python
 execution = {

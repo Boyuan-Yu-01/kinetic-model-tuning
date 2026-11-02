@@ -1,11 +1,8 @@
 """Joint methane-air flame and ignition tuning; all editable settings are below."""
 from pathlib import Path
 import os
-import sys
 
 ROOT = Path(__file__).resolve().parent
-# Support cluster code/mt and a local installation with mt beside the examples.
-sys.path[:0] = [str(ROOT.parents[1]/'code'), str(ROOT.parents[1])]
 
 problem = {
     'model': ROOT/'inputs/mechanism.yaml',  # Human-initialized reduced mechanism.
