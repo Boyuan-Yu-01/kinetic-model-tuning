@@ -24,6 +24,8 @@ The workflow tunes an existing reaction scheme; it does not automatically discov
 | [`ethylene_ZND`](example/ethylene_ZND/run.py) | Ethylene–air | Final ZND temperature, induction length, and exothermic length |
 | [`methane_LFS_IDT`](example/methane_LFS_IDT/run.py) | Methane–air | Flame speed, ignition delay, and both final temperatures |
 
+For individual calculations without optimization, see [`example/calculations`](example/calculations/README.md): commented `run_ZND.py`, `run_LFS.py`, and `run_IDT.py` scripts using FFCM2.
+
 Each directory contains a `run.py` and an `inputs/` folder. Conditions, uncertainty factors, parameter bounds, objectives, and execution settings are editable in `run.py`. Methane examples disable PLOG adaptation.
 
 ## Installation
@@ -208,6 +210,7 @@ code/
   tests/              Regression tests and fixtures
   requirements.txt    Python dependencies, excluding SDToolbox
 example/
+  calculations/       Standalone ZND, flame, and ignition examples
   ethylene_LFS_IDT/
   ethylene_ZND/
   methane_LFS_IDT/
