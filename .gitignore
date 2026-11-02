@@ -1,0 +1,27 @@
+# Previous work stays local
+/SKETCH/
+/sketch/
+# Generated results and solver diagnostics
+**/output*/
+**/logs/
+**/solver_logs/
+**/diagnostics/
+*.out
+*.err
+*.log
+# Python and native build products
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+*.egg-info/
+build/
+dist/
+code/native/openmp_runner
+code/native/.build.lock
+.DS_Store
+*.swp
+.env
+
+# Cluster submission scripts stay local
+*.slurm

@@ -1,0 +1,6 @@
+numpy
+scipy
+cantera
+PyYAML
+matplotlib
+# SDToolbox is required for ZND; provided by the cluster kinetic_model_fitting module.
