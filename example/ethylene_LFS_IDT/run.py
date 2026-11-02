@@ -5,7 +5,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parent
 # Support cluster code/mt and a local installation with mt beside the examples.
-sys.path[:0] = [str(ROOT.parent/'code'), str(ROOT.parent)]
+sys.path[:0] = [str(ROOT.parents[1]/'code'), str(ROOT.parents[1])]
 
 problem = {
     'model': ROOT/'inputs/model_populated.yaml',  # Human-initialized reduced mechanism.

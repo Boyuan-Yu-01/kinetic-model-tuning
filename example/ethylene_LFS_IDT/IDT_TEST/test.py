@@ -3,12 +3,12 @@ from pathlib import Path
 import sys
 
 ROOT = Path(__file__).resolve().parent
-CODE = ROOT.parents[1]
+CODE = ROOT.parents[2]
 sys.path[:0] = [str(CODE / 'code'), str(CODE)]
 
 from mt.ignition_cases import run_ignition_cases
 
-MECHANISM = CODE / 'ethylene_ZND/inputs/FFCM2.yaml'
+MECHANISM = CODE / 'example/ethylene_ZND/inputs/FFCM2.yaml'
 PRESSURES_ATM = [1, 10, 50]
 TEMPERATURES_K = [1400, 1500, 1600]
 PHIS = [0.6, 0.8, 1.0, 1.2, 1.4]

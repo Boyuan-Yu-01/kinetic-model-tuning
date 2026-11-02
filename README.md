@@ -20,10 +20,10 @@ The workflow tunes an existing reaction scheme; it does not automatically discov
 
 | Directory | Fuel | Targets |
 |---|---|---|
-| [`ethylene_LFS`](ethylene_LFS/run.py) | Ethylene–air | Flame speed and burned temperature |
-| [`ethylene_LFS_IDT`](ethylene_LFS_IDT/run.py) | Ethylene–air | Flame speed, ignition delay, and both final temperatures |
-| [`ethylene_ZND`](ethylene_ZND/run.py) | Ethylene–air | Final ZND temperature, induction length, and exothermic length |
-| [`methane_LFS_IDT`](methane_LFS_IDT/run.py) | Methane–air | Flame speed, ignition delay, and both final temperatures |
+| [`ethylene_LFS`](example/ethylene_LFS/run.py) | Ethylene–air | Flame speed and burned temperature |
+| [`ethylene_LFS_IDT`](example/ethylene_LFS_IDT/run.py) | Ethylene–air | Flame speed, ignition delay, and both final temperatures |
+| [`ethylene_ZND`](example/ethylene_ZND/run.py) | Ethylene–air | Final ZND temperature, induction length, and exothermic length |
+| [`methane_LFS_IDT`](example/methane_LFS_IDT/run.py) | Methane–air | Flame speed, ignition delay, and both final temperatures |
 
 Each directory contains a `run.py` and an `inputs/` folder. Conditions, uncertainty factors, parameter bounds, objectives, and execution settings are editable in `run.py`. Methane examples disable PLOG adaptation.
 
@@ -52,7 +52,7 @@ The repository is run directly from its source layout; `pip install .` is not cu
 ## Run an example
 
 ```bash
-cd methane_LFS_IDT
+cd example/methane_LFS_IDT
 python run.py
 ```
 
@@ -134,13 +134,14 @@ code/
   native/             Optional OpenMP scheduler source and build helper
   tests/              Regression tests and fixtures
   requirements.txt    Python dependencies, excluding SDToolbox
-ethylene_LFS/
-ethylene_LFS_IDT/
-ethylene_ZND/
-methane_LFS_IDT/
+example/
+  ethylene_LFS/
+  ethylene_LFS_IDT/
+  ethylene_ZND/
+  methane_LFS_IDT/
 ```
 
-See [flame temperature-profile documentation](code/FLAME_PROFILE.md) and the [combined ethylene example notes](ethylene_LFS_IDT/README.md) for further details.
+See [flame temperature-profile documentation](code/FLAME_PROFILE.md) and the [combined ethylene example notes](example/ethylene_LFS_IDT/README.md) for further details.
 
 ## Attribution and licensing
 

@@ -27,19 +27,19 @@ code/native/.build.lock
 *.slurm
 
 # Published result snapshots and logs for the included examples
-!/ethylene_LFS/output/
-!/ethylene_LFS/output/**
-!/ethylene_LFS/logs/
-!/ethylene_LFS/logs/**
-!/ethylene_LFS_IDT/output/
-!/ethylene_LFS_IDT/output/**
-!/ethylene_LFS_IDT/logs/
-!/ethylene_LFS_IDT/logs/**
-!/ethylene_ZND/output/
-!/ethylene_ZND/output/**
-!/ethylene_ZND/logs/
-!/ethylene_ZND/logs/**
-!/methane_LFS_IDT/output/
-!/methane_LFS_IDT/output/**
-!/methane_LFS_IDT/logs/
-!/methane_LFS_IDT/logs/**
+!/example/ethylene_LFS/output/
+!/example/ethylene_LFS/output/**
+!/example/ethylene_LFS/logs/
+!/example/ethylene_LFS/logs/**
+!/example/ethylene_LFS_IDT/output/
+!/example/ethylene_LFS_IDT/output/**
+!/example/ethylene_LFS_IDT/logs/
+!/example/ethylene_LFS_IDT/logs/**
+!/example/ethylene_ZND/output/
+!/example/ethylene_ZND/output/**
+!/example/ethylene_ZND/logs/
+!/example/ethylene_ZND/logs/**
+!/example/methane_LFS_IDT/output/
+!/example/methane_LFS_IDT/output/**
+!/example/methane_LFS_IDT/logs/
+!/example/methane_LFS_IDT/logs/**

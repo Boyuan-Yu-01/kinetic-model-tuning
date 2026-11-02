@@ -12,15 +12,14 @@ import yaml
 from mt.adaptive_znd import run_adaptive_znd
 
 ROOT = Path(__file__).resolve().parents[1]
-EXAMPLE=ROOT/'ethylene_ZND'
-if not EXAMPLE.exists():EXAMPLE=ROOT.parent/'ethylene_ZND'
+EXAMPLE=ROOT.parent/'example/ethylene_ZND'
 
 
 class AdaptiveTests(unittest.TestCase):
     def run_case(self, *, trial_loss=5., trial_passed=True, enabled_candidate=True):
         calls, insertions = [], []
-        original = ROOT/'ethylene_ZND/inputs/model_populated.yaml'
-        config = dict(model=original, reference=ROOT/'ethylene_ZND/inputs/FFCM2.yaml',
+        original = EXAMPLE/'inputs/model_populated.yaml'
+        config = dict(model=original, reference=EXAMPLE/'inputs/FFCM2.yaml',
                       enable_plog=True, plog_free=None, unbounded_reactions=[2], plog_candidates=[2],
                       plog_min_improvement=.001, initial_search={'samples':10},
                       stages=[dict(parameters=p,a_ratio=(.5,2.)) for p in ('A','AE','AEB')])

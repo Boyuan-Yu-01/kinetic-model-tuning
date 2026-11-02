@@ -34,7 +34,7 @@ profile grid-convergence tolerance is not yet implemented.
 
 ## Optional PLOG adaptation for flame tuning
 
-`ethylene_LFS/run.py` now includes the same `tuning['plog']` settings as ZND:
+`example/ethylene_LFS/run.py` now includes the same `tuning['plog']` settings as ZND:
 R2 is eligible, with fixed nodes at 1, 50, 100 **bar** (inlet cases remain in atm).
 After the A stage, resolved reaction sensitivities determine trial eligibility.
 The trial initially preserves the accepted rate, then releases the PLOG node

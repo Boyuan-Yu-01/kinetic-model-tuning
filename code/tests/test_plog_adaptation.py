@@ -10,8 +10,7 @@ from mt.staged_parameters import StagedParameters
 from mt.initialization import add_plog
 
 ROOT = Path(__file__).resolve().parents[1]
-EXAMPLE=ROOT/'ethylene_ZND'
-if not EXAMPLE.exists():EXAMPLE=ROOT.parent/'ethylene_ZND'
+EXAMPLE=ROOT.parent/'example/ethylene_ZND'
 MODEL = EXAMPLE/'inputs/model_populated.yaml'
 REFERENCE = EXAMPLE/'inputs/FFCM2.yaml'
 FACTORS = {4:1.15, 5:1.6, 6:1.6, 7:1.2, 8:1.4, 9:3., 10:3., 11:5.,
