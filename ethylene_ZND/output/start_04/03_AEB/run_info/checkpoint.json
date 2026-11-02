@@ -1,0 +1,873 @@
+{
+  "round": 1,
+  "loss": 1.039080232564489,
+  "coordinates": [
+    -13.815510557964274,
+    10.380890156536193,
+    10.084433606937196,
+    8.324603215530075,
+    6.416405681748969,
+    -0.13976194137512538,
+    -0.4700036282457356,
+    -0.4700036282457356,
+    -0.1823215557939991,
+    -0.33647223562121287,
+    -1.0986122876681097,
+    1.0986122876681097,
+    1.6094379114339827,
+    1.163150808805688,
+    -0.40546510710816436,
+    -1.0986122876681097,
+    -2.302585091994046,
+    -0.1823215557939546,
+    -0.40546510710816436,
+    0.0,
+    0.06771618677988676,
+    0.03659292812471156,
+    0.054498568171870765,
+    0.0,
+    -7.72109119352768e-15,
+    0.0,
+    0.0,
+    2.5537100535475535e-15,
+    0.0,
+    0.0,
+    0.0,
+    3.5870737328881623e-14,
+    -7.002743183965285e-15,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "reaction_numbers": [
+    1,
+    2,
+    2,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    1,
+    2,
+    2,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    1,
+    2,
+    2,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "coordinate_labels": [
+    {
+      "reaction": 1,
+      "pressure_pa": null,
+      "entries": [
+        1
+      ],
+      "label": "R1 ln k(Tref)",
+      "parameter": "log_k_pivot"
+    },
+    {
+      "reaction": 2,
+      "pressure_pa": 100000.0,
+      "entries": [
+        1
+      ],
+      "label": "R2 @ 1 bar ln k(Tref)",
+      "parameter": "log_k_pivot"
+    },
+    {
+      "reaction": 2,
+      "pressure_pa": 5000000.0,
+      "entries": [
+        2
+      ],
+      "label": "R2 @ 50 bar ln k(Tref)",
+      "parameter": "log_k_pivot"
+    },
+    {
+      "reaction": 2,
+      "pressure_pa": 10000000.0,
+      "entries": [
+        3
+      ],
+      "label": "R2 @ 100 bar ln k(Tref)",
+      "parameter": "log_k_pivot"
+    },
+    {
+      "reaction": 3,
+      "pressure_pa": null,
+      "entries": [
+        1
+      ],
+      "label": "R3 ln k(Tref)",
+      "parameter": "log_k_pivot"
+    },
+    {
+      "reaction": 4,
+      "pressure_pa": null,
+      "entries": [
+        1
+      ],
+      "label": "R4 ln k(Tref)",
+      "parameter": "log_k_pivot"
+    },
+    {
+      "reaction": 5,
+      "pressure_pa": null,
+      "entries": [
+        1
+      ],
+      "label": "R5 ln k(Tref)",
+      "parameter": "log_k_pivot"
+    },
+    {
+      "reaction": 6,
+      "pressure_pa": null,
+      "entries": [
+        1
+      ],
+      "label": "R6 ln k(Tref)",
+      "parameter": "log_k_pivot"
+    },
+    {
+      "reaction": 7,
+      "pressure_pa": null,
+      "entries": [
+        1
+      ],
+      "label": "R7 ln k(Tref)",
+      "parameter": "log_k_pivot"
+    },
+    {
+      "reaction": 8,
+      "pressure_pa": null,
+      "entries": [
+        1
+      ],
+      "label": "R8 ln k(Tref)",
+      "parameter": "log_k_pivot"
+    },
+    {
+      "reaction": 9,
+      "pressure_pa": null,
+      "entries": [
+        1
+      ],
+      "label": "R9 ln k(Tref)",
+      "parameter": "log_k_pivot"
+    },
+    {
+      "reaction": 10,
+      "pressure_pa": null,
+      "entries": [
+        1
+      ],
+      "label": "R10 ln k(Tref)",
+      "parameter": "log_k_pivot"
+    },
+    {
+      "reaction": 11,
+      "pressure_pa": null,
+      "entries": [
+        1
+      ],
+      "label": "R11 ln k(Tref)",
+      "parameter": "log_k_pivot"
+    },
+    {
+      "reaction": 12,
+      "pressure_pa": null,
+      "entries": [
+        1
+      ],
+      "label": "R12 ln k(Tref)",
+      "parameter": "log_k_pivot"
+    },
+    {
+      "reaction": 13,
+      "pressure_pa": null,
+      "entries": [
+        1
+      ],
+      "label": "R13 ln k(Tref)",
+      "parameter": "log_k_pivot"
+    },
+    {
+      "reaction": 14,
+      "pressure_pa": null,
+      "entries": [
+        1,
+        2
+      ],
+      "label": "R14 ln k(Tref)",
+      "parameter": "log_k_pivot"
+    },
+    {
+      "reaction": 15,
+      "pressure_pa": null,
+      "entries": [
+        1
+      ],
+      "label": "R15 ln k(Tref)",
+      "parameter": "log_k_pivot"
+    },
+    {
+      "reaction": 16,
+      "pressure_pa": null,
+      "entries": [
+        1
+      ],
+      "label": "R16 ln k(Tref)",
+      "parameter": "log_k_pivot"
+    },
+    {
+      "reaction": 17,
+      "pressure_pa": null,
+      "entries": [
+        1
+      ],
+      "label": "R17 ln k(Tref)",
+      "parameter": "log_k_pivot"
+    },
+    {
+      "reaction": 1,
+      "pressure_pa": null,
+      "parameter": "scaled_ea",
+      "label": "R1 \u0394Ea/251.04 kJ/mol at fixed k(Tref)",
+      "scale": 251.04
+    },
+    {
+      "reaction": 2,
+      "pressure_pa": 100000.0,
+      "parameter": "scaled_ea",
+      "label": "R(2, 100000.0) \u0394Ea/251.04 kJ/mol at fixed k(Tref)",
+      "scale": 251.04
+    },
+    {
+      "reaction": 2,
+      "pressure_pa": 5000000.0,
+      "parameter": "scaled_ea",
+      "label": "R(2, 5000000.0) \u0394Ea/251.04 kJ/mol at fixed k(Tref)",
+      "scale": 251.04
+    },
+    {
+      "reaction": 2,
+      "pressure_pa": 10000000.0,
+      "parameter": "scaled_ea",
+      "label": "R(2, 10000000.0) \u0394Ea/251.04 kJ/mol at fixed k(Tref)",
+      "scale": 251.04
+    },
+    {
+      "reaction": 3,
+      "pressure_pa": null,
+      "parameter": "scaled_ea",
+      "label": "R3 \u0394Ea/251.04 kJ/mol at fixed k(Tref)",
+      "scale": 251.04
+    },
+    {
+      "reaction": 4,
+      "pressure_pa": null,
+      "parameter": "scaled_ea",
+      "label": "R4 \u0394Ea/251.04 kJ/mol at fixed k(Tref)",
+      "scale": 251.04
+    },
+    {
+      "reaction": 5,
+      "pressure_pa": null,
+      "parameter": "scaled_ea",
+      "label": "R5 \u0394Ea/251.04 kJ/mol at fixed k(Tref)",
+      "scale": 251.04
+    },
+    {
+      "reaction": 6,
+      "pressure_pa": null,
+      "parameter": "scaled_ea",
+      "label": "R6 \u0394Ea/251.04 kJ/mol at fixed k(Tref)",
+      "scale": 251.04
+    },
+    {
+      "reaction": 7,
+      "pressure_pa": null,
+      "parameter": "scaled_ea",
+      "label": "R7 \u0394Ea/251.04 kJ/mol at fixed k(Tref)",
+      "scale": 251.04
+    },
+    {
+      "reaction": 8,
+      "pressure_pa": null,
+      "parameter": "scaled_ea",
+      "label": "R8 \u0394Ea/251.04 kJ/mol at fixed k(Tref)",
+      "scale": 251.04
+    },
+    {
+      "reaction": 9,
+      "pressure_pa": null,
+      "parameter": "scaled_ea",
+      "label": "R9 \u0394Ea/251.04 kJ/mol at fixed k(Tref)",
+      "scale": 251.04
+    },
+    {
+      "reaction": 10,
+      "pressure_pa": null,
+      "parameter": "scaled_ea",
+      "label": "R10 \u0394Ea/251.04 kJ/mol at fixed k(Tref)",
+      "scale": 251.04
+    },
+    {
+      "reaction": 11,
+      "pressure_pa": null,
+      "parameter": "scaled_ea",
+      "label": "R11 \u0394Ea/251.04 kJ/mol at fixed k(Tref)",
+      "scale": 251.04
+    },
+    {
+      "reaction": 12,
+      "pressure_pa": null,
+      "parameter": "scaled_ea",
+      "label": "R12 \u0394Ea/251.04 kJ/mol at fixed k(Tref)",
+      "scale": 251.04
+    },
+    {
+      "reaction": 13,
+      "pressure_pa": null,
+      "parameter": "scaled_ea",
+      "label": "R13 \u0394Ea/251.04 kJ/mol at fixed k(Tref)",
+      "scale": 251.04
+    },
+    {
+      "reaction": 14,
+      "pressure_pa": null,
+      "parameter": "scaled_ea",
+      "label": "R14 \u0394Ea/251.04 kJ/mol at fixed k(Tref)",
+      "scale": 251.04
+    },
+    {
+      "reaction": 15,
+      "pressure_pa": null,
+      "parameter": "scaled_ea",
+      "label": "R15 \u0394Ea/251.04 kJ/mol at fixed k(Tref)",
+      "scale": 251.04
+    },
+    {
+      "reaction": 16,
+      "pressure_pa": null,
+      "parameter": "scaled_ea",
+      "label": "R16 \u0394Ea/251.04 kJ/mol at fixed k(Tref)",
+      "scale": 251.04
+    },
+    {
+      "reaction": 17,
+      "pressure_pa": null,
+      "parameter": "scaled_ea",
+      "label": "R17 \u0394Ea/251.04 kJ/mol at fixed k(Tref)",
+      "scale": 251.04
+    },
+    {
+      "reaction": 1,
+      "pressure_pa": null,
+      "parameter": "scaled_b",
+      "label": "R1 \u0394b/0.2 at fixed k(Tref)",
+      "scale": 0.2
+    },
+    {
+      "reaction": 2,
+      "pressure_pa": 100000.0,
+      "parameter": "scaled_b",
+      "label": "R(2, 100000.0) \u0394b/0.2 at fixed k(Tref)",
+      "scale": 0.2
+    },
+    {
+      "reaction": 2,
+      "pressure_pa": 5000000.0,
+      "parameter": "scaled_b",
+      "label": "R(2, 5000000.0) \u0394b/0.2 at fixed k(Tref)",
+      "scale": 0.2
+    },
+    {
+      "reaction": 2,
+      "pressure_pa": 10000000.0,
+      "parameter": "scaled_b",
+      "label": "R(2, 10000000.0) \u0394b/0.2 at fixed k(Tref)",
+      "scale": 0.2
+    },
+    {
+      "reaction": 3,
+      "pressure_pa": null,
+      "parameter": "scaled_b",
+      "label": "R3 \u0394b/0.2 at fixed k(Tref)",
+      "scale": 0.2
+    },
+    {
+      "reaction": 4,
+      "pressure_pa": null,
+      "parameter": "scaled_b",
+      "label": "R4 \u0394b/0.2 at fixed k(Tref)",
+      "scale": 0.2
+    },
+    {
+      "reaction": 5,
+      "pressure_pa": null,
+      "parameter": "scaled_b",
+      "label": "R5 \u0394b/0.2 at fixed k(Tref)",
+      "scale": 0.2
+    },
+    {
+      "reaction": 6,
+      "pressure_pa": null,
+      "parameter": "scaled_b",
+      "label": "R6 \u0394b/0.2 at fixed k(Tref)",
+      "scale": 0.2
+    },
+    {
+      "reaction": 7,
+      "pressure_pa": null,
+      "parameter": "scaled_b",
+      "label": "R7 \u0394b/0.2 at fixed k(Tref)",
+      "scale": 0.2
+    },
+    {
+      "reaction": 8,
+      "pressure_pa": null,
+      "parameter": "scaled_b",
+      "label": "R8 \u0394b/0.2 at fixed k(Tref)",
+      "scale": 0.2
+    },
+    {
+      "reaction": 9,
+      "pressure_pa": null,
+      "parameter": "scaled_b",
+      "label": "R9 \u0394b/0.2 at fixed k(Tref)",
+      "scale": 0.2
+    },
+    {
+      "reaction": 10,
+      "pressure_pa": null,
+      "parameter": "scaled_b",
+      "label": "R10 \u0394b/0.2 at fixed k(Tref)",
+      "scale": 0.2
+    },
+    {
+      "reaction": 11,
+      "pressure_pa": null,
+      "parameter": "scaled_b",
+      "label": "R11 \u0394b/0.2 at fixed k(Tref)",
+      "scale": 0.2
+    },
+    {
+      "reaction": 12,
+      "pressure_pa": null,
+      "parameter": "scaled_b",
+      "label": "R12 \u0394b/0.2 at fixed k(Tref)",
+      "scale": 0.2
+    },
+    {
+      "reaction": 13,
+      "pressure_pa": null,
+      "parameter": "scaled_b",
+      "label": "R13 \u0394b/0.2 at fixed k(Tref)",
+      "scale": 0.2
+    },
+    {
+      "reaction": 14,
+      "pressure_pa": null,
+      "parameter": "scaled_b",
+      "label": "R14 \u0394b/0.2 at fixed k(Tref)",
+      "scale": 0.2
+    },
+    {
+      "reaction": 15,
+      "pressure_pa": null,
+      "parameter": "scaled_b",
+      "label": "R15 \u0394b/0.2 at fixed k(Tref)",
+      "scale": 0.2
+    },
+    {
+      "reaction": 16,
+      "pressure_pa": null,
+      "parameter": "scaled_b",
+      "label": "R16 \u0394b/0.2 at fixed k(Tref)",
+      "scale": 0.2
+    },
+    {
+      "reaction": 17,
+      "pressure_pa": null,
+      "parameter": "scaled_b",
+      "label": "R17 \u0394b/0.2 at fixed k(Tref)",
+      "scale": 0.2
+    }
+  ],
+  "rate_multipliers_from_source": [
+    1.0000000000000004e-06,
+    100384.23184736671,
+    44277.98209377675,
+    10288.287081516384,
+    611.8001529696985,
+    0.8695652182607859,
+    0.6250000006249999,
+    0.6250000006249999,
+    0.8333333341666652,
+    0.714285715,
+    0.3333333336666667,
+    2.999999997,
+    4.999999995002421,
+    3.1999999967996473,
+    0.6666666673333334,
+    0.3333333336666667,
+    0.10000000009999999,
+    0.8333333341666667,
+    0.6666666673333334,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "relative_change_from_source": null,
+  "physical_parameter_fields": [
+    "A",
+    "Ea",
+    "b"
+  ],
+  "physical_parameters": [
+    3649000.0000000014,
+    7950.0,
+    0.0,
+    7.564253022394624e+18,
+    64062.971206793205,
+    0.0,
+    3.3364787847123594e+18,
+    62195.57568748269,
+    0.0,
+    7.752532964535041e+17,
+    63269.914090312246,
+    0.0,
+    4.00355902101841e+20,
+    60000.0,
+    -1.717,
+    90426087046939.12,
+    15309.999999999536,
+    0.0,
+    2280625002280.625,
+    7950.0,
+    0.0,
+    475156250475156.2,
+    19180.0,
+    0.0,
+    179816666.84648305,
+    3437.0000000001532,
+    1.51,
+    23928.5714525,
+    -1928.0,
+    2.42,
+    1.2922333346255667e+19,
+    104390.0,
+    -1.4,
+    1.847999998152e+16,
+    0.0,
+    -0.5,
+    2.356199997644941e+19,
+    2.1522442397328975e-09,
+    -1.0,
+    1.8889599981108317e+28,
+    120799.99999999958,
+    -3.32,
+    6.7333333400666665e+25,
+    120200.0,
+    -2.44,
+    5.296000005296e+20,
+    5500.0,
+    -2.1,
+    4009666670676.3335,
+    6943.0,
+    -0.31,
+    204060000204.05997,
+    47700.0,
+    0.0,
+    56289.16672295583,
+    -356.0,
+    2.05,
+    3476533336809.8667,
+    332.0,
+    -0.66
+  ],
+  "physical_parameter_meaning": "Physical entries in reaction/entry/field order; adjustable fields declared above.",
+  "cases": [
+    {
+      "T_final": 2208.574665577137,
+      "T_error_K": 2.333191830215128,
+      "profile_rmse_K": 363.10948068050664,
+      "ind_len_ZND": 0.01032746886589313,
+      "exo_len_ZND": 0.0010121848261012286,
+      "components": [
+        0.0,
+        0.011613406115376252,
+        0.26063262197221576,
+        0.12794008079870864
+      ]
+    },
+    {
+      "T_final": 2958.191283437975,
+      "T_error_K": 5.987281988141149,
+      "profile_rmse_K": 228.96684531898373,
+      "ind_len_ZND": 0.0002673050676126807,
+      "exo_len_ZND": 6.433468297833153e-05,
+      "components": [
+        0.0,
+        0.07647476395844144,
+        0.6842840244412259,
+        0.4896891556000476
+      ]
+    },
+    {
+      "T_final": 2670.5500658876776,
+      "T_error_K": 1.634743003616677,
+      "profile_rmse_K": 500.65340292396127,
+      "ind_len_ZND": 0.00025926649745562164,
+      "exo_len_ZND": 0.00016497283487694556,
+      "components": [
+        0.0,
+        0.005701087334130506,
+        2.2465703001723796,
+        2.3814484549542474
+      ]
+    },
+    {
+      "T_final": 2206.9560832421457,
+      "T_error_K": 9.49687059128928,
+      "profile_rmse_K": 184.5315947113682,
+      "ind_len_ZND": 0.009321675251102812,
+      "exo_len_ZND": 0.000472693566915741,
+      "components": [
+        0.0,
+        0.1924065088590831,
+        0.030749460280100976,
+        0.5308261387689399
+      ]
+    },
+    {
+      "T_final": 3072.654289193416,
+      "T_error_K": 23.311429916429006,
+      "profile_rmse_K": 390.7970936819089,
+      "ind_len_ZND": 0.00010824995598411305,
+      "exo_len_ZND": 2.8101531261508443e-05,
+      "components": [
+        0.0,
+        1.1593018981303065,
+        0.5250595394887084,
+        0.46859734438724604
+      ]
+    },
+    {
+      "T_final": 2781.690625275425,
+      "T_error_K": 53.9741537008731,
+      "profile_rmse_K": 591.950372946416,
+      "ind_len_ZND": 0.00013770864882257342,
+      "exo_len_ZND": 2.0224051569815443e-05,
+      "components": [
+        0.0,
+        6.214846437814344,
+        0.5647526726427518,
+        7.914410187967511
+      ]
+    },
+    {
+      "T_final": 2197.8985187036433,
+      "T_error_K": 0.22813244571807445,
+      "profile_rmse_K": 96.80632944519316,
+      "ind_len_ZND": 0.0025411215746340356,
+      "exo_len_ZND": 0.00014959851652168293,
+      "components": [
+        0.0,
+        0.00011102808061719508,
+        0.0004506772767490044,
+        0.8606052730117959
+      ]
+    },
+    {
+      "T_final": 3153.5544580150768,
+      "T_error_K": -0.6046946012370427,
+      "profile_rmse_K": 685.7546489428696,
+      "ind_len_ZND": 2.3082068361694483e-05,
+      "exo_len_ZND": 7.2263760854412384e-06,
+      "components": [
+        0.0,
+        0.0007800651962991488,
+        2.4214371093960874,
+        3.9479251076282034
+      ]
+    },
+    {
+      "T_final": 2705.965361393775,
+      "T_error_K": 6.845549401627068,
+      "profile_rmse_K": 677.7783705459918,
+      "ind_len_ZND": 3.770411999361655e-05,
+      "exo_len_ZND": 6.595665484900074e-06,
+      "components": [
+        0.0,
+        0.09997129943491562,
+        1.546826893121122,
+        4.643476835490052
+      ]
+    }
+  ],
+  "monotonicity": {
+    "valid": true,
+    "reactions": [
+      {
+        "reaction": 2,
+        "increasing": false,
+        "decreasing": true,
+        "valid": true
+      }
+    ],
+    "increasing": false,
+    "decreasing": true,
+    "direction": "either",
+    "pairs": [
+      {
+        "reaction": 2,
+        "pressures_pa": [
+          100000.00000000001,
+          5000000.000000003
+        ],
+        "temperatures": [
+          1290.4153292006397,
+          3164.919995741076
+        ],
+        "log_rate_ratios": [
+          -0.09029477694898735,
+          -0.5216033388592225
+        ],
+        "minimum": -0.5216033388592225,
+        "maximum": -0.09029477694898735
+      },
+      {
+        "reaction": 2,
+        "pressures_pa": [
+          5000000.000000003,
+          10000000.000000006
+        ],
+        "temperatures": [
+          1290.4153292006397,
+          3164.919995741076
+        ],
+        "log_rate_ratios": [
+          -1.8784381031976591,
+          -1.630300337663958
+        ],
+        "minimum": -1.8784381031976591,
+        "maximum": -1.630300337663958
+      }
+    ],
+    "temperature_interval": [
+      1290.4153292006397,
+      3164.919995741076
+    ],
+    "pressure_monotonicity_valid": true,
+    "rate_envelope": {
+      "valid": true,
+      "temperature_interval": [
+        1290.4153292006397,
+        3164.919995741076
+      ],
+      "method": "endpoints_and_analytic_extremum"
+    }
+  },
+  "evaluations": 253
+}

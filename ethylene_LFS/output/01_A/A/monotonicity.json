@@ -1,0 +1,12 @@
+{
+  "valid": true,
+  "reactions": [],
+  "increasing": true,
+  "decreasing": true,
+  "direction": "either",
+  "pairs": [],
+  "temperature_interval": [
+    298.0,
+    2787.563058349108
+  ]
+}

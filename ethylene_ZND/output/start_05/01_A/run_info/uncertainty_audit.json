@@ -1,0 +1,121 @@
+[
+  {
+    "reaction": 1,
+    "nominal_reaction": null,
+    "factor": null,
+    "kind": "unbounded",
+    "origin": "source-centered A with no uncertainty factor"
+  },
+  {
+    "reaction": 2,
+    "nominal_reaction": null,
+    "factor": null,
+    "kind": "unbounded",
+    "origin": "source-centered A with no uncertainty factor"
+  },
+  {
+    "reaction": 3,
+    "nominal_reaction": null,
+    "factor": null,
+    "kind": "unbounded",
+    "origin": "source-centered A with no uncertainty factor"
+  },
+  {
+    "reaction": 4,
+    "nominal_reaction": 1,
+    "factor": 1.15,
+    "kind": "bounded",
+    "origin": "run-configured factor centered on supplied nominal"
+  },
+  {
+    "reaction": 5,
+    "nominal_reaction": 2,
+    "factor": 1.6,
+    "kind": "bounded",
+    "origin": "run-configured factor centered on supplied nominal"
+  },
+  {
+    "reaction": 6,
+    "nominal_reaction": 3,
+    "factor": 1.6,
+    "kind": "bounded",
+    "origin": "run-configured factor centered on supplied nominal"
+  },
+  {
+    "reaction": 7,
+    "nominal_reaction": 4,
+    "factor": 1.2,
+    "kind": "bounded",
+    "origin": "run-configured factor centered on supplied nominal"
+  },
+  {
+    "reaction": 8,
+    "nominal_reaction": 5,
+    "factor": 1.4,
+    "kind": "bounded",
+    "origin": "run-configured factor centered on supplied nominal"
+  },
+  {
+    "reaction": 9,
+    "nominal_reaction": 6,
+    "factor": 3.0,
+    "kind": "bounded",
+    "origin": "run-configured factor centered on supplied nominal"
+  },
+  {
+    "reaction": 10,
+    "nominal_reaction": 9,
+    "factor": 3.0,
+    "kind": "bounded",
+    "origin": "run-configured factor centered on supplied nominal"
+  },
+  {
+    "reaction": 11,
+    "nominal_reaction": 12,
+    "factor": 5.0,
+    "kind": "bounded",
+    "origin": "run-configured factor centered on supplied nominal"
+  },
+  {
+    "reaction": 12,
+    "nominal_reaction": 13,
+    "factor": 3.2,
+    "kind": "bounded",
+    "origin": "run-configured factor centered on supplied nominal"
+  },
+  {
+    "reaction": 13,
+    "nominal_reaction": 14,
+    "factor": 1.5,
+    "kind": "bounded",
+    "origin": "run-configured factor centered on supplied nominal"
+  },
+  {
+    "reaction": 14,
+    "nominal_reaction": 30,
+    "factor": 3.0,
+    "kind": "bounded",
+    "origin": "run-configured factor centered on supplied nominal"
+  },
+  {
+    "reaction": 15,
+    "nominal_reaction": 31,
+    "factor": 10.0,
+    "kind": "bounded",
+    "origin": "run-configured factor centered on supplied nominal"
+  },
+  {
+    "reaction": 16,
+    "nominal_reaction": 32,
+    "factor": 1.2,
+    "kind": "bounded",
+    "origin": "run-configured factor centered on supplied nominal"
+  },
+  {
+    "reaction": 17,
+    "nominal_reaction": 33,
+    "factor": 1.5,
+    "kind": "bounded",
+    "origin": "run-configured factor centered on supplied nominal"
+  }
+]

@@ -24,7 +24,6 @@ The workflow tunes an existing reaction scheme; it does not automatically discov
 | [`ethylene_LFS_IDT`](ethylene_LFS_IDT/run.py) | Ethylene–air | Flame speed, ignition delay, and both final temperatures |
 | [`ethylene_ZND`](ethylene_ZND/run.py) | Ethylene–air | Final ZND temperature, induction length, and exothermic length |
 | [`methane_LFS_IDT`](methane_LFS_IDT/run.py) | Methane–air | Flame speed, ignition delay, and both final temperatures |
-| [`methane_ZND`](methane_ZND/run.py) | Methane–air | Final ZND temperature, induction length, and exothermic length |
 
 Each directory contains a `run.py` and an `inputs/` folder. Conditions, uncertainty factors, parameter bounds, objectives, and execution settings are editable in `run.py`. Methane examples disable PLOG adaptation.
 
@@ -99,7 +98,9 @@ Results are written beneath the example's configured output directory. Exact fil
 | Comparison PNGs | Reference and tuned-model predictions |
 | `optimizer.log` and solver logs | Detailed numerical diagnostics |
 
-Generated results, logs, caches, and compiled binaries are excluded from Git.
+Existing cluster results and logs are included as snapshots under each example’s `output/` and `logs/`. These are records of completed or interrupted runs, not a guarantee of convergence. Caches and compiled binaries remain excluded from Git.
+
+To rerun an example while preserving the published snapshot, change `problem['output']` to a fresh directory such as `ROOT / 'output_new'`.
 
 ## Parallel and cluster execution
 
@@ -137,7 +138,6 @@ ethylene_LFS/
 ethylene_LFS_IDT/
 ethylene_ZND/
 methane_LFS_IDT/
-methane_ZND/
 ```
 
 See [flame temperature-profile documentation](code/FLAME_PROFILE.md) and the [combined ethylene example notes](ethylene_LFS_IDT/README.md) for further details.

@@ -1,0 +1,223 @@
+{
+  "normal": [
+    {
+      "speed_m_s": 0.00755672289337436,
+      "burnt_temperature_K": 1596.1935643043864
+    },
+    {
+      "speed_m_s": 0.01983762179210138,
+      "burnt_temperature_K": 1896.0483822655574
+    },
+    {
+      "speed_m_s": 0.030772206786309902,
+      "burnt_temperature_K": 2000.6740837349182
+    },
+    {
+      "speed_m_s": 0.011498680889043907,
+      "burnt_temperature_K": 1744.2474133708683
+    },
+    {
+      "speed_m_s": 0.029328585076048703,
+      "burnt_temperature_K": 2092.824894054952
+    },
+    {
+      "speed_m_s": 0.03960521728081954,
+      "burnt_temperature_K": 2042.0728167374548
+    },
+    {
+      "speed_m_s": 0.012821118517081856,
+      "burnt_temperature_K": 1805.4106629542623
+    },
+    {
+      "speed_m_s": 0.03323318729531444,
+      "burnt_temperature_K": 2203.742126650439
+    },
+    {
+      "speed_m_s": 0.04227414038198223,
+      "burnt_temperature_K": 2073.6438623539975
+    },
+    {
+      "ignition_delay_s": 0.00037786049291518,
+      "burnt_temperature_K": 2878.3642255314107
+    },
+    {
+      "ignition_delay_s": 0.0002895264252128052,
+      "burnt_temperature_K": 3263.965697048098
+    },
+    {
+      "ignition_delay_s": 0.00023350158181517883,
+      "burnt_temperature_K": 3478.4103257827514
+    },
+    {
+      "ignition_delay_s": 0.0002040945038167712,
+      "burnt_temperature_K": 2965.8630940389744
+    },
+    {
+      "ignition_delay_s": 0.00015720934960518102,
+      "burnt_temperature_K": 3351.3651968878958
+    },
+    {
+      "ignition_delay_s": 0.00012695688564809618,
+      "burnt_temperature_K": 3573.2972296459875
+    },
+    {
+      "ignition_delay_s": 3.8819944722109693e-05,
+      "burnt_temperature_K": 3067.8502982048535
+    },
+    {
+      "ignition_delay_s": 2.9531497293622435e-05,
+      "burnt_temperature_K": 3481.6910600196015
+    },
+    {
+      "ignition_delay_s": 2.3712603924400048e-05,
+      "burnt_temperature_K": 3487.992944866513
+    },
+    {
+      "ignition_delay_s": 2.1123384644149205e-05,
+      "burnt_temperature_K": 3150.8027634183713
+    },
+    {
+      "ignition_delay_s": 1.6126603161010732e-05,
+      "burnt_temperature_K": 3563.492755073941
+    },
+    {
+      "ignition_delay_s": 1.294563022137218e-05,
+      "burnt_temperature_K": 3581.6787453125457
+    },
+    {
+      "ignition_delay_s": 7.87948790988063e-06,
+      "burnt_temperature_K": 3194.9583705563227
+    },
+    {
+      "ignition_delay_s": 5.9842468094011795e-06,
+      "burnt_temperature_K": 3644.07218500464
+    },
+    {
+      "ignition_delay_s": 4.788270240281257e-06,
+      "burnt_temperature_K": 3502.4443883153676
+    },
+    {
+      "ignition_delay_s": 4.29152193290664e-06,
+      "burnt_temperature_K": 3280.896321090005
+    },
+    {
+      "ignition_delay_s": 3.274745725613305e-06,
+      "burnt_temperature_K": 3727.803762688561
+    },
+    {
+      "ignition_delay_s": 2.6182246092083553e-06,
+      "burnt_temperature_K": 3594.7419147861146
+    }
+  ],
+  "tighter": [
+    {
+      "speed_m_s": 0.007535551121567778,
+      "burnt_temperature_K": 1596.6663234154094
+    },
+    {
+      "speed_m_s": 0.01978460895399322,
+      "burnt_temperature_K": 1896.6419030323593
+    },
+    {
+      "speed_m_s": 0.030701562265471775,
+      "burnt_temperature_K": 2000.5977209391895
+    },
+    {
+      "speed_m_s": 0.01147427853856883,
+      "burnt_temperature_K": 1744.7504785339136
+    },
+    {
+      "speed_m_s": 0.029302210732680717,
+      "burnt_temperature_K": 2093.430727900484
+    },
+    {
+      "speed_m_s": 0.03953837468820074,
+      "burnt_temperature_K": 2042.4944648634314
+    },
+    {
+      "speed_m_s": 0.012792747643054778,
+      "burnt_temperature_K": 1806.0303942595494
+    },
+    {
+      "speed_m_s": 0.033170473266050014,
+      "burnt_temperature_K": 2204.422847309074
+    },
+    {
+      "speed_m_s": 0.04219674273330694,
+      "burnt_temperature_K": 2073.1703272865807
+    },
+    {
+      "ignition_delay_s": 0.00037786086714156563,
+      "burnt_temperature_K": 2878.3642255317577
+    },
+    {
+      "ignition_delay_s": 0.000289526620329644,
+      "burnt_temperature_K": 3263.9656970453652
+    },
+    {
+      "ignition_delay_s": 0.00023350162489292972,
+      "burnt_temperature_K": 3478.4106350604825
+    },
+    {
+      "ignition_delay_s": 0.00020409456251219913,
+      "burnt_temperature_K": 2965.8630940392477
+    },
+    {
+      "ignition_delay_s": 0.00015720947261072682,
+      "burnt_temperature_K": 3351.365196881779
+    },
+    {
+      "ignition_delay_s": 0.0001269568766452931,
+      "burnt_temperature_K": 3573.297899080047
+    },
+    {
+      "ignition_delay_s": 3.881997356386978e-05,
+      "burnt_temperature_K": 3067.8502982052923
+    },
+    {
+      "ignition_delay_s": 2.9531493609924787e-05,
+      "burnt_temperature_K": 3481.6910600196193
+    },
+    {
+      "ignition_delay_s": 2.3712621324834633e-05,
+      "burnt_temperature_K": 3487.9926284362796
+    },
+    {
+      "ignition_delay_s": 2.112339679250563e-05,
+      "burnt_temperature_K": 3150.802763417666
+    },
+    {
+      "ignition_delay_s": 1.6126609585121504e-05,
+      "burnt_temperature_K": 3563.492755078152
+    },
+    {
+      "ignition_delay_s": 1.2945640487752531e-05,
+      "burnt_temperature_K": 3581.685851713495
+    },
+    {
+      "ignition_delay_s": 7.879492025260341e-06,
+      "burnt_temperature_K": 3194.9583705559794
+    },
+    {
+      "ignition_delay_s": 5.984248260800402e-06,
+      "burnt_temperature_K": 3644.0721849987235
+    },
+    {
+      "ignition_delay_s": 4.788273123853958e-06,
+      "burnt_temperature_K": 3502.4596238725712
+    },
+    {
+      "ignition_delay_s": 4.2915255952554254e-06,
+      "burnt_temperature_K": 3280.8963210880274
+    },
+    {
+      "ignition_delay_s": 3.27474575588396e-06,
+      "burnt_temperature_K": 3727.80376269444
+    },
+    {
+      "ignition_delay_s": 2.618224415221047e-06,
+      "burnt_temperature_K": 3594.7354110639617
+    }
+  ],
+  "failures": []
+}

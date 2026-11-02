@@ -1,0 +1,207 @@
+{
+  "pivot_temperature": 1800.0,
+  "strict_margin": 1e-09,
+  "a_step": 0.02,
+  "ea_step": 60.0,
+  "b_step": 0.005,
+  "max_tasks_per_worker": 200,
+  "inner_iterations": 15,
+  "options": {
+    "fd_extrapolate": true
+  },
+  "sensitivity_retries": 3,
+  "shrink_factor": 0.5,
+  "minimum_step": 1e-05,
+  "profile_points": 100,
+  "interpolation": "cubic",
+  "steps_per_end": 16000,
+  "rel_tol": 1e-12,
+  "abs_tol": 1e-16,
+  "max_rhs_calls": 400000,
+  "validate": true,
+  "compact_output": true,
+  "diagnostics": false,
+  "plog_shape_free": true,
+  "model": "/project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/inputs/model_populated.yaml",
+  "reference": "/project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/inputs/FFCM2.yaml",
+  "output_dir": "/project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_04",
+  "fuel": "C2H4",
+  "oxidizer": "O2:1, N2:3.76",
+  "P_bar": [
+    1,
+    1,
+    1,
+    5,
+    5,
+    5,
+    20,
+    20,
+    20
+  ],
+  "T0": 298.0,
+  "phi": [
+    0.5,
+    1.0,
+    2.0,
+    0.5,
+    1.0,
+    2.0,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "t_end": [
+    0.0001,
+    8e-06,
+    9e-06,
+    5e-05,
+    1e-06,
+    2e-06,
+    3e-05,
+    1e-06,
+    2e-06
+  ],
+  "uncertainty_factors": {
+    "4": 1.15,
+    "5": 1.6,
+    "6": 1.6,
+    "7": 1.2,
+    "8": 1.4,
+    "9": 3.0,
+    "10": 3.0,
+    "11": 5.0,
+    "12": 3.2,
+    "13": 1.5,
+    "14": 3.0,
+    "15": 10.0,
+    "16": 1.2,
+    "17": 1.5
+  },
+  "unbounded_reactions": [
+    1,
+    2,
+    3
+  ],
+  "objective_names": [
+    "T_ZND",
+    "ind_len_ZND",
+    "exo_len_ZND"
+  ],
+  "length_factor": null,
+  "temperature_scale": 25.0,
+  "profile_scale_K": 25.0,
+  "a_ratio": [
+    1e-06,
+    100000000.0
+  ],
+  "ea_delta": 60000.0,
+  "b_delta": 0.2,
+  "max_rounds": 20,
+  "threshold": 0.01,
+  "stagnation_rounds": 3,
+  "stagnation_relative_tolerance": 1e-05,
+  "enable_plog": true,
+  "plog_candidates": [
+    2
+  ],
+  "plog_pressures_bar": [
+    1.0,
+    50.0,
+    100.0
+  ],
+  "plog_free": null,
+  "plog_direction": "either",
+  "plog_max_trials": 1,
+  "plog_min_relative_score": 0.1,
+  "plog_trial_rounds": 5,
+  "plog_min_improvement": 0.001,
+  "backend": "openmp",
+  "workers": 32,
+  "resume": false,
+  "save_sensitivity_plots": true,
+  "reference_cache": "/project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/diagnostics/reference_cache",
+  "fit_targets": {
+    "final_temperature_percent": 5.0,
+    "induction_percent": 10.0,
+    "exothermic_percent": 10.0
+  },
+  "stages": [
+    {
+      "parameters": "A",
+      "a_ratio": [
+        1e-06,
+        100000000.0
+      ]
+    },
+    {
+      "parameters": "AE",
+      "a_ratio": [
+        0.5,
+        2.0
+      ],
+      "ea_delta": 60000.0
+    },
+    {
+      "parameters": "AEB",
+      "a_ratio": [
+        0.5,
+        2.0
+      ],
+      "ea_delta": 1195.03
+    }
+  ],
+  "top_reactions": 5,
+  "initial_coordinates": [
+    -11.344855693088876,
+    9.516422723935985,
+    6.5125891956138755,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,138 @@
+Code checks passed (see logs/code_checks_6714896.log).
+Computing FFCM2 reference cases: 27 cases, 128 workers.
+
+Stage A | sensitivity-selected reactions
+Baseline loss 131.4885; 27 cases, 128 workers.
+  Optimizer diagnostics: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/methane_LFS_IDT/output/A/optimizer.log
+
+Round 1/20
+  Selected reactions: R2, R1, R3
+  Loss: 64.684814 (50.81% reduction)
+  Largest normalized parameter change: 99.08% (target: < 1%)
+  Sensitivities: 3/3 reaction groups resolved
+  Additional optimization audit: all eligible parameters.
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 2/20
+  Selected reactions: R3, R2, R1
+  Loss: 64.684797 (2.636e-05% reduction)
+  Largest normalized parameter change: 0.03419% (target: < 1%)
+  Sensitivities: 3/3 reaction groups resolved
+  Additional optimization audit: all eligible parameters.
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 3/20
+  Selected reactions: R3, R2, R1
+  Loss: 64.684797 (0% reduction)
+  Largest normalized parameter change: 0% (target: < 1%)
+  Sensitivities: 3/3 reaction groups resolved
+  Additional optimization audit: all eligible parameters.
+  Inner optimizer: trust_region_stalled
+  Stop/status: stalled
+
+Optimization result: NOT_CONVERGED
+  Rounds: 3
+  Stop reason: stalled
+  Loss: 131.4885 -> 64.684797 (50.81% reduction)
+  Solver validation: PASSED
+  Rate uncertainty constraints: PASSED
+  PLOG monotonicity: PASSED
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/methane_LFS_IDT/output/A/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/methane_LFS_IDT/output/A/results.json
+
+Stage AE | sensitivity-selected reactions
+Baseline loss 64.684797; 27 cases, 128 workers.
+  Optimizer diagnostics: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/methane_LFS_IDT/output/AE/optimizer.log
+
+Round 1/20
+  Selected reactions: R2, R3, R1
+  Loss: 49.508289 (23.46% reduction)
+  Largest normalized parameter change: 100% (target: < 1%)
+  Sensitivities: 3/3 reaction groups resolved
+  Additional optimization audit: all eligible parameters.
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 2/20
+  Selected reactions: R2, R3, R1
+  Loss: 49.508289 (0% reduction)
+  Largest normalized parameter change: 0% (target: < 1%)
+  Sensitivities: 3/3 reaction groups resolved
+  Additional optimization audit: all eligible parameters.
+  Inner optimizer: trust_region_stalled
+  Stop/status: stalled
+
+Optimization result: NOT_CONVERGED
+  Rounds: 2
+  Stop reason: stalled
+  Loss: 64.684797 -> 49.508289 (23.46% reduction)
+  Solver validation: PASSED
+  Rate uncertainty constraints: PASSED
+  PLOG monotonicity: PASSED
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/methane_LFS_IDT/output/AE/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/methane_LFS_IDT/output/AE/results.json
+
+Stage AEB | sensitivity-selected reactions
+Baseline loss 49.508289; 27 cases, 128 workers.
+  Optimizer diagnostics: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/methane_LFS_IDT/output/AEB/optimizer.log
+
+Round 1/20
+  Selected reactions: R2, R3, R1
+  Loss: 42.779223 (13.59% reduction)
+  Largest normalized parameter change: 100% (target: < 1%)
+  Sensitivities: 3/3 reaction groups resolved
+  Additional optimization audit: all eligible parameters.
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 2/20
+  Selected reactions: R2, R3, R1
+  Loss: 42.773652 (0.01302% reduction)
+  Largest normalized parameter change: 0.3337% (target: < 1%)
+  Sensitivities: 1/3 reaction groups resolved
+  Additional optimization audit: all eligible parameters.
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 3/20
+  Selected reactions: R2, R3, R1
+  Loss: 42.773652 (0% reduction)
+  Largest normalized parameter change: 0% (target: < 1%)
+  Sensitivities: 1/3 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 4/20
+  Selected reactions: R2, R3, R1
+  Loss: 42.773652 (0% reduction)
+  Largest normalized parameter change: 0% (target: < 1%)
+  Sensitivities: 1/3 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 5/20
+  Selected reactions: R2, R3, R1
+  Loss: 42.773652 (0% reduction)
+  Largest normalized parameter change: 0% (target: < 1%)
+  Sensitivities: 1/3 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  Inner optimizer: trust_region_stalled
+  Stop/status: loss_plateau_unresolved
+
+Optimization result: NOT_CONVERGED
+  Rounds: 5
+  Stop reason: loss_plateau_unresolved
+  Loss: 49.508289 -> 42.773652 (13.6% reduction)
+  Solver validation: PASSED
+  Rate uncertainty constraints: PASSED
+  PLOG monotonicity: PASSED
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/methane_LFS_IDT/output/AEB/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/methane_LFS_IDT/output/AEB/results.json
+
+Tuning finished.
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/methane_LFS_IDT/output/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/methane_LFS_IDT/output/results.json

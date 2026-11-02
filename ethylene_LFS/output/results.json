@@ -1,0 +1,194 @@
+{
+  "stages": [
+    {
+      "stage": "A",
+      "loss": 0.1835549918866807,
+      "status": "unresolved_sensitivities"
+    },
+    {
+      "stage": "plog_trial_R2",
+      "loss": 0.07686594968080196,
+      "status": "unresolved_sensitivities"
+    },
+    {
+      "stage": "AE",
+      "loss": 0.07480668902681713,
+      "status": "stalled"
+    },
+    {
+      "stage": "AEB",
+      "loss": 0.07339600015540614,
+      "status": "stalled"
+    }
+  ],
+  "cases": [
+    {
+      "P_atm": 1,
+      "T": 298.0,
+      "phi": 0.6,
+      "reference_cm_s": 25.87379642878264,
+      "model_cm_s": 19.792504995765952,
+      "error_percent": -23.50366885569105,
+      "reference_temperature_K": 1813.9796561418195,
+      "model_temperature_K": 1806.606609672504,
+      "temperature_error_K": -7.373046469315568
+    },
+    {
+      "P_atm": 1,
+      "T": 298.0,
+      "phi": 0.8,
+      "reference_cm_s": 49.99120574882362,
+      "model_cm_s": 39.08726064433339,
+      "error_percent": -21.811726565020518,
+      "reference_temperature_K": 2165.765015606705,
+      "model_temperature_K": 2162.605390557751,
+      "temperature_error_K": -3.15962504895424
+    },
+    {
+      "P_atm": 1,
+      "T": 298.0,
+      "phi": 1.0,
+      "reference_cm_s": 66.55236072867754,
+      "model_cm_s": 59.11841779216953,
+      "error_percent": -11.170066478655672,
+      "reference_temperature_K": 2359.7665843717573,
+      "model_temperature_K": 2371.9252809896852,
+      "temperature_error_K": 12.158696617927944
+    },
+    {
+      "P_atm": 1,
+      "T": 298.0,
+      "phi": 1.2,
+      "reference_cm_s": 71.13186342944887,
+      "model_cm_s": 77.72944711326915,
+      "error_percent": 9.275145294575315,
+      "reference_temperature_K": 2362.9123049686405,
+      "model_temperature_K": 2369.3483492757878,
+      "temperature_error_K": 6.436044307147313
+    },
+    {
+      "P_atm": 1,
+      "T": 298.0,
+      "phi": 1.4,
+      "reference_cm_s": 60.609439528965744,
+      "model_cm_s": 92.11315949314528,
+      "error_percent": 51.97824003820997,
+      "reference_temperature_K": 2249.4889182630786,
+      "model_temperature_K": 2253.78060680787,
+      "temperature_error_K": 4.291688544791214
+    },
+    {
+      "P_atm": 10,
+      "T": 298.0,
+      "phi": 0.6,
+      "reference_cm_s": 11.058889809439457,
+      "model_cm_s": 11.101258467332043,
+      "error_percent": 0.38311854646042587,
+      "reference_temperature_K": 1815.6170265309222,
+      "model_temperature_K": 1814.454030075059,
+      "temperature_error_K": -1.1629964558630945
+    },
+    {
+      "P_atm": 10,
+      "T": 298.0,
+      "phi": 0.8,
+      "reference_cm_s": 27.248183030027057,
+      "model_cm_s": 25.209018771283876,
+      "error_percent": -7.483670586387559,
+      "reference_temperature_K": 2192.579423492294,
+      "model_temperature_K": 2191.619803730718,
+      "temperature_error_K": -0.9596197615760502
+    },
+    {
+      "P_atm": 10,
+      "T": 298.0,
+      "phi": 1.0,
+      "reference_cm_s": 39.573296506152396,
+      "model_cm_s": 40.00790411628357,
+      "error_percent": 1.09823453819069,
+      "reference_temperature_K": 2450.2892026022428,
+      "model_temperature_K": 2449.3621681797886,
+      "temperature_error_K": -0.9270344224541986
+    },
+    {
+      "P_atm": 10,
+      "T": 298.0,
+      "phi": 1.2,
+      "reference_cm_s": 42.27567214217821,
+      "model_cm_s": 52.95439182206611,
+      "error_percent": 25.259727731765146,
+      "reference_temperature_K": 2396.855409335736,
+      "model_temperature_K": 2396.3729906066915,
+      "temperature_error_K": -0.4824187290446389
+    },
+    {
+      "P_atm": 10,
+      "T": 298.0,
+      "phi": 1.4,
+      "reference_cm_s": 31.62206048435409,
+      "model_cm_s": 61.148883636438015,
+      "error_percent": 93.37412774443699,
+      "reference_temperature_K": 2262.6159612075244,
+      "model_temperature_K": 2262.456640257544,
+      "temperature_error_K": -0.159320949980156
+    },
+    {
+      "P_atm": 50,
+      "T": 298.0,
+      "phi": 0.6,
+      "reference_cm_s": 4.611248416445221,
+      "model_cm_s": 5.534673409031516,
+      "error_percent": 20.025487876408032,
+      "reference_temperature_K": 1816.174050332244,
+      "model_temperature_K": 1815.3091599640088,
+      "temperature_error_K": -0.8648903682351374
+    },
+    {
+      "P_atm": 50,
+      "T": 298.0,
+      "phi": 0.8,
+      "reference_cm_s": 14.380258706119028,
+      "model_cm_s": 14.595745040248307,
+      "error_percent": 1.4984871867262273,
+      "reference_temperature_K": 2199.671571281716,
+      "model_temperature_K": 2198.648505041479,
+      "temperature_error_K": -1.023066240236858
+    },
+    {
+      "P_atm": 50,
+      "T": 298.0,
+      "phi": 1.0,
+      "reference_cm_s": 22.457229090204063,
+      "model_cm_s": 23.958310720360913,
+      "error_percent": 6.684180065703771,
+      "reference_temperature_K": 2487.563058349108,
+      "model_temperature_K": 2487.134247000086,
+      "temperature_error_K": -0.42881134902199847
+    },
+    {
+      "P_atm": 50,
+      "T": 298.0,
+      "phi": 1.2,
+      "reference_cm_s": 22.44699458114796,
+      "model_cm_s": 30.84428460297029,
+      "error_percent": 37.409417957782075,
+      "reference_temperature_K": 2403.3528594637833,
+      "model_temperature_K": 2402.335635486559,
+      "temperature_error_K": -1.0172239772241483
+    },
+    {
+      "P_atm": 50,
+      "T": 298.0,
+      "phi": 1.4,
+      "reference_cm_s": 15.12542100316476,
+      "model_cm_s": 33.83105230598345,
+      "error_percent": 123.67015304172244,
+      "reference_temperature_K": 2265.400923864034,
+      "model_temperature_K": 2275.032896194217,
+      "temperature_error_K": 9.631972330182634
+    }
+  ],
+  "validation_passed": true,
+  "best_loss": 0.07339600015540614,
+  "best_folder": "03_AEB"
+}

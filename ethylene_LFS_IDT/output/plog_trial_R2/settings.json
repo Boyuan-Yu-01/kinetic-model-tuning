@@ -1,0 +1,423 @@
+{
+  "model": "/project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_LFS_IDT/output/inputs/plog_R2.yaml",
+  "reference": "/project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_LFS_IDT/inputs/FFCM2.yaml",
+  "output_dir": "/project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_LFS_IDT/output/plog_trial_R2",
+  "cases": [
+    {
+      "P_atm": 1,
+      "T": 298.0,
+      "phi": 0.6
+    },
+    {
+      "P_atm": 1,
+      "T": 298.0,
+      "phi": 0.8
+    },
+    {
+      "P_atm": 1,
+      "T": 298.0,
+      "phi": 1.0
+    },
+    {
+      "P_atm": 1,
+      "T": 298.0,
+      "phi": 1.2
+    },
+    {
+      "P_atm": 1,
+      "T": 298.0,
+      "phi": 1.4
+    },
+    {
+      "P_atm": 10,
+      "T": 298.0,
+      "phi": 0.6
+    },
+    {
+      "P_atm": 10,
+      "T": 298.0,
+      "phi": 0.8
+    },
+    {
+      "P_atm": 10,
+      "T": 298.0,
+      "phi": 1.0
+    },
+    {
+      "P_atm": 10,
+      "T": 298.0,
+      "phi": 1.2
+    },
+    {
+      "P_atm": 10,
+      "T": 298.0,
+      "phi": 1.4
+    },
+    {
+      "P_atm": 50,
+      "T": 298.0,
+      "phi": 0.6
+    },
+    {
+      "P_atm": 50,
+      "T": 298.0,
+      "phi": 0.8
+    },
+    {
+      "P_atm": 50,
+      "T": 298.0,
+      "phi": 1.0
+    },
+    {
+      "P_atm": 50,
+      "T": 298.0,
+      "phi": 1.2
+    },
+    {
+      "P_atm": 50,
+      "T": 298.0,
+      "phi": 1.4
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 1,
+      "T": 1400,
+      "phi": 0.6,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 1,
+      "T": 1400,
+      "phi": 1.0,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 1,
+      "T": 1400,
+      "phi": 1.4,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 1,
+      "T": 1500,
+      "phi": 0.6,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 1,
+      "T": 1500,
+      "phi": 1.0,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 1,
+      "T": 1500,
+      "phi": 1.4,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 1,
+      "T": 1600,
+      "phi": 0.6,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 1,
+      "T": 1600,
+      "phi": 1.0,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 1,
+      "T": 1600,
+      "phi": 1.4,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 10,
+      "T": 1400,
+      "phi": 0.6,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 10,
+      "T": 1400,
+      "phi": 1.0,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 10,
+      "T": 1400,
+      "phi": 1.4,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 10,
+      "T": 1500,
+      "phi": 0.6,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 10,
+      "T": 1500,
+      "phi": 1.0,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 10,
+      "T": 1500,
+      "phi": 1.4,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 10,
+      "T": 1600,
+      "phi": 0.6,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 10,
+      "T": 1600,
+      "phi": 1.0,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 10,
+      "T": 1600,
+      "phi": 1.4,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 50,
+      "T": 1400,
+      "phi": 0.6,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 50,
+      "T": 1400,
+      "phi": 1.0,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 50,
+      "T": 1400,
+      "phi": 1.4,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 50,
+      "T": 1500,
+      "phi": 0.6,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 50,
+      "T": 1500,
+      "phi": 1.0,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 50,
+      "T": 1500,
+      "phi": 1.4,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 50,
+      "T": 1600,
+      "phi": 0.6,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 50,
+      "T": 1600,
+      "phi": 1.0,
+      "end_time_s": 0.003
+    },
+    {
+      "kind": "ignition",
+      "P_atm": 50,
+      "T": 1600,
+      "phi": 1.4,
+      "end_time_s": 0.003
+    }
+  ],
+  "objectives": {
+    "temperature_scale_K": 25.0,
+    "speed_weight": 1.0,
+    "temperature_weight": 1.0
+  },
+  "solver": {
+    "width": 0.02,
+    "transport_model": "multicomponent",
+    "soret": false,
+    "slope": 0.015,
+    "curve": 0.03,
+    "timeout_seconds": 900
+  },
+  "artificial": [
+    1,
+    2,
+    3
+  ],
+  "uncertainty_factors": {
+    "4": 1.15,
+    "5": 1.6,
+    "6": 1.6,
+    "7": 1.2,
+    "8": 1.4,
+    "9": 3.0,
+    "10": 3.0,
+    "11": 5.0,
+    "12": 3.2,
+    "13": 1.5,
+    "14": 3.0,
+    "15": 10.0,
+    "16": 1.2,
+    "17": 1.5
+  },
+  "stages": [
+    {
+      "parameters": "A",
+      "a_ratio": [
+        1e-06,
+        100000000.0
+      ],
+      "max_rounds": 5
+    }
+  ],
+  "samples": 128,
+  "sample_batch": 8,
+  "seed": 42,
+  "a_ratio": [
+    1e-06,
+    100000000.0
+  ],
+  "ea_delta": 60000.0,
+  "b_delta": 0.2,
+  "max_rounds": 5,
+  "inner_iterations": 15,
+  "enable_plog": false,
+  "plog_candidates": [
+    2
+  ],
+  "plog_pressures_bar": [
+    1.0,
+    50.0,
+    100.0
+  ],
+  "plog_free": [
+    2
+  ],
+  "plog_direction": "either",
+  "plog_max_trials": 1,
+  "plog_min_relative_score": 0.1,
+  "plog_trial_rounds": 5,
+  "plog_min_improvement": 0.001,
+  "plot_yscales": {
+    "laminar_flame_speed": "linear",
+    "T_flame": "linear",
+    "ignition_delay_time": "log",
+    "T_ignition": "linear"
+  },
+  "comparison_plots": true,
+  "backend": "openmp",
+  "workers": 128,
+  "ignition_solver": {
+    "marker_species": "OH",
+    "reactor_type": "constant-volume",
+    "rtol": 1e-09,
+    "atol": 1e-15,
+    "end_time": 0.003
+  },
+  "ignition_objectives": {
+    "delay_weight": 1.0,
+    "temperature_weight": 1.0,
+    "temperature_scale_K": 25.0
+  },
+  "branch_weights": {
+    "flame": 1.0,
+    "ignition": 1.0
+  },
+  "initial_coordinates": [
+    -13.81551055796416,
+    9.708862592440552,
+    9.708862592440552,
+    9.708862592440552,
+    5.296551532198027,
+    -0.13976194137515863,
+    -0.4700036282457356,
+    -0.47000362824573555,
+    -0.1823215557939546,
+    -0.3364722356212126,
+    1.0986122876681097,
+    1.0986122876681097,
+    1.6094379114341002,
+    1.1631508088056808,
+    0.40546510710816436,
+    -0.0997568988075393,
+    -2.302585091994046,
+    -0.18185930905665182,
+    0.40546510710816436,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ]
+}

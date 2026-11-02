@@ -1,0 +1,30 @@
+{
+  "temperature_range_K": [
+    1290.4153292006397,
+    3164.9200026856356
+  ],
+  "range_source": "Full reference and source-baseline trajectories",
+  "model": "/project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/inputs/model_populated.yaml",
+  "monotonicity": {
+    "valid": true,
+    "reactions": [],
+    "increasing": true,
+    "decreasing": true,
+    "direction": "either",
+    "pairs": [],
+    "temperature_interval": [
+      1290.4153292006397,
+      3164.9200026856356
+    ],
+    "pressure_monotonicity_valid": true,
+    "rate_envelope": {
+      "valid": true,
+      "temperature_interval": [
+        1290.4153292006397,
+        3164.9200026856356
+      ],
+      "method": "endpoints_and_analytic_extremum"
+    }
+  },
+  "note": "Constraint applies to the reduced candidate; reference pressure dependence is not constrained."
+}

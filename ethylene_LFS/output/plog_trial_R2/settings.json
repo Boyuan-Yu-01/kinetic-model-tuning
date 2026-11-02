@@ -1,0 +1,211 @@
+{
+  "model": "/project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_LFS/output/inputs/plog_R2.yaml",
+  "reference": "/project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_LFS/inputs/FFCM2.yaml",
+  "output_dir": "/project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_LFS/output/plog_trial_R2",
+  "cases": [
+    {
+      "P_atm": 1,
+      "T": 298.0,
+      "phi": 0.6
+    },
+    {
+      "P_atm": 1,
+      "T": 298.0,
+      "phi": 0.8
+    },
+    {
+      "P_atm": 1,
+      "T": 298.0,
+      "phi": 1.0
+    },
+    {
+      "P_atm": 1,
+      "T": 298.0,
+      "phi": 1.2
+    },
+    {
+      "P_atm": 1,
+      "T": 298.0,
+      "phi": 1.4
+    },
+    {
+      "P_atm": 10,
+      "T": 298.0,
+      "phi": 0.6
+    },
+    {
+      "P_atm": 10,
+      "T": 298.0,
+      "phi": 0.8
+    },
+    {
+      "P_atm": 10,
+      "T": 298.0,
+      "phi": 1.0
+    },
+    {
+      "P_atm": 10,
+      "T": 298.0,
+      "phi": 1.2
+    },
+    {
+      "P_atm": 10,
+      "T": 298.0,
+      "phi": 1.4
+    },
+    {
+      "P_atm": 50,
+      "T": 298.0,
+      "phi": 0.6
+    },
+    {
+      "P_atm": 50,
+      "T": 298.0,
+      "phi": 0.8
+    },
+    {
+      "P_atm": 50,
+      "T": 298.0,
+      "phi": 1.0
+    },
+    {
+      "P_atm": 50,
+      "T": 298.0,
+      "phi": 1.2
+    },
+    {
+      "P_atm": 50,
+      "T": 298.0,
+      "phi": 1.4
+    }
+  ],
+  "objectives": {
+    "temperature_scale_K": 25.0,
+    "speed_weight": 1.0,
+    "temperature_weight": 1.0
+  },
+  "solver": {
+    "width": 0.02,
+    "transport_model": "multicomponent",
+    "soret": false,
+    "slope": 0.015,
+    "curve": 0.03,
+    "timeout_seconds": 900
+  },
+  "artificial": [
+    1,
+    2,
+    3
+  ],
+  "uncertainty_factors": {
+    "4": 1.15,
+    "5": 1.6,
+    "6": 1.6,
+    "7": 1.2,
+    "8": 1.4,
+    "9": 3.0,
+    "10": 3.0,
+    "11": 5.0,
+    "12": 3.2,
+    "13": 1.5,
+    "14": 3.0,
+    "15": 10.0,
+    "16": 1.2,
+    "17": 1.5
+  },
+  "stages": [
+    {
+      "parameters": "A",
+      "a_ratio": [
+        1e-06,
+        100000000.0
+      ],
+      "max_rounds": 5
+    }
+  ],
+  "samples": 128,
+  "sample_batch": 8,
+  "seed": 42,
+  "a_ratio": [
+    1e-06,
+    100000000.0
+  ],
+  "ea_delta": 60000.0,
+  "b_delta": 0.2,
+  "max_rounds": 5,
+  "inner_iterations": 15,
+  "enable_plog": false,
+  "plog_candidates": [
+    2
+  ],
+  "plog_pressures_bar": [
+    1.0,
+    50.0,
+    100.0
+  ],
+  "plog_free": [
+    2
+  ],
+  "plog_direction": "either",
+  "plog_max_trials": 1,
+  "plog_min_relative_score": 0.1,
+  "plog_trial_rounds": 5,
+  "plog_min_improvement": 0.001,
+  "backend": "openmp",
+  "workers": 128,
+  "initial_coordinates": [
+    -13.815510557964274,
+    12.54905465836602,
+    12.54905465836602,
+    12.54905465836602,
+    0.9414672906287369,
+    -0.13976194137515838,
+    -0.4700036282457356,
+    -0.4700036282457356,
+    -0.1823215557939546,
+    -0.33647223562121287,
+    1.0986122876681095,
+    1.0986122876681097,
+    1.6094379114341002,
+    1.1631508088056808,
+    0.4054651071081643,
+    -1.0986122876681097,
+    -2.302585091994046,
+    -0.18232155579395212,
+    -0.40546510710816436,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ]
+}

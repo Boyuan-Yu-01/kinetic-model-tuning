@@ -1,0 +1,510 @@
+{
+  "status": "completed",
+  "converged": false,
+  "stages": [
+    {
+      "stage": "01_A",
+      "trial": false,
+      "accepted": true,
+      "status": "converged",
+      "converged": true,
+      "stop_reason": "parameter_change",
+      "rounds": 4,
+      "baseline_loss": 2.319026941222704,
+      "best_loss": 1.7819328457421717
+    },
+    {
+      "stage": "plog_trial_R2",
+      "trial": true,
+      "accepted": true,
+      "status": "not_converged",
+      "converged": false,
+      "stop_reason": "stalled",
+      "rounds": 2,
+      "baseline_loss": 1.78193284881368,
+      "best_loss": 1.106886713884304,
+      "relative_improvement": 0.37882804252183383
+    },
+    {
+      "stage": "02_AE",
+      "trial": false,
+      "accepted": true,
+      "status": "not_converged",
+      "converged": false,
+      "stop_reason": "stalled",
+      "rounds": 2,
+      "baseline_loss": 1.106886713884304,
+      "best_loss": 1.0390814678128926
+    },
+    {
+      "stage": "03_AEB",
+      "trial": false,
+      "accepted": true,
+      "status": "not_converged",
+      "converged": false,
+      "stop_reason": "stalled",
+      "rounds": 1,
+      "baseline_loss": 1.0390814678128926,
+      "best_loss": 1.0390814678128926
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "performed": true,
+    "passed": true,
+    "max_temperature_change_K": 3.05640242e-08,
+    "max_length_change_percent": 2.21415741e-07,
+    "tighter_loss": 1.03908147,
+    "errors": [],
+    "plog_monotonicity_status": "checked",
+    "plog_monotonicity_passed": true,
+    "rate_uncertainty_passed": true,
+    "export_max_relative_rate_error": 0.0
+  },
+  "cases": [
+    {
+      "case": 1,
+      "pressure_bar": 1,
+      "initial_temperature_K": 298.0,
+      "phi": 0.5,
+      "end_time_s": 0.0001,
+      "reference": {
+        "final_temperature_K": 2206.24147,
+        "induction_length_m": 0.0160696463,
+        "exothermic_length_m": 0.000742557515
+      },
+      "baseline": {
+        "final_temperature_K": 2208.57469,
+        "temperature_error_K": 2.33321672,
+        "profile_rmse_K": 363.104361,
+        "induction_length_m": 0.0103275863,
+        "induction_error_percent": -35.7323359,
+        "exothermic_length_m": 0.00101218531,
+        "exothermic_error_percent": 36.3106947
+      },
+      "accepted": {
+        "final_temperature_K": 2208.57469,
+        "temperature_error_K": 2.33321672,
+        "profile_rmse_K": 363.104361,
+        "induction_length_m": 0.0103275863,
+        "induction_error_percent": -35.7323359,
+        "exothermic_length_m": 0.00101218531,
+        "exothermic_error_percent": 36.3106947
+      }
+    },
+    {
+      "case": 2,
+      "pressure_bar": 1,
+      "initial_temperature_K": 298.0,
+      "phi": 1.0,
+      "end_time_s": 8e-06,
+      "reference": {
+        "final_temperature_K": 2952.204,
+        "induction_length_m": 0.000547180897,
+        "exothermic_length_m": 0.000117933906
+      },
+      "baseline": {
+        "final_temperature_K": 2958.19128,
+        "temperature_error_K": 5.98728183,
+        "profile_rmse_K": 228.966183,
+        "induction_length_m": 0.00026730576,
+        "induction_error_percent": -51.1485576,
+        "exothermic_length_m": 6.43346866e-05,
+        "exothermic_error_percent": -45.4485237
+      },
+      "accepted": {
+        "final_temperature_K": 2958.19128,
+        "temperature_error_K": 5.98728183,
+        "profile_rmse_K": 228.966183,
+        "induction_length_m": 0.00026730576,
+        "induction_error_percent": -51.1485576,
+        "exothermic_length_m": 6.43346866e-05,
+        "exothermic_error_percent": -45.4485237
+      }
+    },
+    {
+      "case": 3,
+      "pressure_bar": 1,
+      "initial_temperature_K": 298.0,
+      "phi": 2.0,
+      "end_time_s": 9e-06,
+      "reference": {
+        "final_temperature_K": 2668.91532,
+        "induction_length_m": 0.000949470195,
+        "exothermic_length_m": 0.000627802883
+      },
+      "baseline": {
+        "final_temperature_K": 2670.55048,
+        "temperature_error_K": 1.63515525,
+        "profile_rmse_K": 500.653203,
+        "induction_length_m": 0.000259266882,
+        "induction_error_percent": -72.6935207,
+        "exothermic_length_m": 0.000164969841,
+        "exothermic_error_percent": -73.7226691
+      },
+      "accepted": {
+        "final_temperature_K": 2670.55048,
+        "temperature_error_K": 1.63515525,
+        "profile_rmse_K": 500.653203,
+        "induction_length_m": 0.000259266882,
+        "induction_error_percent": -72.6935207,
+        "exothermic_length_m": 0.000164969841,
+        "exothermic_error_percent": -73.7226691
+      }
+    },
+    {
+      "case": 4,
+      "pressure_bar": 5,
+      "initial_temperature_K": 298.0,
+      "phi": 0.5,
+      "end_time_s": 5e-05,
+      "reference": {
+        "final_temperature_K": 2197.45921,
+        "induction_length_m": 0.00800831413,
+        "exothermic_length_m": 0.000888393278
+      },
+      "baseline": {
+        "final_temperature_K": 2206.95609,
+        "temperature_error_K": 9.4968753,
+        "profile_rmse_K": 184.531942,
+        "induction_length_m": 0.00932167822,
+        "induction_error_percent": 16.4000072,
+        "exothermic_length_m": 0.000472693673,
+        "exothermic_error_percent": -46.7922952
+      },
+      "accepted": {
+        "final_temperature_K": 2206.95609,
+        "temperature_error_K": 9.4968753,
+        "profile_rmse_K": 184.531942,
+        "induction_length_m": 0.00932167822,
+        "induction_error_percent": 16.4000072,
+        "exothermic_length_m": 0.000472693673,
+        "exothermic_error_percent": -46.7922952
+      }
+    },
+    {
+      "case": 5,
+      "pressure_bar": 5,
+      "initial_temperature_K": 298.0,
+      "phi": 1.0,
+      "end_time_s": 1e-06,
+      "reference": {
+        "final_temperature_K": 3049.34286,
+        "induction_length_m": 0.000202749973,
+        "exothermic_length_m": 5.08385321e-05
+      },
+      "baseline": {
+        "final_temperature_K": 3072.65429,
+        "temperature_error_K": 23.3114284,
+        "profile_rmse_K": 390.797005,
+        "induction_length_m": 0.000108249977,
+        "induction_error_percent": -46.6091286,
+        "exothermic_length_m": 2.81015338e-05,
+        "exothermic_error_percent": -44.7239474
+      },
+      "accepted": {
+        "final_temperature_K": 3072.65429,
+        "temperature_error_K": 23.3114284,
+        "profile_rmse_K": 390.797005,
+        "induction_length_m": 0.000108249977,
+        "induction_error_percent": -46.6091286,
+        "exothermic_length_m": 2.81015338e-05,
+        "exothermic_error_percent": -44.7239474
+      }
+    },
+    {
+      "case": 6,
+      "pressure_bar": 5,
+      "initial_temperature_K": 298.0,
+      "phi": 2.0,
+      "end_time_s": 2e-06,
+      "reference": {
+        "final_temperature_K": 2727.71647,
+        "induction_length_m": 0.000264002493,
+        "exothermic_length_m": 0.000231186297
+      },
+      "baseline": {
+        "final_temperature_K": 2781.69064,
+        "temperature_error_K": 53.974168,
+        "profile_rmse_K": 591.950318,
+        "induction_length_m": 0.000137708678,
+        "induction_error_percent": -47.8381147,
+        "exothermic_length_m": 2.02240534e-05,
+        "exothermic_error_percent": -91.2520536
+      },
+      "accepted": {
+        "final_temperature_K": 2781.69064,
+        "temperature_error_K": 53.974168,
+        "profile_rmse_K": 591.950318,
+        "induction_length_m": 0.000137708678,
+        "induction_error_percent": -47.8381147,
+        "exothermic_length_m": 2.02240534e-05,
+        "exothermic_error_percent": -91.2520536
+      }
+    },
+    {
+      "case": 7,
+      "pressure_bar": 20,
+      "initial_temperature_K": 298.0,
+      "phi": 0.5,
+      "end_time_s": 3e-05,
+      "reference": {
+        "final_temperature_K": 2197.67039,
+        "induction_length_m": 0.00249482991,
+        "exothermic_length_m": 0.000334072034
+      },
+      "baseline": {
+        "final_temperature_K": 2197.89852,
+        "temperature_error_K": 0.228132569,
+        "profile_rmse_K": 96.8060858,
+        "induction_length_m": 0.00254112237,
+        "induction_error_percent": 1.85553551,
+        "exothermic_length_m": 0.000149598537,
+        "exothermic_error_percent": -55.2196766
+      },
+      "accepted": {
+        "final_temperature_K": 2197.89852,
+        "temperature_error_K": 0.228132569,
+        "profile_rmse_K": 96.8060858,
+        "induction_length_m": 0.00254112237,
+        "induction_error_percent": 1.85553551,
+        "exothermic_length_m": 0.000149598537,
+        "exothermic_error_percent": -55.2196766
+      }
+    },
+    {
+      "case": 8,
+      "pressure_bar": 20,
+      "initial_temperature_K": 298.0,
+      "phi": 1.0,
+      "end_time_s": 1e-06,
+      "reference": {
+        "final_temperature_K": 3154.15915,
+        "induction_length_m": 8.88256425e-05,
+        "exothermic_length_m": 4.03857502e-05
+      },
+      "baseline": {
+        "final_temperature_K": 3153.55446,
+        "temperature_error_K": -0.604694552,
+        "profile_rmse_K": 685.754612,
+        "induction_length_m": 2.3082073e-05,
+        "induction_error_percent": -74.0141784,
+        "exothermic_length_m": 7.22637661e-06,
+        "exothermic_error_percent": -82.1066179
+      },
+      "accepted": {
+        "final_temperature_K": 3153.55446,
+        "temperature_error_K": -0.604694552,
+        "profile_rmse_K": 685.754612,
+        "induction_length_m": 2.3082073e-05,
+        "induction_error_percent": -74.0141784,
+        "exothermic_length_m": 7.22637661e-06,
+        "exothermic_error_percent": -82.1066179
+      }
+    },
+    {
+      "case": 9,
+      "pressure_bar": 20,
+      "initial_temperature_K": 298.0,
+      "phi": 2.0,
+      "end_time_s": 2e-06,
+      "reference": {
+        "final_temperature_K": 2699.11981,
+        "induction_length_m": 0.000110703795,
+        "exothermic_length_m": 4.26312386e-05
+      },
+      "baseline": {
+        "final_temperature_K": 2705.96538,
+        "temperature_error_K": 6.84556568,
+        "profile_rmse_K": 677.778341,
+        "induction_length_m": 3.77041279e-05,
+        "induction_error_percent": -65.9414314,
+        "exothermic_length_m": 6.59566593e-06,
+        "exothermic_error_percent": -84.5285613
+      },
+      "accepted": {
+        "final_temperature_K": 2705.96538,
+        "temperature_error_K": 6.84556568,
+        "profile_rmse_K": 677.778341,
+        "induction_length_m": 3.77041279e-05,
+        "induction_error_percent": -65.9414314,
+        "exothermic_length_m": 6.59566593e-06,
+        "exothermic_error_percent": -84.5285613
+      }
+    }
+  ],
+  "fit_quality": {
+    "mean_absolute_errors": {
+      "final_temperature_percent": 0.425375916,
+      "induction_percent": 45.8036456,
+      "exothermic_percent": 62.2338933,
+      "profile_rmse_K": 413.371339
+    },
+    "loss_contributions": {
+      "temperature_profile": 0.0,
+      "final_temperature": 0.215589262,
+      "induction_length": 0.230020498,
+      "exothermic_length": 0.593471708
+    },
+    "targets": {
+      "final_temperature_percent": 5.0,
+      "induction_percent": 10.0,
+      "exothermic_percent": 10.0
+    },
+    "passed": false
+  },
+  "active_bounds": [
+    {
+      "parameter": "R1 physical ln A",
+      "side": "lower",
+      "value": -13.8155106,
+      "bound": -13.8155106
+    },
+    {
+      "parameter": "R4 physical ln A",
+      "side": "lower",
+      "value": -0.139761941,
+      "bound": -0.139761941
+    },
+    {
+      "parameter": "R5 physical ln A",
+      "side": "lower",
+      "value": -0.470003628,
+      "bound": -0.470003628
+    },
+    {
+      "parameter": "R6 physical ln A",
+      "side": "lower",
+      "value": -0.470003628,
+      "bound": -0.470003628
+    },
+    {
+      "parameter": "R7 physical ln A",
+      "side": "lower",
+      "value": -0.182321556,
+      "bound": -0.182321556
+    },
+    {
+      "parameter": "R8 physical ln A",
+      "side": "lower",
+      "value": -0.336472236,
+      "bound": -0.336472236
+    },
+    {
+      "parameter": "R9 physical ln A",
+      "side": "lower",
+      "value": -1.09861229,
+      "bound": -1.09861229
+    },
+    {
+      "parameter": "R10 physical ln A",
+      "side": "upper",
+      "value": 1.09861229,
+      "bound": 1.09861229
+    },
+    {
+      "parameter": "R11 physical ln A",
+      "side": "upper",
+      "value": 1.60943791,
+      "bound": 1.60943791
+    },
+    {
+      "parameter": "R12 physical ln A",
+      "side": "upper",
+      "value": 1.16315081,
+      "bound": 1.16315081
+    },
+    {
+      "parameter": "R13 physical ln A",
+      "side": "lower",
+      "value": -0.405465107,
+      "bound": -0.405465107
+    },
+    {
+      "parameter": "R14 physical ln A",
+      "side": "lower",
+      "value": -1.09861229,
+      "bound": -1.09861229
+    },
+    {
+      "parameter": "R15 physical ln A",
+      "side": "lower",
+      "value": -2.30258509,
+      "bound": -2.30258509
+    },
+    {
+      "parameter": "R16 physical ln A",
+      "side": "lower",
+      "value": -0.182321556,
+      "bound": -0.182321556
+    },
+    {
+      "parameter": "R17 physical ln A",
+      "side": "lower",
+      "value": -0.405465107,
+      "bound": -0.405465107
+    }
+  ],
+  "best_model": "best_model.yaml",
+  "comparison_plot": "profiles.png",
+  "active_model": "/project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_03/inputs/plog_R2.yaml",
+  "coordinates": [
+    -13.815510557964274,
+    10.38089033717126,
+    10.084428405970057,
+    8.324602919104214,
+    -9.904519439575365,
+    -0.13976194137515843,
+    -0.4700036282457356,
+    -0.4700036282457356,
+    -0.18232155579396261,
+    -0.33647223562121287,
+    -1.0986122876681097,
+    1.0986122876681097,
+    1.6094379114341992,
+    1.163150808805651,
+    -0.40546510710816436,
+    -1.0986122876681097,
+    -2.302585091994046,
+    -0.1823215557939546,
+    -0.40546510710816436,
+    0.0,
+    0.06771618677988309,
+    0.036595350648425395,
+    0.05449858479026316,
+    0.0,
+    -1.2183915792299244e-15,
+    0.0,
+    0.0,
+    4.848388084223504e-16,
+    0.0,
+    0.0,
+    0.0,
+    -4.7059784229620135e-14,
+    9.637778802680495e-15,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ]
+}

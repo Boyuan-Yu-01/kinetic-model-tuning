@@ -1,0 +1,54 @@
+{
+  "valid": true,
+  "reactions": [
+    {
+      "reaction": 2,
+      "increasing": false,
+      "decreasing": true,
+      "valid": true
+    }
+  ],
+  "increasing": false,
+  "decreasing": true,
+  "direction": "either",
+  "pairs": [
+    {
+      "reaction": 2,
+      "pressures_pa": [
+        100000.00000000001,
+        5000000.000000003
+      ],
+      "temperatures": [
+        298.0,
+        3828.9827578237027
+      ],
+      "log_rate_ratios": [
+        -1.8131596070004772,
+        -1.8131596070004772
+      ],
+      "minimum": -1.8131596070004772,
+      "maximum": -1.8131596070004772
+    },
+    {
+      "reaction": 2,
+      "pressures_pa": [
+        5000000.000000003,
+        10000000.000000006
+      ],
+      "temperatures": [
+        298.0,
+        3828.9827578237027
+      ],
+      "log_rate_ratios": [
+        -3.405240678723869,
+        -3.405240678723869
+      ],
+      "minimum": -3.405240678723869,
+      "maximum": -3.405240678723869
+    }
+  ],
+  "temperature_interval": [
+    298.0,
+    3828.9827578237027
+  ]
+}

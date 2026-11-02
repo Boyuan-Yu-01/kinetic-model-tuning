@@ -1,0 +1,1243 @@
+schema_version: 1
+status: converged
+fit_quality:
+  mean_absolute_errors:
+    final_temperature_percent: 7.54617520e-01
+    induction_percent: 5.34410741e+01
+    exothermic_percent: 8.35774161e+01
+    profile_rmse_K: 4.84948668e+02
+  loss_contributions:
+    temperature_profile: 0.00000000e+00
+    final_temperature: 6.94378379e-01
+    induction_length: 3.23462100e-01
+    exothermic_length: 7.64092246e-01
+  targets:
+    final_temperature_percent: 5.00000000e+00
+    induction_percent: 1.00000000e+01
+    exothermic_percent: 1.00000000e+01
+  passed: false
+active_bounds:
+- parameter: R1 ln k(Tref)
+  side: lower
+  value: -1.38155106e+01
+  bound: -1.38155106e+01
+- parameter: R4 ln k(Tref)
+  side: lower
+  value: -1.39761941e-01
+  bound: -1.39761941e-01
+- parameter: R5 ln k(Tref)
+  side: lower
+  value: -4.70003628e-01
+  bound: -4.70003628e-01
+- parameter: R6 ln k(Tref)
+  side: lower
+  value: -4.70003628e-01
+  bound: -4.70003628e-01
+- parameter: R7 ln k(Tref)
+  side: lower
+  value: -1.82321556e-01
+  bound: -1.82321556e-01
+- parameter: R8 ln k(Tref)
+  side: lower
+  value: -3.36472236e-01
+  bound: -3.36472236e-01
+- parameter: R9 ln k(Tref)
+  side: lower
+  value: -1.09861229e+00
+  bound: -1.09861229e+00
+- parameter: R10 ln k(Tref)
+  side: upper
+  value: 1.09861229e+00
+  bound: 1.09861229e+00
+- parameter: R11 ln k(Tref)
+  side: upper
+  value: 1.60943791e+00
+  bound: 1.60943791e+00
+- parameter: R12 ln k(Tref)
+  side: upper
+  value: 1.16315081e+00
+  bound: 1.16315081e+00
+- parameter: R13 ln k(Tref)
+  side: lower
+  value: -4.05465107e-01
+  bound: -4.05465107e-01
+- parameter: R14 ln k(Tref)
+  side: lower
+  value: -1.09861229e+00
+  bound: -1.09861229e+00
+- parameter: R15 ln k(Tref)
+  side: lower
+  value: -2.30258509e+00
+  bound: -2.30258509e+00
+- parameter: R16 ln k(Tref)
+  side: lower
+  value: -1.82321556e-01
+  bound: -1.82321556e-01
+- parameter: R17 ln k(Tref)
+  side: lower
+  value: -4.05465107e-01
+  bound: -4.05465107e-01
+- parameter: R1 physical ln A
+  side: lower
+  value: -1.38155106e+01
+  bound: -1.38155106e+01
+- parameter: R4 physical ln A
+  side: lower
+  value: -1.39761941e-01
+  bound: -1.39761941e-01
+- parameter: R5 physical ln A
+  side: lower
+  value: -4.70003628e-01
+  bound: -4.70003628e-01
+- parameter: R6 physical ln A
+  side: lower
+  value: -4.70003628e-01
+  bound: -4.70003628e-01
+- parameter: R7 physical ln A
+  side: lower
+  value: -1.82321556e-01
+  bound: -1.82321556e-01
+- parameter: R8 physical ln A
+  side: lower
+  value: -3.36472236e-01
+  bound: -3.36472236e-01
+- parameter: R9 physical ln A
+  side: lower
+  value: -1.09861229e+00
+  bound: -1.09861229e+00
+- parameter: R10 physical ln A
+  side: upper
+  value: 1.09861229e+00
+  bound: 1.09861229e+00
+- parameter: R11 physical ln A
+  side: upper
+  value: 1.60943791e+00
+  bound: 1.60943791e+00
+- parameter: R12 physical ln A
+  side: upper
+  value: 1.16315081e+00
+  bound: 1.16315081e+00
+- parameter: R13 physical ln A
+  side: lower
+  value: -4.05465107e-01
+  bound: -4.05465107e-01
+- parameter: R14 physical ln A
+  side: lower
+  value: -1.09861229e+00
+  bound: -1.09861229e+00
+- parameter: R15 physical ln A
+  side: lower
+  value: -2.30258509e+00
+  bound: -2.30258509e+00
+- parameter: R16 physical ln A
+  side: lower
+  value: -1.82321556e-01
+  bound: -1.82321556e-01
+- parameter: R17 physical ln A
+  side: lower
+  value: -4.05465107e-01
+  bound: -4.05465107e-01
+change_measure: max(relative A change, scaled Ea/b changes using configured limits)
+accepted_round: 4
+converged: true
+stop_reason: parameter_change
+model: best_model.yaml
+model_sha256: c01b74688d4924558f1706541c80299422badae33012d5c7b8f9bab185c437d6
+fit:
+  baseline_loss: 2.30427093e+00
+  accepted_loss: 1.78193272e+00
+  reduction_percent: 2.26682634e+01
+convergence:
+  threshold_percent: 1.00000000e+00
+  all_changes_below_threshold: true
+  all_sensitivities_resolved: true
+  unresolved_reactions: []
+  projected_gradient: 9.15865004e-07
+  stationary: true
+  max_scaled_parameter_change_percent: 0.00000000e+00
+validation:
+  status: passed
+  performed: true
+  passed: true
+  max_temperature_change_K: 2.71711542e-08
+  max_length_change_percent: 5.73129832e-07
+  tighter_loss: 1.78193272e+00
+  errors: []
+  plog_monotonicity_status: not_applicable
+  plog_monotonicity_passed: null
+  rate_uncertainty_passed: true
+  export_max_relative_rate_error: 0.00000000e+00
+evaluations_at_accepted_state: 729
+elapsed_seconds: 2.82865245e+02
+reactions:
+- reaction: 1
+  equation: O2 + H2 => 2 OH
+  coordinate:
+    reaction: 1
+    pressure_pa: null
+    entries:
+    - 1
+    label: R1 ln k(Tref)
+    parameter: log_k_pivot
+  uncertainty_factor: null
+  bound_policy: unbounded
+  nominal_reaction: null
+  multiplier_from_source: 1.00000000e-06
+  change_from_source_percent: -9.99999000e+01
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: null
+- reaction: 2
+  equation: C2H4 + O2 => 2 CO + 2 H2
+  coordinate:
+    reaction: 2
+    pressure_pa: null
+    entries:
+    - 1
+    label: R2 ln k(Tref)
+    parameter: log_k_pivot
+  uncertainty_factor: null
+  bound_policy: unbounded
+  nominal_reaction: null
+  multiplier_from_source: 7.30814505e+03
+  change_from_source_percent: 7.30714505e+05
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: null
+- reaction: 3
+  equation: C2H4 + 2 O => 2 CO + 2 H2
+  coordinate:
+    reaction: 3
+    pressure_pa: null
+    entries:
+    - 1
+    label: R3 ln k(Tref)
+    parameter: log_k_pivot
+  uncertainty_factor: null
+  bound_policy: unbounded
+  nominal_reaction: null
+  multiplier_from_source: 1.34443540e+05
+  change_from_source_percent: 1.34442540e+07
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: null
+- reaction: 4
+  equation: H + O2 <=> O + OH
+  coordinate:
+    reaction: 4
+    pressure_pa: null
+    entries:
+    - 1
+    label: R4 ln k(Tref)
+    parameter: log_k_pivot
+  uncertainty_factor: 1.15000000e+00
+  bound_policy: bounded
+  nominal_reaction: 1
+  multiplier_from_source: 8.69565218e-01
+  change_from_source_percent: -1.30434782e+01
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: null
+- reaction: 5
+  equation: H2 + O <=> H + OH
+  coordinate:
+    reaction: 5
+    pressure_pa: null
+    entries:
+    - 1
+    label: R5 ln k(Tref)
+    parameter: log_k_pivot
+  uncertainty_factor: 1.60000000e+00
+  bound_policy: bounded
+  nominal_reaction: 2
+  multiplier_from_source: 6.25000001e-01
+  change_from_source_percent: -3.74999999e+01
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: null
+- reaction: 6
+  equation: H2 + O <=> H + OH
+  coordinate:
+    reaction: 6
+    pressure_pa: null
+    entries:
+    - 1
+    label: R6 ln k(Tref)
+    parameter: log_k_pivot
+  uncertainty_factor: 1.60000000e+00
+  bound_policy: bounded
+  nominal_reaction: 3
+  multiplier_from_source: 6.25000001e-01
+  change_from_source_percent: -3.74999999e+01
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: null
+- reaction: 7
+  equation: H2 + OH <=> H + H2O
+  coordinate:
+    reaction: 7
+    pressure_pa: null
+    entries:
+    - 1
+    label: R7 ln k(Tref)
+    parameter: log_k_pivot
+  uncertainty_factor: 1.20000000e+00
+  bound_policy: bounded
+  nominal_reaction: 4
+  multiplier_from_source: 8.33333334e-01
+  change_from_source_percent: -1.66666666e+01
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: null
+- reaction: 8
+  equation: 2 OH <=> H2O + O
+  coordinate:
+    reaction: 8
+    pressure_pa: null
+    entries:
+    - 1
+    label: R8 ln k(Tref)
+    parameter: log_k_pivot
+  uncertainty_factor: 1.40000000e+00
+  bound_policy: bounded
+  nominal_reaction: 5
+  multiplier_from_source: 7.14285715e-01
+  change_from_source_percent: -2.85714285e+01
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: null
+- reaction: 9
+  equation: H2 + M <=> 2 H + M
+  coordinate:
+    reaction: 9
+    pressure_pa: null
+    entries:
+    - 1
+    label: R9 ln k(Tref)
+    parameter: log_k_pivot
+  uncertainty_factor: 3.00000000e+00
+  bound_policy: bounded
+  nominal_reaction: 6
+  multiplier_from_source: 3.33333334e-01
+  change_from_source_percent: -6.66666666e+01
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: null
+- reaction: 10
+  equation: 2 O + M <=> O2 + M
+  coordinate:
+    reaction: 10
+    pressure_pa: null
+    entries:
+    - 1
+    label: R10 ln k(Tref)
+    parameter: log_k_pivot
+  uncertainty_factor: 3.00000000e+00
+  bound_policy: bounded
+  nominal_reaction: 9
+  multiplier_from_source: 3.00000000e+00
+  change_from_source_percent: 2.00000000e+02
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: null
+- reaction: 11
+  equation: H + O + M <=> OH + M
+  coordinate:
+    reaction: 11
+    pressure_pa: null
+    entries:
+    - 1
+    label: R11 ln k(Tref)
+    parameter: log_k_pivot
+  uncertainty_factor: 5.00000000e+00
+  bound_policy: bounded
+  nominal_reaction: 12
+  multiplier_from_source: 4.99999999e+00
+  change_from_source_percent: 3.99999999e+02
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: null
+- reaction: 12
+  equation: H2O + M <=> H + OH + M
+  coordinate:
+    reaction: 12
+    pressure_pa: null
+    entries:
+    - 1
+    label: R12 ln k(Tref)
+    parameter: log_k_pivot
+  uncertainty_factor: 3.20000000e+00
+  bound_policy: bounded
+  nominal_reaction: 13
+  multiplier_from_source: 3.20000000e+00
+  change_from_source_percent: 2.20000000e+02
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: null
+- reaction: 13
+  equation: H2O + H2O <=> H + OH + H2O
+  coordinate:
+    reaction: 13
+    pressure_pa: null
+    entries:
+    - 1
+    label: R13 ln k(Tref)
+    parameter: log_k_pivot
+  uncertainty_factor: 1.50000000e+00
+  bound_policy: bounded
+  nominal_reaction: 14
+  multiplier_from_source: 6.66666667e-01
+  change_from_source_percent: -3.33333333e+01
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: null
+- reaction: 14
+  equation: CO + O (+M) <=> CO2 (+M)
+  coordinate:
+    reaction: 14
+    pressure_pa: null
+    entries:
+    - 1
+    - 2
+    label: R14 ln k(Tref)
+    parameter: log_k_pivot
+  uncertainty_factor: 3.00000000e+00
+  bound_policy: bounded
+  nominal_reaction: 30
+  multiplier_from_source: 3.33333334e-01
+  change_from_source_percent: -6.66666666e+01
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: null
+- reaction: 15
+  equation: CO + O2 <=> CO2 + O
+  coordinate:
+    reaction: 15
+    pressure_pa: null
+    entries:
+    - 1
+    label: R15 ln k(Tref)
+    parameter: log_k_pivot
+  uncertainty_factor: 1.00000000e+01
+  bound_policy: bounded
+  nominal_reaction: 31
+  multiplier_from_source: 1.00000000e-01
+  change_from_source_percent: -9.00000000e+01
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: null
+- reaction: 16
+  equation: CO + OH <=> CO2 + H
+  coordinate:
+    reaction: 16
+    pressure_pa: null
+    entries:
+    - 1
+    label: R16 ln k(Tref)
+    parameter: log_k_pivot
+  uncertainty_factor: 1.20000000e+00
+  bound_policy: bounded
+  nominal_reaction: 32
+  multiplier_from_source: 8.33333334e-01
+  change_from_source_percent: -1.66666666e+01
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: null
+- reaction: 17
+  equation: CO + OH <=> CO2 + H
+  coordinate:
+    reaction: 17
+    pressure_pa: null
+    entries:
+    - 1
+    label: R17 ln k(Tref)
+    parameter: log_k_pivot
+  uncertainty_factor: 1.50000000e+00
+  bound_policy: bounded
+  nominal_reaction: 33
+  multiplier_from_source: 6.66666667e-01
+  change_from_source_percent: -3.33333333e+01
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: null
+- reaction: 1
+  equation: O2 + H2 => 2 OH
+  coordinate:
+    reaction: 1
+    pressure_pa: null
+    parameter: scaled_ea
+    label: R1 ΔEa/251.04 kJ/mol at fixed k(Tref)
+    scale: 2.51040000e+02
+  uncertainty_factor: null
+  bound_policy: unbounded
+  nominal_reaction: null
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: 0.00000000e+00
+  b_change: null
+- reaction: 2
+  equation: C2H4 + O2 => 2 CO + 2 H2
+  coordinate:
+    reaction: 2
+    pressure_pa: null
+    parameter: scaled_ea
+    label: R2 ΔEa/251.04 kJ/mol at fixed k(Tref)
+    scale: 2.51040000e+02
+  uncertainty_factor: null
+  bound_policy: unbounded
+  nominal_reaction: null
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: 0.00000000e+00
+  b_change: null
+- reaction: 3
+  equation: C2H4 + 2 O => 2 CO + 2 H2
+  coordinate:
+    reaction: 3
+    pressure_pa: null
+    parameter: scaled_ea
+    label: R3 ΔEa/251.04 kJ/mol at fixed k(Tref)
+    scale: 2.51040000e+02
+  uncertainty_factor: null
+  bound_policy: unbounded
+  nominal_reaction: null
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: 0.00000000e+00
+  b_change: null
+- reaction: 4
+  equation: H + O2 <=> O + OH
+  coordinate:
+    reaction: 4
+    pressure_pa: null
+    parameter: scaled_ea
+    label: R4 ΔEa/251.04 kJ/mol at fixed k(Tref)
+    scale: 2.51040000e+02
+  uncertainty_factor: 1.15000000e+00
+  bound_policy: bounded
+  nominal_reaction: 1
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: 0.00000000e+00
+  b_change: null
+- reaction: 5
+  equation: H2 + O <=> H + OH
+  coordinate:
+    reaction: 5
+    pressure_pa: null
+    parameter: scaled_ea
+    label: R5 ΔEa/251.04 kJ/mol at fixed k(Tref)
+    scale: 2.51040000e+02
+  uncertainty_factor: 1.60000000e+00
+  bound_policy: bounded
+  nominal_reaction: 2
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: 0.00000000e+00
+  b_change: null
+- reaction: 6
+  equation: H2 + O <=> H + OH
+  coordinate:
+    reaction: 6
+    pressure_pa: null
+    parameter: scaled_ea
+    label: R6 ΔEa/251.04 kJ/mol at fixed k(Tref)
+    scale: 2.51040000e+02
+  uncertainty_factor: 1.60000000e+00
+  bound_policy: bounded
+  nominal_reaction: 3
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: 0.00000000e+00
+  b_change: null
+- reaction: 7
+  equation: H2 + OH <=> H + H2O
+  coordinate:
+    reaction: 7
+    pressure_pa: null
+    parameter: scaled_ea
+    label: R7 ΔEa/251.04 kJ/mol at fixed k(Tref)
+    scale: 2.51040000e+02
+  uncertainty_factor: 1.20000000e+00
+  bound_policy: bounded
+  nominal_reaction: 4
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: 0.00000000e+00
+  b_change: null
+- reaction: 8
+  equation: 2 OH <=> H2O + O
+  coordinate:
+    reaction: 8
+    pressure_pa: null
+    parameter: scaled_ea
+    label: R8 ΔEa/251.04 kJ/mol at fixed k(Tref)
+    scale: 2.51040000e+02
+  uncertainty_factor: 1.40000000e+00
+  bound_policy: bounded
+  nominal_reaction: 5
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: 0.00000000e+00
+  b_change: null
+- reaction: 9
+  equation: H2 + M <=> 2 H + M
+  coordinate:
+    reaction: 9
+    pressure_pa: null
+    parameter: scaled_ea
+    label: R9 ΔEa/251.04 kJ/mol at fixed k(Tref)
+    scale: 2.51040000e+02
+  uncertainty_factor: 3.00000000e+00
+  bound_policy: bounded
+  nominal_reaction: 6
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: 0.00000000e+00
+  b_change: null
+- reaction: 10
+  equation: 2 O + M <=> O2 + M
+  coordinate:
+    reaction: 10
+    pressure_pa: null
+    parameter: scaled_ea
+    label: R10 ΔEa/251.04 kJ/mol at fixed k(Tref)
+    scale: 2.51040000e+02
+  uncertainty_factor: 3.00000000e+00
+  bound_policy: bounded
+  nominal_reaction: 9
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: 0.00000000e+00
+  b_change: null
+- reaction: 11
+  equation: H + O + M <=> OH + M
+  coordinate:
+    reaction: 11
+    pressure_pa: null
+    parameter: scaled_ea
+    label: R11 ΔEa/251.04 kJ/mol at fixed k(Tref)
+    scale: 2.51040000e+02
+  uncertainty_factor: 5.00000000e+00
+  bound_policy: bounded
+  nominal_reaction: 12
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: 0.00000000e+00
+  b_change: null
+- reaction: 12
+  equation: H2O + M <=> H + OH + M
+  coordinate:
+    reaction: 12
+    pressure_pa: null
+    parameter: scaled_ea
+    label: R12 ΔEa/251.04 kJ/mol at fixed k(Tref)
+    scale: 2.51040000e+02
+  uncertainty_factor: 3.20000000e+00
+  bound_policy: bounded
+  nominal_reaction: 13
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: 0.00000000e+00
+  b_change: null
+- reaction: 13
+  equation: H2O + H2O <=> H + OH + H2O
+  coordinate:
+    reaction: 13
+    pressure_pa: null
+    parameter: scaled_ea
+    label: R13 ΔEa/251.04 kJ/mol at fixed k(Tref)
+    scale: 2.51040000e+02
+  uncertainty_factor: 1.50000000e+00
+  bound_policy: bounded
+  nominal_reaction: 14
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: 0.00000000e+00
+  b_change: null
+- reaction: 14
+  equation: CO + O (+M) <=> CO2 (+M)
+  coordinate:
+    reaction: 14
+    pressure_pa: null
+    parameter: scaled_ea
+    label: R14 ΔEa/251.04 kJ/mol at fixed k(Tref)
+    scale: 2.51040000e+02
+  uncertainty_factor: 3.00000000e+00
+  bound_policy: bounded
+  nominal_reaction: 30
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: 0.00000000e+00
+  b_change: null
+- reaction: 15
+  equation: CO + O2 <=> CO2 + O
+  coordinate:
+    reaction: 15
+    pressure_pa: null
+    parameter: scaled_ea
+    label: R15 ΔEa/251.04 kJ/mol at fixed k(Tref)
+    scale: 2.51040000e+02
+  uncertainty_factor: 1.00000000e+01
+  bound_policy: bounded
+  nominal_reaction: 31
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: 0.00000000e+00
+  b_change: null
+- reaction: 16
+  equation: CO + OH <=> CO2 + H
+  coordinate:
+    reaction: 16
+    pressure_pa: null
+    parameter: scaled_ea
+    label: R16 ΔEa/251.04 kJ/mol at fixed k(Tref)
+    scale: 2.51040000e+02
+  uncertainty_factor: 1.20000000e+00
+  bound_policy: bounded
+  nominal_reaction: 32
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: 0.00000000e+00
+  b_change: null
+- reaction: 17
+  equation: CO + OH <=> CO2 + H
+  coordinate:
+    reaction: 17
+    pressure_pa: null
+    parameter: scaled_ea
+    label: R17 ΔEa/251.04 kJ/mol at fixed k(Tref)
+    scale: 2.51040000e+02
+  uncertainty_factor: 1.50000000e+00
+  bound_policy: bounded
+  nominal_reaction: 33
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: 0.00000000e+00
+  b_change: null
+- reaction: 1
+  equation: O2 + H2 => 2 OH
+  coordinate:
+    reaction: 1
+    pressure_pa: null
+    parameter: scaled_b
+    label: R1 Δb/0.2 at fixed k(Tref)
+    scale: 2.00000000e-01
+  uncertainty_factor: null
+  bound_policy: unbounded
+  nominal_reaction: null
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: 0.00000000e+00
+- reaction: 2
+  equation: C2H4 + O2 => 2 CO + 2 H2
+  coordinate:
+    reaction: 2
+    pressure_pa: null
+    parameter: scaled_b
+    label: R2 Δb/0.2 at fixed k(Tref)
+    scale: 2.00000000e-01
+  uncertainty_factor: null
+  bound_policy: unbounded
+  nominal_reaction: null
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: 0.00000000e+00
+- reaction: 3
+  equation: C2H4 + 2 O => 2 CO + 2 H2
+  coordinate:
+    reaction: 3
+    pressure_pa: null
+    parameter: scaled_b
+    label: R3 Δb/0.2 at fixed k(Tref)
+    scale: 2.00000000e-01
+  uncertainty_factor: null
+  bound_policy: unbounded
+  nominal_reaction: null
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: 0.00000000e+00
+- reaction: 4
+  equation: H + O2 <=> O + OH
+  coordinate:
+    reaction: 4
+    pressure_pa: null
+    parameter: scaled_b
+    label: R4 Δb/0.2 at fixed k(Tref)
+    scale: 2.00000000e-01
+  uncertainty_factor: 1.15000000e+00
+  bound_policy: bounded
+  nominal_reaction: 1
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: 0.00000000e+00
+- reaction: 5
+  equation: H2 + O <=> H + OH
+  coordinate:
+    reaction: 5
+    pressure_pa: null
+    parameter: scaled_b
+    label: R5 Δb/0.2 at fixed k(Tref)
+    scale: 2.00000000e-01
+  uncertainty_factor: 1.60000000e+00
+  bound_policy: bounded
+  nominal_reaction: 2
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: 0.00000000e+00
+- reaction: 6
+  equation: H2 + O <=> H + OH
+  coordinate:
+    reaction: 6
+    pressure_pa: null
+    parameter: scaled_b
+    label: R6 Δb/0.2 at fixed k(Tref)
+    scale: 2.00000000e-01
+  uncertainty_factor: 1.60000000e+00
+  bound_policy: bounded
+  nominal_reaction: 3
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: 0.00000000e+00
+- reaction: 7
+  equation: H2 + OH <=> H + H2O
+  coordinate:
+    reaction: 7
+    pressure_pa: null
+    parameter: scaled_b
+    label: R7 Δb/0.2 at fixed k(Tref)
+    scale: 2.00000000e-01
+  uncertainty_factor: 1.20000000e+00
+  bound_policy: bounded
+  nominal_reaction: 4
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: 0.00000000e+00
+- reaction: 8
+  equation: 2 OH <=> H2O + O
+  coordinate:
+    reaction: 8
+    pressure_pa: null
+    parameter: scaled_b
+    label: R8 Δb/0.2 at fixed k(Tref)
+    scale: 2.00000000e-01
+  uncertainty_factor: 1.40000000e+00
+  bound_policy: bounded
+  nominal_reaction: 5
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: 0.00000000e+00
+- reaction: 9
+  equation: H2 + M <=> 2 H + M
+  coordinate:
+    reaction: 9
+    pressure_pa: null
+    parameter: scaled_b
+    label: R9 Δb/0.2 at fixed k(Tref)
+    scale: 2.00000000e-01
+  uncertainty_factor: 3.00000000e+00
+  bound_policy: bounded
+  nominal_reaction: 6
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: 0.00000000e+00
+- reaction: 10
+  equation: 2 O + M <=> O2 + M
+  coordinate:
+    reaction: 10
+    pressure_pa: null
+    parameter: scaled_b
+    label: R10 Δb/0.2 at fixed k(Tref)
+    scale: 2.00000000e-01
+  uncertainty_factor: 3.00000000e+00
+  bound_policy: bounded
+  nominal_reaction: 9
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: 0.00000000e+00
+- reaction: 11
+  equation: H + O + M <=> OH + M
+  coordinate:
+    reaction: 11
+    pressure_pa: null
+    parameter: scaled_b
+    label: R11 Δb/0.2 at fixed k(Tref)
+    scale: 2.00000000e-01
+  uncertainty_factor: 5.00000000e+00
+  bound_policy: bounded
+  nominal_reaction: 12
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: 0.00000000e+00
+- reaction: 12
+  equation: H2O + M <=> H + OH + M
+  coordinate:
+    reaction: 12
+    pressure_pa: null
+    parameter: scaled_b
+    label: R12 Δb/0.2 at fixed k(Tref)
+    scale: 2.00000000e-01
+  uncertainty_factor: 3.20000000e+00
+  bound_policy: bounded
+  nominal_reaction: 13
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: 0.00000000e+00
+- reaction: 13
+  equation: H2O + H2O <=> H + OH + H2O
+  coordinate:
+    reaction: 13
+    pressure_pa: null
+    parameter: scaled_b
+    label: R13 Δb/0.2 at fixed k(Tref)
+    scale: 2.00000000e-01
+  uncertainty_factor: 1.50000000e+00
+  bound_policy: bounded
+  nominal_reaction: 14
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: 0.00000000e+00
+- reaction: 14
+  equation: CO + O (+M) <=> CO2 (+M)
+  coordinate:
+    reaction: 14
+    pressure_pa: null
+    parameter: scaled_b
+    label: R14 Δb/0.2 at fixed k(Tref)
+    scale: 2.00000000e-01
+  uncertainty_factor: 3.00000000e+00
+  bound_policy: bounded
+  nominal_reaction: 30
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: 0.00000000e+00
+- reaction: 15
+  equation: CO + O2 <=> CO2 + O
+  coordinate:
+    reaction: 15
+    pressure_pa: null
+    parameter: scaled_b
+    label: R15 Δb/0.2 at fixed k(Tref)
+    scale: 2.00000000e-01
+  uncertainty_factor: 1.00000000e+01
+  bound_policy: bounded
+  nominal_reaction: 31
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: 0.00000000e+00
+- reaction: 16
+  equation: CO + OH <=> CO2 + H
+  coordinate:
+    reaction: 16
+    pressure_pa: null
+    parameter: scaled_b
+    label: R16 Δb/0.2 at fixed k(Tref)
+    scale: 2.00000000e-01
+  uncertainty_factor: 1.20000000e+00
+  bound_policy: bounded
+  nominal_reaction: 32
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: 0.00000000e+00
+- reaction: 17
+  equation: CO + OH <=> CO2 + H
+  coordinate:
+    reaction: 17
+    pressure_pa: null
+    parameter: scaled_b
+    label: R17 Δb/0.2 at fixed k(Tref)
+    scale: 2.00000000e-01
+  uncertainty_factor: 1.50000000e+00
+  bound_policy: bounded
+  nominal_reaction: 33
+  multiplier_from_source: null
+  change_from_source_percent: null
+  multiplier_from_nominal: null
+  ea_change_kJ_per_mol: null
+  b_change: 0.00000000e+00
+cases:
+- case: 1
+  pressure_bar: 1
+  initial_temperature_K: 2.98000000e+02
+  phi: 5.00000000e-01
+  end_time_s: 1.00000000e-04
+  reference:
+    final_temperature_K: 2.20624147e+03
+    induction_length_m: 1.60696463e-02
+    exothermic_length_m: 7.42557515e-04
+  baseline:
+    final_temperature_K: 2.20528168e+03
+    temperature_error_K: -9.59798315e-01
+    profile_rmse_K: 1.73769439e+02
+    induction_length_m: 1.90728452e-02
+    induction_error_percent: 1.86886436e+01
+    exothermic_length_m: 2.02665404e-03
+    exothermic_error_percent: 1.72928898e+02
+  accepted:
+    final_temperature_K: 2.20761697e+03
+    temperature_error_K: 1.37549445e+00
+    profile_rmse_K: 3.37421624e+02
+    induction_length_m: 2.30561849e-02
+    induction_error_percent: 4.34766172e+01
+    exothermic_length_m: 2.07562658e-03
+    exothermic_error_percent: 1.79524014e+02
+- case: 2
+  pressure_bar: 1
+  initial_temperature_K: 2.98000000e+02
+  phi: 1.00000000e+00
+  end_time_s: 8.00000000e-06
+  reference:
+    final_temperature_K: 2.95220400e+03
+    induction_length_m: 5.47180897e-04
+    exothermic_length_m: 1.17933906e-04
+  baseline:
+    final_temperature_K: 2.94275094e+03
+    temperature_error_K: -9.45305801e+00
+    profile_rmse_K: 5.10922276e+01
+    induction_length_m: 4.36401667e-04
+    induction_error_percent: -2.02454492e+01
+    exothermic_length_m: 1.99749397e-04
+    exothermic_error_percent: 6.93740199e+01
+  accepted:
+    final_temperature_K: 2.95795773e+03
+    temperature_error_K: 5.75372731e+00
+    profile_rmse_K: 4.41001978e+01
+    induction_length_m: 5.07145405e-04
+    induction_error_percent: -7.31668311e+00
+    exothermic_length_m: 1.77974180e-04
+    exothermic_error_percent: 5.09101045e+01
+- case: 3
+  pressure_bar: 1
+  initial_temperature_K: 2.98000000e+02
+  phi: 2.00000000e+00
+  end_time_s: 9.00000000e-06
+  reference:
+    final_temperature_K: 2.66891532e+03
+    induction_length_m: 9.49470195e-04
+    exothermic_length_m: 6.27802883e-04
+  baseline:
+    final_temperature_K: 2.74142581e+03
+    temperature_error_K: 7.25104911e+01
+    profile_rmse_K: 4.06335069e+02
+    induction_length_m: 4.00323617e-04
+    induction_error_percent: -5.78371581e+01
+    exothermic_length_m: 1.15941671e-04
+    exothermic_error_percent: -8.15321537e+01
+  accepted:
+    final_temperature_K: 2.76743671e+03
+    temperature_error_K: 9.85213897e+01
+    profile_rmse_K: 3.81737569e+02
+    induction_length_m: 4.73920021e-04
+    induction_error_percent: -5.00858454e+01
+    exothermic_length_m: 1.02425682e-04
+    exothermic_error_percent: -8.36850570e+01
+- case: 4
+  pressure_bar: 5
+  initial_temperature_K: 2.98000000e+02
+  phi: 5.00000000e-01
+  end_time_s: 5.00000000e-05
+  reference:
+    final_temperature_K: 2.19745921e+03
+    induction_length_m: 8.00831413e-03
+    exothermic_length_m: 8.88393278e-04
+  baseline:
+    final_temperature_K: 2.20614065e+03
+    temperature_error_K: 8.68143991e+00
+    profile_rmse_K: 5.53675665e+02
+    induction_length_m: 3.47871403e-03
+    induction_error_percent: -5.65612191e+01
+    exothermic_length_m: 3.12551282e-04
+    exothermic_error_percent: -6.48183648e+01
+  accepted:
+    final_temperature_K: 2.20159471e+03
+    temperature_error_K: 4.13549430e+00
+    profile_rmse_K: 4.64138285e+02
+    induction_length_m: 4.60152702e-03
+    induction_error_percent: -4.25406278e+01
+    exothermic_length_m: 3.91539948e-04
+    exothermic_error_percent: -5.59271825e+01
+- case: 5
+  pressure_bar: 5
+  initial_temperature_K: 2.98000000e+02
+  phi: 1.00000000e+00
+  end_time_s: 1.00000000e-06
+  reference:
+    final_temperature_K: 3.04934286e+03
+    induction_length_m: 2.02749973e-04
+    exothermic_length_m: 5.08385321e-05
+  baseline:
+    final_temperature_K: 3.06941364e+03
+    temperature_error_K: 2.00707781e+01
+    profile_rmse_K: 5.68846333e+02
+    induction_length_m: 5.86935706e-05
+    induction_error_percent: -7.10512561e+01
+    exothermic_length_m: 2.12183219e-05
+    exothermic_error_percent: -5.82633074e+01
+  accepted:
+    final_temperature_K: 3.07426748e+03
+    temperature_error_K: 2.49246226e+01
+    profile_rmse_K: 5.22616167e+02
+    induction_length_m: 7.42498602e-05
+    induction_error_percent: -6.33786091e+01
+    exothermic_length_m: 2.26927475e-05
+    exothermic_error_percent: -5.53630946e+01
+- case: 6
+  pressure_bar: 5
+  initial_temperature_K: 2.98000000e+02
+  phi: 2.00000000e+00
+  end_time_s: 2.00000000e-06
+  reference:
+    final_temperature_K: 2.72771647e+03
+    induction_length_m: 2.64002493e-04
+    exothermic_length_m: 2.31186297e-04
+  baseline:
+    final_temperature_K: 2.79725011e+03
+    temperature_error_K: 6.95336414e+01
+    profile_rmse_K: 7.28891237e+02
+    induction_length_m: 7.08334099e-05
+    induction_error_percent: -7.31694163e+01
+    exothermic_length_m: 1.52557160e-05
+    exothermic_error_percent: -9.34011158e+01
+  accepted:
+    final_temperature_K: 2.76027140e+03
+    temperature_error_K: 3.25549307e+01
+    profile_rmse_K: 6.73089779e+02
+    induction_length_m: 9.07626541e-05
+    induction_error_percent: -6.56205315e+01
+    exothermic_length_m: 1.78515528e-05
+    exothermic_error_percent: -9.22782825e+01
+- case: 7
+  pressure_bar: 20
+  initial_temperature_K: 2.98000000e+02
+  phi: 5.00000000e-01
+  end_time_s: 3.00000000e-05
+  reference:
+    final_temperature_K: 2.19767039e+03
+    induction_length_m: 2.49482991e-03
+    exothermic_length_m: 3.34072034e-04
+  baseline:
+    final_temperature_K: 2.19855073e+03
+    temperature_error_K: 8.80345316e-01
+    profile_rmse_K: 5.60492602e+02
+    induction_length_m: 8.80482351e-04
+    induction_error_percent: -6.47077203e+01
+    exothermic_length_m: 7.41695797e-05
+    exothermic_error_percent: -7.77983273e+01
+  accepted:
+    final_temperature_K: 2.19777927e+03
+    temperature_error_K: 1.08888683e-01
+    profile_rmse_K: 4.74123858e+02
+    induction_length_m: 1.28106537e-03
+    induction_error_percent: -4.86511941e+01
+    exothermic_length_m: 1.17684945e-04
+    exothermic_error_percent: -6.47725841e+01
+- case: 8
+  pressure_bar: 20
+  initial_temperature_K: 2.98000000e+02
+  phi: 1.00000000e+00
+  end_time_s: 1.00000000e-06
+  reference:
+    final_temperature_K: 3.15415915e+03
+    induction_length_m: 8.88256425e-05
+    exothermic_length_m: 4.03857502e-05
+  baseline:
+    final_temperature_K: 3.15421182e+03
+    temperature_error_K: 5.26642596e-02
+    profile_rmse_K: 8.13861145e+02
+    induction_length_m: 1.17273794e-05
+    induction_error_percent: -8.67973041e+01
+    exothermic_length_m: 3.79615793e-06
+    exothermic_error_percent: -9.06002540e+01
+  accepted:
+    final_temperature_K: 3.15347623e+03
+    temperature_error_K: -6.82921890e-01
+    profile_rmse_K: 7.42889232e+02
+    induction_length_m: 1.60761080e-05
+    induction_error_percent: -8.19015010e+01
+    exothermic_length_m: 6.42685040e-06
+    exothermic_error_percent: -8.40863414e+01
+- case: 9
+  pressure_bar: 20
+  initial_temperature_K: 2.98000000e+02
+  phi: 2.00000000e+00
+  end_time_s: 2.00000000e-06
+  reference:
+    final_temperature_K: 2.69911981e+03
+    induction_length_m: 1.10703795e-04
+    exothermic_length_m: 4.26312386e-05
+  baseline:
+    final_temperature_K: 2.75171174e+03
+    temperature_error_K: 5.25919249e+01
+    profile_rmse_K: 8.00994953e+02
+    induction_length_m: 1.75295223e-05
+    induction_error_percent: -8.41653827e+01
+    exothermic_length_m: 3.59058011e-06
+    exothermic_error_percent: -9.15775844e+01
+  accepted:
+    final_temperature_K: 2.68246050e+03
+    temperature_error_K: -1.66593116e+01
+    profile_rmse_K: 7.24421300e+02
+    induction_length_m: 2.43569848e-05
+    induction_error_percent: -7.79980579e+01
+    exothermic_length_m: 6.11754705e-06
+    exothermic_error_percent: -8.56500837e+01
+provenance:
+  python: 3.13.2 (main, Feb 26 2025, 13:56:00) [GCC 13.3.0]
+  cantera: 3.2.0
+  inputs:
+    model:
+      path: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/inputs/model_populated.yaml
+      sha256: 6f1dd9aef38fba38489d878f0e52ad04da74fbde788a4ca3df10665970d328d9
+    reference:
+      path: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/inputs/FFCM2.yaml
+      sha256: dde5fb1e2cd5f6dfacb11343ea9a6936bf91ea7cdfb9a69cbc95557afa0c3719
+  input_snapshots: run_info/input_snapshots.yaml

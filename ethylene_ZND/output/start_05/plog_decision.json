@@ -1,0 +1,246 @@
+{
+  "enabled": true,
+  "accepted": true,
+  "pressure_entries_bar": [
+    1.0,
+    50.0,
+    100.0
+  ],
+  "eligible_reactions": [
+    2
+  ],
+  "selected_reactions": [
+    2
+  ],
+  "ranking": [
+    {
+      "group": 2,
+      "coordinates": [
+        1
+      ],
+      "reliable_coordinates": [
+        1
+      ],
+      "all_resolved": true,
+      "score": 0.25620458187542566,
+      "projected_gradient": 9.960275872671759e-06
+    },
+    {
+      "group": 4,
+      "coordinates": [
+        3
+      ],
+      "reliable_coordinates": [
+        3
+      ],
+      "all_resolved": true,
+      "score": 0.20492565981064964,
+      "projected_gradient": 5e-324
+    },
+    {
+      "group": 12,
+      "coordinates": [
+        11
+      ],
+      "reliable_coordinates": [
+        11
+      ],
+      "all_resolved": true,
+      "score": 0.09169324000015494,
+      "projected_gradient": 1.5210055437364642e-13
+    },
+    {
+      "group": 11,
+      "coordinates": [
+        10
+      ],
+      "reliable_coordinates": [
+        10
+      ],
+      "all_resolved": true,
+      "score": 0.060080180085924764,
+      "projected_gradient": 1.1102230246251563e-15
+    },
+    {
+      "group": 7,
+      "coordinates": [
+        6
+      ],
+      "reliable_coordinates": [
+        6
+      ],
+      "all_resolved": true,
+      "score": 0.046460213799128444,
+      "projected_gradient": 5e-324
+    },
+    {
+      "group": 16,
+      "coordinates": [
+        15
+      ],
+      "reliable_coordinates": [
+        15
+      ],
+      "all_resolved": true,
+      "score": 0.04529119602028433,
+      "projected_gradient": 5e-324
+    },
+    {
+      "group": 6,
+      "coordinates": [
+        5
+      ],
+      "reliable_coordinates": [
+        5
+      ],
+      "all_resolved": true,
+      "score": 0.04349415795013805,
+      "projected_gradient": 5e-324
+    },
+    {
+      "group": 13,
+      "coordinates": [
+        12
+      ],
+      "reliable_coordinates": [
+        12
+      ],
+      "all_resolved": true,
+      "score": 0.012744486618147852,
+      "projected_gradient": 1.0544755014381258e-53
+    },
+    {
+      "group": 9,
+      "coordinates": [
+        8
+      ],
+      "reliable_coordinates": [
+        8
+      ],
+      "all_resolved": true,
+      "score": 0.004571636847311289,
+      "projected_gradient": 4.5348597591556455e-36
+    },
+    {
+      "group": 5,
+      "coordinates": [
+        4
+      ],
+      "reliable_coordinates": [
+        4
+      ],
+      "all_resolved": true,
+      "score": 0.003301221670420522,
+      "projected_gradient": 5.97256002117202e-47
+    },
+    {
+      "group": 8,
+      "coordinates": [
+        7
+      ],
+      "reliable_coordinates": [
+        7
+      ],
+      "all_resolved": true,
+      "score": 0.0031308536314194556,
+      "projected_gradient": 8.942481438384394e-37
+    },
+    {
+      "group": 17,
+      "coordinates": [
+        16
+      ],
+      "reliable_coordinates": [
+        16
+      ],
+      "all_resolved": true,
+      "score": 0.0030662406580135144,
+      "projected_gradient": 6.552575621803244e-43
+    },
+    {
+      "group": 10,
+      "coordinates": [
+        9
+      ],
+      "reliable_coordinates": [
+        9
+      ],
+      "all_resolved": true,
+      "score": 0.002423377006402301,
+      "projected_gradient": 7.250624788455675e-42
+    },
+    {
+      "group": 1,
+      "coordinates": [
+        0
+      ],
+      "reliable_coordinates": [
+        0
+      ],
+      "all_resolved": true,
+      "score": 0.0024181087968142196,
+      "projected_gradient": 8.359505403984584e-38
+    },
+    {
+      "group": 14,
+      "coordinates": [
+        13
+      ],
+      "reliable_coordinates": [
+        13
+      ],
+      "all_resolved": true,
+      "score": 0.001638656469462832,
+      "projected_gradient": 1.9782394429988276e-34
+    },
+    {
+      "group": 15,
+      "coordinates": [
+        14
+      ],
+      "reliable_coordinates": [
+        14
+      ],
+      "all_resolved": true,
+      "score": 0.00034791779673034364,
+      "projected_gradient": 1.3284348254273699e-11
+    },
+    {
+      "group": 3,
+      "coordinates": [
+        2
+      ],
+      "reliable_coordinates": [
+        2
+      ],
+      "all_resolved": true,
+      "score": 5.1142520771692843e-08,
+      "projected_gradient": 4.2536926336951766e-08
+    }
+  ],
+  "trials": [
+    {
+      "reaction": 2,
+      "accepted": true,
+      "relative_improvement": 0.3788280502252545,
+      "required_improvement": 0.001,
+      "rate_equivalence": {
+        "valid": true,
+        "max_relative_error": 3.385985127537535e-15,
+        "temperatures": [
+          300.0,
+          1000.0,
+          1800.0,
+          3000.0
+        ],
+        "pressures_pa": [
+          100000.0,
+          5000000.0,
+          10000000.0
+        ],
+        "rtol": 1e-10
+      }
+    }
+  ],
+  "reaction": 2
+}

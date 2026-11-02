@@ -1,0 +1,8 @@
+model:
+  path: run_info/inputs/model.yaml
+  original_path: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/output/start_02/inputs/plog_R2.yaml
+  sha256: 9a199afc61cb2e9c97d493a1fa8063fecf12cf13eabf819c8eb0316a6618e04f
+reference:
+  path: run_info/inputs/reference.yaml
+  original_path: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/ethylene_ZND/inputs/FFCM2.yaml
+  sha256: dde5fb1e2cd5f6dfacb11343ea9a6936bf91ea7cdfb9a69cbc95557afa0c3719

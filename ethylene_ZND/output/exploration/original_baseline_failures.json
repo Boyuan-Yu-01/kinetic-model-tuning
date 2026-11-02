@@ -1,0 +1,29 @@
+[
+  {
+    "error": "ValueError: Thermicity maximum is at the shock (t=0); no resolved interior peak. Induction/exothermic sensitivities are unavailable."
+  },
+  {
+    "error": "ValueError: Thermicity maximum is at the shock (t=0); no resolved interior peak. Induction/exothermic sensitivities are unavailable."
+  },
+  {
+    "error": "ValueError: Thermicity maximum is at the shock (t=0); no resolved interior peak. Induction/exothermic sensitivities are unavailable."
+  },
+  {
+    "error": "ValueError: Thermicity maximum is at the shock (t=0); no resolved interior peak. Induction/exothermic sensitivities are unavailable."
+  },
+  {
+    "error": "ValueError: Thermicity maximum is at the shock (t=0); no resolved interior peak. Induction/exothermic sensitivities are unavailable."
+  },
+  {
+    "error": "ValueError: Thermicity maximum is at the shock (t=0); no resolved interior peak. Induction/exothermic sensitivities are unavailable."
+  },
+  {
+    "error": "ValueError: Thermicity maximum is at t_end=3e-05 s; extend the integration to resolve the peak and its decay."
+  },
+  {
+    "error": "ValueError: Thermicity maximum is at t_end=1e-06 s; extend the integration to resolve the peak and its decay."
+  },
+  {
+    "error": "ValueError: Thermicity maximum is at t_end=2e-06 s; extend the integration to resolve the peak and its decay."
+  }
+]

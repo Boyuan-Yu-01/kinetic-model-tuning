@@ -1,0 +1,6 @@
+{
+  "max_speed_change_fraction": 0.007744495482977065,
+  "max_idt_change_fraction": 0.0011975743750715084,
+  "max_idt_temperature_change_K": 3.551967893145047e-07,
+  "passed": true
+}

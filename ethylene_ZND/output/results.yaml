@@ -1,0 +1,33 @@
+status: completed
+starts:
+- start: start_01
+  initial_loss: 2.2994193734755184
+  final_loss: 1.0390827729023848
+  status: completed
+  validation_passed: true
+  stop_reason: stalled
+- start: start_02
+  initial_loss: 2.304270927874208
+  final_loss: 1.039079971734924
+  status: completed
+  validation_passed: true
+  stop_reason: stalled
+- start: start_03
+  initial_loss: 2.319026941222704
+  final_loss: 1.0390814678128926
+  status: completed
+  validation_passed: true
+  stop_reason: stalled
+- start: start_04
+  initial_loss: 2.3402300047765023
+  final_loss: 1.039080232564489
+  status: completed
+  validation_passed: true
+  stop_reason: stalled
+- start: start_05
+  initial_loss: 2.3885859523447817
+  final_loss: 1.039081945821323
+  status: completed
+  validation_passed: true
+  stop_reason: stalled
+best_start: start_02

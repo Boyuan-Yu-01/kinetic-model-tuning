@@ -25,3 +25,21 @@ code/native/.build.lock
 
 # Cluster submission scripts stay local
 *.slurm
+
+# Published result snapshots and logs for the included examples
+!/ethylene_LFS/output/
+!/ethylene_LFS/output/**
+!/ethylene_LFS/logs/
+!/ethylene_LFS/logs/**
+!/ethylene_LFS_IDT/output/
+!/ethylene_LFS_IDT/output/**
+!/ethylene_LFS_IDT/logs/
+!/ethylene_LFS_IDT/logs/**
+!/ethylene_ZND/output/
+!/ethylene_ZND/output/**
+!/ethylene_ZND/logs/
+!/ethylene_ZND/logs/**
+!/methane_LFS_IDT/output/
+!/methane_LFS_IDT/output/**
+!/methane_LFS_IDT/logs/
+!/methane_LFS_IDT/logs/**
