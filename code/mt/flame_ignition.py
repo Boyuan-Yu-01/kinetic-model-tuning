@@ -79,21 +79,44 @@ def ignition_comparison(cases,refs,rows):
         for case,ref,row in zip(cases,refs,rows) if case.get('kind')=='ignition']
 
 
-def plot_ignition_comparison(root,comparison,scales):
-    """Compare reference and model delays and endpoint temperatures by pressure."""
+def plot_ignition_comparison(root, comparison, scales, *, phis=None,
+                             inverse_temperature=False, separate_pressures=False):
+    """Plot selected equivalence ratios, optionally with 1000/T and one figure per pressure."""
     from .plot_settings import yscale
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
-    pressures=sorted({r['P_atm'] for r in comparison})
-    fig,axes=plt.subplots(2,len(pressures),squeeze=False,figsize=(5*len(pressures),8))
-    for j,p in enumerate(pressures):
-        for phi in sorted({r['phi'] for r in comparison}):
-            rows=sorted([r for r in comparison if r['P_atm']==p and r['phi']==phi],key=lambda r:r['T'])
-            for ax,ref,model in [(axes[0,j],'reference_delay_us','model_delay_us'),(axes[1,j],'reference_temperature_K','model_temperature_K')]:
-                line,=ax.plot([r['T'] for r in rows],[r[ref] for r in rows],'-',label=f'FFCM2 phi={phi:g}')
-                ax.plot([r['T'] for r in rows],[r[model] for r in rows],'--',color=line.get_color(),label=f'Model phi={phi:g}')
-                ax.set(xlabel='Initial temperature (K)',title=f'{p:g} atm');ax.legend(fontsize=7);ax.grid(alpha=.3)
-        axes[0,j].set(ylabel='Ignition delay (us)',yscale=yscale(scales,'ignition_delay_time','log'))
-        axes[1,j].set(ylabel='Final temperature (K)',yscale=yscale(scales,'T_ignition'))
-    fig.tight_layout();fig.savefig(root/'ignition_comparison.png',dpi=180);plt.close(fig)
+    pressures = sorted({r['P_atm'] for r in comparison})
+    selected = sorted({r['phi'] for r in comparison}) if phis is None else list(phis)
+    groups = [[p] for p in pressures] if separate_pressures else [pressures]
+    xvalue = (lambda r: 1000. / r['T']) if inverse_temperature else (lambda r: r['T'])
+    xlabel = r'$1000/T_0$ (K$^{-1}$)' if inverse_temperature else 'Initial temperature (K)'
+    paths = []
+    for group in groups:
+        fig, axes = plt.subplots(2, len(group), squeeze=False, figsize=(6*len(group), 9))
+        for j, pressure in enumerate(group):
+            for phi in selected:
+                rows = sorted([r for r in comparison if r['P_atm'] == pressure
+                               and np.isclose(r['phi'], phi)], key=xvalue)
+                if not rows:
+                    continue
+                for ax, ref, model in [(axes[0,j], 'reference_delay_us', 'model_delay_us'),
+                                       (axes[1,j], 'reference_temperature_K', 'model_temperature_K')]:
+                    line, = ax.plot([xvalue(r) for r in rows], [r[ref] for r in rows],
+                                    '-', linewidth=2, label=f'FFCM2 φ={phi:g}')
+                    ax.plot([xvalue(r) for r in rows], [r[model] for r in rows],
+                            'o--', color=line.get_color(), markerfacecolor='none',
+                            linewidth=2, label=f'best_model φ={phi:g}')
+                    baseline_key = 'baseline_delay_us' if ref == 'reference_delay_us' else 'baseline_temperature_K'
+                    if baseline_key in rows[0]:
+                        ax.plot([xvalue(r) for r in rows], [r[baseline_key] for r in rows],
+                                ':', color=line.get_color(), linewidth=2, label=f'Untuned φ={phi:g}')
+                    ax.set(xlabel=xlabel, title=f'{pressure:g} atm')
+                    ax.legend(fontsize=9); ax.grid(alpha=.3)
+            axes[0,j].set(ylabel='Ignition delay (µs)', yscale=yscale(scales, 'ignition_delay_time', 'log'))
+            axes[1,j].set(ylabel='Final temperature (K)', yscale=yscale(scales, 'T_ignition'))
+        name = f'ignition_comparison_{group[0]:g}atm.png' if separate_pressures else 'ignition_comparison.png'
+        path = Path(root) / name
+        fig.tight_layout(); fig.savefig(path, dpi=200); plt.close(fig)
+        paths.append(path)
+    return paths

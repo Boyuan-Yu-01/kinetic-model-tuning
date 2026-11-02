@@ -101,6 +101,50 @@ Retain any other workflow-specific execution settings already present in the exa
 
 Use a fresh output directory for a new run. Keep an existing result by changing `problem['output']` rather than overwriting it.
 
+## Validation without optimization
+
+The shared `mt.validation.Validation` API calculates reference and candidate predictions,
+then returns cached results for summaries and plots. See the short run scripts in
+[`ethylene_ZND/validate`](example/ethylene_ZND/validate/plot_comparison.py),
+[`ethylene_LFS_IDT/validate`](example/ethylene_LFS_IDT/validate/flame_speed.py), and
+[`methane_LFS_IDT/validate`](example/methane_LFS_IDT/validate/ignition_delay.py).
+
+```python
+from mt.validation import Validation
+
+validation = Validation(
+    reference='FFCM2.yaml',
+    models={'Tuned': 'best_model.yaml', 'Untuned': 'mechanism.yaml'},
+    fuel='CH4', workers=8, output_dir='results',
+    save_results=False, save_logs=False,
+)
+result = validation.flame(
+    conditions={'pressure_atm': [1, 10, 50], 'temperature_K': [298.],
+                'phi': [.7, 1., 1.4]},
+    solver={'transport_model': 'multicomponent', 'soret': False},
+)
+result.print_summary()
+result.plot(quantities=['laminar_flame_speed', 'T_flame'],
+            x='phi', separate_by='pressure')
+```
+
+- `.flame()` and `.ignition()` expand Cartesian condition grids. `.znd()` pairs
+  pressure, temperature, phi and `end_time_s` arrays; scalar values broadcast.
+- Use either `pressure_atm` or `pressure_bar`, never both. Temperatures are in K.
+- `workers=1` runs sequentially; larger values use isolated worker processes.
+  Plain calling scripts do not need a multiprocessing main guard.
+- Summaries include signed percentage errors, absolute natural-log ratios for
+  positive speeds/delays/lengths, and temperature differences in K.
+- Flame and ZND plots default to linear axes; ignition delay defaults to logarithmic.
+  Use `yscales`, `styles`, `quantities`, and `x` to change plots without recalculating.
+- Calculations return SI values. Plots display flame speed in cm/s, delay in µs,
+  and ZND distance in mm. IDT plots support `x='1000/T'`.
+- Failed solves are retained in `result.failures`; other predictions remain usable.
+  Plots leave gaps at failures. Warnings are retained in individual result rows.
+- Only calling `.plot()` saves PNGs by default. Enable `save_results` for JSON or
+  `save_logs` for solver logs. These prediction comparisons are not a substitute
+  for a grid/tolerance convergence study.
+
 ## Optimization workflow
 
 1. Calculate reference results at the requested conditions.

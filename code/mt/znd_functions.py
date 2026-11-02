@@ -489,13 +489,15 @@ def calculate_znd(P0, T0, fuel, oxidizer, phi, mechanism, file_name,
 
 
 def plot_temperature(znd_out, znd_out2=None, labels=None,
-                     file_name='temperature.png', title=None, xlim=None, ylim=None):
+                     file_name='temperature.png', title=None, xlim=None, ylim=None,
+                     color='blue', model_markers=False):
     """Plot one result in blue solid and an optional second in blue dashed.
 
     Save to file_name without opening a window; return the output filename.
     labels supplies one label per result; title optionally sets the plot title.
     xlim=(xmin, xmax) sets the displayed distance range in mm; None shows all data.
     ylim=(Tmin, Tmax) sets the temperature range in K; None uses automatic limits.
+    color sets both curves; model_markers adds open circles to the second curve.
     """
     results = [znd_out] if znd_out2 is None else [znd_out, znd_out2]
     if labels is None:
@@ -515,12 +517,15 @@ def plot_temperature(znd_out, znd_out2=None, labels=None,
     xmax = max(out['distance'][-1] for out in results) * 1000
     # Extend only the illustrative upstream segment when a wider view is requested.
     upstream_x = min(-0.1 * xmax, xlim[0]) if xlim is not None else -0.1 * xmax
-    for out, style, label in zip(results, ['b-', 'b--'], labels):
+    for index, (out, style, label) in enumerate(zip(results, ['-', '--'], labels)):
         # Negative distance is an illustrative upstream segment at initial T.
         # Two points at x = 0 draw the vertical temperature jump at the shock.
         x_mm = np.r_[upstream_x, 0, np.asarray(out['distance']) * 1000]
         temperature = np.r_[out['gas1'].T, out['gas1'].T, out['T']]
-        ax.plot(x_mm, temperature, style, linewidth=2, label=label)
+        ax.plot(x_mm, temperature, linestyle=style, color=color, linewidth=2, label=label,
+                marker='o' if index == 1 and model_markers else None,
+                markerfacecolor='none', markersize=6, markeredgewidth=1.2,
+                markevery=0.06)
 
     ax.set_xlabel('Distance behind shock, x (mm)')
     ax.set_ylabel('Temperature, T (K)')

@@ -39,3 +39,11 @@ code/native/.build.lock
 !/example/methane_LFS_IDT/output/**
 !/example/methane_LFS_IDT/logs/
 !/example/methane_LFS_IDT/logs/**
+
+# Regenerated validation figures and optional numerical reports
+/example/*/validate/results/*
+!/example/*/validate/results/*.png
+!/example/*/validate/results/*.pdf
+/example/*/validate/temperature_profiles/*
+!/example/*/validate/temperature_profiles/*.png
+!/example/*/validate/temperature_profiles/*.pdf

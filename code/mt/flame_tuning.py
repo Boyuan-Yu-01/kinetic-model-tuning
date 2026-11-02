@@ -31,7 +31,7 @@ def solve_flame_case(job):
     previous = signal.signal(signal.SIGALRM, timeout)
     signal.alarm(settings.get('timeout_seconds', 900))
     try:
-        with open(Path(logdir)/f'worker_{os.getpid()}.log', 'a') as log, redirect_stdout(log), redirect_stderr(log):
+        with open(Path(logdir)/f'worker_{os.getpid()}.log' if logdir is not None else os.devnull, 'a') as log, redirect_stdout(log), redirect_stderr(log):
             gas = ct.Solution(yaml=source) if source.startswith('description:') else ct.Solution(source)
             gas.TP = case['T'], case['P_atm']*ct.one_atm
             gas.set_equivalence_ratio(case['phi'], case.get('fuel','C2H4'), case.get('oxidizer','O2:1, N2:3.76'))
@@ -109,11 +109,15 @@ def save_flame_comparison(root, cases, comparison, enabled=True, scales=None):
         group=[c for c in comparison if c['P_atm']==p]
         ax.plot([c['phi'] for c in group],[c['reference_cm_s'] for c in group],'o-',label='FFCM2')
         ax.plot([c['phi'] for c in group],[c['model_cm_s'] for c in group],'s--',label='Tuned')
+        if group and 'baseline_cm_s' in group[0]:
+            ax.plot([c['phi'] for c in group],[c['baseline_cm_s'] for c in group],':',label='Untuned')
         ax.set_yscale(yscale(scales, 'laminar_flame_speed'))
         ax.set(xlabel='Equivalence ratio',ylabel='Flame speed (cm/s)',title=f'{p} atm, 298 K');ax.legend();ax.grid(alpha=.3)
         temp_ax=axes[1,column]
         temp_ax.plot([c['phi'] for c in group],[c['reference_temperature_K'] for c in group],'o-',label='FFCM2')
         temp_ax.plot([c['phi'] for c in group],[c['model_temperature_K'] for c in group],'s--',label='Tuned')
+        if group and 'baseline_temperature_K' in group[0]:
+            temp_ax.plot([c['phi'] for c in group],[c['baseline_temperature_K'] for c in group],':',label='Untuned')
         temp_ax.set_yscale(yscale(scales, 'T_flame'))
         temp_ax.set(xlabel='Equivalence ratio',ylabel='Burned temperature (K)',title=f'{p} atm, 298 K')
         temp_ax.legend();temp_ax.grid(alpha=.3)
