@@ -170,9 +170,3 @@ example/
 ```
 
 See [flame temperature-profile documentation](code/FLAME_PROFILE.md) and the [combined ethylene example notes](example/ethylene_LFS_IDT/README.md) for further details.
-
-## Attribution and licensing
-
-FFCM2 mechanism inputs retain their original notices. External dependencies and reference data have their own licensing terms; see [THIRD_PARTY.md](THIRD_PARTY.md).
-
-No project-wide license has been assigned yet. Public availability does not itself grant an open-source license.
