@@ -12,7 +12,6 @@ These snapshots and cases are independent of later edits to the optimization run
 
 ## Twelve-case presentation
 
-[PowerPoint slides](znd_validation_12_cases.pptx) and [PDF](znd_validation_12_cases.pdf)
-compare all twelve temperature profiles with the supplied numerical results.
+[PDF slides](results.pdf) compare all twelve temperature profiles with the supplied numerical results.
 The deck includes signed percentage errors, absolute log-ratio errors, and an
-all-case summary. Tables remain editable in PowerPoint.
+all-case summary. Editable PowerPoint files stay local and are excluded from GitHub.

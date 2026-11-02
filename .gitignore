@@ -47,3 +47,6 @@ code/native/.build.lock
 /example/*/validate/temperature_profiles/*
 !/example/*/validate/temperature_profiles/*.png
 !/example/*/validate/temperature_profiles/*.pdf
+
+# PowerPoint source files stay local
+*.[pP][pP][tT][xX]
