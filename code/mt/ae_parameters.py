@@ -6,6 +6,8 @@ import math
 import numpy as np
 import cantera as ct
 import yaml
+
+from .mechanism_yaml import dump_mechanism
 from .uncertainty import RateUncertaintySpace, _entries
 
 
@@ -126,7 +128,7 @@ class AEParameters:
         return np.array([(self.source_units.convert_activation_energy_to(e[k], self.energy_unit) if k == 'Ea' else float(e[k])) for r in self.scheme(x)['reactions'] for e in _entries(r) for k in self.physical_fields])
 
     def export(self, path, x):
-        Path(path).write_text(yaml.safe_dump(self.scheme(x), sort_keys=False))
+        Path(path).write_text(dump_mechanism(self.scheme(x)))
         return Path(path)
 
     def linear_monotonicity(self, t_min, t_max, direction='either'):

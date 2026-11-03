@@ -16,6 +16,8 @@ import warnings
 import cantera as ct
 import numpy as np
 import yaml
+
+from .mechanism_yaml import dump_mechanism
 from .starting_points import _prepare_case
 from .znd_functions import _sensitivity_lengths
 from .sensitivity_search import DEFAULTS, sensitivity_trust_region
@@ -115,7 +117,7 @@ def _export(source,x,path,reactions):
         entry['A']=float(entry['A'])*float(np.exp(x[j]))
         entry['b']=float(rate.temperature_exponent+.1*x[2*n+j])
         entry['Ea']=f'{(rate.activation_energy+5e6*x[n+j])/1000:.17g} J/mol'
-    temp=Path(str(path)+'.tmp');temp.write_text(yaml.safe_dump(data,sort_keys=False));temp.replace(path)
+    temp=Path(str(path)+'.tmp');temp.write_text(dump_mechanism(data));temp.replace(path)
 
 
 def _bounds(stage,center,cfg):

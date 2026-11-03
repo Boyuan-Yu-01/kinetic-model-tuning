@@ -11,6 +11,8 @@ import math
 import numpy as np
 import yaml
 
+from .mechanism_yaml import dump_mechanism
+
 
 def _load(value):
     if isinstance(value, dict):
@@ -313,7 +315,7 @@ class RateUncertaintySpace:
 
     def export(self, path, x):
         result = self.scheme(x)
-        Path(path).write_text(yaml.safe_dump(result, sort_keys=False))
+        Path(path).write_text(dump_mechanism(result))
         return Path(path)
 
     def make_gas(self, x=None):
