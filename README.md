@@ -311,7 +311,7 @@ The centered formula illustrates the estimate when both perturbations are feasib
 A Jacobian entry measures the signed response of one residual to one coordinate. To rank a reaction group $G$, the tuner scales each reliable column by its available movement $d_j$ and combines the column norms:
 
 ```math
-\operatorname{score}(G)=
+\mathrm{score}(G)=
 \frac{\sqrt{\sum_{j\in G_{\mathrm{reliable}}} d_j^2
 \left\|(\underline{\underline{J}})_{:,j}\right\|_2^2}}
 {\max(\|\underline{r}\|_2,1)}.
