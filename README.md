@@ -278,7 +278,21 @@ a+\Delta b\ln\frac{T}{T_{\ast}}
 +\sum_{i\in\mathcal U}\Delta n_i\ln\frac{C_i}{C_{i,\ast}}.
 ```
 
-At the reference state, only $a$ contributes. The tuner adjusts the YAML value of $A$ to enforce this relation. The anchor uses the maximum temperature gradient region of each reference flame, with a harmonic mean for temperature and geometric means for concentrations.
+### The anchor state
+
+The subscript $\ast$ means evaluated at the fixed anchor state. The comma separates labels. For example, $r_{f,0,\ast}$ is the forward rate of the baseline mechanism evaluated at the anchor. Likewise, $T_{\ast}$ is the anchor temperature and $C_{i,\ast}$ is the anchor concentration of species $i$.
+
+For a flame-only fit, the tuner finds the interval with the largest $\Delta T/\Delta x$ in each reference flame and samples the state at its midpoint. With $N$ reference flames, it combines the sampled temperatures and positive concentrations as follows:
+
+```math
+T_{\ast}=\left(\frac{1}{N}\sum_{j=1}^{N}\frac{1}{T_j}\right)^{-1},
+\qquad
+C_{i,\ast}=\left(\prod_{j=1}^{N} C_{i,j}\right)^{1/N}.
+```
+
+The harmonic mean averages inverse temperature, which appears in the activation-energy term. The geometric mean averages log concentration, which appears in the order term. The resulting anchor stays fixed across stages.
+
+At the anchor, the temperature and concentration difference terms vanish, leaving $r_{f,\ast}/r_{f,0,\ast}=e^a$. If the tuner raises an order by $0.2$ at fixed $a$, it adjusts the YAML coefficient $A$ to preserve the rate at the anchor. At twice that species' anchor concentration, the order change multiplies the rate by $2^{0.2}\approx1.15$ with the other coordinates held fixed.
 
 ### Objective function
 
