@@ -261,6 +261,8 @@ example is documented in [hydrogen_LFS](example/hydrogen_LFS/README.md).
 
 ## Tuning mathematics
 
+A single underline denotes a vector. A double underline denotes a matrix.
+
 For an Arrhenius reaction with concentration-dependent forward kinetics, let $\mathcal S$ be the species in its forward rate law and $\mathcal U\subseteq\mathcal S$ the species whose orders are adjustable. Suppressing the reaction index, the forward rate is
 
 ```math
@@ -283,35 +285,35 @@ At the reference state, only $a$ contributes. The tuner adjusts the YAML value o
 For example, a flame fit can use the residual vector
 
 ```math
-\mathbf r_i=\begin{bmatrix}
+\underline{r}_i=\begin{bmatrix}
 \ln(S_{u,i}/S_{u,i}^{\mathrm{ref}})\\
 \ln(\delta_i/\delta_i^{\mathrm{ref}})\\
 (T_{b,i}-T_{b,i}^{\mathrm{ref}})/(25\,\mathrm K)
 \end{bmatrix},
-\qquad L=\frac{1}{3N}\sum_i\|\mathbf r_i\|_2^2.
+\qquad L=\frac{1}{3N}\sum_i\|\underline{r}_i\|_2^2.
 ```
 
 ### Sensitivity analysis
 
-Stack the scaled residuals from all cases into a vector $\mathbf r$. For the objective above, each case contributes three rows. The Jacobian has one column per adjustable coordinate $x_j$ and records the effect of that coordinate on every residual.
+Stack the scaled residuals from all cases into a vector $\underline{r}$. For the objective above, each case contributes three rows. The Jacobian has one column per adjustable coordinate $x_j$ and records the effect of that coordinate on every residual.
 
 ```math
-J_{ij}=\frac{\partial r_i}{\partial x_j}
-\approx \frac{r_i(\mathbf x+h_j\mathbf e_j)-r_i(\mathbf x-h_j\mathbf e_j)}{2h_j}.
+(\underline{\underline{J}})_{ij}=\frac{\partial r_i}{\partial x_j}
+\approx \frac{r_i(\underline{x}+h_j\underline{e}_j)-r_i(\underline{x}-h_j\underline{e}_j)}{2h_j}.
 ```
 
-Here $h_j$ is the perturbation in optimizer coordinates and $\mathbf e_j$ selects one coordinate. A positive entry means an increase in that coordinate raises the corresponding residual. For a log-ratio objective, the derivative is the fractional response of the predicted observable to that coordinate. For a temperature objective, it is the temperature response divided by the chosen scale. Consequently, objective weights and scales affect which changes the tuner prioritizes.
+Here $h_j$ is the perturbation in optimizer coordinates and $\underline{e}_j$ selects one coordinate. A positive entry means an increase in that coordinate raises the corresponding residual. For a log-ratio objective, the derivative is the fractional response of the predicted observable to that coordinate. For a temperature objective, it is the temperature response divided by the chosen scale. Consequently, objective weights and scales affect which changes the tuner prioritizes.
 
 The centered formula illustrates the estimate when both perturbations are feasible and resolve successfully. Near bounds, the tuner can use feasible one-sided estimates. It checks estimate quality as the perturbation changes. Flame calculations can use adjoints for supported Arrhenius derivatives and uses finite differences for reaction orders and flame thickness. An unavailable derivative is skipped and rechecked in later rounds.
 
 ### Computing a joint update
 
-For selected, reliable columns $J_S$, the tuner approximates the new residual by $\mathbf r+J_S\Delta\mathbf x$. It proposes a step by solving
+For selected, reliable columns $\underline{\underline{J}}_S$, the tuner approximates the new residual by $\underline{r}+\underline{\underline{J}}_S\Delta\underline{x}$. It proposes a step by solving
 
 ```math
-\min_{\Delta\mathbf x}
-\left\|\mathbf r+J_S\Delta\mathbf x\right\|_2^2
-+\lambda\left\|\Delta\mathbf x\right\|_2^2
+\min_{\Delta\underline{x}}
+\left\|\underline{r}+\underline{\underline{J}}_S\Delta\underline{x}\right\|_2^2
++\lambda\left\|\Delta\underline{x}\right\|_2^2
 ```
 
 subject to the stage bounds, coupled rate constraints, and a trust region that limits the size of the step. The damping $\lambda$ stabilizes the proposed update when several coordinates produce similar responses. Because the fit uses all rows together, a change that helps one case and hurts another is judged by its combined effect.
