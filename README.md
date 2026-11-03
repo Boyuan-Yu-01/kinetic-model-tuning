@@ -280,6 +280,22 @@ a+\Delta b\ln\frac{T}{T_{\ast}}
 +\sum_{i\in\mathcal U}\Delta n_i\ln\frac{C_i}{C_{i,\ast}}.
 ```
 
+### How parameters are tuned
+
+The tuner adjusts $A$ through a logarithmic coordinate. When the rate shape and orders are fixed, a step $\Delta a$ multiplies $A$ by $e^{\Delta a}$. When those parameters also change, the tuner reconstructs the physical $A$ to satisfy the requested rate multiplier at the anchor.
+
+The temperature exponent, activation energy, and any enabled reaction orders use scaled additive coordinates:
+
+```math
+b=b_0+s_b x_b,
+\qquad
+E_a=E_{a,0}+s_E x_E,
+\qquad
+n_i=n_{i,0}+s_{n_i}x_{n_i}.
+```
+
+Each $s$ converts a step in the corresponding optimizer coordinate $x$ into a change in the physical parameter. For example, if $s_E=5{,}000$ cal/mol, increasing $x_E$ by $0.2$ adds $1{,}000$ cal/mol to $E_a$. Reaction orders are dimensionless and their configured bounds apply to the actual $n_i$. At fixed $a$, an order change $\Delta n_i$ multiplies the rate by $(C_i/C_{i,\ast})^{\Delta n_i}$ when the other coordinates are held fixed.
+
 ### The anchor state
 
 The tuner samples one state from each reference case according to the simulation type.
