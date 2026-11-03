@@ -258,3 +258,68 @@ For n reactions with one Arrhenius expression each and m reactions with two
 adjustable orders, the final stage has 3n + 2m coordinates. PLOG nodes can add
 rate coordinates while sharing one set of orders per reaction. The complete
 example is documented in [hydrogen_LFS](example/hydrogen_LFS/README.md).
+
+## Tuning mathematics
+
+For an Arrhenius reaction with concentration-dependent forward kinetics, let $\mathcal S$ be the species in its forward rate law and $\mathcal U\subseteq\mathcal S$ the species whose orders are adjustable. Suppressing the reaction index, the forward rate is
+
+```math
+r_f=A T^b e^{-E_a/(RT)} \prod_{i\in\mathcal S}C_i^{n_i}.
+```
+
+Define $a=\ln(r_{f,\ast}/r_{f,0,\ast})$ as the log rate multiplier at a fixed reference state. Relative to the baseline rate,
+
+```math
+\ln\frac{r_f}{r_{f,0}}=
+a+\Delta b\ln\frac{T}{T_{\ast}}
+-\frac{\Delta E_a}{R}\left(\frac{1}{T}-\frac{1}{T_{\ast}}\right)
++\sum_{i\in\mathcal U}\Delta n_i\ln\frac{C_i}{C_{i,\ast}}.
+```
+
+At the reference state, only $a$ contributes. The tuner adjusts the YAML value of $A$ to enforce this relation. The anchor uses the maximum temperature gradient region of each reference flame, with a harmonic mean for temperature and geometric means for concentrations.
+
+### Objective function
+
+For example, a flame fit can use the residual vector
+
+```math
+\mathbf r_i=\begin{bmatrix}
+\ln(S_{u,i}/S_{u,i}^{\mathrm{ref}})\\
+\ln(\delta_i/\delta_i^{\mathrm{ref}})\\
+(T_{b,i}-T_{b,i}^{\mathrm{ref}})/(25\,\mathrm K)
+\end{bmatrix},
+\qquad L=\frac{1}{3N}\sum_i\|\mathbf r_i\|_2^2.
+```
+
+### Sensitivity analysis
+
+Stack the scaled residuals from all cases into a vector $\mathbf r$. For the objective above, each case contributes three rows. The Jacobian has one column per adjustable coordinate $x_j$ and records the effect of that coordinate on every residual.
+
+```math
+J_{ij}=\frac{\partial r_i}{\partial x_j}
+\approx \frac{r_i(\mathbf x+h_j\mathbf e_j)-r_i(\mathbf x-h_j\mathbf e_j)}{2h_j}.
+```
+
+Here $h_j$ is the perturbation in optimizer coordinates and $\mathbf e_j$ selects one coordinate. A positive entry means an increase in that coordinate raises the corresponding residual. For a log-ratio objective, the derivative is the fractional response of the predicted observable to that coordinate. For a temperature objective, it is the temperature response divided by the chosen scale. Consequently, objective weights and scales affect which changes the tuner prioritizes.
+
+The centered formula illustrates the estimate when both perturbations are feasible and resolve successfully. Near bounds, the tuner can use feasible one-sided estimates. It checks estimate quality as the perturbation changes. Flame calculations can use adjoints for supported Arrhenius derivatives and uses finite differences for reaction orders and flame thickness. An unavailable derivative is skipped and rechecked in later rounds.
+
+### Computing a joint update
+
+For selected, reliable columns $J_S$, the tuner approximates the new residual by $\mathbf r+J_S\Delta\mathbf x$. It proposes a step by solving
+
+```math
+\min_{\Delta\mathbf x}
+\left\|\mathbf r+J_S\Delta\mathbf x\right\|_2^2
++\lambda\left\|\Delta\mathbf x\right\|_2^2
+```
+
+subject to the stage bounds, coupled rate constraints, and a trust region that limits the size of the step. The damping $\lambda$ stabilizes the proposed update when several coordinates produce similar responses. Because the fit uses all rows together, a change that helps one case and hurts another is judged by its combined effect.
+
+## Optimization workflow
+
+1. **Prepare the reference and starting model.** Evaluate the reference cases, set the fixed anchor for order tuning, and evaluate the supplied starting model to obtain the initial residuals.
+2. **Set the stage coordinates and bounds.** Apply the stage rules below. Transfer the best feasible model to the next stage.
+3. **Screen the reactions.** Estimate sensitivities at the current model and prioritize reaction groups with reliable derivatives and room to move. A single-reaction example has only one group to select.
+4. **Propose and verify an update.** Solve the constrained local problem, then run the full simulations on the trial model. Accept an improving step only when the actual reduction agrees sufficiently with the prediction. Shrink the trust region when a proposal performs poorly.
+5. **Repeat and validate.** Refresh sensitivities as the model changes and recheck unavailable directions. Distinguish convergence from a loss plateau, an exhausted trust region, or a round limit. Validate the final model with the refinement checks for the chosen observable.
