@@ -1,0 +1,182 @@
+[
+  {
+    "speed_m_s": 0.051817184421067135,
+    "burnt_temperature_K": 1450.1349093097156,
+    "flame_thickness_m": 0.000271777743925213,
+    "order_anchor": {
+      "temperature_K": 1193.721207603741,
+      "concentrations_kmol_m3": {
+        "H2": 0.0008658021006536866,
+        "O2": 0.01669130851385948
+      }
+    }
+  },
+  {
+    "speed_m_s": 0.06129100846473975,
+    "burnt_temperature_K": 1480.5029978831265,
+    "flame_thickness_m": 0.00021014526789142138,
+    "order_anchor": {
+      "temperature_K": 1215.8651480357162,
+      "concentrations_kmol_m3": {
+        "H2": 0.0010648916684958504,
+        "O2": 0.019776225053500462
+      }
+    }
+  },
+  {
+    "speed_m_s": 0.07130233084810428,
+    "burnt_temperature_K": 1507.3925557586394,
+    "flame_thickness_m": 0.00016801377573521977,
+    "order_anchor": {
+      "temperature_K": 1234.020145331749,
+      "concentrations_kmol_m3": {
+        "H2": 0.0012746384673002647,
+        "O2": 0.02278880760101916
+      }
+    }
+  },
+  {
+    "speed_m_s": 0.08147100097478423,
+    "burnt_temperature_K": 1531.221663047976,
+    "flame_thickness_m": 0.0001383797075912462,
+    "order_anchor": {
+      "temperature_K": 1252.1851821358173,
+      "concentrations_kmol_m3": {
+        "H2": 0.0014727286896372227,
+        "O2": 0.02566678999129472
+      }
+    }
+  },
+  {
+    "speed_m_s": 0.09213846549412674,
+    "burnt_temperature_K": 1553.0144233841136,
+    "flame_thickness_m": 0.00011623392335568077,
+    "order_anchor": {
+      "temperature_K": 1266.3637806834276,
+      "concentrations_kmol_m3": {
+        "H2": 0.0016911570674834633,
+        "O2": 0.028546758963951167
+      }
+    }
+  },
+  {
+    "speed_m_s": 0.10382042469320876,
+    "burnt_temperature_K": 1573.752923616915,
+    "flame_thickness_m": 9.87305443768308e-05,
+    "order_anchor": {
+      "temperature_K": 1280.7125946035687,
+      "concentrations_kmol_m3": {
+        "H2": 0.0019070261728430474,
+        "O2": 0.031324901779919936
+      }
+    }
+  },
+  {
+    "speed_m_s": 0.11458239407275742,
+    "burnt_temperature_K": 1591.7528230563132,
+    "flame_thickness_m": 8.590635693193281e-05,
+    "order_anchor": {
+      "temperature_K": 1293.6905087255639,
+      "concentrations_kmol_m3": {
+        "H2": 0.002117798703994114,
+        "O2": 0.03406863298242658
+      }
+    }
+  },
+  {
+    "speed_m_s": 0.126268816004482,
+    "burnt_temperature_K": 1609.178427401529,
+    "flame_thickness_m": 7.524720913040662e-05,
+    "order_anchor": {
+      "temperature_K": 1306.0158577734194,
+      "concentrations_kmol_m3": {
+        "H2": 0.0023340605986169227,
+        "O2": 0.03675647313590872
+      }
+    }
+  },
+  {
+    "speed_m_s": 0.13843609090773423,
+    "burnt_temperature_K": 1625.696961942894,
+    "flame_thickness_m": 6.650088487127637e-05,
+    "order_anchor": {
+      "temperature_K": 1316.6459570736265,
+      "concentrations_kmol_m3": {
+        "H2": 0.0025646200427595547,
+        "O2": 0.03944337998318052
+      }
+    }
+  },
+  {
+    "speed_m_s": 0.15170028958790505,
+    "burnt_temperature_K": 1641.9154523188097,
+    "flame_thickness_m": 5.902886193394876e-05,
+    "order_anchor": {
+      "temperature_K": 1327.1903618372116,
+      "concentrations_kmol_m3": {
+        "H2": 0.0027987388973775233,
+        "O2": 0.04207084788627407
+      }
+    }
+  },
+  {
+    "speed_m_s": 0.1638957067395688,
+    "burnt_temperature_K": 1656.171848798609,
+    "flame_thickness_m": 5.321727597549206e-05,
+    "order_anchor": {
+      "temperature_K": 1336.8768171775714,
+      "concentrations_kmol_m3": {
+        "H2": 0.0030270113589375156,
+        "O2": 0.04468502519620698
+      }
+    }
+  },
+  {
+    "speed_m_s": 0.1775509881488656,
+    "burnt_temperature_K": 1670.6138886019558,
+    "flame_thickness_m": 4.8004845618714554e-05,
+    "order_anchor": {
+      "temperature_K": 1347.646734284449,
+      "concentrations_kmol_m3": {
+        "H2": 0.0032469297586721034,
+        "O2": 0.04718781878197223
+      }
+    }
+  },
+  {
+    "speed_m_s": 0.1907752606403529,
+    "burnt_temperature_K": 1683.9093143466268,
+    "flame_thickness_m": 4.369263967132776e-05,
+    "order_anchor": {
+      "temperature_K": 1356.458283326067,
+      "concentrations_kmol_m3": {
+        "H2": 0.0034827118387772845,
+        "O2": 0.04973977983118472
+      }
+    }
+  },
+  {
+    "speed_m_s": 0.2045077939120604,
+    "burnt_temperature_K": 1696.7604907045065,
+    "flame_thickness_m": 3.994861278362133e-05,
+    "order_anchor": {
+      "temperature_K": 1364.9055020552305,
+      "concentrations_kmol_m3": {
+        "H2": 0.003722189365789182,
+        "O2": 0.05226482557411871
+      }
+    }
+  },
+  {
+    "speed_m_s": 0.21847455821225267,
+    "burnt_temperature_K": 1709.155219408786,
+    "flame_thickness_m": 3.668393293385701e-05,
+    "order_anchor": {
+      "temperature_K": 1372.849340536327,
+      "concentrations_kmol_m3": {
+        "H2": 0.003967450638357292,
+        "O2": 0.05477325285782159
+      }
+    }
+  }
+]

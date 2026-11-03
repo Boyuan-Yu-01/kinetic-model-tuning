@@ -1,0 +1,9 @@
+{
+  "temperature_K": 1295.3828586317322,
+  "concentrations_kmol_m3": {
+    "H2": 0.002154590508402813,
+    "O2": 0.034315164101776735
+  },
+  "definition": "Reference LFS max dT/dx; IDT max dT/dt; ZND induction length. Fixed for all stages.",
+  "case_count": 15
+}

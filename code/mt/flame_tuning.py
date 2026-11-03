@@ -13,6 +13,7 @@ import cantera as ct
 import yaml
 from .flame_profile import profile_settings, prepare_profile_reference, profile_residual
 from .uncertainty import plog_monotonicity
+from .order_tuning import anchor_species, state_anchor, combine_anchors, order_report
 from .plot_settings import yscale
 from .flame_ignition import solve_ignition_case, combined_residual, ignition_comparison, plot_ignition_comparison
 from .staged_parameters import StagedParameters
@@ -35,10 +36,11 @@ def solve_flame_case(job):
             gas = ct.Solution(yaml=source) if source.startswith('description:') else ct.Solution(source)
             gas.TP = case['T'], case['P_atm']*ct.one_atm
             gas.set_equivalence_ratio(case['phi'], case.get('fuel','C2H4'), case.get('oxidizer','O2:1, N2:3.76'))
+            inlet_sound_speed=float(gas.sound_speed)
             flame = ct.FreeFlame(gas, width=settings['width'])
             flame.transport_model = settings['transport_model']
             flame.soret_enabled = settings['soret']
-            flame.set_refine_criteria(ratio=3., slope=settings['slope'], curve=settings['curve'])
+            flame.set_refine_criteria(ratio=settings.get('ratio',3.), slope=settings['slope'], curve=settings['curve'])
             flame.solve(loglevel=0, auto=True)
             if settings.get('flame_speed_sensitivities', False):
                 # Resolve the state Jacobian accurately for dilute intermediates.
@@ -47,9 +49,20 @@ def solve_flame_case(job):
                 flame.flame.set_steady_tolerances(default=(1e-10, 1e-14))
                 flame.solve(loglevel=0, refine_grid=False, auto=False)
             speed=float(flame.velocity[0])
-            if not np.isfinite(speed) or speed<=0 or flame.T[-1]-case['T']<200:
-                raise ValueError('Flame is not a positive-speed burning solution.')
+            if not np.isfinite(speed) or not 0<speed<inlet_sound_speed or flame.T[-1]-case['T']<200:
+                raise ValueError('Flame is not a positive-speed, subsonic burning solution.')
             row=dict(speed_m_s=speed, burnt_temperature_K=float(flame.T[-1]))
+            gradient=np.diff(flame.T)/np.diff(flame.grid)
+            if settings.get('save_thickness',False):
+                thickness=float((flame.T[-1]-flame.T[0])/np.max(gradient))
+                if not np.isfinite(thickness) or thickness<=0: raise ValueError('Invalid flame thickness.')
+                row['flame_thickness_m']=thickness
+            if settings.get('order_anchor_species'):
+                j=int(np.argmax(gradient))
+                previous_state=gas.state
+                gas.TPY=float((flame.T[j]+flame.T[j+1])/2),flame.P,(flame.Y[:,j]+flame.Y[:,j+1])/2
+                row['order_anchor']=state_anchor(gas,settings['order_anchor_species'])
+                gas.state=previous_state
             if settings.get('flame_speed_sensitivities', False):
                 sensitivities = flame.get_flame_speed_reaction_sensitivities()
                 if not np.isfinite(sensitivities).all():
@@ -68,10 +81,11 @@ def solve_flame_case(job):
         signal.signal(signal.SIGALRM, previous)
 
 
-def flame_residual(rows, references, temperature_scale_K=None, speed_weight=1., temperature_weight=1., profile=None):
+def flame_residual(rows, references, temperature_scale_K=None, speed_weight=1., temperature_weight=1., profile=None, thickness_weight=None):
     """Weighted log-speed and optional scaled burned-temperature residuals."""
     if len(rows)!=len(references) or not rows or any('error' in r for r in rows): return None
     weights=[speed_weight] if temperature_scale_K is None else [speed_weight,temperature_weight]
+    if thickness_weight is not None: weights.append(thickness_weight)
     if profile is not None:
         profile=profile_settings(profile)
         weights.append(profile['weight'])
@@ -84,6 +98,10 @@ def flame_residual(rows, references, temperature_scale_K=None, speed_weight=1., 
             raise ValueError('temperature_scale_K must be positive.')
         temperature=np.array([r['burnt_temperature_K']-ref['burnt_temperature_K'] for r,ref in zip(rows,references)])
         parts.append(np.sqrt(temperature_weight)*temperature/temperature_scale_K)
+    if thickness_weight is not None:
+        values=np.array([r['flame_thickness_m']/ref['flame_thickness_m'] for r,ref in zip(rows,references)])
+        if np.any(values<=0) or not np.isfinite(values).all(): return None
+        parts.append(np.sqrt(thickness_weight)*np.log(values))
     if profile is not None:
         try:
             for row,ref in zip(rows,references):
@@ -104,7 +122,22 @@ def save_flame_comparison(root, cases, comparison, enabled=True, scales=None):
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
-    fig,axes=plt.subplots(2,3,figsize=(14,8))
+    if len({c['phi'] for c in cases}) == 1 and len({c['P_atm'] for c in cases})>3:
+        fields=[('reference_cm_s','model_cm_s','Flame speed (cm/s)','laminar_flame_speed'),
+                ('reference_temperature_K','model_temperature_K','Burned temperature (K)','T_flame')]
+        if comparison and 'reference_thickness_um' in comparison[0]:
+            fields.append(('reference_thickness_um','model_thickness_um','Flame thickness (µm)','flame_thickness'))
+        fig,axes=plt.subplots(1,len(fields),figsize=(6*len(fields),4.5),squeeze=False)
+        group=sorted(comparison,key=lambda c:c['P_atm'])
+        for ax,(ref,model,label,key) in zip(axes.flat,fields):
+            ax.plot([c['P_atm'] for c in group],[c[ref] for c in group],'b-',label='FFCM2')
+            ax.plot([c['P_atm'] for c in group],[c[model] for c in group],'bo--',markerfacecolor='none',label='Tuned')
+            ax.set(xlabel='Initial pressure (atm)',ylabel=label,title=f"φ = {cases[0]['phi']:g}; paired inlet temperatures")
+            ax.set_yscale(yscale(scales,key));ax.grid(alpha=.3);ax.legend()
+        fig.tight_layout();fig.savefig(root/'comparison.png',dpi=180);plt.close(fig)
+        return
+    pressures=sorted({c['P_atm'] for c in cases})
+    fig,axes=plt.subplots(2,len(pressures),figsize=(5*len(pressures),8),squeeze=False)
     for column,(ax,p) in enumerate(zip(axes[0],sorted({c['P_atm'] for c in cases}))):
         group=[c for c in comparison if c['P_atm']==p]
         ax.plot([c['phi'] for c in group],[c['reference_cm_s'] for c in group],'o-',label='FFCM2')
@@ -134,20 +167,24 @@ def run_flame_tuning(cfg):
     root=Path(cfg['output_dir']);root.mkdir(parents=True,exist_ok=False)
     logs=root/'solver_logs';logs.mkdir()
     _save(root/'settings.json',cfg)
-    settings=dict(cfg['solver'],save_profile=profile is not None);cases=cfg['cases'];history=[];center=cfg.get('initial_coordinates')
+    settings=dict(cfg['solver'],save_profile=profile is not None,save_thickness=cfg.get('objectives',{}).get('thickness_weight') is not None);cases=cfg['cases'];history=[];center=cfg.get('initial_coordinates')
     def registry(stage):
         return StagedParameters(cfg['model'],cfg['reference'], uncertainty_factors=cfg['uncertainty_factors'],
             unbounded_reactions=cfg['artificial'],a_ratio=tuple(cfg['a_ratio']),ea_delta=cfg['ea_delta'],
             b_delta=cfg['b_delta'], plog_free=cfg.get('plog_free'), stage=stage['parameters'],center=center,
-            stage_a_ratio=stage['a_ratio'],stage_ea_delta=stage.get('ea_delta',cfg['ea_delta']))
+            stage_a_ratio=stage['a_ratio'],stage_ea_delta=stage.get('ea_delta',cfg['ea_delta']),
+            orders=cfg.get('orders'),order_anchor=cfg.get('order_anchor'),rate_bounds=cfg.get('rate_bounds'))
     with create_executor(cfg['backend'],cfg['workers'],max_tasks_per_worker=50) as pool:
         def simulate(sources, solver=settings, *, refine_ignition=False):
             rows=[[None]*len(cases) for _ in sources]
             idt_solver=dict(cfg.get('ignition_solver',{}))
             if refine_ignition and idt_solver:
                 idt_solver['rtol']/=10;idt_solver['atol']/=10
+            reference_species=anchor_species(cfg.get('orders'))
+            reference_solver=dict(solver,flame_speed_sensitivities=False,full_flame_adjoints=False,
+                                  order_anchor_species=reference_species)
             futures={pool.submit(solve_ignition_case if case.get('kind')=='ignition' else solve_flame_case,
-                (source,case,idt_solver if case.get('kind')=='ignition' else (dict(solver,flame_speed_sensitivities=False,full_flame_adjoints=False) if source==cfg['reference'] else solver),str(logs))):(j,i)
+                (source,case,(dict(idt_solver,anchor_species=reference_species) if source==cfg['reference'] else idt_solver) if case.get('kind')=='ignition' else (reference_solver if source==cfg['reference'] else solver),str(logs))):(j,i)
                 for j,source in enumerate(sources) for i,case in enumerate(cases)}
             for future in as_completed(futures):
                 j,i=futures[future];rows[j][i]=future.result()
@@ -160,9 +197,20 @@ def run_flame_tuning(cfg):
             for case,ref in zip(cases,refs):
                 if case.get('kind')!='ignition':ref['profile_reference']=prepare_profile_reference(ref,profile)
             _save(root/'FFCM2_results.json',refs)
+        if cfg.get('orders'):
+            if not cfg.get('order_anchor'): cfg['order_anchor']=combine_anchors(refs,cases)
+            _save(root/'order_anchor.json',cfg['order_anchor'])
+            _save(root/'settings.json',cfg)
+            print(f'Fixed reference anchor: T={cfg["order_anchor"]["temperature_K"]:.2f} K; '+
+                  ', '.join(f'{s}={v:.5g} kmol/m³' for s,v in cfg['order_anchor']['concentrations_kmol_m3'].items()),flush=True)
+        if center is None and cfg.get('initial_model'):
+            initial_space=registry(dict(parameters='AEB',a_ratio=cfg['a_ratio'],ea_delta=cfg['ea_delta']))
+            center=initial_space.encode(cfg['initial_model'])
+            print(f'Initial candidate: {cfg["initial_model"]}; original bounds and priors retained.',flush=True)
         console=sys.stdout
         for stage in cfg['stages']:
             space=registry(stage);folder=root/stage['parameters'];folder.mkdir()
+            _save(folder/'parameters.json',dict(labels=space.coordinate_labels,order_bounds=cfg.get('orders',{})))
             print(f'\nStage {stage["parameters"]} | sensitivity-selected reactions', flush=True)
             cache={};evaluations=0
             def source(x):
@@ -177,7 +225,11 @@ def run_flame_tuning(cfg):
                     try: space.validate(k);valid.append(k)
                     except (ValueError,OverflowError):cache[k]=(None,None)
                 for k,rows in zip(valid,simulate([source(k) for k in valid])):
-                    cache[k]=(combined_residual(rows,refs,cfg),rows);evaluations+=1
+                    residual=combined_residual(rows,refs,cfg)
+                    if residual is not None:
+                        from .order_tuning import rate_penalty_residual
+                        residual=np.r_[residual,rate_penalty_residual(space,k,cfg.get('rate_regularization'))]
+                    cache[k]=(residual,rows);evaluations+=1
                 return [cache[k][0] for k in keys]
             def jacobian_entries(x):
                 """Supply weighted log-speed/A derivatives; other entries remain numerical."""
@@ -192,7 +244,8 @@ def run_flame_tuning(cfg):
                     points=np.repeat(space.x0[None,:],min(cfg['sample_batch'],cfg['samples']-offset),axis=0)
                     for j,number in enumerate(space.base.reaction_numbers):
                         if number in cfg['artificial']:
-                            points[:,j]=rng.uniform(space.lower[j],space.upper[j],len(points))
+                            shift=(space.a_map@space.x0)[j]-space.x0[j]
+                            points[:,j]=rng.uniform(max(space.lower[j],space.a_low[j]-shift),min(space.upper[j],space.a_high[j]-shift),len(points))
                     for x,r in zip(points,evaluate(points)):
                         if r is not None and (best is None or r@r<best[0]):best=(float(r@r),x.copy())
                 if best is None:raise RuntimeError('No feasible initial flame candidate. Inspect solver_logs and adjust initialization.')
@@ -208,18 +261,20 @@ def run_flame_tuning(cfg):
                 space.x0=np.asarray(info['coordinates'])
                 branches=space.linear_monotonicity(*interval, direction=cfg.get('plog_direction', 'either'))
                 space.export(folder/'best_model.yaml',space.x0)
+                info['orders']=order_report(space,space.x0)
                 _save(folder/f'round_{info["round"]:02d}.json',info)
                 report_round(info,cfg['max_rounds'],console)
-            steps=[.02]*space.na+[60./space.energy_yaml]*space.ne+[.005/space.b_scale]*space.ne
+            steps=space.sensitivity_steps()
             print(f'Baseline loss {float(initial@initial):.8g}; {len(cases)} cases, {cfg["workers"]} workers.',flush=True)
             print(f'  Optimizer diagnostics: {folder / "optimizer.log"}',flush=True)
             with (folder/'optimizer.log').open('w',buffering=1) as diagnostic, redirect_stdout(diagnostic):
                 result=iterative_sensitivity_optimize(evaluate,space.x0,space.lower,space.upper,list(space.reaction_numbers),
                     physical_parameters=space.physical_parameters,parameter_scales=space.parameter_scales,
-                    max_rounds=cfg['max_rounds'],inner_iterations=cfg['inner_iterations'],top_reactions=5,
+                    max_rounds=cfg['max_rounds'],inner_iterations=cfg['inner_iterations'],top_reactions=cfg.get('top_reactions',5),
                     steps=steps,minimum_step=np.asarray(steps)/2,on_round=on_round,constraints=lambda:branches,feasible=feasible,
-                    options=dict(fd_extrapolate=True, fd_min_steps=(np.asarray(steps)/2).tolist(), **({'jacobian_entries':jacobian_entries} if settings.get('flame_speed_sensitivities',False) else {})))
+                    options=dict(step_scales=space.trust_step_scales().tolist(), fd_extrapolate=True, fd_min_steps=(np.asarray(steps)/2).tolist(), **({'jacobian_entries':jacobian_entries} if settings.get('flame_speed_sensitivities',False) else {})))
             center=result['bestx'];space.export(folder/'best_model.yaml',center)
+            result['orders']=order_report(space,center)
             _save(folder/'results.json',result)
             history.append(dict(stage=stage['parameters'],initial_loss=float(initial@initial),loss=result['loss'],status=result['status']))
             # Bound trajectory cache lifetime to one stage.
@@ -239,9 +294,13 @@ def run_flame_tuning(cfg):
             idt_pairs=[(a,b) for case,a,b in zip(cases,refined,rows) if case.get('kind')=='ignition']
             idt_drift=max((abs(a['ignition_delay_s']/b['ignition_delay_s']-1) for a,b in idt_pairs),default=0.)
             idt_temperature_drift=max((abs(a['burnt_temperature_K']-b['burnt_temperature_K']) for a,b in idt_pairs),default=0.)
-            _save(folder/'validation.json',dict(max_speed_change_fraction=drift,max_idt_change_fraction=idt_drift,
-                max_idt_temperature_change_K=idt_temperature_drift,passed=drift<=.02 and idt_drift<=.02 and idt_temperature_drift<=1.))
+            thickness_drift=0.
+            if cfg.get('objectives',{}).get('thickness_weight') is not None:
+                thickness_drift=max(abs(a['flame_thickness_m']/b['flame_thickness_m']-1) for case,a,b in zip(cases,refined,rows) if case.get('kind')!='ignition')
+            _save(folder/'validation.json',dict(max_speed_change_fraction=drift,max_thickness_change_fraction=thickness_drift,max_idt_change_fraction=idt_drift,
+                max_idt_temperature_change_K=idt_temperature_drift,passed=drift<=.02 and thickness_drift<=.02 and idt_drift<=.02 and idt_temperature_drift<=1.))
             if idt_drift>.02 or idt_temperature_drift>1.:raise RuntimeError('Ignition tighter-tolerance validation failed.')
+            if thickness_drift>.02: raise RuntimeError(f'Flame refinement changes thickness by {thickness_drift:.2%}; use a finer grid.')
             if drift>.02:raise RuntimeError('Flame refinement changes speed by more than 2%; use a finer grid.')
             interval=(interval[0],max(interval[1],max(r['burnt_temperature_K'] for r in rows+refined)))
             if not space.rate_envelope(center,*interval)['valid']:raise RuntimeError('Final rate uncertainty envelope failed.')
@@ -257,8 +316,12 @@ def run_flame_tuning(cfg):
                 error_percent=100*(row['speed_m_s']/ref['speed_m_s']-1),
                 reference_temperature_K=ref['burnt_temperature_K'],model_temperature_K=row['burnt_temperature_K'],
                 temperature_error_K=row['burnt_temperature_K']-ref['burnt_temperature_K']) for case,ref,row in zip(cases,refs,rows) if case.get('kind')!='ignition']
+            if cfg.get('objectives',{}).get('thickness_weight') is not None:
+                for record,ref,row in zip(comparison,[r for c,r in zip(cases,refs) if c.get('kind')!='ignition'],[r for c,r in zip(cases,rows) if c.get('kind')!='ignition']):
+                    record.update(reference_thickness_um=ref['flame_thickness_m']*1e6,model_thickness_um=row['flame_thickness_m']*1e6,
+                                  thickness_error_percent=100*(row['flame_thickness_m']/ref['flame_thickness_m']-1))
             idt_comparison=ignition_comparison(cases,refs,rows)
-            _save(root/'results.json',dict(stages=history,cases=comparison,ignition_cases=idt_comparison,validation_passed=True))
+            _save(root/'results.json',dict(stages=history,cases=comparison,ignition_cases=idt_comparison,orders=order_report(space,center),validation_passed=True))
             if idt_comparison and cfg.get('comparison_plots',True):plot_ignition_comparison(root,idt_comparison,cfg.get('plot_yscales'))
             save_flame_comparison(root, [c for c in cases if c.get('kind')!='ignition'], comparison, cfg.get('comparison_plots', True), cfg.get('plot_yscales'))
     print(f'\nTuning finished.\n  Best model: {root / "best_model.yaml"}\n  Summary: {root / "results.json"}',flush=True)

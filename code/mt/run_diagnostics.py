@@ -43,11 +43,15 @@ def update_audit(space, before, after, interval):
     ratios=[]
     for t in np.geomspace(*interval,9):
         for p in sorted(pressures):
-            a.TP=b.TP=t,p
-            ratios.append(b.forward_rate_constants/a.forward_rate_constants)
+            a.TPX=b.TPX=t,p,np.ones(a.n_species)
+            ratio=b.forward_rate_constants/a.forward_rate_constants
+            for n in getattr(space,'orders',{}):
+                ratio[n-1]=b.forward_rates_of_progress[n-1]/a.forward_rates_of_progress[n-1]
+            ratios.append(ratio)
     ratios=np.asarray(ratios)
     for row in changes:
         j=row['reaction']-1
+        row['rate_comparison']='progress_rate_at_equal_composition' if row['reaction'] in getattr(space,'orders',{}) else 'rate_constant'
         row.update(sampled_k_ratio_min=float(ratios[:,j].min()),sampled_k_ratio_max=float(ratios[:,j].max()))
     return dict(largest_A_updates=changes[:3],temperature_interval_K=list(interval),
                 temperatures_sampled=9,pressures_sampled_Pa=sorted(pressures))

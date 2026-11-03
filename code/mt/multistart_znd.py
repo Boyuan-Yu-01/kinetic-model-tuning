@@ -25,6 +25,8 @@ def resolve_settings(problem, tuning, execution):
     cases = problem['conditions']['znd']
     cfg.update(P_bar=cases['pressure_bar'], T0=cases['temperature_K'],
                phi=cases['phi'], t_end=cases['end_time_s'])
+    from .order_tuning import order_specs
+    cfg['orders']=order_specs(problem['reactions'].get('orders'))
     cfg.update(uncertainty_factors=problem['reactions']['uncertainty_factors'],
                unbounded_reactions=problem['reactions']['artificial'])
     objectives = problem['objectives']
@@ -82,6 +84,8 @@ def run_multistart(cfg):
             target=root/'diagnostics'; target.mkdir(exist_ok=True)
             folder.rename(target/(folder.name+'_'+datetime.now().strftime('%Y%m%d_%H%M%S_%f')))
 
+    from .order_tuning import prepare_znd_anchor
+    cfg=prepare_znd_anchor(cfg,root/'order_anchor.json')
     exploration = stage_config(cfg, cfg['stages'][0], None, root/'exploration')
     exploration.update(exploration_only=True, compact_output=False)
     if not (root/'exploration/verified_candidates.json').exists():

@@ -179,6 +179,9 @@ def sensitivity_trust_region(evaluate, x, low, high, active, steps, *,
     r = evaluate([x])[0]
     if r is None:
         raise ValueError('Initial point has invalid residuals.')
+    step_scales = np.broadcast_to(np.asarray(opts.get('step_scales',1.),float),x.shape)
+    if not np.isfinite(step_scales).all() or np.any(step_scales<=0):
+        raise ValueError('Trust-region step scales must be positive and finite.')
     radius = opts['initial_radius'];stagnant = 0;last = {}
     for iteration in range(max_iterations):
         J, columns = adaptive_jacobian(evaluate,x,r,low,high,active,steps,radius,opts)
@@ -209,8 +212,8 @@ def sensitivity_trust_region(evaluate, x, low, high, active, steps, *,
         accepted = False;old_loss=float(r@r);step_size=0.
         last['trial_steps'] = []
         for trial in range(opts['max_trial_steps']):
-            lo=np.maximum(low[selected]-x[selected],-radius)
-            hi=np.minimum(high[selected]-x[selected],radius)
+            lo=np.maximum(low[selected]-x[selected],-radius*step_scales[selected])
+            hi=np.minimum(high[selected]-x[selected],radius*step_scales[selected])
             damping=max(1e-10,1e-6*np.linalg.norm(model,ord=2)**2)
             if constraints is None:
                 fit=lsq_linear(np.vstack([model,np.sqrt(damping)*np.eye(len(used))]),
@@ -240,7 +243,7 @@ def sensitivity_trust_region(evaluate, x, low, high, active, steps, *,
                     valid=valid, actual_reduction=float(actual) if np.isfinite(actual) else None,
                     rho=float(rho) if np.isfinite(rho) else None, accepted=bool(actual>0 and rho>.1)))
                 if actual>0 and rho>.1:
-                    candidates.append((actual, point, trial_r, rho, float(np.max(np.abs(step)))))
+                    candidates.append((actual, point, trial_r, rho, float(np.max(np.abs(step)/step_scales[selected]))))
             if candidates:
                 _, x, r, rho, step_size = max(candidates, key=lambda row: row[0])
                 last['rho']=float(rho); accepted=True
@@ -248,7 +251,7 @@ def sensitivity_trust_region(evaluate, x, low, high, active, steps, *,
                 elif rho<.25:radius*=.5
                 break
             # Restrict the rejected proposal itself, not just an inactive radius.
-            proposed_size = max((float(np.max(np.abs(s))) for s in proposals), default=radius)
+            proposed_size = max((float(np.max(np.abs(s)/step_scales[selected])) for s in proposals), default=radius)
             radius = min(radius*.5, proposed_size*.5)
             if radius<opts['minimum_radius']:break
         last.update(accepted=accepted, accepted_coordinates=x.tolist(), loss=float(r@r),radius=radius)

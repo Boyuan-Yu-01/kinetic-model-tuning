@@ -1,0 +1,157 @@
+{
+  "normal": [
+    {
+      "speed_m_s": 0.032677623253177204,
+      "burnt_temperature_K": 1448.4076364184568,
+      "flame_thickness_m": 0.00045238861023654236
+    },
+    {
+      "speed_m_s": 0.042695882750543354,
+      "burnt_temperature_K": 1478.0265389048827,
+      "flame_thickness_m": 0.0003162833752201598
+    },
+    {
+      "speed_m_s": 0.05390058896871457,
+      "burnt_temperature_K": 1505.292420958483,
+      "flame_thickness_m": 0.00023323339490455972
+    },
+    {
+      "speed_m_s": 0.06589382891143362,
+      "burnt_temperature_K": 1529.4162175670126,
+      "flame_thickness_m": 0.0001794156600721066
+    },
+    {
+      "speed_m_s": 0.07903230140376417,
+      "burnt_temperature_K": 1551.7457744138303,
+      "flame_thickness_m": 0.0001420312847818326
+    },
+    {
+      "speed_m_s": 0.09247803286525122,
+      "burnt_temperature_K": 1571.3737946092092,
+      "flame_thickness_m": 0.00011598940606626318
+    },
+    {
+      "speed_m_s": 0.106947589213775,
+      "burnt_temperature_K": 1590.1361914857541,
+      "flame_thickness_m": 9.630770255711929e-05
+    },
+    {
+      "speed_m_s": 0.12258201730690439,
+      "burnt_temperature_K": 1608.318244574599,
+      "flame_thickness_m": 8.105509267021238e-05
+    },
+    {
+      "speed_m_s": 0.13855220565904286,
+      "burnt_temperature_K": 1624.2488011239993,
+      "flame_thickness_m": 6.943491416035157e-05
+    },
+    {
+      "speed_m_s": 0.15579027405839044,
+      "burnt_temperature_K": 1640.3755987668358,
+      "flame_thickness_m": 5.9979025142001324e-05
+    },
+    {
+      "speed_m_s": 0.17332268877186346,
+      "burnt_temperature_K": 1655.149956124632,
+      "flame_thickness_m": 5.249400996858953e-05
+    },
+    {
+      "speed_m_s": 0.19217002409308473,
+      "burnt_temperature_K": 1669.382470631012,
+      "flame_thickness_m": 4.618570648155036e-05
+    },
+    {
+      "speed_m_s": 0.2112262596790117,
+      "burnt_temperature_K": 1682.878664503662,
+      "flame_thickness_m": 4.1116508594415203e-05
+    },
+    {
+      "speed_m_s": 0.23203852739273945,
+      "burnt_temperature_K": 1696.1847541707373,
+      "flame_thickness_m": 3.671465450921189e-05
+    },
+    {
+      "speed_m_s": 0.2540378745690194,
+      "burnt_temperature_K": 1709.2129681471579,
+      "flame_thickness_m": 3.298527526157933e-05
+    }
+  ],
+  "tighter": [
+    {
+      "speed_m_s": 0.03291448144575862,
+      "burnt_temperature_K": 1450.2154618317,
+      "flame_thickness_m": 0.00044800502959397285
+    },
+    {
+      "speed_m_s": 0.04323425387803163,
+      "burnt_temperature_K": 1480.9969440754558,
+      "flame_thickness_m": 0.0003118095965007917
+    },
+    {
+      "speed_m_s": 0.054421891048721915,
+      "burnt_temperature_K": 1507.661492292086,
+      "flame_thickness_m": 0.00023044049111953975
+    },
+    {
+      "speed_m_s": 0.06648021647314652,
+      "burnt_temperature_K": 1531.685639436477,
+      "flame_thickness_m": 0.00017743244249181323
+    },
+    {
+      "speed_m_s": 0.07952647144933508,
+      "burnt_temperature_K": 1553.85750763557,
+      "flame_thickness_m": 0.0001407957484643856
+    },
+    {
+      "speed_m_s": 0.09346263953319954,
+      "burnt_temperature_K": 1574.293868408743,
+      "flame_thickness_m": 0.00011449880716987892
+    },
+    {
+      "speed_m_s": 0.10786643147081636,
+      "burnt_temperature_K": 1592.5942509606816,
+      "flame_thickness_m": 9.524875485089091e-05
+    },
+    {
+      "speed_m_s": 0.12346838796511168,
+      "burnt_temperature_K": 1610.5837968407334,
+      "flame_thickness_m": 8.027251983694601e-05
+    },
+    {
+      "speed_m_s": 0.14012958123993846,
+      "burnt_temperature_K": 1627.673084566674,
+      "flame_thickness_m": 6.848642092595931e-05
+    },
+    {
+      "speed_m_s": 0.1569681369024957,
+      "burnt_temperature_K": 1642.9436188002185,
+      "flame_thickness_m": 5.93692303031888e-05
+    },
+    {
+      "speed_m_s": 0.1749140961713336,
+      "burnt_temperature_K": 1658.0094661066926,
+      "flame_thickness_m": 5.187491504278252e-05
+    },
+    {
+      "speed_m_s": 0.19395847330235227,
+      "burnt_temperature_K": 1672.6496159568312,
+      "flame_thickness_m": 4.566182158031629e-05
+    },
+    {
+      "speed_m_s": 0.21320770064566105,
+      "burnt_temperature_K": 1685.8483020945773,
+      "flame_thickness_m": 4.0625728744006646e-05
+    },
+    {
+      "speed_m_s": 0.23398840135981416,
+      "burnt_temperature_K": 1699.3413622950825,
+      "flame_thickness_m": 3.631162748222659e-05
+    },
+    {
+      "speed_m_s": 0.2560893176607752,
+      "burnt_temperature_K": 1712.2787152010667,
+      "flame_thickness_m": 3.2621899185649745e-05
+    }
+  ],
+  "failures": []
+}

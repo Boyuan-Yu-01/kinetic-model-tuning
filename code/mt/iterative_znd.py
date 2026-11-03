@@ -66,7 +66,8 @@ def _registry(cfg):
             a_ratio=cfg['a_ratio'], ea_delta=cfg['ea_delta'], b_delta=cfg['b_delta'],
             pivot_temperature=cfg.get('pivot_temperature',1800.), plog_shape_free=cfg.get('plog_shape_free',False),
             stage=cfg['stage'], center=cfg.get('stage_center'),
-            stage_a_ratio=cfg['stage_a_ratio'], stage_ea_delta=cfg['stage_ea_delta'])
+            stage_a_ratio=cfg['stage_a_ratio'], stage_ea_delta=cfg['stage_ea_delta'],
+            orders=cfg.get('orders'),order_anchor=cfg.get('order_anchor'),rate_bounds=cfg.get('rate_bounds'))
     elif cfg.get('tune_ea', False):
         from .ae_parameters import AEParameters
         factory = lambda *a, **k: AEParameters(*a, **k, a_ratio=cfg.get('a_ratio', (.5,2.)),
@@ -100,7 +101,8 @@ def _solve(job):
                        tuple(cfg.get('unbounded_reactions',[])), tuple(cfg.get('plog_free') or []), cfg.get('tune_ea',False),
                        tuple(cfg.get('a_ratio',(.5,2.))), cfg.get('ea_delta',60000.),cfg.get('pivot_temperature',1800.),
                        cfg.get('staged_parameters',False),cfg.get('plog_shape_free',False),cfg.get('stage'),cfg.get('b_delta'),
-                       tuple(cfg.get('stage_center') or []),tuple(cfg.get('stage_a_ratio',[])),cfg.get('stage_ea_delta'))
+                       tuple(cfg.get('stage_center') or []),tuple(cfg.get('stage_a_ratio',[])),cfg.get('stage_ea_delta'),
+                       json.dumps(cfg.get('orders'),sort_keys=True),json.dumps(cfg.get('order_anchor'),sort_keys=True),json.dumps(cfg.get('rate_bounds'),sort_keys=True))
                 if key not in _GASES:
                     _GASES[key] = (ct.Solution(source), ct.Solution(source),
                                    _registry(cfg) if vector is not None else None)
@@ -113,7 +115,7 @@ def _solve(job):
                     if registry is None:
                         registry = _registry(cfg)
                         _GASES[key] = gas, upstream, registry
-                    registry.apply(gas, vector)
+                    gas = registry.apply(gas, vector)
                 end = state['case']['t_end']
                 with warnings.catch_warnings(), _work_limit(cfg['max_rhs_calls']):
                     warnings.simplefilter('error')
@@ -140,6 +142,12 @@ def _solve(job):
                         value = np.asarray(out[name])
                         if not np.isfinite(value).all(): raise ValueError('Nonfinite '+name)
                         row[name] = value
+                if vector is None and cfg.get('orders'):
+                    from .order_tuning import anchor_species, state_anchor
+                    position=lengths['ind_len_ZND']
+                    y=np.array([np.interp(position,distance,v) for v in out['species']])
+                    gas.TPY=np.interp(position,distance,temperature),np.interp(position,distance,out['P']),y
+                    row['order_anchor']=state_anchor(gas,anchor_species(cfg['orders']))
                 return row
             except Exception as exc:
                 return dict(error=f'{type(exc).__name__}: {exc}')
@@ -269,7 +277,7 @@ def _round_text(info, previous_loss, max_rounds):
     for blocker in info.get('convergence_blockers',[]):
         lines.append('  Convergence blocked: '+blocker['reason'].replace('_',' ')+((': '+str(blocker['status'])) if 'status' in blocker else ''))
     for row in info.get('update_audit',{}).get('largest_A_updates',[]):
-        lines.append(f"  R{row['reaction']} entry {row['entry']} ({row['pressure'] or 'Arrhenius'}): A {row['old_A']:.4e} -> {row['new_A']:.4e} ({row['multiplier']:.4g}x); sampled k ratio {row['sampled_k_ratio_min']:.4g}–{row['sampled_k_ratio_max']:.4g}")
+        lines.append(f"  R{row['reaction']} entry {row['entry']} ({row['pressure'] or 'Arrhenius'}): A {row['old_A']:.4e} -> {row['new_A']:.4e} ({row['multiplier']:.4g}x); sampled {row.get('rate_comparison','rate_constant')} ratio {row['sampled_k_ratio_min']:.4g}–{row['sampled_k_ratio_max']:.4g}")
     if 'stagnation_count' in info:
         lines.append(f"  Consecutive negligible improvements: {info['stagnation_count']}")
     lines.append('  ' + outcomes.get(info['status'], f'Stopped: {info["status"]}; NOT CONVERGED.'))
@@ -470,6 +478,7 @@ def _run(cfg, root, begin):
                 relative_change_from_source=(None if cfg['tune_ea'] else np.expm1(np.asarray(x)-space.source_coordinates)),
                 physical_parameter_fields=list(getattr(space,'physical_fields',('A',))),
                 physical_parameters=space.physical_parameters(x),
+                order_parameter_keys=[dict(reaction=n,species=s) for n,s in getattr(space,'order_indices',{})],
                 physical_parameter_meaning='Physical entries in reaction/entry/field order; adjustable fields declared above.',
                 cases=metrics,monotonicity=check,evaluations=evaluations)
             _save(root/'checkpoint.json',record)

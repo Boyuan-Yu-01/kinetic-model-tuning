@@ -171,6 +171,7 @@ def _accepted_snapshot(root):
                     if key in reaction:
                         entries = reaction[key] if key == 'rate-constants' else [reaction[key]]
                         actual.extend(float(entry[field]) for entry in entries for field in checkpoint.get('physical_parameter_fields',['A']))
+            actual.extend(float(model['reactions'][key['reaction']-1]['orders'][key['species']]) for key in checkpoint.get('order_parameter_keys',[]))
             if len(actual) != len(parameters) or not all(
                     math.isclose(a, b, rel_tol=1e-12, abs_tol=0.)
                     for a, b in zip(actual, parameters)):
@@ -253,7 +254,8 @@ def write_iterative_results(work_dir, output_dir=None):
         coordinate_label = _at(checkpoint.get('coordinate_labels', bounds.get('coordinate_labels')), index, {})
         is_ea = coordinate_label.get('parameter') == 'scaled_ea'
         is_b = coordinate_label.get('parameter') == 'scaled_b'
-        if multiplier is None and coordinate is not None and origin is not None and not is_ea and not is_b:
+        is_order = coordinate_label.get('parameter') == 'scaled_order'
+        if multiplier is None and coordinate is not None and origin is not None and not is_ea and not is_b and not is_order:
             multiplier = _exp(coordinate - origin)
         equation = _at(model.get('reactions'), number - 1, {}).get('equation')
         coordinate_label = _at(checkpoint.get('coordinate_labels', bounds.get('coordinate_labels')), index, {})
@@ -263,7 +265,9 @@ def write_iterative_results(work_dir, output_dir=None):
             multiplier_from_source=multiplier, change_from_source_percent=_percent(multiplier, 1.),
             multiplier_from_nominal=(_exp(coordinate) if item.get('nominal_reaction') and not cfg.get('tune_ea') else None),
             ea_change_kJ_per_mol=(coordinate*coordinate_label['scale'] if is_ea and coordinate is not None else None),
-            b_change=(coordinate*coordinate_label['scale'] if is_b and coordinate is not None else None)))
+            b_change=(coordinate*coordinate_label['scale'] if is_b and coordinate is not None else None),
+            order_value=(model['reactions'][number-1]['orders'][coordinate_label['species']] if is_order else None),
+            order_change=(coordinate*coordinate_label['scale'] if is_order and coordinate is not None else None)))
     result = dict(schema_version=1, status=status,fit_quality=summary.get('fit_quality'),active_bounds=summary.get('active_bounds'),
         change_measure=('max(relative A change, scaled Ea/b changes using configured limits)' if cfg.get('tune_ea') else 'relative A change'),
         accepted_round=checkpoint.get('round'),

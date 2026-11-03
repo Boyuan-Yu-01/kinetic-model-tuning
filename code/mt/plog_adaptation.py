@@ -80,7 +80,8 @@ def transfer_coordinates(old_space, new_space, x):
     values = []
     for new in new_labels:
         candidates = [(i, old) for i, old in enumerate(old_labels)
-                      if old['reaction'] == new['reaction'] and old.get('parameter') == new.get('parameter')]
+                      if old['reaction'] == new['reaction'] and old.get('parameter') == new.get('parameter')
+                      and old.get('species') == new.get('species')]
         matches = [(i, old) for i, old in candidates
                    if match_pressure(old.get('pressure_pa'), new.get('pressure_pa'))]
         if not matches and new.get('pressure_pa') is not None:

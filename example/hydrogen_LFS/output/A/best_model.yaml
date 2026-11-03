@@ -1,0 +1,156 @@
+units:
+  length: cm
+  quantity: mol
+  activation-energy: cal/mol
+phases:
+- name: gas
+  thermo: ideal-gas
+  elements:
+  - H
+  - O
+  - Ar
+  species:
+  - H2
+  - O2
+  - H2O
+  - AR
+  kinetics: gas
+  reactions: all
+  transport: mixture-averaged
+  state:
+    T: 300.0
+    P: 101325.0
+species:
+- name: H2
+  composition:
+    H: 2
+  thermo:
+    model: NASA7
+    temperature-ranges:
+    - 200.0
+    - 1000.0
+    - 6000.0
+    data:
+    - - 2.34433112
+      - 0.00798052075
+      - -1.9478151e-05
+      - 2.01572094e-08
+      - -7.37611761e-12
+      - -917.935173
+      - 0.683010238
+    - - 2.93286575
+      - 0.000826608026
+      - -1.46402364e-07
+      - 1.54100414e-11
+      - -6.888048e-16
+      - -813.065581
+      - -1.02432865
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 2.92
+    well-depth: 38.0
+    polarizability: 0.79
+    rotational-relaxation: 280.0
+- name: O2
+  composition:
+    O: 2
+  thermo:
+    model: NASA7
+    temperature-ranges:
+    - 200.0
+    - 1000.0
+    - 6000.0
+    data:
+    - - 3.78245636
+      - -0.00299673416
+      - 9.84730201e-06
+      - -9.68129509e-09
+      - 3.24372837e-12
+      - -1063.94356
+      - 3.65767573
+    - - 3.66096065
+      - 0.000656365811
+      - -1.41149627e-07
+      - 2.05797935e-11
+      - -1.29913436e-15
+      - -1215.97718
+      - 3.41536279
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.458
+    well-depth: 107.4
+    polarizability: 1.6
+    rotational-relaxation: 3.8
+    collision-integral: 1.0
+- name: H2O
+  composition:
+    H: 2
+    O: 1
+  thermo:
+    model: NASA7
+    temperature-ranges:
+    - 200.0
+    - 1000.0
+    - 6000.0
+    data:
+    - - 4.1986352
+      - -0.0020364017
+      - 6.5203416e-06
+      - -5.4879269e-09
+      - 1.771968e-12
+      - -30293.726
+      - -0.84900901
+    - - 2.6770389
+      - 0.0029731816
+      - -7.7376889e-07
+      - 9.4433514e-11
+      - -4.2689991e-15
+      - -29885.894
+      - 6.88255
+  transport:
+    model: gas
+    geometry: nonlinear
+    diameter: 2.605
+    well-depth: 572.4
+    dipole: 1.844
+    rotational-relaxation: 4.0
+- name: AR
+  composition:
+    Ar: 1
+  thermo:
+    model: NASA7
+    temperature-ranges:
+    - 200.0
+    - 1000.0
+    - 6000.0
+    data:
+    - - 2.5
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - -745.375
+      - 4.37967491
+    - - 2.5
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - -745.375
+      - 4.37967491
+  transport:
+    model: gas
+    geometry: atom
+    diameter: 3.33
+    well-depth: 136.5
+reactions:
+- equation: 2 H2 + O2 => 2 H2O
+  rate-constant:
+    A: 510491955908610.0
+    b: 0.4476861942300294
+    Ea: 49666.13474338099
+  orders:
+    H2: 1.2942258989987447
+    O2: 0.46469888551538885

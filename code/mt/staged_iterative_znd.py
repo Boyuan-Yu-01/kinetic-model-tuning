@@ -23,12 +23,15 @@ def stage_config(config, stage, center, output):
                max_rounds=stage.get('max_rounds',cfg.get('max_rounds',20)),output_dir=str(output))
     cfg=_configuration(cfg)
     space=_registry(cfg)
-    cfg['steps']=[cfg.get('a_step',.02)]*space.na+[cfg.get('ea_step',60.)/space.energy_yaml]*space.ne+[cfg.get('b_step',.005)/space.b_scale]*space.ne
+    cfg['steps']=space.sensitivity_steps(cfg.get('a_step',.02),cfg.get('ea_step',60.),cfg.get('b_step',.005))
+    cfg['options']=dict(cfg.get('options') or {},step_scales=space.trust_step_scales().tolist())
     return cfg
 
 
 def run_staged_iterative_znd(config, *, runner=run_iterative_znd):
     """Carry accepted coordinates through stages and publish stage summaries."""
+    from .order_tuning import prepare_znd_anchor
+    config=prepare_znd_anchor(config,Path(config['output_dir'])/'order_anchor.json')
     if config.get('enable_plog',False):
         from .adaptive_znd import run_adaptive_znd
         return run_adaptive_znd(config)

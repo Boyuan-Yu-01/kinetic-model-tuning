@@ -8,6 +8,7 @@ def speed_jacobian_entries(rows, cfg, space, residual_size):
     objective=cfg.get('objectives',{})
     sw=objective.get('speed_weight',1.)
     total=sw+(objective.get('temperature_weight',1.) if objective.get('temperature_scale_K') is not None else 0.)
+    if objective.get('thickness_weight') is not None:total+=objective['thickness_weight']
     if objective.get('profile') is not None:total+=objective['profile'].get('weight',1.)
     factor=np.sqrt(sw/(len(flames)*total))
     if len(flames)!=len(rows):
@@ -50,6 +51,7 @@ def full_flame_entries(rows,cfg,space,residual_size):
     ids=[i for i,c in enumerate(cfg['cases']) if c.get('kind')!='ignition'];n=len(ids)
     obj=cfg['objectives'];sw=obj.get('speed_weight',1.);tw=obj.get('temperature_weight',1.)
     total=sw+(tw if obj.get('temperature_scale_K') is not None else 0.)
+    if obj.get('thickness_weight') is not None:total+=obj['thickness_weight']
     if obj.get('profile') is not None:total+=obj['profile'].get('weight',1.)
     branch=1.
     if len(ids)!=len(rows):
@@ -64,4 +66,7 @@ def full_flame_entries(rows,cfg,space,residual_size):
         jac=np.asarray(rows[i]['flame_parameter_adjoints'])@mapping
         result[k]=jac[0]*branch*np.sqrt(sw/(n*total))
         if obj.get('temperature_scale_K') is not None:result[n+k]=jac[1]*branch*np.sqrt(tw/(n*total))/obj['temperature_scale_K']
+    # Arrhenius adjoints omit the explicit concentration-order derivative.
+    # Those columns must use complete finite-difference residuals.
+    for j in getattr(space,'order_indices',{}).values():result[:,j]=np.nan
     return result

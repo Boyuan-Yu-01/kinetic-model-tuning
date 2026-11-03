@@ -36,6 +36,7 @@ def run_adaptive_flame(config, runner=None):
         _save(root/'results.json',report)
     accepted=run(cfg,stages[0],'01_A',cfg.get('initial_coordinates'))
     center=accepted['coordinates'];old_space=accepted['space']
+    if cfg.get('orders'):cfg['order_anchor']=old_space.order_anchor
     history.append(dict(stage='A',loss=accepted['loss'],status=accepted['optimization']['status']))
     publish(accepted,'01_A')
     candidates=rank_plog_candidates(accepted['optimization']['screen'],old_space.scheme(center),eligible,
@@ -48,7 +49,8 @@ def run_adaptive_flame(config, runner=None):
         trial['plog_free']=list(dict.fromkeys([*(cfg.get('plog_free') or []),number]))
         space=StagedParameters(trial['model'],trial['reference'],uncertainty_factors=trial['uncertainty_factors'],
             unbounded_reactions=trial['artificial'],a_ratio=trial['a_ratio'],ea_delta=trial['ea_delta'],b_delta=trial['b_delta'],
-            plog_free=trial['plog_free'],stage='A',stage_a_ratio=stages[0]['a_ratio'])
+            plog_free=trial['plog_free'],stage='A',stage_a_ratio=stages[0]['a_ratio'],
+            orders=trial.get('orders'),order_anchor=trial.get('order_anchor'),rate_bounds=trial.get('rate_bounds'))
         mapped=transfer_coordinates(old_space,space,center)
         parity=check_rate_equivalence(old_space,space,center,mapped)
         if not parity['valid']:raise RuntimeError('PLOG insertion changed rates before tuning.')

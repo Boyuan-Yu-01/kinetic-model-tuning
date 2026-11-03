@@ -1,0 +1,149 @@
+Computing FFCM2 reference cases: 15 cases, 32 workers.
+Fixed reference anchor: T=1295.38 K; H2=0.0021546 kmol/m³, O2=0.034315 kmol/m³
+Initial candidate: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/hydrogen_LFS/inputs/start_model.yaml; original bounds and priors retained.
+
+Stage A | sensitivity-selected reactions
+Baseline loss 0.029523014; 15 cases, 32 workers.
+  Optimizer diagnostics: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/hydrogen_LFS/output/A/optimizer.log
+
+Round 1/20
+  Selected reactions: R1
+  Loss: 0.029523014 (0% reduction)
+  Largest normalized parameter change: 0% (target: < 1%)
+  Sensitivities: 0/1 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  R1 orders: H2=1.2942, O2=0.4647; sum=1.7589
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 2/20
+  Selected reactions: R1
+  Loss: 0.029523014 (0% reduction)
+  Largest normalized parameter change: 0% (target: < 1%)
+  Sensitivities: 0/1 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  R1 orders: H2=1.2942, O2=0.4647; sum=1.7589
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 3/20
+  Selected reactions: R1
+  Loss: 0.029523014 (0% reduction)
+  Largest normalized parameter change: 0% (target: < 1%)
+  Sensitivities: 0/1 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  R1 orders: H2=1.2942, O2=0.4647; sum=1.7589
+  Inner optimizer: trust_region_stalled
+  Stop/status: loss_plateau_unresolved
+
+Optimization result: NOT_CONVERGED
+  Rounds: 3
+  Stop reason: loss_plateau_unresolved
+  Loss: 0.029523014 -> 0.029523014 (0% reduction)
+  Solver validation: PASSED
+  Rate uncertainty constraints: PASSED
+  PLOG monotonicity: PASSED
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/hydrogen_LFS/output/A/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/hydrogen_LFS/output/A/results.json
+
+Stage AE | sensitivity-selected reactions
+Baseline loss 0.029523014; 15 cases, 32 workers.
+  Optimizer diagnostics: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/hydrogen_LFS/output/AE/optimizer.log
+
+Round 1/20
+  Selected reactions: R1
+  Loss: 0.028879958 (2.178% reduction)
+  Largest normalized parameter change: 0.1065% (target: < 1%)
+  Sensitivities: 0/1 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  R1 orders: H2=1.2937, O2=0.4647; sum=1.7584
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 2/20
+  Selected reactions: R1
+  Loss: 0.028879958 (0% reduction)
+  Largest normalized parameter change: 0% (target: < 1%)
+  Sensitivities: 0/1 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  R1 orders: H2=1.2937, O2=0.4647; sum=1.7584
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 3/20
+  Selected reactions: R1
+  Loss: 0.028879958 (0% reduction)
+  Largest normalized parameter change: 0% (target: < 1%)
+  Sensitivities: 0/1 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  R1 orders: H2=1.2937, O2=0.4647; sum=1.7584
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 4/20
+  Selected reactions: R1
+  Loss: 0.028879958 (0% reduction)
+  Largest normalized parameter change: 0% (target: < 1%)
+  Sensitivities: 0/1 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  R1 orders: H2=1.2937, O2=0.4647; sum=1.7584
+  Inner optimizer: trust_region_stalled
+  Stop/status: loss_plateau_unresolved
+
+Optimization result: NOT_CONVERGED
+  Rounds: 4
+  Stop reason: loss_plateau_unresolved
+  Loss: 0.029523014 -> 0.028879958 (2.178% reduction)
+  Solver validation: PASSED
+  Rate uncertainty constraints: PASSED
+  PLOG monotonicity: PASSED
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/hydrogen_LFS/output/AE/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/hydrogen_LFS/output/AE/results.json
+
+Stage AEB | sensitivity-selected reactions
+Baseline loss 0.028879958; 15 cases, 32 workers.
+  Optimizer diagnostics: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/hydrogen_LFS/output/AEB/optimizer.log
+
+Round 1/20
+  Selected reactions: R1
+  Loss: 0.028879958 (0% reduction)
+  Largest normalized parameter change: 0% (target: < 1%)
+  Sensitivities: 0/1 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  R1 orders: H2=1.2937, O2=0.4647; sum=1.7584
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 2/20
+  Selected reactions: R1
+  Loss: 0.028879958 (0% reduction)
+  Largest normalized parameter change: 0% (target: < 1%)
+  Sensitivities: 0/1 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  R1 orders: H2=1.2937, O2=0.4647; sum=1.7584
+  Inner optimizer: trust_region_stalled
+  Stop/status: iterating
+
+Round 3/20
+  Selected reactions: R1
+  Loss: 0.028879958 (0% reduction)
+  Largest normalized parameter change: 0% (target: < 1%)
+  Sensitivities: 0/1 reaction groups resolved
+  Unavailable derivatives skipped; rechecked next round.
+  R1 orders: H2=1.2937, O2=0.4647; sum=1.7584
+  Inner optimizer: trust_region_stalled
+  Stop/status: loss_plateau_unresolved
+
+Optimization result: NOT_CONVERGED
+  Rounds: 3
+  Stop reason: loss_plateau_unresolved
+  Loss: 0.028879958 -> 0.028879958 (0% reduction)
+  Solver validation: PASSED
+  Rate uncertainty constraints: PASSED
+  PLOG monotonicity: PASSED
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/hydrogen_LFS/output/AEB/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/hydrogen_LFS/output/AEB/results.json
+
+Tuning finished.
+  Best model: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/hydrogen_LFS/output/best_model.yaml
+  Summary: /project2/rxu13019_1548/boyuan/kinetic_model_tuning/hydrogen_LFS/output/results.json

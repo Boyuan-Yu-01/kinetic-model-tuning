@@ -11,8 +11,13 @@ def resolve_flame_settings(problem, tuning, execution):
     objectives=problem['objectives']
     if objectives['laminar_flame_speed']['loss']!='log_squared' or objectives['T_flame']['loss']!='squared':
         raise ValueError('Use log_squared flame speed and squared burned temperature.')
+    mode=cases.get('mode','product')
+    if mode not in ('product','paired'): raise ValueError('Flame condition mode must be product or paired.')
+    if mode=='paired' and len({len(cases[k]) for k in ('pressure_atm','temperature_K','phi')})!=1:
+        raise ValueError('Paired flame arrays must have equal lengths.')
+    triples=(zip if mode=='paired' else product)(cases['pressure_atm'],cases['temperature_K'],cases['phi'])
     cfg=dict(model=problem['model'],reference=problem['reference'],output_dir=problem['output'],
-        cases=[dict(P_atm=p,T=t,phi=phi) for p,t,phi in product(cases['pressure_atm'],cases['temperature_K'],cases['phi'])],
+        cases=[dict(P_atm=p,T=t,phi=phi) for p,t,phi in triples],
         objectives=dict(temperature_scale_K=objectives['T_flame']['scale'],
                         speed_weight=objectives['laminar_flame_speed'].get('weight',1.),
                         temperature_weight=objectives['T_flame'].get('weight',1.)),
@@ -20,6 +25,15 @@ def resolve_flame_settings(problem, tuning, execution):
         uncertainty_factors=deepcopy(problem['reactions']['uncertainty_factors']),
         stages=deepcopy(tuning['stages']),samples=tuning['exploration']['samples'],
         sample_batch=tuning['exploration']['batch_size'],seed=tuning['exploration']['seed'])
+    if 'flame_thickness' in objectives:
+        if objectives['flame_thickness']['loss'] != 'log_squared':
+            raise ValueError('Use log_squared flame thickness.')
+        cfg['objectives']['thickness_weight'] = objectives['flame_thickness'].get('weight',1.)
+    from .order_tuning import order_specs
+    if problem.get('initial_model'):cfg['initial_model']=problem['initial_model']
+    cfg['rate_regularization'] = deepcopy(problem['reactions'].get('rate_regularization',{}))
+    cfg['orders'] = order_specs(problem['reactions'].get('orders'))
+    cfg['top_reactions'] = tuning.get('selection',{}).get('top_reactions',5)
     if 'T_profile' in objectives:
         profile=deepcopy(objectives['T_profile'])
         if profile.pop('loss')!='squared': raise ValueError('Use squared profile loss.')

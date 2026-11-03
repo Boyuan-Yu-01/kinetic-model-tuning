@@ -19,7 +19,9 @@ def solve_ignition_case(job):
             delay=calc.ignition_delay(**options)
             temperature=calc.final_temperature
             if not np.isfinite([delay,temperature]).all() or delay<=0:raise ValueError('Invalid ignition result.')
-            return dict(ignition_delay_s=float(delay),burnt_temperature_K=float(temperature))
+            row=dict(ignition_delay_s=float(delay),burnt_temperature_K=float(temperature))
+            if settings.get('anchor_species'):row['order_anchor']=calc.temperature_anchor
+            return row
     except Exception as exc:return dict(error=f'{type(exc).__name__}: {exc}')
 
 

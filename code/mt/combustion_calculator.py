@@ -145,6 +145,7 @@ class CombustionCalculator:
         rtol: float = 1.0e-9,
         atol: float = 1.0e-15,
         max_time_step: float | None = None,
+        anchor_species: tuple = (),
     ) -> float:
         """Return IDT in seconds; expose the last reactor temperature in K.
 
@@ -154,6 +155,7 @@ class CombustionCalculator:
         a steady-state convergence check. The IDT return type stays unchanged.
         """
         self.final_temperature = None
+        self.temperature_anchor = None
         if end_time <= 0:
             raise ValueError("end_time must be positive.")
 
@@ -187,6 +189,16 @@ class CombustionCalculator:
             capacity = phase.cv_mass if reactor_type == 'constant-volume' else phase.cp_mass
             energy = phase.partial_molar_int_energies if reactor_type == 'constant-volume' else phase.partial_molar_enthalpies
             return -float(np.dot(phase.net_production_rates,energy))/(phase.density*capacity)
+        peak_temperature_rate = -np.inf
+        def capture_anchor():
+            nonlocal peak_temperature_rate
+            if anchor_species:
+                value=temperature_rate()
+                if value>peak_temperature_rate:
+                    from .order_tuning import state_anchor
+                    self.temperature_anchor=state_anchor(phase,anchor_species)
+                    peak_temperature_rate=value
+        capture_anchor()
         rates = [temperature_rate()] if species_index is None else []
         times = [0.0]
         concentrations = [marker_value()]
@@ -196,6 +208,7 @@ class CombustionCalculator:
             network.max_time_step = min(max_time_step or end_time, end_time - network.time)
             times.append(network.step())
             concentrations.append(marker_value())
+            capture_anchor()
             if species_index is None:rates.append(temperature_rate())
 
         self.final_temperature = float(phase.T)

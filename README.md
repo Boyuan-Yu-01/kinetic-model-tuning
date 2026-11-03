@@ -7,6 +7,7 @@ Start with a human-initialized Cantera YAML mechanism, define the operating cond
 ## Capabilities
 
 - Staged optimization of Arrhenius parameters: **A → A/Ea → A/Ea/b**.
+- Optional joint tuning of explicit reaction orders, with fixed reference-state anchors and optional order-sum bounds.
 - Sensitivity-based reaction selection, repeated as the model changes.
 - Separate flame, ignition, and ZND condition sets and objective settings.
 - Rate uncertainty constraints for reference-derived reactions and configurable bounds for artificial reactions.
@@ -23,6 +24,7 @@ The workflow tunes an existing reaction scheme; it does not automatically discov
 | [`ethylene_LFS_IDT`](example/ethylene_LFS_IDT/run.py) | Ethylene–air | Flame speed, ignition delay, and both final temperatures |
 | [`ethylene_ZND`](example/ethylene_ZND/run.py) | Ethylene–air | Final ZND temperature, induction length, and exothermic length |
 | [`methane_LFS_IDT`](example/methane_LFS_IDT/run.py) | Methane–air | Flame speed, ignition delay, and both final temperatures |
+| [`hydrogen_LFS`](example/hydrogen_LFS/run.py) | Hydrogen–oxygen–argon | Flame speed, flame thickness, burned temperature; tunable reaction orders |
 
 For individual calculations without optimization, see [`example/calculations`](example/calculations/README.md): commented `run_ZND.py`, `run_LFS.py`, and `run_IDT.py` scripts using FFCM2.
 
@@ -217,3 +219,42 @@ example/
 ```
 
 See [flame temperature-profile documentation](code/FLAME_PROFILE.md) and the [combined ethylene example notes](example/ethylene_LFS_IDT/README.md) for further details.
+
+## Optional reaction-order tuning
+
+In the staged workflows, add actual order bounds under `problem['reactions']`:
+
+```python
+'orders': {
+    1: {
+        'bounds': {'H2': (-2., 2.), 'O2': (-2., 2.)},
+        # Optional sum of these selected orders:
+        'sum_bounds': (1., 2.),
+    },
+},
+```
+
+Omit `orders` to retain the existing fixed-order behavior. These bounds are
+additive actual orders, unlike the legacy `OrderParameters.ratios` API.
+The selected reactant orders must already appear in the input YAML. Order
+tuning supports irreversible Arrhenius and PLOG reactions declared artificial;
+published rate uncertainty factors are not applied to changing-order reactions.
+Borrowed reactions retain their original rate uncertainty constraints.
+
+Orders remain active during all A / A–Ea / A–Ea–b stages. Each reaction's rate
+and order coordinates are updated jointly; unselected reactions keep their
+current values. Numerical derivative probes use bounded steps and are rechecked
+each round. Unavailable derivatives are not treated as zero sensitivities.
+
+Reference anchors are sampled at maximum **dT/dx** for flames, maximum **dT/dt**
+for ignition, and the **induction-length** location for ZND. One fixed anchor is
+formed with a harmonic mean temperature and geometric mean positive reactant
+concentrations, weighting cases equally within equally weighted families.
+Anchors are independent of the chosen ignition-delay marker. They are computed
+from the reference mechanism and retained throughout the run. YAML energy and
+concentration units govern export; there is no separate energy-unit setting.
+
+For n reactions with one Arrhenius expression each and m reactions with two
+adjustable orders, the final stage has 3n + 2m coordinates. PLOG nodes can add
+rate coordinates while sharing one set of orders per reaction. The complete
+example is documented in [hydrogen_LFS](example/hydrogen_LFS/README.md).

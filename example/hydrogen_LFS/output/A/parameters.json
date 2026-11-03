@@ -1,0 +1,57 @@
+{
+  "labels": [
+    {
+      "reaction": 1,
+      "pressure_pa": null,
+      "entries": [
+        1
+      ],
+      "label": "R1 ln k(Tref)",
+      "parameter": "log_k_pivot"
+    },
+    {
+      "reaction": 1,
+      "pressure_pa": null,
+      "parameter": "scaled_ea",
+      "label": "R1 \u0394Ea/251.04 kJ/mol at fixed k(Tref)",
+      "scale": 251.04
+    },
+    {
+      "reaction": 1,
+      "pressure_pa": null,
+      "parameter": "scaled_b",
+      "label": "R1 \u0394b/9 at fixed k(Tref)",
+      "scale": 9.0
+    },
+    {
+      "reaction": 1,
+      "parameter": "scaled_order",
+      "species": "H2",
+      "scale": 0.2,
+      "label": "R1 \u0394order(H2)/0.2 at fixed reference rate"
+    },
+    {
+      "reaction": 1,
+      "parameter": "scaled_order",
+      "species": "O2",
+      "scale": 0.2,
+      "label": "R1 \u0394order(O2)/0.2 at fixed reference rate"
+    }
+  ],
+  "order_bounds": {
+    "1": {
+      "bounds": {
+        "H2": [
+          -2.0,
+          2.0
+        ],
+        "O2": [
+          -2.0,
+          2.0
+        ]
+      },
+      "scale": 0.2,
+      "step": 0.02
+    }
+  }
+}

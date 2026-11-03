@@ -15,6 +15,8 @@ def report_round(info, maximum, stream):
     if info.get('skipped_coordinates'):
         emit('  Unavailable derivatives skipped; rechecked next round.')
     if info.get('all_free_audit'): emit('  Additional optimization audit: all eligible parameters.')
+    for n,row in info.get('orders',{}).items():
+        emit(f'  R{n} orders: '+', '.join(f'{s}={v:.5g}' for s,v in row['orders'].items())+f"; sum={row['sum']:.5g}")
     emit(f'  Inner optimizer: {info.get("inner_status", "not reported")}')
     emit(f'  Stop/status: {info["status"]}')
 
