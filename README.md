@@ -306,22 +306,69 @@ Here $h_j$ is the perturbation in optimizer coordinates and $\underline{e}_j$ se
 
 The centered formula illustrates the estimate when both perturbations are feasible and resolve successfully. Near bounds, the tuner can use feasible one-sided estimates. It checks estimate quality as the perturbation changes. Flame calculations can use adjoints for supported Arrhenius derivatives and uses finite differences for reaction orders and flame thickness. An unavailable derivative is skipped and rechecked in later rounds.
 
-### Computing a joint update
+### From sensitivity to a proposed update
 
-For selected, reliable columns $\underline{\underline{J}}_S$, the tuner approximates the new residual by $\underline{r}+\underline{\underline{J}}_S\Delta\underline{x}$. It proposes a step by solving
+A Jacobian entry measures the signed response of one residual to one coordinate. To rank a reaction group $G$, the tuner scales each reliable column by its available movement $d_j$ and combines the column norms:
+
+```math
+\operatorname{score}(G)=
+\frac{\sqrt{\sum_{j\in G_{\mathrm{reliable}}} d_j^2
+\left\|(\underline{\underline{J}})_{:,j}\right\|_2^2}}
+{\max(\|\underline{r}\|_2,1)}.
+```
+
+A large score means the reaction can move the residuals substantially. Whether those changes reduce the current loss depends on their signs and the current errors. For $L=\|\underline{r}\|_2^2$, the loss gradient is $2\underline{\underline{J}}^{\mathsf T}\underline{r}$.
+
+### One optimization round
+
+1. **Evaluate the current model.** Compute the observables and assemble the weighted, signed residuals. A profile contributes one row per comparison point.
+2. **Estimate sensitivities and screen reactions.** Rank eligible reaction groups using their reliable derivatives and available movement. Recheck unavailable derivatives in later rounds.
+3. **Propose a joint step.** For the selected columns $S$, solve the damped least-squares problem below. The feasible region combines parameter bounds, applicable rate constraints, and a trust region that limits the step size.
+4. **Evaluate the trial mechanism.** Run the full simulations and check feasibility. Accept the step if it reduces the loss and the actual reduction agrees sufficiently with the predicted reduction. Reduce the trust radius and retry when a proposal performs poorly.
+5. **Repeat and validate.** Refresh the sensitivities at the updated model. Record convergence, loss plateau, trust-region stall, or round limit separately. Check the saved model with the configured solver refinement.
 
 ```math
 \min_{\Delta\underline{x}}
 \left\|\underline{r}+\underline{\underline{J}}_S\Delta\underline{x}\right\|_2^2
-+\lambda\left\|\Delta\underline{x}\right\|_2^2
++\lambda\left\|\Delta\underline{x}\right\|_2^2.
 ```
 
-subject to the stage bounds, coupled rate constraints, and a trust region that limits the size of the step. The damping $\lambda$ stabilizes the proposed update when several coordinates produce similar responses. Because the fit uses all rows together, a change that helps one case and hurts another is judged by its combined effect.
+Damping $\lambda$ stabilizes the local step when parameters have similar effects. Optional baseline regularization instead penalizes departures of the mechanism from its starting parameters.
 
-## Optimization workflow
+### Worked example
 
-1. **Prepare the reference and starting model.** Evaluate the reference cases, set the fixed anchor for order tuning, and evaluate the supplied starting model to obtain the initial residuals.
-2. **Set the stage coordinates and bounds.** Apply the stage rules below. Transfer the best feasible model to the next stage.
-3. **Screen the reactions.** Estimate sensitivities at the current model and prioritize reaction groups with reliable derivatives and room to move. A single-reaction example has only one group to select.
-4. **Propose and verify an update.** Solve the constrained local problem, then run the full simulations on the trial model. Accept an improving step only when the actual reduction agrees sufficiently with the prediction. Shrink the trust region when a proposal performs poorly.
-5. **Repeat and validate.** Refresh sensitivities as the model changes and recheck unavailable directions. Distinguish convergence from a loss plateau, an exhausted trust region, or a round limit. Validate the final model with the refinement checks for the chosen observable.
+Suppose two cases both underpredict an observable. Two adjustable coordinates give the following scaled residual vector and Jacobian:
+
+```math
+\underline{r}=\begin{bmatrix}-1\\-0.6\end{bmatrix},
+\qquad
+\underline{\underline{J}}=\begin{bmatrix}2&1\\-2&1\end{bmatrix}.
+```
+
+The first column has the larger norm, but increasing its coordinate helps the first case and hurts the second. The second coordinate improves both. For illustration, set damping to zero and assume both coordinates are selected. The unconstrained joint step is $(0.1,0.8)^{\mathsf T}$, which zeros both linearized residuals. If the second coordinate can increase by at most $0.5$, the constrained solution is
+
+```math
+\Delta\underline{x}=\begin{bmatrix}0.1\\0.5\end{bmatrix},
+\qquad
+\underline{r}+\underline{\underline{J}}\Delta\underline{x}
+=\begin{bmatrix}-0.3\\-0.3\end{bmatrix}.
+```
+
+The predicted squared loss falls from $1.36$ to $0.18$. Full simulations determine the actual reduction and whether the tuner accepts the step.
+
+### What changes between stages
+
+| Stage | Coordinates released | Coordinates held fixed | Purpose |
+| --- | --- | --- | --- |
+| **A** | Anchored rate strength and any configured reaction orders | Activation energy and temperature exponent | Adjust overall strength and concentration dependence. |
+| **A/Ea** | Rate strength, activation energy, and any configured orders | Temperature exponent | Adjust inverse-temperature dependence while allowing the rate strength to readjust. |
+| **A/Ea/b** | Rate strength, activation energy, temperature exponent, and any configured orders | Coordinates excluded by configuration | Add power-law temperature dependence for a final joint adjustment. |
+
+Each stage uses the same sensitivity and update procedure. It starts from the preceding stage's best feasible model. Configured stage-relative limits are centered on that stage's entry model and intersected with the global bounds. Releasing $b$ last helps because the $b$ and $E_a$ terms can have similar effects over a narrow temperature range.
+
+### Constraints and validation
+
+- **Physical parameter bounds.** Limits apply to the reconstructed YAML values of $A$, $E_a$, and $b$, as configured. Because the anchored rate coordinate couples $A$ to the shape and order coordinates, the feasible update must satisfy the bounds jointly. Adjustable orders have individual bounds and may also have a bound on their sum.
+- **Rate uncertainty.** For a borrowed reaction with a configured uncertainty factor $F$, the rate envelope constrains $k/k_0$ to the interval $[1/F,F]$ over the configured domain, relative to the designated baseline. A shared $A$-only multiplier scales the full rate directly, so its uncertainty bound reduces to a multiplier bound.
+- **PLOG continuity and monotonicity.** Logarithmic interpolation between positive summed rates at pressure nodes makes the rate continuous in pressure. Monotonicity is an additional constraint. For an increasing rate, require $k(T,P_{j+1})\ge k(T,P_j)$ for every adjacent pair and every temperature in the configured interval. Reverse the inequality for decreasing rates. With either direction enabled, one direction must hold throughout the interval. Equal node rates permit flat segments. The tuner checks the resulting rate shape before accepting a candidate.
+- **Simulation validity.** The mechanism must produce valid observables for the required cases. Final solver validation checks the saved mechanism separately from optimizer convergence.
