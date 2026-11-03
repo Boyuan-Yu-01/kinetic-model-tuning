@@ -90,13 +90,25 @@ $$
 
 At the reference state, only $a$ contributes. The tuner adjusts the YAML value of $A$ to enforce this relation. The anchor uses the maximum temperature gradient region of each reference flame, with a harmonic mean for temperature and geometric means for concentrations.
 
-| Stage | Adjustable coordinates |
-| --- | --- |
-| A | $a$, $n_{\mathrm{H_2}}$, $n_{\mathrm{O_2}}$ |
-| A/Ea | $a$, $E_a$, $n_{\mathrm{H_2}}$, $n_{\mathrm{O_2}}$ |
-| A/Ea/b | $a$, $E_a$, $b$, $n_{\mathrm{H_2}}$, $n_{\mathrm{O_2}}$ |
+### Stage 1 — A and reaction orders
 
-Each stage starts from the preceding stage's best model. Order changes are additive, $n_i=n_{i,0}+\Delta n_i$, and each actual order is bounded between $-2$ and $2$ in this example. At fixed $a$, increasing the hydrogen order by $0.2$ multiplies the rate by $(C_{\mathrm{H_2}}/C_{\mathrm{H_2},*})^{0.2}$.
+Adjust the anchored log rate multiplier $a$ and the two orders $n_{\mathrm{H_2}}$ and $n_{\mathrm{O_2}}$. Hold $E_a$ and $b$ at their starting values. This stage fits the overall rate strength and how the rate responds to reactant concentrations. The physical YAML coefficient satisfies $10^{-3}\le A/A_{\mathrm{entry}}\le 10^8$, intersected with the global $A$ bounds.
+
+### Stage 2 — A, Ea, and reaction orders
+
+Start from the best Stage 1 model. Release $E_a$ while keeping $b$ fixed. Changing $E_a$ changes the slope of the log rate with respect to $1/T$. The tuner can readjust the rate strength and both orders at the same time. The stage allows $0.5\le A/A_{\mathrm{entry}}\le2$ and $|E_a-E_{a,\mathrm{entry}}|\le60{,}000$ cal/mol, subject to the global bounds below.
+
+### Stage 3 — A, Ea, b, and reaction orders
+
+Start from the best Stage 2 model and release $b$. All five coordinates can now move together. The $b$ term contributes $\Delta b\ln(T/T_*)$ to the log rate ratio. The same factor-of-two window applies to $A$, while the stage restricts $|E_a-E_{a,\mathrm{entry}}|\le1{,}195.03$ cal/mol. The global bounds govern $b$.
+
+### Constraints
+
+- **Arrhenius bounds.** The global $A$ multiplier is between $10^{-3}$ and $10^8$ relative to the original YAML template. For this template, the intersection of the absolute bounds and the allowed template deviations gives $4{,}500\le E_a\le75{,}000$ cal/mol and $-5\le b\le10$. The optimizer intersects these limits with each stage window. The bounds on $A$ apply to the physical coefficient recovered from the anchored coordinates, so changes in orders, $E_a$, and $b$ also affect which steps are feasible.
+- **Reaction orders.** The actual orders obey $-2\le n_i\le2$ in every stage. Changes are additive, $n_i=n_{i,0}+\Delta n_i$. At fixed $a$, increasing the hydrogen order by $0.2$ multiplies the rate by $(C_{\mathrm{H_2}}/C_{\mathrm{H_2},*})^{0.2}$. This run sets individual bounds and leaves the order sum free.
+- **Reaction scope.** This run treats R1 as an artificial reaction and uses the explicit bounds above. The published FFCM2 uncertainty factors and PLOG constraints are inactive. The loss contains only the three flame objectives.
+
+### Objective and update
 
 For each flame case, the fit uses the residual vector
 
