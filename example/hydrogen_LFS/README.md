@@ -70,3 +70,43 @@ Ea, b and order changes. PLOG insertion is disabled for this example.
 Final validation disables sensitivity calculations, repeats predictions on a
 finer grid, and checks speed and thickness changes against 2%. A plateau or
 iteration limit is reported separately from convergence.
+
+## Tuning mathematics
+
+For the irreversible hydrogen reaction, the forward rate is
+
+$$
+r_f=A T^b e^{-E_a/(RT)} C_{\mathrm{H_2}}^{n_{\mathrm{H_2}}} C_{\mathrm{O_2}}^{n_{\mathrm{O_2}}}.
+$$
+
+Define $a=\ln(r_{f,*}/r_{f,0,*})$ as the log rate multiplier at a fixed reference state. Relative to the baseline rate,
+
+$$
+\ln\frac{r_f}{r_{f,0}}=
+a+\Delta b\ln\frac{T}{T_*}
+-\frac{\Delta E_a}{R}\left(\frac1T-\frac1{T_*}\right)
++\sum_i\Delta n_i\ln\frac{C_i}{C_{i,*}}.
+$$
+
+At the reference state, only $a$ contributes. The tuner adjusts the YAML value of $A$ to enforce this relation. The anchor uses the maximum temperature gradient region of each reference flame, with a harmonic mean for temperature and geometric means for concentrations.
+
+| Stage | Adjustable coordinates |
+| --- | --- |
+| A | $a$, $n_{\mathrm{H_2}}$, $n_{\mathrm{O_2}}$ |
+| A/Ea | $a$, $E_a$, $n_{\mathrm{H_2}}$, $n_{\mathrm{O_2}}$ |
+| A/Ea/b | $a$, $E_a$, $b$, $n_{\mathrm{H_2}}$, $n_{\mathrm{O_2}}$ |
+
+Each stage starts from the preceding stage's best model. Order changes are additive, $n_i=n_{i,0}+\Delta n_i$, and each actual order is bounded between $-2$ and $2$ in this example. At fixed $a$, increasing the hydrogen order by $0.2$ multiplies the rate by $(C_{\mathrm{H_2}}/C_{\mathrm{H_2},*})^{0.2}$.
+
+For each flame case, the fit uses the residual vector
+
+$$
+\mathbf r_i=\begin{bmatrix}
+\ln(S_{u,i}/S_{u,i}^{\mathrm{ref}})\\
+\ln(\delta_i/\delta_i^{\mathrm{ref}})\\
+(T_{b,i}-T_{b,i}^{\mathrm{ref}})/(25\,\mathrm K)
+\end{bmatrix},
+\qquad L=\frac{1}{3N}\sum_i\|\mathbf r_i\|_2^2.
+$$
+
+The tuner estimates the order columns of $J=\partial\mathbf r/\partial\mathbf x$ by finite differences. It uses $\mathbf r+J\Delta\mathbf x$ to propose a bounded joint step and checks its improvement with full flame solves.
