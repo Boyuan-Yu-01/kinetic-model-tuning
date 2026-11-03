@@ -269,6 +269,8 @@ For an Arrhenius reaction with concentration-dependent forward kinetics, let $\m
 r_f=A T^b e^{-E_a/(RT)} \prod_{i\in\mathcal S}C_i^{n_i}.
 ```
 
+The subscript $\ast$ means evaluated at the fixed anchor state. The comma separates labels. For example, $r_{f,0,\ast}$ is the forward rate of the baseline mechanism evaluated at the anchor. Likewise, $T_{\ast}$ is the anchor temperature and $C_{i,\ast}$ is the anchor concentration of species $i$.
+
 Define $a=\ln(r_{f,\ast}/r_{f,0,\ast})$ as the log rate multiplier at a fixed reference state. Relative to the baseline rate,
 
 ```math
@@ -280,9 +282,13 @@ a+\Delta b\ln\frac{T}{T_{\ast}}
 
 ### The anchor state
 
-The subscript $\ast$ means evaluated at the fixed anchor state. The comma separates labels. For example, $r_{f,0,\ast}$ is the forward rate of the baseline mechanism evaluated at the anchor. Likewise, $T_{\ast}$ is the anchor temperature and $C_{i,\ast}$ is the anchor concentration of species $i$.
+The tuner samples one state from each reference case according to the simulation type.
 
-For a flame-only fit, the tuner finds the interval with the largest $\Delta T/\Delta x$ in each reference flame and samples the state at its midpoint. With $N$ reference flames, it combines the sampled temperatures and positive concentrations as follows:
+- **Laminar flame speed.** Find the interval with the largest $\Delta T/\Delta x$ and sample its midpoint.
+- **Ignition delay.** Use the reactor state with the largest $dT/dt$ among the sampled states. This anchors the rate at the strongest heating even when ignition delay itself is measured with a species marker such as OH.
+- **ZND.** Use the state at the induction length behind the shock, the location of peak thermicity. Interpolate the reference profile to that distance to obtain temperature, pressure, and composition, then calculate the species concentrations.
+
+For a single simulation family with $N$ cases, combine the sampled temperatures and positive concentrations as follows:
 
 ```math
 T_{\ast}=\left(\frac{1}{N}\sum_{j=1}^{N}\frac{1}{T_j}\right)^{-1},
@@ -290,7 +296,7 @@ T_{\ast}=\left(\frac{1}{N}\sum_{j=1}^{N}\frac{1}{T_j}\right)^{-1},
 C_{i,\ast}=\left(\prod_{j=1}^{N} C_{i,j}\right)^{1/N}.
 ```
 
-The harmonic mean averages inverse temperature, which appears in the activation-energy term. The geometric mean averages log concentration, which appears in the order term. The resulting anchor stays fixed across stages.
+The harmonic mean averages inverse temperature, which appears in the activation-energy term. The geometric mean averages log concentration, which appears in the order term. For a fit that combines simulation families, the tuner averages inverse temperatures and log concentrations within each family first, then gives each family equal weight. The resulting anchor stays fixed across stages.
 
 At the anchor, the temperature and concentration difference terms vanish, leaving $r_{f,\ast}/r_{f,0,\ast}=e^a$. If the tuner raises an order by $0.2$ at fixed $a$, it adjusts the YAML coefficient $A$ to preserve the rate at the anchor. At twice that species' anchor concentration, the order change multiplies the rate by $2^{0.2}\approx1.15$ with the other coordinates held fixed.
 
