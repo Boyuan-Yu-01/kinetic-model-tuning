@@ -405,6 +405,15 @@ Each stage uses the same sensitivity and update procedure. It starts from the pr
 ### Constraints and validation
 
 - **Physical parameter bounds.** Limits apply to the reconstructed YAML values of $A$, $E_a$, and $b$, as configured. Because the anchored rate coordinate couples $A$ to the shape and order coordinates, the feasible update must satisfy the bounds jointly. Adjustable orders have individual bounds and may also have a bound on their sum.
-- **Rate uncertainty.** For a borrowed reaction with a configured uncertainty factor $F$, the rate envelope constrains $k/k_0$ to the interval $[1/F,F]$ over the configured domain, relative to the designated baseline. A shared $A$-only multiplier scales the full rate directly, so its uncertainty bound reduces to a multiplier bound.
+- **Rate uncertainty.** For a reaction with uncertainty factor $F$, A-only tuning bounds the shared multiplier $A/A_0$ between $1/F$ and $F$. With $b$ and $E_a$ fixed, that multiplier is also the full rate-constant ratio. When $b$ or $E_a$ can change, the bound applies to the full rate-constant ratio over the configured domain. For a single Arrhenius rate,
+
+  ```math
+  \frac{1}{F}\le\frac{k(T)}{k_0(T)}
+  =\frac{A}{A_0}T^{b-b_0}
+  \exp\!\left(-\frac{E_a-E_{a,0}}{RT}\right)
+  \le F.
+  ```
+
+  The exponential term accounts for activation-energy changes. The subscript $0$ identifies the designated baseline.
 - **PLOG continuity and monotonicity.** Logarithmic interpolation between positive summed rates at pressure nodes makes the rate continuous in pressure. Monotonicity is an additional constraint. For an increasing rate, require $k(T,P_{j+1})\ge k(T,P_j)$ for every adjacent pair and every temperature in the configured interval. Reverse the inequality for decreasing rates. With either direction enabled, one direction must hold throughout the interval. Equal node rates permit flat segments. The tuner checks the resulting rate shape before accepting a candidate.
 - **Simulation validity.** The mechanism must produce valid observables for the required cases. Final solver validation checks the saved mechanism separately from optimizer convergence.
